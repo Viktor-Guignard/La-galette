@@ -134,7 +134,7 @@ saveBtn.addEventListener('click', async () => {
     const name = await saveVersion(S().doc, S().style);
     S().baseVersion = name;
     H().clearDraft();
-    try { localStorage.setItem('carte_a_publier_' + MENU_KEY, '1'); } catch (e) { }
+    try { localStorage.setItem('galette_a_publier_' + MENU_KEY, '1'); } catch (e) { }
     H().updateSyncStatus();
     H().toast('✓ Enregistré. Pour que les clients voient la modification : Publier', 'Publier →', () => { location.href = 'publier.html'; });
   } catch (err) {

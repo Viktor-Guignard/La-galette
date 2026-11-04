@@ -10,7 +10,7 @@
     owner: 'Viktor-Guignard',
     repo: 'La-galette',
     branch: 'main',
-    tokenKey: 'carte_gh_token',
+    tokenKey: 'galette_gh_token'   // propre à La Galette : l'éditeur Coursive est sur le même domaine,
   };
   const API = `https://api.github.com/repos/${GH.owner}/${GH.repo}/contents`;
 

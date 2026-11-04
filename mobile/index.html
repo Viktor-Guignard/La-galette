@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ma carte — La Galette</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="La Galette">
+<link rel="icon" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-row">
+    <img class="top-logo" src="../assets/logo-noir.png" alt="">
+    <div class="top-title">
+      <h1>La Galette</h1>
+      <p>Ma carte</p>
+    </div>
+    <button id="installBtn" class="icon-btn" type="button" aria-label="Installer l'app sur ce téléphone" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button id="statusBtn" class="status" type="button" aria-label="Réglages de l'accès">
+      <span class="dot"></span><span class="txt">…</span>
+    </button>
+  </div>
+
+  <div class="search">
+    <svg class="search-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <input id="q" type="search" placeholder="Rechercher un plat, une pizza, un vin…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-label="Rechercher">
+    <button id="qClear" class="search-clear" type="button" aria-label="Effacer la recherche" hidden>✕</button>
+  </div>
+
+  <nav id="chips" class="chips" aria-label="Filtrer par carte"></nav>
+</header>
+
+<main>
+  <div id="installCard" class="install-card" hidden>
+    <img src="assets/icon-192.png" alt="">
+    <div>
+      <b>Installez l'app sur ce téléphone</b>
+      <span>Une icône, et la carte s’ouvre en plein écran.</span>
+    </div>
+    <button id="installCardOpen" type="button" class="install-card-go">Comment&nbsp;?</button>
+    <button id="installCardClose" type="button" class="install-card-x" aria-label="Ne plus afficher">✕</button>
+  </div>
+
+  <p id="count" class="count" aria-live="polite"></p>
+  <div id="list" class="list">
+    <div class="empty">Chargement de la carte…</div>
+  </div>
+  <p class="help">Touchez un produit pour le modifier, l'œil pour le masquer.</p>
+</main>
+
+<div id="bar" class="bar" hidden>
+  <button id="undoBtn" class="bar-undo" type="button">Annuler</button>
+  <button id="saveBtn" class="bar-save" type="button">Publier</button>
+</div>
+
+<!-- Fiche produit : modifier ou ajouter -->
+<div id="editSheet" class="sheet-backdrop" hidden>
+  <form id="editForm" class="sheet" role="dialog" aria-modal="true" aria-labelledby="editTitle" novalidate>
+    <div class="sheet-grip"></div>
+    <h2 id="editTitle">Modifier</h2>
+    <p id="editCtx" class="sheet-ctx"></p>
+
+    <label class="field">
+      <span>Nom</span>
+      <textarea id="fFr" rows="2" autocapitalize="sentences" required></textarea>
+    </label>
+    <label class="field">
+      <span>Description <i>(ingrédients, en français)</i></span>
+      <textarea id="fDesc" rows="2" autocapitalize="sentences"></textarea>
+    </label>
+    <p class="field-hint">🌐 Anglais, italien et allemand se traduisent tout seuls à la publication.</p>
+    <input id="fEn" type="hidden">
+    <label class="field" id="fPriceBox">
+      <span>Prix</span>
+      <input id="fPrice" type="text" inputmode="decimal" placeholder="ex. 17,50" autocomplete="off">
+    </label>
+    <div class="field" id="fWineBox" hidden>
+      <span>Prix par contenance</span>
+      <div class="wine-prices">
+        <label><small>37,5 cl</small><input id="fP1" type="text" inputmode="decimal"></label>
+        <label><small>50 cl</small><input id="fP2" type="text" inputmode="decimal"></label>
+        <label><small>75 cl</small><input id="fP3" type="text" inputmode="decimal"></label>
+        <label><small>150 cl</small><input id="fP4" type="text" inputmode="decimal"></label>
+      </div>
+    </div>
+
+    <div id="fTags" class="field-tags">
+      <label class="toggle-chip"><input type="checkbox" value="veg"><span>V · Végétarien</span></label>
+      <label class="toggle-chip"><input type="checkbox" value="gf"><span>🌾 Sans gluten</span></label>
+    </div>
+
+    <label class="switch">
+      <input id="fVisible" type="checkbox">
+      <span class="switch-track" aria-hidden="true"></span>
+      <span>Visible sur la carte des clients</span>
+    </label>
+
+    <button id="editOk" type="submit" class="btn-primary">Valider</button>
+    <button id="delBtn" type="button" class="btn-danger">Supprimer ce produit</button>
+    <button id="editCancel" type="button" class="btn-ghost">Fermer</button>
+  </form>
+</div>
+
+<!-- Réglages : jeton GitHub (partagé avec l'éditeur, même site) -->
+<div id="tokenSheet" class="sheet-backdrop" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="tokenTitle">
+    <div class="sheet-grip"></div>
+    <h2 id="tokenTitle">Autoriser ce téléphone</h2>
+    <p>Pour modifier la carte, ce téléphone doit être autorisé une fois : ouvrez sur ce téléphone le <b>lien d'activation</b> envoyé par Viktor. Il vaut pour l'éditeur et pour cette app.</p>
+    <p class="muted">Ou collez ici le lien d'activation&nbsp;:</p>
+    <form id="tokenForm">
+      <input id="tokenInput" type="password" placeholder="Lien d'activation" autocomplete="off" spellcheck="false">
+      <button type="submit" class="btn-primary">Autoriser ce téléphone</button>
+    </form>
+    <div id="magicBox" class="magic" hidden>
+      <button id="copyMagic" type="button" class="btn-ghost">✨ Copier le lien d'activation de cette app</button>
+      <input id="magicText" type="text" readonly hidden>
+    </div>
+    <a class="sheet-link" href="../index.html" target="_blank" rel="noopener">Ouvrir l'éditeur complet (mise en page, PDF) ↗</a>
+    <a class="sheet-link" href="../carte.html" target="_blank" rel="noopener">Voir la carte des clients (QR) ↗</a>
+    <button type="button" class="btn-ghost sheet-close" data-close="tokenSheet">Fermer</button>
+  </div>
+</div>
+
+<!-- Installation sur l'écran d'accueil -->
+<div id="installSheet" class="sheet-backdrop" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="installTitle">
+    <div class="sheet-grip"></div>
+    <h2 id="installTitle">Installer l'app</h2>
+    <div id="installIos">
+      <ol class="steps">
+        <li>Ouvrez cette page dans <b>Safari</b>.</li>
+        <li>Touchez le bouton <b>Partager</b> <svg class="ico-share" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M12 3 8 7M12 3l4 4M6 11H5v10h14V11h-1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> en bas de l'écran.</li>
+        <li>Choisissez <b>Sur l'écran d'accueil</b>, puis <b>Ajouter</b>.</li>
+      </ol>
+    </div>
+    <div id="installAndroid">
+      <button id="installNow" type="button" class="btn-primary" hidden>Installer maintenant</button>
+      <ol class="steps">
+        <li>Dans Chrome, touchez le menu <b>⋮</b> en haut à droite.</li>
+        <li>Choisissez <b>Installer l'application</b> (ou <b>Ajouter à l'écran d'accueil</b>).</li>
+      </ol>
+    </div>
+    <p class="muted">L'icône La Galette apparaît avec vos autres apps et s'ouvre en plein écran.</p>
+    <p class="muted" id="installIosNote">Sur iPhone, l'app installée ne voit pas les réglages de Safari&nbsp;: au premier lancement, touchez la pastille <b>À activer</b> et collez le lien d'activation. Pour le copier maintenant&nbsp;: pastille <b>Prêt</b> → ✨.</p>
+    <button type="button" class="btn-ghost sheet-close" data-close="installSheet">Fermer</button>
+  </div>
+</div>
+
+<div id="toast" class="toast" role="status"></div>
+
+<script src="../gh.js?v=33"></script>
+<script src="../i18n.js?v=33"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>

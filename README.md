@@ -11,6 +11,12 @@ Les cartes de La Galette (restaurant savoyard · pizzéria · crêperie), refait
 | **Pizzas (EN)** | A4 | Même carte en anglais |
 | **Vente à emporter** | Affiche 46 × 66 cm | Adhésif porte-menu noir & or (entrées, crêpes & galettes, pizzas) |
 
+## App mobile — « Ma carte »
+
+**https://viktor-guignard.github.io/la-coursive-site/carte-galette/mobile/**
+
+Pour tenir la carte à jour depuis le téléphone, sans l'éditeur complet (s'installe sur l'écran d'accueil) : rechercher un plat, le masquer en cas de rupture (👁), changer son nom, sa description, son prix, ses pictos, en ajouter, en supprimer. **Publier** met à jour la carte des clients (QR code + site), crée une nouvelle version pour l'éditeur web (qui l'ouvre ensuite) et traduit automatiquement les plats modifiés en anglais, italien et allemand. Même autorisation que l'éditeur (lien d'activation).
+
 ## Utilisation
 
 - **Cliquer sur un texte** pour le modifier (Entrée ou clic ailleurs pour valider).

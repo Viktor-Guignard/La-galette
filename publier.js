@@ -9,7 +9,7 @@ let latestByKey = {};   // key -> {name, path, sha} (dernière version enregistr
    local. */
 function draftWarning(menu) {
   try {
-    const raw = localStorage.getItem('carte_draft_' + menu.key);
+    const raw = localStorage.getItem('galette_draft_' + menu.key);
     if (!raw) return '';
     const d = JSON.parse(raw);
     if (!d || !Array.isArray(d.doc) || !d.doc.length) return '';
@@ -168,7 +168,7 @@ document.getElementById('publishBtn').addEventListener('click', async () => {
     await GHUB.putJson('published.json', payload, 'Publication du QR (' + keys.join(', ') + ')');
     publishedKeys = new Set(keys);
     publishedAt = payload.updatedAt;
-    keys.forEach(k => { publishedVersion[k] = latestByKey[k] && latestByKey[k].name; try { localStorage.removeItem('carte_a_publier_' + k); } catch (e) { } });
+    keys.forEach(k => { publishedVersion[k] = latestByKey[k] && latestByKey[k].name; try { localStorage.removeItem('galette_a_publier_' + k); } catch (e) { } });
     render();
     toast('✓ En ligne ! Le QR code et le site affichent la nouvelle carte (jusqu\'à 5 min).');
   } catch (err) {

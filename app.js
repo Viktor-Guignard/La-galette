@@ -217,7 +217,7 @@ function updateHistoryButtons(){
 
 /* ===================== Brouillon local (sécurité) ===================== */
 
-const DRAFT_KEY = 'carte_draft_' + window.currentMenuKey();
+const DRAFT_KEY = 'galette_draft_' + window.currentMenuKey();
 
 function saveDraft(){
   try{
@@ -313,7 +313,7 @@ function updateSyncStatus(){
   setTimeout(() => { el.title = txt.textContent; }, 0);
   try {
     const d = document.querySelector('#publishLink .pub-dot');
-    if(d) d.hidden = localStorage.getItem('carte_a_publier_' + window.currentMenuKey()) !== '1';
+    if(d) d.hidden = localStorage.getItem('galette_a_publier_' + window.currentMenuKey()) !== '1';
   } catch(e){}
   if(state.dirty){
     el.classList.add('warn');
