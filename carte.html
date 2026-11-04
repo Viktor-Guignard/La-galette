@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/logo-noir.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="carte-public.css?v=32">
+<link rel="stylesheet" href="carte-public.css?v=33">
 </head>
 <body>
 
@@ -38,7 +38,17 @@
 
 
 <button id="topBtn" aria-label="Revenir en haut">↑</button>
+
+<!-- Choix de la langue : à l'arrivée (scan du QR), puis bouton 🌐 toujours visible -->
+<div id="langGate" class="lang-gate" hidden>
+  <div class="lang-gate-box" role="dialog" aria-modal="true" aria-labelledby="langGateTitle">
+    <img src="assets/logo-noir.png" alt="La Galette">
+    <p id="langGateTitle" class="lg-title">Choisissez votre langue<br><span>Choose your language · Scegli la lingua · Sprache wählen</span></p>
+    <div id="langGateBtns" class="lg-btns"></div>
+  </div>
+</div>
+<button id="langFab" class="lang-fab" hidden aria-label="Langue / Language"></button>
 <script src="i18n.js?v=32"></script>
-<script src="carte-public.js?v=32"></script>
+<script src="carte-public.js?v=33"></script>
 </body>
 </html>

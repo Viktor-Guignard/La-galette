@@ -156,3 +156,24 @@ main{max-width:760px; margin:0 auto; padding:24px 20px 10px;}
 .m-order .tel{display:inline-block; background:var(--or); color:#fff; text-decoration:none; font-weight:700; font-size:17px; padding:11px 20px; border-radius:30px;}
 .m-banner-web{text-align:center; text-transform:uppercase; font-style:normal; font-weight:700; letter-spacing:.06em; font-size:13px; margin:22px 0 8px;}
 .pub-foot, .pub-foot .tiny{color:#6b6158;}
+
+/* ---------- Choix de la langue (arrivée par le QR code) ---------- */
+.lang-gate{position:fixed; inset:0; z-index:50; background:rgba(255,255,255,.97); display:flex; align-items:center; justify-content:center; padding:20px;}
+.lang-gate[hidden]{display:none;}
+.lang-gate-box{width:100%; max-width:360px; text-align:center;}
+.lang-gate-box img{width:120px; margin:0 auto 18px; display:block;}
+.lg-title{font-size:19px; font-weight:700; color:var(--or); margin:0 0 20px; line-height:1.35;}
+.lg-title span{display:block; font-size:13px; font-weight:400; color:#6b6158; margin-top:4px;}
+.lg-btns{display:flex; flex-direction:column; gap:12px;}
+.lg-btn{display:flex; align-items:center; gap:14px; width:100%; min-height:58px; padding:12px 20px; border-radius:14px;
+  border:1.5px solid rgba(136,108,78,.35); background:#fff; font-family:var(--fb); font-size:18px; font-weight:600; color:var(--creme); cursor:pointer;
+  -webkit-tap-highlight-color:transparent;}
+.lg-btn .flag{font-size:28px; line-height:1;}
+.lg-btn:active, .lg-btn.current{border-color:var(--or); background:rgba(136,108,78,.08);}
+body.gate-open{overflow:hidden;}
+.lang-fab{position:fixed; left:16px; bottom:calc(18px + env(safe-area-inset-bottom)); z-index:20;
+  min-height:44px; padding:0 16px; border-radius:24px; border:1px solid rgba(136,108,78,.5); background:rgba(255,255,255,.96);
+  font-family:var(--fb); font-size:14px; font-weight:600; color:var(--creme); box-shadow:0 4px 14px rgba(0,0,0,.12); cursor:pointer;
+  -webkit-tap-highlight-color:transparent;}
+.lang-fab[hidden]{display:none;}
+.lang-fab span{margin-left:4px;}

@@ -233,16 +233,53 @@
       b.innerHTML = `<span class="flag">${l.flag}</span><span>${l.short}</span>`;
       b.title = l.label;
       b.setAttribute('aria-pressed', l.code === LANG ? 'true' : 'false');
-      b.onclick = () => {
-        if (l.code === LANG) return;
-        LANG = l.code; I18N.remember(LANG);
-        const y = window.scrollY;
-        if (lastPub) build(lastPub);
-        window.scrollTo(0, Math.min(y, document.body.scrollHeight));
-      };
+      b.onclick = () => setLang(l.code, true);
       el.appendChild(b);
     });
+    updateFab();
   }
+
+  /* Changer de langue (drapeaux du haut, bouton 🌐, écran d'accueil) */
+  function setLang(code, keepScroll) {
+    try { localStorage.setItem('carte_lang_chosen', '1'); } catch (e) { }
+    if (code === LANG) { updateFab(); return; }
+    LANG = code; I18N.remember(LANG);
+    const y = window.scrollY;
+    if (lastPub) build(lastPub);
+    window.scrollTo(0, keepScroll ? Math.min(y, document.body.scrollHeight) : 0);
+  }
+
+  /* Écran de choix de la langue : à la première visite (scan du QR code),
+     puis à chaque appui sur le bouton 🌐 flottant. */
+  const gate = document.getElementById('langGate');
+  const fab = document.getElementById('langFab');
+  function updateFab() {
+    if (!fab || !I18N) return;
+    const L = I18N.LANGS.find(l => l.code === LANG);
+    fab.innerHTML = `🌐 <span>${L.flag} ${L.short}</span>`;
+    fab.hidden = false;
+  }
+  function openGate() {
+    if (!gate || !I18N) return;
+    const box = document.getElementById('langGateBtns');
+    box.innerHTML = '';
+    I18N.LANGS.forEach(l => {
+      const b = document.createElement('button');
+      b.className = 'lg-btn' + (l.code === LANG ? ' current' : '');
+      b.innerHTML = `<span class="flag">${l.flag}</span><span>${l.label}</span>`;
+      b.onclick = () => { gate.hidden = true; document.body.classList.remove('gate-open'); setLang(l.code, false); };
+      box.appendChild(b);
+    });
+    gate.hidden = false;
+    document.body.classList.add('gate-open');
+    const first = box.querySelector('.current') || box.firstChild;
+    if (first) first.focus();
+  }
+  if (fab) fab.onclick = openGate;
+  if (gate) gate.addEventListener('click', e => { if (e.target === gate && localStorage.getItem('carte_lang_chosen')) { gate.hidden = true; document.body.classList.remove('gate-open'); } });
+  let chosen = false;
+  try { chosen = !!localStorage.getItem('carte_lang_chosen'); } catch (e) { chosen = true; }   // stockage bloqué : pas d'écran à chaque visite
+  if (I18N && !chosen && !new URLSearchParams(location.search).get('lang')) openGate();
 
   const ld = document.querySelector('#menuRoot .loading'); if (ld) ld.textContent = T('loading');
   load();
