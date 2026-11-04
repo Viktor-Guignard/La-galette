@@ -934,3 +934,44 @@ body.exporting .block.blk-banner, body.print-mode .block.blk-banner{background:v
 .lang-foreign.theme-emporter .blk-item .fr .desc, .lang-foreign.theme-emporter .blk-item .sub{font-size:8.2px;}
 body.print-mode #langBanner, body.exporting #langBanner{display:none !important;}
 @media print{ #langBanner{display:none !important;} }
+
+/* ---------- Barre d'outils sur tablette et téléphone ---------- */
+@media (max-width:1180px){
+  #toolbar{gap:7px; padding:0 12px;}
+  .tbtn{padding:8px 10px;}
+  #syncStatus .txt{display:none;}          /* le point de couleur reste, détail au survol */
+  #syncStatus{cursor:help; max-width:none;}
+  #toolbar .brand{font-size:17px;}
+}
+@media (max-width:900px){
+  #toolbar{overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; scrollbar-width:none;}
+  #toolbar::-webkit-scrollbar{display:none;}
+  #toolbar > *{flex:none;}
+  #toolbar .brand{margin-right:6px;}
+  #toolbar .brand small{display:none;}
+  .tbtn .lbl{display:none;}                /* icônes seules, libellé en info-bulle */
+  .tbtn{padding:9px 11px; font-size:15px;}
+  #trStatus{font-size:11px;}
+  #langBanner{top:110px; font-size:12px; padding:8px 12px;}
+}
+@media (max-width:900px){
+  body{overflow-x:clip;}
+  .page-cols{flex-direction:column; gap:10px;}
+  .page-cols > .page-col{width:100%; flex:none !important;}
+  .blk-emp-header{flex-direction:column; align-items:stretch;}
+  .blk-emp-header .emp-logo{flex-basis:auto; max-width:240px; margin:0 auto;}
+  .blk-emp-header .emp-title{font-size:30px; padding-left:0;}
+  .blk-emp-header .emp-box1{font-size:24px;}
+  .blk-emp-header .emp-box2{font-size:18px;}
+  .wprices .wp, .theme-moderne .wprices .wp{width:auto; min-width:34px; padding-left:5px; font-size:10.5px;}
+  .blk-item .txt, .theme-moderne .blk-item .txt{max-width:none; flex:1 1 auto;}
+  .blk-item .leader{min-width:6px;}
+  .theme-emporter .blk-banner{font-size:16px; margin-left:0; margin-right:0;}
+}
+/* picto dans le bouton 🏷 : taille du bouton (les SVG ont désormais une taille propre) */
+.rctrl img{width:14px; height:14px; display:block;}
+@media (max-width:900px){
+  .row-controls{flex-wrap:wrap; max-width:100%;}
+  .blk-item{flex-wrap:wrap;}
+  .blk-item > .row-controls{flex-basis:100%;}
+}

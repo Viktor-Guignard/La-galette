@@ -107,7 +107,7 @@ saveBtn.addEventListener('click', async () => {
     return;
   }
   saveBtn.disabled = true;
-  const original = saveBtn.textContent;
+  const original = saveBtn.innerHTML;
   saveBtn.textContent = 'Traduction…';
   try {
     /* la version enregistrée part toujours traduite (EN · IT · DE) */
@@ -135,7 +135,7 @@ saveBtn.addEventListener('click', async () => {
     else if (err.message === 'NO_TOKEN') { settingsBackdrop.classList.add('open'); }
     else H().toast('Erreur d\'enregistrement — réessayez.');
   } finally {
-    saveBtn.disabled = false; saveBtn.textContent = original;
+    saveBtn.disabled = false; saveBtn.innerHTML = original;
   }
 });
 

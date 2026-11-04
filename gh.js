@@ -18,8 +18,13 @@
   function hasToken() { return !!getToken(); }
   function setToken(t) { if (t) localStorage.setItem(GH.tokenKey, t); else localStorage.removeItem(GH.tokenKey); }
 
+  /* Par morceaux : « String.fromCharCode(...tout) » dépasse la pile du
+     navigateur dès que la carte pèse plus de ~100 Ko (traductions incluses). */
   function utf8ToB64(str) {
-    return btoa(String.fromCharCode(...new TextEncoder().encode(str)));
+    const bytes = new TextEncoder().encode(str);
+    let bin = '';
+    for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+    return btoa(bin);
   }
   function b64ToUtf8(b64) {
     const bin = atob((b64 || '').replace(/\n/g, ''));

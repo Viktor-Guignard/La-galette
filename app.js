@@ -298,6 +298,7 @@ function updateSyncStatus(){
   const txt = el.querySelector('.txt');
   const hasToken = !!window.CarteStorage && window.CarteStorage.hasToken();
   el.classList.remove('ok','warn');
+  setTimeout(() => { el.title = txt.textContent; }, 0);
   if(state.dirty){
     el.classList.add('warn');
     txt.textContent = 'Modifications non enregistrées';

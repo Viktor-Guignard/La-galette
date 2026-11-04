@@ -66,12 +66,19 @@
   let terms = { en: {}, it: {}, de: {} };       // norm(terme) -> traduction (ingrédients)
   let memoryReady = null;
 
+  /* on préfère garder la version en casse normale (« Green salad ») à la
+     version tout en capitales (« GREEN SALAD ») : on sait remettre en
+     capitales, pas l'inverse (noms allemands !) */
+  function keep(dict, k, v) {
+    const cur = dict[k];
+    if (!cur || (isUpper(cur) && !isUpper(v))) dict[k] = v;
+  }
   function learn(lang, src, out) {
     if (!src || !out) return;
-    memory[lang][norm(src)] = out;
+    keep(memory[lang], norm(src), out);
     /* alignement des listes « a, b, c » -> termes */
     const a = src.split(/\s*,\s*/), b = out.split(/\s*,\s*/);
-    if (a.length > 1 && a.length === b.length) a.forEach((t, i) => { if (!terms[lang][norm(t)]) terms[lang][norm(t)] = b[i]; });
+    if (a.length > 1 && a.length === b.length) a.forEach((t, i) => keep(terms[lang], norm(t), b[i]));
   }
 
   function loadMemory(base) {
@@ -93,16 +100,24 @@
     });
   }
 
+  /* casse d'un terme recomposé : comme le terme français (MAJUSCULES, Capitale, minuscule) */
+  function likeCase(t, frPart, lang) {
+    if (!t) return t;
+    if (isUpper(frPart)) return t.toUpperCase();
+    /* terme connu seulement en capitales : en allemand chaque mot garde sa majuscule */
+    if (isUpper(t) && lang === 'de') return t.toLowerCase().replace(/(^|[\s-])(\S)/g, (m, a, c) => a + c.toUpperCase());
+    let x = isUpper(t) ? t.toLowerCase() : t;
+    if (lang === 'de') return x.charAt(0).toUpperCase() + x.slice(1);
+    const cap = /^[A-ZÀ-Þ]/.test(frPart);
+    return cap ? x.charAt(0).toUpperCase() + x.slice(1) : x.charAt(0).toLowerCase() + x.slice(1);
+  }
   function fromMemory(src, lang) {
     const hit = memory[lang][norm(src)];
     if (hit) return fitCase(src, hit);
     const parts = src.split(/\s*,\s*/);
     if (parts.length > 1) {
       const out = parts.map(p => memory[lang][norm(p)] || terms[lang][norm(p)]);
-      if (out.every(Boolean)) {
-        const joined = out.map((t, i) => i === 0 ? t.charAt(0).toUpperCase() + t.slice(1) : (isUpper(t) && !isUpper(src) ? t : t.charAt(0).toLowerCase() + t.slice(1))).join(', ');
-        return fitCase(src, joined);
-      }
+      if (out.every(Boolean)) return out.map((t, i) => likeCase(t, parts[i], lang)).join(', ');
     }
     return null;
   }
@@ -138,6 +153,23 @@
     if (/<br\s*\/?>/i.test(src)) {
       const lines = await Promise.all(src.split(/<br\s*\/?>/i).map(l => translateText(l, lang)));
       return lines.every(x => x != null) ? lines.join('<br>') : null;
+    }
+    /* liste d'ingrédients en partie connue : on ne demande en ligne que les
+       termes inconnus (la traduction relue des autres est conservée) */
+    const parts = src.split(/\s*,\s*/);
+    if (parts.length > 1) {
+      const known = parts.map(x => memory[lang][norm(x)] || terms[lang][norm(x)]);
+      if (known.filter(Boolean).length >= Math.ceil(parts.length / 2)) {
+        const outParts = [];
+        for (let i = 0; i < parts.length; i++) {
+          const k = known[i] || await online(parts[i], lang);
+          if (!k) return null;
+          outParts.push(likeCase(k, parts[i], lang));
+        }
+        const out = fitCase(src, outParts.join(', '));
+        learn(lang, src, out);
+        return out;
+      }
     }
     const t = await online(src, lang);
     if (t) { const out = fitCase(src, t); learn(lang, src, out); return out; }

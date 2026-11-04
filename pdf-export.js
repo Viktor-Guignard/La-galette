@@ -36,7 +36,7 @@ async function exportPdf() {
   }
 
   btn.disabled = true;
-  const originalLabel = btn.textContent;
+  const originalLabel = btn.innerHTML;
   btn.textContent = '⏳ Génération…';
 
   try {
@@ -57,7 +57,7 @@ async function exportPdf() {
     }
   } finally {
     btn.disabled = false;
-    btn.textContent = originalLabel;
+    btn.innerHTML = originalLabel;
   }
 }
 

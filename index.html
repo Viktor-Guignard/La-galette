@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&family=Arimo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="icon" href="assets/logo-noir.png">
-<link rel="stylesheet" href="styles.css?v=30">
+<link rel="stylesheet" href="styles.css?v=31">
 </head>
 <body>
 
@@ -15,15 +15,15 @@
   <div class="brand">La Galette <small id="menuBadge">Carte</small></div>
   <button class="tbtn secondary" id="undoBtn" title="Annuler (Ctrl/Cmd+Z)" disabled>↶</button>
   <button class="tbtn secondary" id="redoBtn" title="Rétablir (Ctrl/Cmd+Shift+Z)" disabled>↷</button>
-  <button class="tbtn secondary" id="addBlockBtn">+ Ajouter un bloc</button>
-  <button class="tbtn secondary" id="appearanceBtn" title="Polices et couleurs">🎨 Apparence</button>
-  <button class="tbtn teal" id="saveVersionBtn">💾 Enregistrer</button>
-  <button class="tbtn secondary" id="versionsBtn">🕑 Versions</button>
-  <button class="tbtn" id="exportPdfBtn">⬇️ PDF</button>
+  <button class="tbtn secondary" id="addBlockBtn" title="Ajouter un bloc">+ <span class="lbl">Ajouter un bloc</span></button>
+  <button class="tbtn secondary" id="appearanceBtn" title="Apparence : polices, couleurs, format, marges">🎨 <span class="lbl">Apparence</span></button>
+  <button class="tbtn teal" id="saveVersionBtn" title="Enregistrer une version">💾 <span class="lbl">Enregistrer</span></button>
+  <button class="tbtn secondary" id="versionsBtn" title="Versions enregistrées">🕑 <span class="lbl">Versions</span></button>
+  <button class="tbtn" id="exportPdfBtn" title="Télécharger le PDF (langue affichée)">⬇️ <span class="lbl">PDF</span></button>
   <span id="syncStatus"><span class="dot"></span><span class="txt"></span></span>
   <label class="lang-pick" title="Langue affichée (et du PDF)"><select id="langSel" aria-label="Langue"></select></label>
   <span id="trStatus" class="tr-status"></span>
-  <a class="tbtn secondary" href="tuto.html" title="Mode d'emploi en démonstrations animées">🎓 Tuto</a>
+  <a class="tbtn secondary" href="tuto.html" title="Mode d'emploi en démonstrations animées">🎓 <span class="lbl">Tuto</span></a>
   <button class="tbtn secondary" id="settingsBtn" title="Réglages">⚙️</button>
 </div>
 
@@ -169,16 +169,16 @@
   Éditeur de carte conçu par <a href="https://vikto-labs.fr" target="_blank" rel="noopener">VIKTO LABS</a>
 </footer>
 
-<script src="menus-config.js?v=30"></script>
-<script src="i18n.js?v=30"></script>
-<script src="gh.js?v=30"></script>
-<script src="app.js?v=30"></script>
-<script src="storage.js?v=30"></script>
+<script src="menus-config.js?v=31"></script>
+<script src="i18n.js?v=31"></script>
+<script src="gh.js?v=31"></script>
+<script src="app.js?v=31"></script>
+<script src="storage.js?v=31"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="pdf-vector.js?v=30"></script>
-<script src="pdf-export.js?v=30"></script>
-<script src="aide.js?v=30"></script>
+<script src="pdf-vector.js?v=31"></script>
+<script src="pdf-export.js?v=31"></script>
+<script src="aide.js?v=31"></script>
 
 </body>
 </html>

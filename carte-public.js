@@ -10,6 +10,7 @@
   /* Langue du visiteur : celle du téléphone par défaut, choix mémorisé */
   const I18N = window.CarteI18n;
   let LANG = I18N ? I18N.preferred() : 'fr';
+  if (I18N && new URLSearchParams(location.search).get('lang')) I18N.remember(LANG);   // lien « ?lang=de » : mémorisé aussi
   const T = k => I18N ? I18N.ui(LANG, k) : k;
   let lastPub = null, activeKey = null;
 
