@@ -1016,3 +1016,10 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
 .publier .tbtn, #toolbar a.tbtn{text-decoration:none;}
 .public-url{overflow-wrap:anywhere;}
 .theme-moderne .page-col .blk-item{padding-top:1px; padding-bottom:1px;}
+@media (max-width:1440px){
+  #toolbar{gap:7px; padding:0 12px;}
+  .tbtn{padding:8px 10px;}
+  #syncStatus .txt{display:none;}
+  #syncStatus{cursor:help; max-width:none;}
+  a.tbtn[href="tuto.html"] .lbl{display:none;}
+}

@@ -258,7 +258,15 @@
       if (blk.en && !blk.enAuto && tr.en) { v.desc = tr.en; v.sub = ''; }
       v.en = '';
       /* description qui ne faisait que traduire le nom (carte d'origine) : doublon */
-      ['desc', 'sub'].forEach(f => { if (v[f] && v.fr && norm(v.fr).includes(norm(v[f]))) v[f] = ''; });
+      const bare = x => norm(x).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+      ['desc', 'sub'].forEach(f => {
+        if (!v[f] || !v.fr) return;
+        const d = bare(v[f]), n = bare(v.fr);
+        if (!d || n.includes(d)) { v[f] = ''; return; }
+        /* « Hirtenteller: Speck-Schinken… » sous « HIRTENTELLER » : on retire le nom répété */
+        const m = v[f].match(/^([^:]{2,60}):\s*(.+)$/);
+        if (m && bare(m[1]) === n) v[f] = m[2].charAt(0).toUpperCase() + m[2].slice(1);
+      });
     }
     if (blk.type === 'line' && blk.variant === 'sub') v.__skip = true;
     /* drapeau de la carte : celui de la langue affichée */
