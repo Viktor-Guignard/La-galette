@@ -1,6 +1,6 @@
 # Éditeur de cartes — La Galette
 
-**Site : https://viktor-guignard.github.io/La-galette/**
+**Site : https://viktor-guignard.github.io/la-coursive-site/carte-galette/** (servi par le site des restaurants, dossier `carte-galette/`)
 
 Les cartes de La Galette (restaurant savoyard · pizzéria · crêperie), refaites à l'identique des PDF d'origine et modifiables sans aucune compétence en mise en page :
 

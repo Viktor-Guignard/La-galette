@@ -6,7 +6,7 @@ window.CARTE_MENUS = [
   { key: 'pizzas-en', label: 'Pizzas (EN)',       hint: 'English',          slug: 'pizzas-en' },
   { key: 'emporter',  label: 'Vente à emporter',  hint: 'Affiche 46×66',    slug: 'vente-a-emporter' },
 ];
-window.CARTE_PUBLIC_URL = 'https://viktor-guignard.github.io/La-galette/carte.html';
+window.CARTE_PUBLIC_URL = 'https://viktor-guignard.github.io/la-coursive-site/carte-galette/carte.html';
 
 window.currentMenuKey = function () {
   const k = new URLSearchParams(location.search).get('menu');
