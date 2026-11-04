@@ -47,7 +47,7 @@
     <div id="pubList" class="pub-list"><div class="empty-state">Chargement…</div></div>
     <div class="pub-footer">
       <div id="pubStatus" class="muted"></div>
-      <button class="tbtn teal big" id="publishBtn" disabled>📱 Publier la sélection sur le QR</button>
+      <button class="tbtn teal big" id="publishBtn" disabled>📱 Mettre en ligne (QR code + site)</button>
     </div>
   </section>
 
@@ -57,8 +57,8 @@
 <div class="modal-backdrop" id="settingsBackdrop">
   <div class="modal">
     <button class="modal-close" id="settingsClose">×</button>
-    <h3>Réglages — sauvegarde cloud</h3>
-    <p class="sub">Pour <b>publier</b> (comme pour enregistrer), il faut le jeton GitHub, collé une fois par ordinateur — ou utilisez le lien magique.</p>
+    <h3>Autoriser cet ordinateur</h3>
+    <p class="sub">Pour <b>publier</b> depuis cet appareil, il faut l'autoriser une fois : ouvrez le <b>lien d'activation</b> envoyé par Viktor.</p>
     <form id="tokenForm">
       <div class="field">
         <label>Jeton GitHub (stocké uniquement sur cet ordinateur)</label>
@@ -72,7 +72,7 @@
     <div id="magicLinkBox" style="display:none">
       <div class="ttl">✨ Lien magique</div>
       <p>Copiez ce lien et mettez-le en favori sur vos autres ordinateurs pour activer la sauvegarde/publication sans recoller le jeton.</p>
-      <button type="button" class="tbtn teal" id="copyMagicLink">Copier le lien magique</button>
+      <button type="button" class="tbtn teal" id="copyMagicLink">Copier le lien d'activation</button>
       <input type="text" id="magicLinkText" readonly>
     </div>
   </div>

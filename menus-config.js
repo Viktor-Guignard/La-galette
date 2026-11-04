@@ -2,8 +2,7 @@
    Utilisée par l'éditeur (onglets), la page Publier et la page publique. */
 window.CARTE_MENUS = [
   { key: 'carte',     label: 'La carte',          hint: 'Salle · 9 pages',  slug: 'carte' },
-  { key: 'pizzas',    label: 'Pizzas',            hint: 'Français',         slug: 'pizzas-fr' },
-  { key: 'pizzas-en', label: 'Pizzas (EN)',       hint: 'English',          slug: 'pizzas-en' },
+  { key: 'pizzas',    label: 'Pizzas',            hint: '4 langues',         slug: 'pizzas-fr' },
   { key: 'emporter',  label: 'Vente à emporter',  hint: 'Affiche 46×66',    slug: 'vente-a-emporter' },
 ];
 window.CARTE_PUBLIC_URL = 'https://viktor-guignard.github.io/la-coursive-site/carte-galette/carte.html';

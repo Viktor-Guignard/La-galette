@@ -116,26 +116,31 @@
    "fr": "MARGARITA",
    "desc": "Tomatoes, mozzarella, olives, oregano",
    "price": "13,50€",
-   "keepName": true,
    "tr": {
     "en": {
+     "fr": "MARGHERITA",
      "desc": "Tomatoes, mozzarella, olives, oregano"
     },
     "src": {
      "en": {
+      "fr": "MARGARITA",
       "desc": "Tomatoes, mozzarella, olives, oregano"
      },
      "it": {
+      "fr": "MARGARITA",
       "desc": "Tomatoes, mozzarella, olives, oregano"
      },
      "de": {
+      "fr": "MARGARITA",
       "desc": "Tomatoes, mozzarella, olives, oregano"
      }
     },
     "it": {
+     "fr": "MARGHERITA",
      "desc": "Pomodoro, mozzarella, olive, origano"
     },
     "de": {
+     "fr": "MARGHERITA",
      "desc": "Tomaten, Mozzarella, Oliven, Oregano"
     }
    }

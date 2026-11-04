@@ -60,14 +60,14 @@
     {
       id: 'picto',
       cat: 'Modifier',
-      q: 'Comment mettre le pictogramme végétarien sur un plat ?',
-      k: 'picto pictogramme icone logo vegetarien vegan vege specialite maison symbole etoile feuille signe',
+      q: 'Comment mettre le pictogramme végétarien ou sans gluten sur un plat ?',
+      k: 'picto pictogramme icone logo vegetarien vegan vege gluten sans gluten allergie nouveau new coeur coup de coeur symbole feuille epi signe',
       a: `<ol>
           <li>Survolez la ligne du plat</li>
           <li>Cliquez sur le bouton <b>🏷</b> (le dernier de la rangée à droite)</li>
         </ol>
-        <p>Chaque clic fait défiler : <b>aucun → 🌿 végétarien → ⭐ spécialité maison → aucun</b>.</p>
-        <p class="tip">Ces pictogrammes existent sur la carte cuisine. Pour en créer d'autres (sans gluten, épicé…), demandez à Viktor.</p>`
+        <p>Chaque clic fait défiler : <b>aucun → végétarien → sans gluten → les deux → « NEW » → coup de cœur ❤ → aucun</b>.</p>
+        <p class="tip">Les pictogrammes apparaissent aussi sur la page du QR code et sur le site, avec leur légende traduite.</p>`
     },
     {
       id: 'masquer',
@@ -94,7 +94,7 @@
           <li>Choisissez <b>Titre de section</b></li>
           <li>Modifiez le texte français, puis la traduction anglaise après le « / »</li>
         </ol>
-        <p class="tip">Sur la page Vins, le bloc <b>Sous-titre</b> sert aux groupes en couleur (« VINS BLANCS DE SAVOIE AOP »…). Sur la page Boissons, un titre de section en mode « sous-titre » donne les petits titres à gauche (APÉRITIFS…).</p>
+        <p class="tip">Sur la page des vins, le bloc <b>Sous-titre</b> sert aux groupes en couleur (« VINS BLANCS DE SAVOIE AOP »…). Sur la page des boissons, les petits titres à gauche (APÉRITIFS…) sont des titres de section en mode « sous-titre ».</p>
         <p class="tip">Pour mettre des blocs côte à côte (photo à côté des raclettes, boissons sur 2 colonnes) : <b>Début de colonnes</b>, puis les blocs de gauche, <b>Colonne suivante</b>, les blocs de droite, et <b>Fin des colonnes</b>. Le bouton ⇔ change la largeur des colonnes.</p>`
     },
     {
@@ -118,7 +118,8 @@
       k: 'format taille page marge dimension a4 a5 mm centimetre impression porte-menu bord',
       a: `<p>Dans <b>🎨 Apparence</b> :</p>
         <ul>
-          <li><b>Format de page</b> : A4, A5, carte haute 14×34 cm…</li>
+          <li><b>Format de page</b> : A4 (carte de salle, pizzas) ou affiche 46 × 66 cm (vente à emporter)</li>
+          <li><b>Porte-menu</b> : indiquez les millimètres cachés par le cadre — un pointillé rouge montre la zone visible, et ce qui passe dessous est signalé</li>
           <li><b>Marges (mm)</b> : haut / droite / bas / gauche, au dixième de millimètre</li>
           <li><b>Marges en miroir</b> : pour les documents reliés (pages paires inversées)</li>
           <li><b>Espacement entre les lignes</b> : pour aérer ou densifier</li>
@@ -167,9 +168,10 @@
           <li>Enregistrez d'abord vos modifications (<b>💾</b>)</li>
           <li>Allez sur l'onglet <b>📱 Publier / QR</b></li>
           <li>Cochez les cartes à rendre visibles</li>
-          <li>Cliquez sur <b>Publier la sélection sur le QR</b></li>
+          <li>Cliquez sur <b>Mettre en ligne (QR code + site)</b></li>
         </ol>
-        <p class="tip">Tant que vous n'avez pas cliqué « Publier », vos modifications restent invisibles pour les clients : vous pouvez préparer une carte tranquillement.</p>`
+        <p>Chaque carte indique son état : <b>en ligne ✓ à jour</b>, ou <b>modifiée — à publier</b> s'il reste une version enregistrée à mettre en ligne. Un point orange sur le bouton <b>📱 Publier</b> de l'éditeur rappelle qu'une publication est en attente.</p>
+        <p class="tip">Tant que vous n'avez pas publié, vos modifications restent invisibles pour les clients : vous pouvez préparer une carte tranquillement.</p>`
     },
     {
       id: 'qr-pas-jour',
@@ -180,7 +182,7 @@
         <p>Pour vérifier sans attendre :</p>
         <ul>
           <li>Ouvrez la page en navigation privée</li>
-          <li>Ou ajoutez <code>?x=1</code> à la fin de l'adresse pour forcer le rechargement</li>
+          <li>Ou fermez la page et rouvrez-la quelques minutes plus tard</li>
         </ul>
         <p class="tip">Si rien ne change après 10 minutes, vérifiez que vous avez bien <b>enregistré</b> avant de publier.</p>`
     },
@@ -198,7 +200,8 @@
       q: 'Comment obtenir le PDF pour l\'imprimeur ?',
       k: 'pdf imprimer imprimeur telecharger export fichier papier impression editer sortir',
       a: `<p>Cliquez sur <b>⬇️ PDF</b> en haut : le fichier se télécharge directement, nommé avec la date et l'heure. Rien à régler.</p>
-        <p>Le PDF sort <b>exactement au format choisi</b> dans 🎨 Apparence (A4, 14×34 cm…), sans fond perdu ni traits de coupe, et <b>identique à ce que vous voyez à l'écran</b>.</p>
+        <p>Le PDF sort <b>exactement au format choisi</b> dans 🎨 Apparence (A4, affiche 46 × 66 cm), sans fond perdu ni traits de coupe, et <b>identique à ce que vous voyez à l'écran</b>.</p>
+        <p><b>Dans quelle langue ?</b> Celle affichée : le bouton indique « PDF FR », « PDF DE »… Choisissez la langue en haut (🇫🇷 🇬🇧 🇮🇹 🇩🇪) avant de cliquer.</p>
         <p>Le texte reste du <b>vrai texte</b> : net à n'importe quelle taille d'impression, et votre imprimeur peut le sélectionner pour vérifier les accents ou les prix.</p>
         <p class="tip">Le PDF ne concerne que la carte de l'onglet en cours — répétez l'opération pour chaque carte.</p>`
     },
@@ -207,9 +210,9 @@
       cat: 'Accès',
       q: 'Comment travailler depuis un autre ordinateur ?',
       k: 'autre ordinateur pc mac telephone maison acces connexion ailleurs lien magique deplacement partager equipe chez soi domicile distance exterieur portable tablette autre poste collegue serveur',
-      a: `<p>Utilisez le <b>lien magique</b> :</p>
+      a: `<p>Utilisez le <b>lien d'activation</b> (envoyé par Viktor) :</p>
         <ol>
-          <li>Sur l'ordinateur déjà configuré : <b>⚙️</b> → <b>Copier le lien magique</b></li>
+          <li>Sur un appareil déjà autorisé : <b>⚙️</b> → <b>Copier le lien d'activation</b></li>
           <li>Envoyez-vous ce lien (mail, WhatsApp…)</li>
           <li>Sur l'autre appareil : ouvrez le lien une fois → tout est activé, mettez-le en favori</li>
         </ol>
@@ -218,12 +221,12 @@
     {
       id: 'lecture-seule',
       cat: 'Accès',
-      q: 'Il est écrit « Lecture seule », je ne peux pas enregistrer',
-      k: 'lecture seule enregistrer grise impossible bloque jeton token acces droit refuse marche pas bouton',
-      a: `<p>L'appareil n'a pas encore la clé d'accès. Deux solutions :</p>
+      q: 'Il est écrit « Consultation seule », je ne peux pas enregistrer',
+      k: 'lecture seule consultation autorise autorisation enregistrer grise impossible bloque jeton token acces droit refuse marche pas bouton',
+      a: `<p>Cet appareil n'est pas encore autorisé à modifier les cartes.</p>
         <ul>
-          <li><b>Le plus simple</b> : ouvrez le <b>lien magique</b> (voir « travailler depuis un autre ordinateur »)</li>
-          <li>Sinon : <b>⚙️</b> → collez votre jeton GitHub → Enregistrer</li>
+          <li><b>Ouvrez le lien d'activation</b> que Viktor vous a envoyé, sur cet appareil : c'est tout.</li>
+          <li>Pas de lien ? Demandez-le à Viktor (ou copiez-le depuis un appareil déjà autorisé : ⚙️ → Copier le lien d'activation).</li>
         </ul>
         <p class="tip">Consulter la carte est toujours possible sans clé — seuls l'enregistrement et la publication en nécessitent une.</p>`
     },
@@ -259,8 +262,8 @@
       q: 'Comment changer le logo ou une image ?',
       k: 'logo image photo remplacer changer visuel tampon medaillon illustration',
       a: `<p>Cliquez directement sur l'image dans la carte : un sélecteur de fichier s'ouvre.</p>
-        <p>Ça marche pour le logo, le QR code de l'en-tête, et tous les blocs image.</p>
-        <p class="tip">Pour ajouter une nouvelle image : « + ajouter ici » → <b>Image / logo</b>.</p>`
+        <p>Ça marche pour le logo et toutes les photos. Les boutons <b>−</b> / <b>+</b> de la ligne changent la taille de l'image.</p>
+        <p class="tip">Pour ajouter une nouvelle image : « + ajouter ici » → <b>Image / photo</b>.</p>`
     },
     {
       id: 'site-vs-qr',
@@ -279,9 +282,38 @@
       cat: 'Général',
       q: 'À quoi servent les onglets en haut ?',
       k: 'onglet tab carte pizzas emporter affiche vins boissons naviguer changer passer',
-      a: `<p>Chaque onglet est une <b>carte indépendante</b> : La carte (9 pages, salle), Pizzas, Pizzas (EN) et Vente à emporter (affiche 46 × 66 cm).</p>
+      a: `<p>Chaque onglet est une <b>carte indépendante</b> : La carte (9 pages, salle), Pizzas et Vente à emporter (affiche 46 × 66 cm).</p>
+        <p>Chacune existe dans les <b>4 langues</b> (sélecteur 🇫🇷 🇬🇧 🇮🇹 🇩🇪 en haut) : la carte anglaise des pizzas, par exemple, c'est l'onglet Pizzas en 🇬🇧.</p>
         <p>Chacune a son propre contenu, son format, ses couleurs, ses versions et son PDF.</p>
         <p class="tip">Le dernier onglet <b>📱 Publier / QR</b> n'est pas une carte : c'est là qu'on rend les modifications visibles aux clients.</p>`
+    },
+    {
+      id: 'langues',
+      cat: 'Langues',
+      q: 'Comment la carte est-elle traduite (anglais, italien, allemand) ?',
+      k: 'langue langues traduction traduire anglais italien allemand english italiano deutsch etranger touriste automatique dictionnaire',
+      a: `<p><b>Toute seule.</b> Vous écrivez la carte en français ; dès que vous modifiez ou ajoutez un plat, la traduction anglaise, italienne et allemande se fait en quelques secondes (indicateur <b>🌐</b> en haut).</p>
+        <p>Elle s'appuie d'abord sur les traductions déjà relues de vos cartes (plus de 600 textes), terme par terme pour les listes d'ingrédients, puis sur un service de traduction en ligne pour les mots nouveaux.</p>
+        <p class="tip">Les clients voient la page du QR code dans la langue de leur téléphone, et peuvent en changer avec les drapeaux.</p>`
+    },
+    {
+      id: 'langue-corriger',
+      cat: 'Langues',
+      q: 'La traduction est fausse : comment la corriger ?',
+      k: 'traduction fausse faute erreur corriger allemand italien anglais mauvaise mot changer langue verifier relire',
+      a: `<ol>
+          <li>En haut, choisissez la langue : <b>🇬🇧 EN</b>, <b>🇮🇹 IT</b> ou <b>🇩🇪 DE</b></li>
+          <li>Touchez le texte à corriger, tapez la bonne traduction, Entrée</li>
+        </ol>
+        <p>Le français ne bouge pas. Les textes traduits par le service en ligne sont <b>soulignés en orange</b> jusqu'à ce que vous les validiez (bouton <b>✓ Tout est bon</b>).</p>
+        <p class="tip">Dans une autre langue, les prix et l'ordre des plats ne se modifient pas : faites-le dans la carte en 🇫🇷 français.</p>`
+    },
+    {
+      id: 'langue-pdf',
+      cat: 'Langues',
+      q: 'Comment imprimer la carte en anglais, italien ou allemand ?',
+      k: 'pdf langue anglais italien allemand imprimer carte etrangere english version traduite',
+      a: `<p>Choisissez la langue en haut (🇬🇧 🇮🇹 🇩🇪), puis cliquez <b>⬇️ PDF</b> : le bouton affiche la langue (« PDF DE ») et le fichier sort dans cette langue, au même format.</p>`
     },
     {
       id: 'annuler',

@@ -983,3 +983,36 @@ body.print-mode #langBanner, body.exporting #langBanner{display:none !important;
 body.exporting .holder-guide, body.print-mode .holder-guide{display:none !important;}
 body.exporting .block.under-holder{box-shadow:none !important; background:none !important;}
 @media print{ .holder-guide{display:none !important;} .block.under-holder{box-shadow:none !important; background:none !important;} }
+
+/* ---------- Vue étrangère : seule la traduction se corrige ---------- */
+body.lang-foreign .row-controls, body.lang-foreign .insert-bar{display:none !important;}
+body.lang-foreign [contenteditable].locked{cursor:default;}
+body.lang-foreign [contenteditable].locked:hover{background:none;}
+.tr-auto{text-decoration:underline dotted #d98a2b; text-decoration-thickness:1.5px; text-underline-offset:2px;}
+body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !important;}
+@media print{ .tr-auto{text-decoration:none !important;} }
+#langBanner{position:relative; top:auto;}
+#langBanner .rv{color:#b0782a; font-weight:600; margin-left:4px;}
+#langBanner button{margin-left:6px; font-size:12px; padding:3px 10px; border-radius:6px; border:1px solid #c9a775; background:#fff; cursor:pointer; font-weight:600;}
+/* croix de suppression : seulement au survol (ou ligne choisie au toucher) */
+.rctrl.del{opacity:0;}
+.block:hover .rctrl.del, .block.selected .rctrl, .block.selected .rctrl.del{opacity:1;}
+@media (hover:none){ .rctrl{opacity:0;} .block.selected .rctrl{opacity:1;} .block:not(.selected) .row-controls{display:none;} }
+/* bouton Publier + point « à publier » */
+#publishLink{position:relative; text-decoration:none;}
+#publishLink .pub-dot{position:absolute; top:-3px; right:-3px; width:11px; height:11px; border-radius:50%; background:#e0a33d; border:2px solid #fff;}
+#publishLink .pub-dot[hidden]{display:none;}
+.admin-steps{margin:6px 0 4px; font-size:12.5px;}
+.admin-steps summary{cursor:pointer; color:var(--grey); font-weight:600; margin-bottom:8px;}
+@media (max-width:900px){
+  /* l'essentiel d'abord, avec son texte : Enregistrer et Publier */
+  #saveVersionBtn{order:-3;} #publishLink{order:-2;}
+  #saveVersionBtn .lbl, #publishLink .lbl{display:inline;}
+  #toolbar .brand{order:-4; font-size:15px;}
+  #toolbar{mask-image:linear-gradient(90deg,#000 88%,transparent); -webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);}
+}
+.pub-row-title .tag.todo{font-size:10px; background:#e0a33d; color:#fff; border-radius:10px; padding:1px 8px; margin-left:8px; vertical-align:middle;}
+.pub-row-title .tag.off{font-size:10px; background:#ddd; color:#555; border-radius:10px; padding:1px 8px; margin-left:8px; vertical-align:middle;}
+.publier .tbtn, #toolbar a.tbtn{text-decoration:none;}
+.public-url{overflow-wrap:anywhere;}
+.theme-moderne .page-col .blk-item{padding-top:1px; padding-bottom:1px;}

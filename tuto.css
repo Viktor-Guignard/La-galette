@@ -1,7 +1,7 @@
 /* Tuto / démo animée — reprend la DA de l'éditeur (Playfair + Poppins,
    crème, teal) avec des maquettes miniatures rejouables. */
 
-.tuto-page{background:var(--bg); padding-top:0;}
+.tuto-page{background:var(--bg); padding-top:74px;}
 
 /* ---------- Hero ---------- */
 .tuto-hero{

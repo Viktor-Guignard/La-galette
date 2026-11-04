@@ -11,7 +11,7 @@
   "marginMm": {
    "t": 6,
    "r": 18,
-   "b": 9,
+   "b": 11,
    "l": 18
   },
   "mirror": false,
@@ -118,26 +118,31 @@
    "fr": "MARGARITA",
    "price": "13,50",
    "desc": "Tomatoes, mozzarella, olives, oregano",
-   "keepName": true,
    "tr": {
     "en": {
+     "fr": "MARGHERITA",
      "desc": "Tomatoes, mozzarella, olives, oregano"
     },
     "src": {
      "en": {
+      "fr": "MARGARITA",
       "desc": "Tomatoes, mozzarella, olives, oregano"
      },
      "it": {
+      "fr": "MARGARITA",
       "desc": "Tomatoes, mozzarella, olives, oregano"
      },
      "de": {
+      "fr": "MARGARITA",
       "desc": "Tomatoes, mozzarella, olives, oregano"
      }
     },
     "it": {
+     "fr": "MARGHERITA",
      "desc": "Pomodoro, mozzarella, olive, origano"
     },
     "de": {
+     "fr": "MARGHERITA",
      "desc": "Tomaten, Mozzarella, Oliven, Oregano"
     }
    }
@@ -178,7 +183,29 @@
    "fr": "REINE",
    "price": "15,50",
    "en": "Tomatoes, mozzarella, ham, mushrooms",
-   "keepName": true
+   "keepName": true,
+   "tr": {
+    "en": {
+     "en": "Tomatoes, mozzarella, ham, mushrooms"
+    },
+    "src": {
+     "en": {
+      "en": "Tomatoes, mozzarella, ham, mushrooms"
+     },
+     "it": {
+      "en": "Tomatoes, mozzarella, ham, mushrooms"
+     },
+     "de": {
+      "en": "Tomatoes, mozzarella, ham, mushrooms"
+     }
+    },
+    "it": {
+     "en": "Pomodoro, mozzarella, prosciutto, funghi"
+    },
+    "de": {
+     "en": "Tomaten, Mozzarella, Schinken, Champignons"
+    }
+   }
   },
   {
    "id": "m710",
@@ -306,7 +333,29 @@
    "fr": "TARENTAISE",
    "price": "17,50",
    "en": "Tomatoes, mozzarella, smoked ham Speck, egg, rocket salad",
-   "keepName": true
+   "keepName": true,
+   "tr": {
+    "en": {
+     "en": "Tomatoes, mozzarella, Speck smoked ham, egg, rocket"
+    },
+    "src": {
+     "en": {
+      "en": "Tomatoes, mozzarella, smoked ham Speck, egg, rocket salad"
+     },
+     "it": {
+      "en": "Tomatoes, mozzarella, smoked ham Speck, egg, rocket salad"
+     },
+     "de": {
+      "en": "Tomatoes, mozzarella, smoked ham Speck, egg, rocket salad"
+     }
+    },
+    "it": {
+     "en": "Pomodoro, mozzarella, prosciutto affumicato speck, uovo, rucola"
+    },
+    "de": {
+     "en": "Tomaten, Mozzarella, geräucherter Speck-Schinken, Ei, Rucola"
+    }
+   }
   },
   {
    "id": "m715",
@@ -314,7 +363,29 @@
    "fr": "CALZONE",
    "price": "17,50",
    "en": "Tomatoes, mozzarella, ham, mushrooms, egg, cream",
-   "keepName": true
+   "keepName": true,
+   "tr": {
+    "en": {
+     "en": "Tomatoes, mozzarella, ham, mushrooms, egg, cream"
+    },
+    "src": {
+     "en": {
+      "en": "Tomatoes, mozzarella, ham, mushrooms, egg, cream"
+     },
+     "it": {
+      "en": "Tomatoes, mozzarella, ham, mushrooms, egg, cream"
+     },
+     "de": {
+      "en": "Tomatoes, mozzarella, ham, mushrooms, egg, cream"
+     }
+    },
+    "it": {
+     "en": "Pomodoro, mozzarella, prosciutto, funghi, uovo, panna"
+    },
+    "de": {
+     "en": "Tomaten, Mozzarella, Schinken, Champignons, Ei, Sahne"
+    }
+   }
   },
   {
    "id": "m716",
@@ -322,7 +393,29 @@
    "fr": "CHÈVRE",
    "price": "17,50",
    "en": "Cream, mozzarella, goat cheese, honey, nuts, rocket salad",
-   "keepName": true
+   "keepName": true,
+   "tr": {
+    "en": {
+     "en": "Cream, mozzarella, goat's cheese, honey, walnuts, rocket"
+    },
+    "src": {
+     "en": {
+      "en": "Cream, mozzarella, goat cheese, honey, nuts, rocket salad"
+     },
+     "it": {
+      "en": "Cream, mozzarella, goat cheese, honey, nuts, rocket salad"
+     },
+     "de": {
+      "en": "Cream, mozzarella, goat cheese, honey, nuts, rocket salad"
+     }
+    },
+    "it": {
+     "en": "Panna, mozzarella, formaggio di capra, miele, noci, rucola"
+    },
+    "de": {
+     "en": "Sahne, Mozzarella, Ziegenkäse, Honig, Walnüsse, Rucola"
+    }
+   }
   },
   {
    "id": "m717",
@@ -450,7 +543,29 @@
    "fr": "SAUMON",
    "price": "20,00",
    "en": "Cream, chives, mozzarella, salmon, lemon",
-   "keepName": true
+   "keepName": true,
+   "tr": {
+    "en": {
+     "en": "Cream, chives, mozzarella, salmon, lemon"
+    },
+    "src": {
+     "en": {
+      "en": "Cream, chives, mozzarella, salmon, lemon"
+     },
+     "it": {
+      "en": "Cream, chives, mozzarella, salmon, lemon"
+     },
+     "de": {
+      "en": "Cream, chives, mozzarella, salmon, lemon"
+     }
+    },
+    "it": {
+     "en": "Panna, erba cipollina, mozzarella, salmone, limone"
+    },
+    "de": {
+     "en": "Sahne, Schnittlauch, Mozzarella, Lachs, Zitrone"
+    }
+   }
   },
   {
    "id": "m722",

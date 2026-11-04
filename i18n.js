@@ -24,7 +24,7 @@
 
   /* champs traduits, par type de bloc (le prix, lui, est commun) */
   const FIELDS = {
-    item: ['fr', 'desc', 'sub'],
+    item: ['fr', 'desc', 'sub', 'en'],   // « en » = ligne anglaise imprimée, traduite elle aussi
     wine: ['desc'],                    // le nom du vin ne se traduit pas
     section: ['fr'], line: ['text'], note: ['text'], formule: ['text'],
     banner: ['text'], winehead: ['text'], legend: ['text'],
@@ -32,16 +32,18 @@
   };
   /* noms qui ne se traduisent jamais (pizzas, vins…) : drapeau keepName sur le bloc */
   function fieldsOf(blk) {
-    const f = FIELDS[blk.type] || [];
-    return blk.keepName ? f.filter(x => x !== 'fr') : f;
+    let f = FIELDS[blk.type] || [];
+    if (blk.keepName) f = f.filter(x => x !== 'fr');
+    if (blk.enAuto) f = f.filter(x => x !== 'en');   // ligne anglaise recalculée depuis le français
+    return f;
   }
 
   /* petits textes d'interface (page du QR, site, légendes) */
   const UI = {
-    fr: { veg: 'Végétarien', gf: 'Sans gluten', new: 'Nouveauté', coeur: 'Coup de cœur', updated: 'Carte mise à jour le', loading: 'Chargement de la carte…', error: 'La carte n\'a pas pu être chargée. Vérifiez votre connexion et réessayez.', soon: 'La carte sera bientôt disponible.', foot: 'Prix nets en euros, service compris.', top: 'Revenir en haut', lang: 'Langue' },
-    en: { veg: 'Vegetarian', gf: 'Gluten free', new: 'New', coeur: 'Our favourite', updated: 'Menu updated on', loading: 'Loading the menu…', error: 'The menu could not be loaded. Please check your connection and try again.', soon: 'The menu will be available soon.', foot: 'Net prices in euros, service included.', top: 'Back to top', lang: 'Language' },
-    it: { veg: 'Vegetariano', gf: 'Senza glutine', new: 'Novità', coeur: 'Il nostro preferito', updated: 'Menu aggiornato il', loading: 'Caricamento del menu…', error: 'Impossibile caricare il menu. Controlla la connessione e riprova.', soon: 'Il menu sarà presto disponibile.', foot: 'Prezzi netti in euro, servizio incluso.', top: 'Torna su', lang: 'Lingua' },
-    de: { veg: 'Vegetarisch', gf: 'Glutenfrei', new: 'Neu', coeur: 'Unser Favorit', updated: 'Speisekarte aktualisiert am', loading: 'Speisekarte wird geladen…', error: 'Die Speisekarte konnte nicht geladen werden. Bitte Verbindung prüfen und erneut versuchen.', soon: 'Die Speisekarte ist bald verfügbar.', foot: 'Nettopreise in Euro, Service inbegriffen.', top: 'Nach oben', lang: 'Sprache' },
+    fr: { tagline: 'Méribel · Restaurant savoyard · Pizzéria · Crêperie', legend: 'Pictogrammes', veg: 'Végétarien', gf: 'Sans gluten', new: 'Nouveauté', coeur: 'Coup de cœur', updated: 'Carte mise à jour le', loading: 'Chargement de la carte…', error: 'La carte n\'a pas pu être chargée. Vérifiez votre connexion et réessayez.', soon: 'La carte sera bientôt disponible.', foot: 'Prix nets en euros, service compris.', top: 'Revenir en haut', lang: 'Langue' },
+    en: { tagline: 'Méribel · Savoyard restaurant · Pizzeria · Crêperie', legend: 'Symbols', veg: 'Vegetarian', gf: 'Gluten free', new: 'New', coeur: 'Our favourite', updated: 'Menu updated on', loading: 'Loading the menu…', error: 'The menu could not be loaded. Please check your connection and try again.', soon: 'The menu will be available soon.', foot: 'Net prices in euros, service included.', top: 'Back to top', lang: 'Language' },
+    it: { tagline: 'Méribel · Ristorante savoiardo · Pizzeria · Crêperie', legend: 'Simboli', veg: 'Vegetariano', gf: 'Senza glutine', new: 'Novità', coeur: 'Il nostro preferito', updated: 'Menu aggiornato il', loading: 'Caricamento del menu…', error: 'Impossibile caricare il menu. Controlla la connessione e riprova.', soon: 'Il menu sarà presto disponibile.', foot: 'Prezzi netti in euro, servizio incluso.', top: 'Torna su', lang: 'Lingua' },
+    de: { tagline: 'Méribel · Savoyardisches Restaurant · Pizzeria · Crêperie', legend: 'Symbole', veg: 'Vegetarisch', gf: 'Glutenfrei', new: 'Neu', coeur: 'Unser Favorit', updated: 'Speisekarte aktualisiert am', loading: 'Speisekarte wird geladen…', error: 'Die Speisekarte konnte nicht geladen werden. Bitte Verbindung prüfen und erneut versuchen.', soon: 'Die Speisekarte ist bald verfügbar.', foot: 'Nettopreise in Euro, Service inbegriffen.', top: 'Nach oben', lang: 'Sprache' },
   };
   const MENU_LABELS = {
     carte: { fr: 'La carte', en: 'Menu', it: 'Menu', de: 'Speisekarte' },
@@ -163,6 +165,7 @@
         const outParts = [];
         for (let i = 0; i < parts.length; i++) {
           const k = known[i] || await online(parts[i], lang);
+          if (!known[i]) lastWasOnline = true;
           if (!k) return null;
           outParts.push(likeCase(k, parts[i], lang));
         }
@@ -172,9 +175,10 @@
       }
     }
     const t = await online(src, lang);
-    if (t) { const out = fitCase(src, t); learn(lang, src, out); return out; }
+    if (t) { const out = fitCase(src, t); learn(lang, src, out); lastWasOnline = true; return out; }
     return null;
   }
+  let lastWasOnline = false;
 
   /* ---------- état des traductions d'un bloc ----------
      tr.src[lang][champ] = le texte français qui a servi à traduire :
@@ -208,10 +212,14 @@
     let done = 0, failed = 0;
     for (const [b, l, f] of todo) {
       const src = b[f];
+      lastWasOnline = false;
       const t = await translateText(src, l);
       if (t != null && b[f] === src) {          // le texte n'a pas rechangé entre-temps
         store(b, l, f, t, src);
         if (b.tr.manual && b.tr.manual[l]) delete b.tr.manual[l][f];
+        /* traduite par un service en ligne : à relire */
+        b.tr.auto = b.tr.auto || {}; b.tr.auto[l] = b.tr.auto[l] || {};
+        if (lastWasOnline) b.tr.auto[l][f] = true; else delete b.tr.auto[l][f];
       } else if (t == null) failed++;
       done++;
       if (onProgress) onProgress(done, todo.length);
@@ -222,6 +230,7 @@
   /* Correction manuelle d'une traduction (dans l'éditeur, vue IT par ex.) */
   function setManual(blk, lang, f, value) {
     store(blk, lang, f, value, blk[f]);
+    if (blk.tr.auto && blk.tr.auto[lang]) delete blk.tr.auto[lang][f];
     blk.tr.manual = blk.tr.manual || {};
     blk.tr.manual[lang] = blk.tr.manual[lang] || {};
     blk.tr.manual[lang][f] = true;
@@ -234,20 +243,54 @@
      Dans une autre langue : carte monolingue (la ligne de traduction
      anglaise et les sous-lignes « traduction » disparaissent). */
   function view(blk, lang) {
-    if (!lang || lang === 'fr') return blk;
+    if (!lang || lang === 'fr') {
+      /* carte bilingue : on imprime l'anglais corrigé quand il existe */
+      if (blk.type === 'item' && blk.en && blk.tr && blk.tr.en && blk.tr.en.en && !blk.enAuto && !isStale(blk, 'en', 'en')) return Object.assign({}, blk, { en: blk.tr.en.en });
+      return blk;
+    }
     const v = Object.assign({}, blk);
     const tr = (blk.tr && blk.tr[lang]) || {};
     fieldsOf(blk).forEach(f => { if (tr[f] != null && tr[f] !== '') v[f] = tr[f]; });
     if (blk.type === 'item') {
+      /* La ligne anglaise imprimée décrit tout le plat : à l'étranger, sa
+         traduction sert de description (rien ne se perd). Si le français a
+         été modifié depuis (enAuto), on prend la traduction du français. */
+      if (blk.en && !blk.enAuto && tr.en) { v.desc = tr.en; v.sub = ''; }
       v.en = '';
       /* description qui ne faisait que traduire le nom (carte d'origine) : doublon */
       ['desc', 'sub'].forEach(f => { if (v[f] && v.fr && norm(v.fr).includes(norm(v[f]))) v[f] = ''; });
     }
     if (blk.type === 'line' && blk.variant === 'sub') v.__skip = true;
+    /* drapeau de la carte : celui de la langue affichée */
+    if (blk.type === 'image' && /assets\/flag-(fr|gb|en|it|de)\.svg/.test(blk.src || '')) v.src = blk.src.replace(/flag-(fr|gb|en|it|de)\.svg/, 'flag-' + (lang === 'en' ? 'gb' : lang) + '.svg');
     if (blk.type === 'note' && blk.italic && /\b(people|price|minimum)\b/i.test(blk.text || '')) v.__skip = true;
     return v;
   }
   function isTranslatable(blk, f) { return fieldsOf(blk).includes(f); }
+  /* textes traduits par machine et pas encore relus */
+  function toReview(blocks, lang) {
+    const out = [];
+    (blocks || []).forEach(b => { const a = b.tr && b.tr.auto; TARGETS.forEach(l => { if ((!lang || l === lang) && a && a[l]) Object.keys(a[l]).forEach(f => { if (a[l][f] && b[f]) out.push([b, l, f]); }); }); });
+    return out;
+  }
+  function markReviewed(blocks, lang) { toReview(blocks, lang).forEach(([b, l, f]) => { delete b.tr.auto[l][f]; }); }
+  /* le champ affiché à cet endroit (vue étrangère) est-il à relire ? */
+  function isAuto(blk, lang, f) {
+    const a = blk.tr && blk.tr.auto && blk.tr.auto[lang];
+    if (!a) return false;
+    if (f === 'desc' && blk.type === 'item' && blk.en && !blk.enAuto) return !!a.en;
+    return !!a[f];
+  }
+  /* champ réellement modifié quand on corrige la description à l'étranger */
+  function sourceField(blk, f) { return (f === 'desc' && blk.type === 'item' && blk.en && !blk.enAuto) ? 'en' : f; }
+
+  /* prix affichés aux clients : format français « 10,00 € » */
+  function price(p) {
+    if (!p) return p;
+    const m = String(p).match(/^\s*(\d+)(?:[.,](\d{1,2}))?\s*€?\s*$/);
+    if (!m) return String(p).replace(/(\d)\.(\d\d)/g, '$1,$2').replace(/\s*€/g, ' €');
+    return m[1] + ',' + ((m[2] || '') + '00').slice(0, 2) + ' €';
+  }
 
   /* ---------- langue préférée du visiteur ---------- */
   function preferred(param) {
@@ -260,7 +303,7 @@
   function remember(lang) { try { localStorage.setItem('carte_lang', lang); } catch (e) { } }
 
   global.CarteI18n = {
-    LANGS, TARGETS, FIELDS, fieldsOf, ui, menuLabel, view, isTranslatable,
+    LANGS, TARGETS, FIELDS, fieldsOf, ui, menuLabel, view, isTranslatable, toReview, markReviewed, isAuto, sourceField, price,
     translateText, translateBlocks, pending, isStale, setManual, store, loadMemory, learnFromBlocks,
     preferred, remember, norm,
   };

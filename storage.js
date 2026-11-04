@@ -34,6 +34,12 @@ async function saveVersion(doc, style) {
 
 window.CarteStorage = { hasToken: GHUB.hasToken, listVersions, loadVersion, saveVersion };
 
+/* « carte_2026-11-04_18h00 » -> « 04/11 à 18h00 » */
+function friendlyDate(name) {
+  const m = (name || '').match(/(\d{4})-(\d{2})-(\d{2})_(\d{2})h(\d{2})/);
+  return m ? `${m[3]}/${m[2]} à ${m[4]}h${m[5]}` : name;
+}
+
 /* ===================== UI ===================== */
 
 const saveBtn = document.getElementById('saveVersionBtn');
@@ -103,7 +109,7 @@ document.getElementById('copyMagicLink').addEventListener('click', async () => {
 saveBtn.addEventListener('click', async () => {
   if (!GHUB.hasToken()) {
     settingsBackdrop.classList.add('open'); refreshMagicLinkUi();
-    H().toast('Collez d\'abord votre jeton GitHub (une fois par ordinateur).');
+    H().toast('Cet appareil n\'est pas encore autorisé : ouvrez le lien d\'activation envoyé par Viktor.');
     return;
   }
   saveBtn.disabled = true;
@@ -128,7 +134,9 @@ saveBtn.addEventListener('click', async () => {
     const name = await saveVersion(S().doc, S().style);
     S().baseVersion = name;
     H().clearDraft();
-    H().toast('Version enregistrée : ' + name);
+    try { localStorage.setItem('carte_a_publier_' + MENU_KEY, '1'); } catch (e) { }
+    H().updateSyncStatus();
+    H().toast('✓ Enregistré. Pour que les clients voient la modification : Publier', 'Publier →', () => { location.href = 'publier.html'; });
   } catch (err) {
     console.error(err);
     if (err.message === 'BAD_TOKEN') { H().toast('Jeton refusé par GitHub — vérifiez ⚙️ Réglages.'); settingsBackdrop.classList.add('open'); }
@@ -154,8 +162,8 @@ versionsBtn.addEventListener('click', async () => {
       const dateStr = m ? `${m[3]}/${m[2]}/${m[1]} à ${m[4]}h${m[5]}` : '';
       row.innerHTML = `
         <div>
-          <div class="vname">${v.name}${i === 0 ? '<span class="tag">plus récente</span>' : ''}</div>
-          <div class="vmeta">${dateStr}</div>
+          <div class="vname">Carte du ${dateStr || v.name}${i === 0 ? '<span class="tag">plus récente</span>' : ''}</div>
+          <div class="vmeta">${/proposition/.test(v.name) ? 'Proposition graphique (nouvelle mise en page)' : (/_2026-11-04_17h00$/.test(v.name) ? 'Version fidèle aux PDF d\'origine' : 'Version enregistrée')}</div>
         </div>
         <div class="vactions">
           <button class="load">Charger</button>
@@ -212,7 +220,7 @@ versionsBackdrop.addEventListener('click', (e) => { if (e.target === versionsBac
     const versions = await listVersions();
     if (versions.length && !draftResumed) {
       const data = await loadVersion(versions[0].path);
-      if (!draftResumed) { applyLoaded(data, versions[0].name); H().toast('Dernière version chargée : ' + versions[0].name); }
+      if (!draftResumed) { applyLoaded(data, versions[0].name); H().toast('Carte ouverte ✓ (' + friendlyDate(versions[0].name) + ')'); }
     }
   } catch (err) { console.warn('Chargement initial impossible', err); }
   /* Signal pour le rendu cloud (render.mjs attend ce drapeau). */

@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400&family=Arimo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="icon" href="assets/logo-noir.png">
-<link rel="stylesheet" href="styles.css?v=31">
+<link rel="stylesheet" href="styles.css?v=32">
 </head>
 <body>
 
@@ -18,6 +18,7 @@
   <button class="tbtn secondary" id="addBlockBtn" title="Ajouter un bloc">+ <span class="lbl">Ajouter un bloc</span></button>
   <button class="tbtn secondary" id="appearanceBtn" title="Apparence : polices, couleurs, format, marges">🎨 <span class="lbl">Apparence</span></button>
   <button class="tbtn teal" id="saveVersionBtn" title="Enregistrer une version">💾 <span class="lbl">Enregistrer</span></button>
+  <a class="tbtn teal" id="publishLink" href="publier.html" title="Mettre en ligne : page du QR code et site">📱 <span class="lbl">Publier</span><span class="pub-dot" hidden></span></a>
   <button class="tbtn secondary" id="versionsBtn" title="Versions enregistrées">🕑 <span class="lbl">Versions</span></button>
   <button class="tbtn" id="exportPdfBtn" title="Télécharger le PDF (langue affichée)">⬇️ <span class="lbl">PDF</span></button>
   <span id="syncStatus"><span class="dot"></span><span class="txt"></span></span>
@@ -135,8 +136,10 @@
 <div class="modal-backdrop" id="settingsBackdrop">
   <div class="modal">
     <button class="modal-close" id="settingsClose">×</button>
-    <h3>Réglages — sauvegarde cloud</h3>
-    <p class="sub">Les versions sont lisibles partout sans réglage. Pour <b>enregistrer</b> depuis cet ordinateur, collez une fois votre jeton GitHub.</p>
+    <h3>Autoriser cet ordinateur</h3>
+    <p class="sub">Tout le monde peut <b>consulter</b> les cartes. Pour <b>enregistrer</b> et <b>publier</b> depuis cet ordinateur (ou ce téléphone), il faut l'autoriser une fois :
+      <b>ouvrez simplement le lien d'activation</b> que Viktor vous a envoyé (il commence par l'adresse de l'éditeur et se termine par « #jeton=… »). C'est tout.</p>
+    <details class="admin-steps"><summary>Réservé à l'administrateur : créer la clé d'accès</summary>
     <ol class="steps">
       <li>Ouvrez <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a> (connecté à votre compte GitHub).</li>
       <li><b>Token name</b> : « carte galette » — <b>Expiration</b> : 1 an.</li>
@@ -154,10 +157,11 @@
         <button type="submit" class="tbtn teal">Enregistrer le jeton</button>
       </div>
     </form>
+    </details>
     <div id="magicLinkBox" style="display:none">
-      <div class="ttl">✨ Lien magique — pour vos autres ordinateurs</div>
-      <p>Plus besoin de recoller le jeton ailleurs : copiez ce lien et mettez-le en favori sur le PC du resto, le Mac, etc. L'ouvrir active la sauvegarde automatiquement.</p>
-      <button type="button" class="tbtn teal" id="copyMagicLink">Copier le lien magique</button>
+      <div class="ttl">✨ Lien d'activation — pour vos autres ordinateurs et téléphones</div>
+      <p>Copiez ce lien et ouvrez-le sur le PC du resto, le Mac, le téléphone… : l'appareil est autorisé tout de suite. Gardez-le pour vous (il donne le droit de modifier les cartes).</p>
+      <button type="button" class="tbtn teal" id="copyMagicLink">Copier le lien d'activation</button>
       <input type="text" id="magicLinkText" readonly>
     </div>
   </div>
@@ -179,16 +183,16 @@
   Éditeur de carte conçu par <a href="https://vikto-labs.fr" target="_blank" rel="noopener">VIKTO LABS</a>
 </footer>
 
-<script src="menus-config.js?v=31"></script>
-<script src="i18n.js?v=31"></script>
-<script src="gh.js?v=31"></script>
-<script src="app.js?v=31"></script>
-<script src="storage.js?v=31"></script>
+<script src="menus-config.js?v=32"></script>
+<script src="i18n.js?v=32"></script>
+<script src="gh.js?v=32"></script>
+<script src="app.js?v=32"></script>
+<script src="storage.js?v=32"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="pdf-vector.js?v=31"></script>
-<script src="pdf-export.js?v=31"></script>
-<script src="aide.js?v=31"></script>
+<script src="pdf-vector.js?v=32"></script>
+<script src="pdf-export.js?v=32"></script>
+<script src="aide.js?v=32"></script>
 
 </body>
 </html>

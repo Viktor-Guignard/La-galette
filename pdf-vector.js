@@ -174,12 +174,22 @@
   function baselineOffset(el, cs, firstLineTop) {
     const key = `${cs.fontFamily}|${cs.fontSize}|${cs.fontWeight}|${cs.fontStyle}|${cs.lineHeight}`;
     if (baselineCache.has(key)) return baselineCache.get(key);
+    /* Mesure sur un témoin hors flux, avec la même police : insérer le
+       repère dans le texte lui-même pouvait le faire passer à la ligne
+       (texte en bout de ligne) et décaler toute la mesure d'une ligne. */
+    const probe = document.createElement('div');
+    probe.style.cssText = `position:absolute;left:-9999px;top:0;white-space:nowrap;font-family:${cs.fontFamily};font-size:${cs.fontSize};font-weight:${cs.fontWeight};font-style:${cs.fontStyle};line-height:${cs.lineHeight};letter-spacing:0;`;
+    const txt = document.createTextNode('Hxg');
     const mark = document.createElement('span');
     mark.style.cssText = 'display:inline-block;width:0;height:0;overflow:hidden;vertical-align:baseline;';
-    el.insertBefore(mark, el.firstChild);
+    probe.appendChild(txt); probe.appendChild(mark);
+    document.body.appendChild(probe);
+    const range = document.createRange();
+    range.setStart(txt, 0); range.setEnd(txt, 1);
+    const r = range.getClientRects()[0];
     const mr = mark.getBoundingClientRect();
-    const off = mr ? mr.top - firstLineTop : parseFloat(cs.fontSize) * 0.79;
-    mark.remove();
+    const off = r && mr ? mr.top - r.top : parseFloat(cs.fontSize) * 0.79;
+    probe.remove();
     baselineCache.set(key, off);
     return off;
   }
@@ -223,7 +233,10 @@
       }
     }
 
-    const scale = Math.min(4, Math.max(2, 900 / Math.max(rect.width, rect.height)));
+    /* résolution visée : 300 dpi à la taille imprimée (3000 px au plus),
+       au moins 2× l'écran — l'affiche 46×66 n'est plus floue */
+    const printPx = Math.max(rect.width, rect.height) * PX2MM / 25.4 * 300;
+    const scale = Math.min(8, Math.max(2, Math.min(3000, printPx) / Math.max(rect.width, rect.height)));
     const c = document.createElement('canvas');
     c.width = Math.max(1, Math.round(rect.width * scale));
     c.height = Math.max(1, Math.round(rect.height * scale));

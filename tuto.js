@@ -120,7 +120,7 @@
       a.dire('Le texte devient modifiable : on tape directement dessus.');
       a.cacherCurseur();
       nm.innerHTML = '';
-      await a.taper(nm, 'CROQUE TRUFFE & BEAUFORT');
+      await a.taper(nm, 'ESCARGOTS LES 6 (MAISON)');
       await a.pause(500);
       const pr = row.querySelector('.pr');
       row.classList.remove('editing');
@@ -134,7 +134,7 @@
       row.classList.remove('editing');
       a.dire('Terminé — le texte est modifié sur la carte.');
       await a.pause(1400);
-      nm.innerHTML = original; pr.textContent = '23€';
+      nm.innerHTML = original; pr.textContent = '16.50€';
       a.dire('Cliquez sur « Rejouer » pour revoir.');
     },
 
@@ -216,7 +216,7 @@
       const row = demo.querySelector('[data-row="0"]');
       const nm = row.querySelector('.nm');
       const original = nm.innerHTML;
-      nm.innerHTML = 'CROQUE ERREUR DE FRAPPE';
+      nm.innerHTML = 'ESCARGOTTS ERREUR DE FRAPPE';
       a.dire('Oups, une faute vient d’être tapée.');
       await a.pause(1100);
       a.dire('↶ annule la dernière action.');
@@ -229,9 +229,9 @@
       await a.versEl(vers);
       await a.clic(vers);
       await a.panneau(`<h4>Versions enregistrées</h4>
-        <div class="line">carte · 26/07 à 18h40 <b style="margin-left:auto;color:#6e5438">Charger</b></div>
-        <div class="line">carte · 26/07 à 14h05 <b style="margin-left:auto;color:#6e5438">Charger</b></div>
-        <div class="line">carte · 25/07 à 09h12 <b style="margin-left:auto;color:#6e5438">Charger</b></div>`, 2300);
+        <div class="line">Carte du 04/11 à 18h40 <b style="margin-left:auto;color:#6e5438">Charger</b></div>
+        <div class="line">Carte du 04/11 à 14h05 <b style="margin-left:auto;color:#6e5438">Charger</b></div>
+        <div class="line">Carte du 03/11 à 09h12 <b style="margin-left:auto;color:#6e5438">Charger</b></div>`, 2300);
       a.fermerPanneau();
       a.dire('Chaque enregistrement reste consultable, daté à la minute.');
       await a.pause(1300);
@@ -269,7 +269,7 @@
       btn.textContent = '⏳ Génération…';
       await a.pause(1500);
       btn.textContent = '⬇️ PDF';
-      await a.toast('PDF téléchargé : carte_v22_2026-07-26_18h42.pdf', 2400);
+      await a.toast('PDF téléchargé : carte_2026-11-04_18h42.pdf', 2400);
       a.dire('Format exact, texte vectoriel — prêt pour l’imprimeur.');
       await a.pause(1400);
       a.dire('Cliquez sur « Rejouer » pour revoir.');

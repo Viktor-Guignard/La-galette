@@ -30,7 +30,9 @@
     const ensure = () => { if (!sec) { sec = document.createElement('div'); sec.className = 'm-section'; wrap.appendChild(sec); } return sec; };
 
     wineCols = ['37,5cl','50cl','75cl','150cl'];
-    (menu.blocks || []).forEach(b0 => {
+    const usedTags = new Set();
+    const blocks = (menu.blocks || []).filter(b => !(b.type === 'note' && /^prix nets/i.test(b.text || '')));   // déjà en pied de page
+    blocks.forEach(b0 => {
       if (b0.hidden) return;   // plat masqué temporairement : jamais côté client
       const b = I18N ? I18N.view(b0, LANG) : b0;
       if (b.__skip) return;    // ligne de traduction anglaise : inutile hors français
@@ -59,11 +61,13 @@
         }
         case 'item': {
           const el = document.createElement('div'); el.className = 'm-item';
-          const desc = b.desc ? ` <span class="desc">${esc(b.desc)}</span>` : '';
+          /* nom, puis description sur sa ligne, puis traduction en italique */
+          const desc = b.desc ? `<div class="desc">${esc(b.desc)}</div>` : '';
           const sub = b.sub ? `<div class="sub">${esc(b.sub)}</div>` : '';
           const en = b.en ? `<div class="en">${esc(b.en)}</div>` : '';
-          const p = b.price ? `<div class="p">${esc(b.price)}</div>` : '';
-          el.innerHTML = `<div class="n"><div class="fr">${esc(b.fr)}${tagsHtml(b)}${desc}</div>${sub}${en}</div><div class="dots"></div>${p}`;
+          const p = b.price ? `<div class="p">${esc(PRICE(b.price))}</div>` : '';
+          (b0.tags || []).forEach(t => usedTags.add(t));
+          el.innerHTML = `<div class="n"><div class="fr">${esc(b.fr)}${tagsHtml(b)}</div>${desc}${sub}${en}</div>${p}`;
           ensure().appendChild(el);
           break;
         }
@@ -77,38 +81,56 @@
         }
         case 'winehead': {
           wineCols = [b.c1, b.c2, b.c3, b.c4];
-          if (b.text) { const el = document.createElement('div'); el.className = 'm-note'; el.textContent = b.text; ensure().appendChild(el); }
+          /* « voir dernière page » : renvoi propre au papier, inutile en ligne */
+          if (b.text && !/(dernière page|last page|ultima pagina|letzte seite)/i.test(b.text)) { const el = document.createElement('div'); el.className = 'm-note'; el.textContent = b.text; ensure().appendChild(el); }
           break;
         }
         case 'wine': {
           const el = document.createElement('div'); el.className = 'm-item';
           const desc = b.desc ? ` <span class="desc">${esc(b.desc)}</span>` : '';
-          const prices = ['p1','p2','p3','p4'].map((f, i) => b[f] ? `<span class="wp">${wineCols[i] ? '<small>' + esc(wineCols[i]) + '</small> ' : ''}${esc(b[f])}</span>` : '').filter(Boolean).join('');
-          el.innerHTML = `<div class="n"><div class="fr">${esc(b.fr)}${tagsHtml(b)}${desc}</div></div><div class="dots"></div><div class="p wps">${prices}</div>`;
+          const prices = ['p1','p2','p3','p4'].map((f, i) => b[f] ? `<span class="wp">${wineCols[i] ? '<small>' + esc(wineCols[i]) + '</small> ' : ''}${esc(PRICE(b[f]))}</span>` : '').filter(Boolean).join('');
+          el.innerHTML = `<div class="n"><div class="fr">${esc(b.fr)}${tagsHtml(b)}</div>${b.desc ? `<div class="desc">${esc(b.desc)}</div>` : ''}</div><div class="p wps">${prices}</div>`;
           ensure().appendChild(el);
           break;
         }
         case 'line': {
           const el = document.createElement('div'); el.className = 'm-line v-' + (b.variant || 'main');
-          el.innerHTML = esc(b.text) + (b.price ? ' <em>' + esc(b.price) + '</em>' : '');
+          el.innerHTML = esc(b.text) + (b.price ? ' <em>' + esc(PRICE(b.price)) + '</em>' : '');
           if (b.variant === 'title') { sec = document.createElement('div'); sec.className = 'm-section m-menu'; wrap.appendChild(sec); }
           ensure().appendChild(el);
           break;
         }
+        case 'emp-header': {
+          /* affiche à emporter : le téléphone, seul moyen de commander */
+          const tel = (b.box2 || '').replace(/<[^>]+>/g, '');
+          const el = document.createElement('div'); el.className = 'm-order';
+          el.innerHTML = `<div class="t">${esc((b.title || '').replace(/<br\s*\/?>/gi, ' '))}</div><div class="s">${esc(b.box1 || '')}</div>${tel ? `<a class="tel" href="tel:${tel.replace(/[^+\d]/g, '').replace(/^\+330/, '+33')}">📞 ${esc(tel)}</a>` : ''}`;
+          wrap.appendChild(el);
+          break;
+        }
         case 'banner': {
-          const el = document.createElement('div'); el.className = 'm-banner'; el.textContent = b.text;
+          const el = document.createElement('div'); el.className = 'm-head m-banner-web'; el.textContent = b.text;
           ensure().appendChild(el);
           break;
         }
         /* header / emp-header / colonnes / divider / pagebreak : ignorés sur le web */
       }
     });
+    /* légende des pictogrammes utilisés */
+    const lg = ['veg', 'gf'].filter(t => usedTags.has(t));
+    if (lg.length) {
+      const el = document.createElement('div'); el.className = 'm-legend';
+      el.innerHTML = lg.map(t => `<span><img src="${TAG_ICONS[t].src}" alt=""> ${T(t)}</span>`).join('');
+      wrap.insertBefore(el, wrap.firstChild);
+    }
     return wrap;
   }
+  const PRICE = p => I18N ? I18N.price(p) : p;
 
   function build(pub) {
     lastPub = pub;
     document.documentElement.lang = LANG;
+    const tg = document.querySelector('.pub-head .sub'); if (tg) tg.textContent = T('tagline');
     buildLangs();
     let menus = (pub.menus || []).filter(m => (m.blocks || []).length);
     /* la carte « Pizzas (EN) » est faite pour l'impression : en ligne, l'onglet

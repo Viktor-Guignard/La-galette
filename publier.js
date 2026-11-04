@@ -20,6 +20,7 @@ function draftWarning(menu) {
 }
 let publishedKeys = new Set();
 let publishedAt = null;
+let publishedVersion = {};   // key -> nom de la version publiée
 
 function toast(msg) {
   const t = document.getElementById('toast');
@@ -63,6 +64,16 @@ document.getElementById('copyPublic').addEventListener('click', async () => {
 });
 
 /* ---------- Liste des cartes ---------- */
+/* date ISO -> « 04/11/2026 à 16h00 » et clé triable comme les noms de version */
+function fmtStamp(iso) {
+  const d = new Date(iso); if (isNaN(d)) return '';
+  const p = n => (n < 10 ? '0' : '') + n;
+  return `${p(d.getDate())}/${p(d.getMonth() + 1)}/${d.getFullYear()} à ${p(d.getHours())}h${p(d.getMinutes())}`;
+}
+function stamp(iso) {
+  const d = new Date(iso); const p = n => (n < 10 ? '0' : '') + n;
+  return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}${p(d.getHours())}${p(d.getMinutes())}${p(d.getSeconds())}`;
+}
 function fmtDate(name) {
   const m = (name || '').match(/(\d{4})-(\d{2})-(\d{2})_(\d{2})h(\d{2})/);
   return m ? `${m[3]}/${m[2]}/${m[1]} à ${m[4]}h${m[5]}` : '';
@@ -84,6 +95,7 @@ async function loadState() {
       if (pub && pub.data && Array.isArray(pub.data.menus)) {
         publishedKeys = new Set(pub.data.menus.map(x => x.key));
         publishedAt = pub.data.updatedAt || null;
+        pub.data.menus.forEach(x => { publishedVersion[x.key] = x.version || null; });
       }
     } catch (e) { /* pas encore publié */ }
 
@@ -105,11 +117,18 @@ function render() {
     row.className = 'pub-row';
     // par défaut : coché si déjà publié, sinon coché si une version existe
     const checked = anyPublished ? publishedKeys.has(m.key) : !!latest;
+    /* à jour seulement si la version en ligne EST la dernière enregistrée */
+    const live = publishedKeys.has(m.key);
+    const pv = publishedVersion[m.key];
+    const upToDate = live && latest && (pv ? pv === latest.name : (publishedAt && GHUB.dateKey(latest.name) <= stamp(publishedAt)));
+    const tag = !live ? '<span class="tag off">pas en ligne</span>'
+      : upToDate ? '<span class="tag live">en ligne ✓ à jour</span>'
+      : '<span class="tag todo">modifiée — à publier</span>';
     row.innerHTML = `
-      <input type="checkbox" class="pub-chk" data-key="${m.key}" ${checked ? 'checked' : ''} ${latest ? '' : 'disabled'}>
+      <input type="checkbox" class="pub-chk" data-key="${m.key}" data-live="${live ? 1 : 0}" ${checked ? 'checked' : ''} ${latest ? '' : 'disabled'}>
       <div class="pub-row-main">
-        <div class="pub-row-title">${m.label}${publishedKeys.has(m.key) ? '<span class="tag live">en ligne</span>' : ''}</div>
-        <div class="pub-row-meta">${latest ? 'Dernière version : ' + fmtDate(latest.name) : 'Aucune version enregistrée — rien à publier'}</div>
+        <div class="pub-row-title">${m.label}${tag}</div>
+        <div class="pub-row-meta">${latest ? 'Dernière version enregistrée : ' + fmtDate(latest.name) : 'Aucune version enregistrée — rien à publier'}</div>
         ${draftWarning(m)}
       </div>
       <a class="pub-row-edit" href="index.html?menu=${m.key}">Éditer ↗</a>`;
@@ -118,8 +137,8 @@ function render() {
 
   const status = document.getElementById('pubStatus');
   status.textContent = publishedAt
-    ? 'Dernière publication : ' + new Date(publishedAt).toLocaleString('fr-FR')
-    : 'Aucune publication pour l\'instant.';
+    ? 'Dernière mise en ligne : ' + fmtStamp(publishedAt)
+    : 'Aucune mise en ligne pour l\'instant.';
   document.getElementById('publishBtn').disabled = false;
 }
 
@@ -128,6 +147,9 @@ document.getElementById('publishBtn').addEventListener('click', async () => {
   if (!GHUB.hasToken()) { settingsBackdrop.classList.add('open'); refreshMagicLinkUi(); toast('Collez d\'abord votre jeton (⚙️).'); return; }
   const keys = Array.from(document.querySelectorAll('.pub-chk:checked')).map(c => c.dataset.key);
   if (!keys.length) { toast('Cochez au moins une carte à publier.'); return; }
+  const removed = Array.from(document.querySelectorAll('.pub-chk:not(:checked)')).filter(c => c.dataset.live === '1')
+    .map(c => (window.CARTE_MENUS.find(m => m.key === c.dataset.key) || {}).label || c.dataset.key);
+  if (removed.length && !confirm('« ' + removed.join(' », « ') + ' » va disparaître de la page du QR code et du site. Continuer ?')) return;
 
   const btn = document.getElementById('publishBtn');
   btn.disabled = true; const orig = btn.textContent; btn.textContent = 'Publication…';
@@ -140,14 +162,15 @@ document.getElementById('publishBtn').addEventListener('click', async () => {
       const data = f ? f.data : { blocks: [] };
       const norm = Array.isArray(data) ? { style: null, blocks: data } : { style: data.style || null, blocks: data.blocks || [] };
       const label = (window.CARTE_MENUS.find(m => m.key === key) || {}).label || key;
-      menus.push({ key, label, style: norm.style, blocks: norm.blocks });
+      menus.push({ key, label, version: latest.name, style: norm.style, blocks: norm.blocks });
     }
     const payload = { updatedAt: new Date().toISOString(), menus };
     await GHUB.putJson('published.json', payload, 'Publication du QR (' + keys.join(', ') + ')');
     publishedKeys = new Set(keys);
     publishedAt = payload.updatedAt;
+    keys.forEach(k => { publishedVersion[k] = latestByKey[k] && latestByKey[k].name; try { localStorage.removeItem('carte_a_publier_' + k); } catch (e) { } });
     render();
-    toast('Publié ! Jusqu\'à 5 min de propagation avant que le QR affiche la mise à jour.');
+    toast('✓ En ligne ! Le QR code et le site affichent la nouvelle carte (jusqu\'à 5 min).');
   } catch (err) {
     console.error(err);
     if (err.message === 'BAD_TOKEN') { toast('Jeton refusé — vérifiez ⚙️.'); settingsBackdrop.classList.add('open'); }

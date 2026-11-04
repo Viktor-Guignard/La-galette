@@ -264,6 +264,13 @@ async function runTranslate(){
     updateTrStatus('run', 0, before);
     const res = await I18N.translateBlocks(state.doc, (d, t) => updateTrStatus('run', d, t));
     trFailed = res.failed;
+    if(window.__refreshLangBanner) window.__refreshLangBanner();
+    state.doc.forEach(b => {
+      if(b.type !== 'item' || !b.enAuto || !b.tr || !b.tr.en) return;
+      if(I18N.isStale(b, 'en', 'desc') || I18N.isStale(b, 'en', 'sub')) return;
+      const en = [b.desc && b.tr.en.desc, b.sub && b.tr.en.sub].filter(Boolean).join(' — ');
+      if(en && en !== b.en){ b.en = en; if(state.lang === 'fr') render(); }
+    });
     if(res.total - res.failed > 0){
       /* des traductions ont été ajoutées : elles partiront avec le prochain enregistrement */
       state.dirty = true; updateSyncStatus();
@@ -288,7 +295,12 @@ function updateTrStatus(mode, d, t){
   const left = I18N.pending(state.doc).length;
   el.classList.remove('ok','warn','run');
   if(mode === 'run'){ el.classList.add('run'); el.textContent = `🌐 Traduction… ${d}/${t}`; el.title = 'Traduction automatique en anglais, italien et allemand'; }
-  else if(left === 0){ el.classList.add('ok'); el.textContent = '🌐 Traduit'; el.title = 'Toute la carte est traduite en anglais, italien et allemand'; }
+  else if(left === 0){
+    const rv = I18N.toReview(state.doc).length;
+    el.classList.add(rv ? 'run' : 'ok');
+    el.textContent = rv ? `🌐 Traduit · ${rv} à relire` : '🌐 Traductions à jour';
+    el.title = rv ? 'Des textes ont été traduits par un service en ligne : vérifiez-les dans la vue de chaque langue (soulignés en orange)' : 'Toute la carte est traduite en anglais, italien et allemand';
+  }
   else if(trFailed){ el.classList.add('warn'); el.textContent = `🌐 ${left} à traduire`; el.title = 'Traduction automatique indisponible (connexion ?) — réessai au prochain changement, ou corrigez à la main dans la vue de la langue'; }
   else { el.classList.add('run'); el.textContent = `🌐 ${left} à traduire`; el.title = 'La traduction démarre dans un instant'; }
 }
@@ -299,14 +311,18 @@ function updateSyncStatus(){
   const hasToken = !!window.CarteStorage && window.CarteStorage.hasToken();
   el.classList.remove('ok','warn');
   setTimeout(() => { el.title = txt.textContent; }, 0);
+  try {
+    const d = document.querySelector('#publishLink .pub-dot');
+    if(d) d.hidden = localStorage.getItem('carte_a_publier_' + window.currentMenuKey()) !== '1';
+  } catch(e){}
   if(state.dirty){
     el.classList.add('warn');
     txt.textContent = 'Modifications non enregistrées';
   } else if(hasToken){
     el.classList.add('ok');
-    txt.textContent = 'Sauvegarde cloud activée';
+    txt.textContent = 'Tout est enregistré';
   } else {
-    txt.textContent = 'Lecture seule — jeton requis pour enregistrer (⚙️)';
+    txt.textContent = 'Consultation seule — cet appareil n\'est pas encore autorisé (⚙️)';
   }
 }
 
@@ -586,6 +602,13 @@ function buildBlockEl(blk){
   wrap.className = 'block ' + blockClass(vb) + (state.selectedId===blk.id ? ' selected' : '') + (vb.__skip ? ' i18n-skip' : '');
   wrap.dataset.blockId = blk.id;
   wrap.innerHTML = renderBlockInner(vb);
+  if(state.lang !== 'fr' && I18N){
+    wrap.querySelectorAll('[contenteditable]').forEach(el => {
+      const f = el.dataset.field;
+      if(!I18N.isTranslatable(blk, f)){ el.setAttribute('contenteditable', 'false'); el.classList.add('locked'); }
+      else if(I18N.isAuto(blk, state.lang, f)){ el.classList.add('tr-auto'); el.title = 'Traduction automatique à relire — cliquez pour corriger'; }
+    });
+  }
   if(blk.type === 'formule' && blk.color) wrap.style.setProperty('--formule-color-override', blk.color);
   if(blk.size) wrap.style.fontSize = blk.size + 'px';
   if(blk.mt != null) wrap.style.marginTop = blk.mt + 'px';
@@ -623,6 +646,9 @@ function buildBlockEl(blk){
     if(e.target.closest('.rctrl')) return;
     if(e.target.closest('.img-slot')) return;
     state.selectedId = blk.id;
+    /* au toucher (pas de survol) : la ligne choisie montre ses boutons */
+    canvasWrap.querySelectorAll('.block.selected').forEach(x => { if(x !== wrap) x.classList.remove('selected'); });
+    wrap.classList.add('selected');
   });
 
   controls.addEventListener('click', (e) => {
@@ -726,13 +752,18 @@ canvasWrap.addEventListener('blur', (e) => {
   const newVal = MULTILINE_FIELDS.has(field)
     ? el.innerHTML.replace(/<div><br><\/div>/g,'<br>').replace(/<div>/g,'<br>').replace(/<\/div>/g,'')
     : el.textContent;
-  if(state.lang !== 'fr' && I18N && I18N.isTranslatable(blk, field)){
+  if(state.lang !== 'fr' && I18N){
+    /* vue étrangère : on ne corrige que la traduction ; le reste se modifie en français */
+    if(!I18N.isTranslatable(blk, field)) return;
     const cur = I18N.view(blk, state.lang)[field];
-    if(cur !== newVal){ I18N.setManual(blk, state.lang, field, newVal); markDirty(); }
+    if(cur !== newVal){ I18N.setManual(blk, state.lang, I18N.sourceField(blk, field), newVal); markDirty(); render(); }
     return;
   }
   if(blk[field] !== newVal){
     blk[field] = newVal;
+    /* description française modifiée : la ligne anglaise imprimée suivra la traduction */
+    if(blk.type === 'item' && (field === 'desc' || field === 'sub') && blk.en != null) blk.enAuto = true;
+    if(blk.type === 'item' && field === 'en') delete blk.enAuto;
     markDirty();
   }
 }, true);
@@ -947,14 +978,22 @@ resetHistory();
     document.body.classList.toggle('lang-foreign', state.lang !== 'fr');
     if(banner){
       const L = I18N.LANGS.find(l => l.code === state.lang);
+      const NOM = {en:'anglais', it:'italien', de:'allemand'};
+      const rv = state.lang === 'fr' ? 0 : I18N.toReview(state.doc, state.lang).length;
       banner.innerHTML = state.lang === 'fr' ? '' :
-        `${L.flag} Vous voyez la carte en <b>${L.label}</b>, traduite automatiquement. Cliquez sur un texte pour corriger la traduction — les prix, les plats et leur ordre se modifient en <a href="#" data-lang="fr">🇫🇷 français</a>.`;
+        `${L.flag} Carte en <b>${NOM[state.lang]}</b>. Touchez un texte pour corriger sa traduction. Les prix, les plats et leur ordre se modifient dans la carte en <a href="#" data-lang="fr">🇫🇷 français</a>.`
+        + (rv ? ` <span class="rv">${rv} traduction${rv>1?'s':''} automatique${rv>1?'s':''} à relire (soulignée${rv>1?'s':''} en orange)</span> <button type="button" data-ok>✓ Tout est bon</button>` : '');
       const a = banner.querySelector('[data-lang]');
       if(a) a.onclick = (e) => { e.preventDefault(); sel.value = 'fr'; sel.onchange(); };
+      const ok = banner.querySelector('[data-ok]');
+      if(ok) ok.onclick = () => { I18N.markReviewed(state.doc, state.lang); markDirty(); apply(); render(); };
+      const pdfL = document.querySelector('#exportPdfBtn .lbl');
+      if(pdfL) pdfL.textContent = 'PDF ' + L.short;
     }
     try { const u = new URL(location.href); if(state.lang === 'fr') u.searchParams.delete('lang'); else u.searchParams.set('lang', state.lang); history.replaceState(null, '', u); } catch(e){}
   };
   sel.onchange = () => { state.lang = sel.value; state.selectedId = null; apply(); render(); };
+  window.__refreshLangBanner = apply;
   apply();
   updateTrStatus();
 })();
