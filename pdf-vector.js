@@ -30,6 +30,10 @@
     { file: 'Arimo-Regular.ttf', name: 'Arimo', style: 'normal', weight: 'normal' },
     { file: 'Arimo-Italic.ttf', name: 'Arimo', style: 'italic', weight: 'normal' },
     { file: 'Arimo-Bold.ttf', name: 'Arimo', style: 'normal', weight: 'bold' },
+    { file: 'Jost-Regular.ttf', name: 'Jost', style: 'normal', weight: 'normal' },
+    { file: 'Jost-Italic.ttf', name: 'Jost', style: 'italic', weight: 'normal' },
+    { file: 'Jost-Medium.ttf', name: 'Jost', style: 'normal', weight: 'semibold' },
+    { file: 'Jost-SemiBold.ttf', name: 'Jost', style: 'normal', weight: 'bold' },
     { file: 'Montserrat-Regular.ttf', name: 'Montserrat', style: 'normal', weight: 'normal' },
     { file: 'Montserrat-Italic.ttf', name: 'Montserrat', style: 'italic', weight: 'normal' },
     { file: 'Montserrat-Medium.ttf', name: 'Montserrat', style: 'normal', weight: 'semibold' },
@@ -75,6 +79,7 @@
     const w = parseInt(cssWeight, 10) || (cssWeight === 'bold' ? 700 : 400);
     if (family === 'Playfair Display') return w >= 800 ? 'extrabold' : 'bold';
     if (family === 'Cormorant Garamond') return w >= 700 ? 'bold' : 'semibold';
+    if (family === 'Jost') return w >= 600 ? 'bold' : (w >= 500 ? 'semibold' : 'normal');
     if (family === 'Arimo') return w >= 600 ? 'bold' : 'normal';
     if (family === 'Montserrat') return w >= 600 ? 'bold' : (w >= 500 ? 'semibold' : 'normal');
     if (w >= 700) return 'bold';
@@ -480,7 +485,13 @@
       const bOff = baselineOffset(parent, cs, lines[0].top);
 
       for (const line of lines) {
-        const text = line.text.replace(/\s+$/, '');
+        /* majuscules / minuscules imposées par le style (text-transform) :
+           à l'écran le navigateur les applique, ici on doit le faire */
+        let text = line.text.replace(/\s+$/, '');
+        const tt = cs.textTransform;
+        if (tt === 'uppercase') text = text.toUpperCase();
+        else if (tt === 'lowercase') text = text.toLowerCase();
+        else if (tt === 'capitalize') text = text.replace(/(^|\s)(\S)/g, (m, a, c) => a + c.toUpperCase());
         if (!text) continue;
 
         /* Chaque ligne doit occuper EXACTEMENT la largeur qu'elle a à

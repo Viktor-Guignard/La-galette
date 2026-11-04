@@ -1,0 +1,197 @@
+{
+ "style": {
+  "titleFont": "Jost",
+  "bodyFont": "Jost",
+  "titleColor": "#886c4e",
+  "accent": "#b04a3f",
+  "pageBg": "#ffffff",
+  "leaders": false,
+  "format": "a4",
+  "theme": "moderne",
+  "marginMm": {
+   "t": 6,
+   "r": 18,
+   "b": 9,
+   "l": 18
+  },
+  "mirror": false,
+  "sectionUnderline": true,
+  "itemSpacing": 4,
+  "nameColor": "#6b4c2a"
+ },
+ "blocks": [
+  {
+   "id": "m673",
+   "type": "cols",
+   "ratio": "22/56/22",
+   "gap": 0
+  },
+  {
+   "id": "m674",
+   "type": "colbreak"
+  },
+  {
+   "id": "m675",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 46,
+   "mt": 10,
+   "mb": 0
+  },
+  {
+   "id": "m676",
+   "type": "colbreak"
+  },
+  {
+   "id": "m677",
+   "type": "image",
+   "src": "assets/flag-fr.svg",
+   "widthPct": 30,
+   "align": "right",
+   "mt": 46
+  },
+  {
+   "id": "m678",
+   "type": "colsend"
+  },
+  {
+   "id": "m679",
+   "type": "line",
+   "text": "SERVICE EN SALLE DE 12H À 18H",
+   "variant": "small",
+   "mt": 4,
+   "mb": 0,
+   "size": null
+  },
+  {
+   "id": "m680",
+   "type": "section",
+   "fr": "NOS PIZZAS"
+  },
+  {
+   "id": "m681",
+   "type": "item",
+   "fr": "MARGARITA",
+   "price": "13,50",
+   "desc": "Tomates, mozza, olives, origan"
+  },
+  {
+   "id": "m682",
+   "type": "item",
+   "fr": "PAMPLUNE",
+   "price": "15,50",
+   "desc": "Tomates, mozza, jambon, oeuf, origan"
+  },
+  {
+   "id": "m683",
+   "type": "item",
+   "fr": "REINE",
+   "price": "15,50",
+   "desc": "Tomates, mozza, jambon, champignons"
+  },
+  {
+   "id": "m684",
+   "type": "item",
+   "fr": "NAPOLITAINE",
+   "price": "15,50",
+   "desc": "Tomates, mozza, anchois, câpres, olives, origan"
+  },
+  {
+   "id": "m685",
+   "type": "item",
+   "fr": "3 VALLÉES",
+   "price": "15,50",
+   "desc": "Tomates, mozza, poivrons, champignons, olives, origan, roquette"
+  },
+  {
+   "id": "m686",
+   "type": "item",
+   "fr": "TOSCANE",
+   "price": "16,00",
+   "desc": "Tomates, mozza, jambon, ananas, olives"
+  },
+  {
+   "id": "m687",
+   "type": "item",
+   "fr": "4 SAISONS",
+   "price": "17,50",
+   "desc": "Tomates, mozza, artichaut, champignons, poivrons, olives, origan, roquette"
+  },
+  {
+   "id": "m688",
+   "type": "item",
+   "fr": "TARENTAISE",
+   "price": "17,50",
+   "desc": "Tomates, mozza, jambon fumé Speck, oeuf, roquette"
+  },
+  {
+   "id": "m689",
+   "type": "item",
+   "fr": "CALZONE",
+   "price": "17,50",
+   "desc": "Tomates, mozza, jambon, champignons, oeuf, crème"
+  },
+  {
+   "id": "m690",
+   "type": "item",
+   "fr": "CHÈVRE",
+   "price": "17,50",
+   "desc": "Crème, mozza, chèvre, miel, noix, roquette"
+  },
+  {
+   "id": "m691",
+   "type": "item",
+   "fr": "MEXICAINE",
+   "price": "18,00",
+   "desc": "Tomates, mozza, chorizo, merguez, poivrons"
+  },
+  {
+   "id": "m692",
+   "type": "item",
+   "fr": "ORIENTALE",
+   "price": "18,00",
+   "desc": "Crème, mozza, viande kebab, oignons, salade, sauce burger"
+  },
+  {
+   "id": "m693",
+   "type": "item",
+   "fr": "MERIBELOISE",
+   "price": "18,00",
+   "desc": "Crème, mozza, lardons, pomme de terre, oignons, Reblochon"
+  },
+  {
+   "id": "m694",
+   "type": "item",
+   "fr": "4 FROMAGES",
+   "price": "18,00",
+   "desc": "Tomates, mozza, chèvre, Roquefort, Reblochon"
+  },
+  {
+   "id": "m695",
+   "type": "item",
+   "fr": "SAUMON",
+   "price": "20,00",
+   "desc": "Crème, ciboulette, mozza, saumon, citron"
+  },
+  {
+   "id": "m696",
+   "type": "item",
+   "fr": "LASAGNE MAISON · SALADE",
+   "price": "17,50"
+  },
+  {
+   "id": "m697",
+   "type": "image",
+   "src": "assets/photos/pizza.jpg",
+   "widthPct": 100,
+   "mt": 18,
+   "heightPx": 230
+  },
+  {
+   "id": "m698",
+   "type": "legend",
+   "text": "Prix nets en euros, service compris",
+   "onlyNote": true
+  }
+ ]
+}

@@ -1,0 +1,197 @@
+{
+ "style": {
+  "titleFont": "Jost",
+  "bodyFont": "Jost",
+  "titleColor": "#886c4e",
+  "accent": "#b04a3f",
+  "pageBg": "#ffffff",
+  "leaders": false,
+  "format": "a4",
+  "theme": "moderne",
+  "marginMm": {
+   "t": 6,
+   "r": 18,
+   "b": 9,
+   "l": 18
+  },
+  "mirror": false,
+  "sectionUnderline": true,
+  "itemSpacing": 4,
+  "nameColor": "#6b4c2a"
+ },
+ "blocks": [
+  {
+   "id": "m699",
+   "type": "cols",
+   "ratio": "22/56/22",
+   "gap": 0
+  },
+  {
+   "id": "m700",
+   "type": "colbreak"
+  },
+  {
+   "id": "m701",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 46,
+   "mt": 10,
+   "mb": 0
+  },
+  {
+   "id": "m702",
+   "type": "colbreak"
+  },
+  {
+   "id": "m703",
+   "type": "image",
+   "src": "assets/flag-gb.svg",
+   "widthPct": 30,
+   "align": "right",
+   "mt": 46
+  },
+  {
+   "id": "m704",
+   "type": "colsend"
+  },
+  {
+   "id": "m705",
+   "type": "line",
+   "text": "AT THE RESTAURANT FROM NOON TO 6 PM",
+   "variant": "small",
+   "mt": 4,
+   "mb": 0,
+   "size": null
+  },
+  {
+   "id": "m706",
+   "type": "section",
+   "fr": "OUR PIZZAS"
+  },
+  {
+   "id": "m707",
+   "type": "item",
+   "fr": "MARGARITA",
+   "price": "13,50",
+   "desc": "Tomatoes, mozzarella, olives, oregano"
+  },
+  {
+   "id": "m708",
+   "type": "item",
+   "fr": "PAMPLUNE",
+   "price": "15,50",
+   "desc": "Tomatoes, mozzarella, ham, egg, oregano"
+  },
+  {
+   "id": "m709",
+   "type": "item",
+   "fr": "REINE",
+   "price": "15,50",
+   "en": "Tomatoes, mozzarella, ham, mushrooms"
+  },
+  {
+   "id": "m710",
+   "type": "item",
+   "fr": "NAPOLITAINE",
+   "price": "15,50",
+   "desc": "Tomatoes, mozzarella, anchovies, capers, olives, oregano"
+  },
+  {
+   "id": "m711",
+   "type": "item",
+   "fr": "3 VALLÉES",
+   "price": "15,50",
+   "desc": "Tomatoes, mozzarella, green pepper, mushrooms, olives, oregano, rocket salad"
+  },
+  {
+   "id": "m712",
+   "type": "item",
+   "fr": "TOSCANE",
+   "price": "16,00",
+   "desc": "Tomatoes, mozzarella, ham, pineapple, olives"
+  },
+  {
+   "id": "m713",
+   "type": "item",
+   "fr": "4 SAISONS",
+   "price": "17,50",
+   "desc": "Tomatoes, mozzarella, artichoke, mushrooms, green pepper, olives, oregano, rocket salad"
+  },
+  {
+   "id": "m714",
+   "type": "item",
+   "fr": "TARENTAISE",
+   "price": "17,50",
+   "en": "Tomatoes, mozzarella, smoked ham Speck, egg, rocket salad"
+  },
+  {
+   "id": "m715",
+   "type": "item",
+   "fr": "CALZONE",
+   "price": "17,50",
+   "en": "Tomatoes, mozzarella, ham, mushrooms, egg, cream"
+  },
+  {
+   "id": "m716",
+   "type": "item",
+   "fr": "CHÈVRE",
+   "price": "17,50",
+   "en": "Cream, mozzarella, goat cheese, honey, nuts, rocket salad"
+  },
+  {
+   "id": "m717",
+   "type": "item",
+   "fr": "MEXICAINE",
+   "price": "18,00",
+   "desc": "Tomatoes, mozzarella, chorizo, merguez, green pepper"
+  },
+  {
+   "id": "m718",
+   "type": "item",
+   "fr": "ORIENTALE",
+   "price": "18,00",
+   "desc": "Cream, mozza, meat kebab, onions, salad, burger sauce"
+  },
+  {
+   "id": "m719",
+   "type": "item",
+   "fr": "MERIBELOISE",
+   "price": "18,00",
+   "desc": "Cream, mozzarella, bacon, potatoes, onions, Reblochon"
+  },
+  {
+   "id": "m720",
+   "type": "item",
+   "fr": "4 FROMAGES",
+   "price": "18,00",
+   "desc": "Tomatoes, mozzarella, goat cheese, Roquefort, Reblochon"
+  },
+  {
+   "id": "m721",
+   "type": "item",
+   "fr": "SAUMON",
+   "price": "20,00",
+   "en": "Cream, chives, mozzarella, salmon, lemon"
+  },
+  {
+   "id": "m722",
+   "type": "item",
+   "fr": "HOME-MADE LASAGNA · SALAD",
+   "price": "17,50"
+  },
+  {
+   "id": "m723",
+   "type": "image",
+   "src": "assets/photos/pizza.jpg",
+   "widthPct": 100,
+   "mt": 18,
+   "heightPx": 230
+  },
+  {
+   "id": "m724",
+   "type": "legend",
+   "text": "Net prices in euros, service included",
+   "onlyNote": true
+  }
+ ]
+}

@@ -16,6 +16,7 @@ const BLOCK_DEFS = {
   wine:             {type:'wine', ttl:'Vin (4 contenances)', desc:'Nom, domaine, prix 37,5 / 50 / 75 / 150 cl', make:()=>({fr:'NOUVEAU VIN', desc:'DOMAINE', p1:'', p2:'', p3:'0.00€', p4:''})},
   winehead:         {type:'winehead', ttl:'En-tête contenances', desc:'Texte à gauche + « 37,5cl 50cl 75cl 150cl »', make:()=>({text:'', c1:'37,5cl', c2:'50cl', c3:'75cl', c4:'150cl'})},
   line:             {type:'line', ttl:'Ligne de menu (centrée)', desc:'Titre de menu, plat, « ou », traduction, étoiles…', make:()=>({text:'NOUVELLE LIGNE', variant:'main'})},
+  legend:           {type:'legend', ttl:'Légende des pictos', desc:'Végétarien · Sans gluten (+ mention des prix)', make:()=>({text:'Prix nets en euros, service compris'})},
   banner:           {type:'banner', ttl:'Bandeau couleur', desc:'Texte blanc sur bande de couleur', make:()=>({text:'NOUVEAU BANDEAU'})},
   cols:             {type:'cols', ttl:'Début de colonnes', desc:'Les blocs suivants se rangent en colonnes', make:()=>({ratio:'50/50'})},
   colbreak:         {type:'colbreak', ttl:'Colonne suivante', desc:'Passe à la colonne de droite', make:()=>({})},
@@ -40,6 +41,7 @@ const MULTILINE_FIELDS = new Set(['insta','wifi','title','box2']);
 
 const FONT_CHOICES = {
   title: [
+    {name:'Jost', gq:'Jost:ital,wght@0,400;0,500;0,600;1,400'},
     {name:'Arimo', gq:'Arimo:ital,wght@0,400;0,700;1,400'},
     {name:'Montserrat', gq:'Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400'},
     {name:'Playfair Display', gq:'Playfair+Display:wght@700;800'},
@@ -50,6 +52,7 @@ const FONT_CHOICES = {
     {name:'Marcellus', gq:'Marcellus'},
   ],
   body: [
+    {name:'Jost', gq:'Jost:ital,wght@0,400;0,500;0,600;1,400'},
     {name:'Arimo', gq:'Arimo:ital,wght@0,400;0,700;1,400'},
     {name:'Montserrat', gq:'Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400'},
     {name:'Poppins', gq:'Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500'},
@@ -85,6 +88,7 @@ function normMargins(st){
   return LEGACY_MARGINS[st.margin] || LEGACY_MARGINS.normale;
 }
 const PAGE_THEMES = {
+  moderne:   { label:'La Galette — proposition moderne' },
   galette:   { label:'La Galette — carte (filets bruns)' },
   pizza:     { label:'La Galette — pizzas (noms bruns)' },
   emporter:  { label:'La Galette — affiche noir & or' },
@@ -123,6 +127,7 @@ function applyStyle(){
   root.style.setProperty('--page-w', fmt.w + 'px');
   root.style.setProperty('--page-h', fmt.h + 'px');
   root.style.setProperty('--page-pad', `${px(m.t)} ${px(m.r)} ${px(m.b)} ${px(m.l)}`);
+  root.style.setProperty('--name-color', st.nameColor || '#2b2523');
   root.style.setProperty('--bleed-l', px(m.l));
   root.style.setProperty('--bleed-r', px(m.r));
   // pages paires : marges en miroir (reliure) si demandé
@@ -345,6 +350,11 @@ function renderBlockInner(blk){
       return `${ed(blk.id,'text',esc(blk.text),'ln')}${blk.price != null ? ' '+ed(blk.id,'price',esc(blk.price),'ln-price') : ''}`;
     case 'banner':
       return ed(blk.id,'text',esc(blk.text),'', 'div');
+    case 'legend':
+      if(blk.onlyNote) return `<span class="lg-note">${ed(blk.id,'text',esc(blk.text || ''))}</span>`;
+      return `<span class="lg"><img src="${TAG_ICONS.veg.src}" alt=""> Végétarien · <i>Vegetarian</i></span>
+        <span class="lg"><img src="${TAG_ICONS.gf.src}" alt=""> Sans gluten · <i>Gluten free</i></span>
+        ${blk.text != null ? `<span class="lg-note">${ed(blk.id,'text',esc(blk.text))}</span>` : ''}`;
     case 'cols':
       return `<span class="mk">⫴ Colonnes ${esc(blk.ratio || '50/50')}</span>`;
     case 'colbreak':
@@ -369,7 +379,7 @@ function renderBlockInner(blk){
 }
 
 function blockClass(blk){
-  const map = {header:'blk-header', 'emp-header':'blk-emp-header', section:'blk-section', item:'blk-item', wine:'blk-item blk-wine', winehead:'blk-winehead', line:'blk-line', banner:'blk-banner', cols:'blk-marker blk-cols', colbreak:'blk-marker blk-colbreak', colsend:'blk-marker blk-colsend', formule:'blk-formule', note:'blk-note', divider:'blk-divider', pagebreak:'blk-pagebreak', image:'blk-image'};
+  const map = {header:'blk-header', 'emp-header':'blk-emp-header', section:'blk-section', item:'blk-item', wine:'blk-item blk-wine', winehead:'blk-winehead', line:'blk-line', banner:'blk-banner', legend:'blk-legend', cols:'blk-marker blk-cols', colbreak:'blk-marker blk-colbreak', colsend:'blk-marker blk-colsend', formule:'blk-formule', note:'blk-note', divider:'blk-divider', pagebreak:'blk-pagebreak', image:'blk-image'};
   let c = map[blk.type] || '';
   if(blk.type==='line') c += ' v-' + (blk.variant || 'main');
   if(blk.type==='item' && !blk.en && !blk.sub) c += ' one-line';
@@ -385,7 +395,7 @@ function blockClass(blk){
 }
 
 /* Blocs qu'on peut masquer temporairement (pas le saut de page) */
-const HIDEABLE = new Set(['item','wine','winehead','line','banner','section','formule','note','image','divider']);
+const HIDEABLE = new Set(['legend','item','wine','winehead','line','banner','section','formule','note','image','divider']);
 /* Repères d'édition (jamais imprimés) */
 const MARKERS = new Set(['pagebreak','cols','colbreak','colsend']);
 
@@ -425,7 +435,7 @@ function render(){
         pageEl.appendChild(buildInsertBar(i - 1));
         pageEl.appendChild(buildBlockEl(blk));
         row = document.createElement('div');
-        row.className = 'page-cols';
+        row.className = 'page-cols' + (blk.boxed ? ' boxed' : '');
         if(blk.gap != null) row.style.gap = blk.gap + 'px';
         if(blk.valign) row.style.alignItems = blk.valign;
         pageEl.appendChild(row);

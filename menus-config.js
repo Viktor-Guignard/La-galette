@@ -28,10 +28,10 @@ window.currentMenuSlug = function () { return window.menuSlug(window.currentMenu
 window.MENU_BLOCK_PRESETS = {
   // Carte de salle : logo, titres à filets bruns, plats FR + EN en rouge,
   // menus centrés, vins à 4 contenances, colonnes (boissons, photos)
-  carte:       ['section', 'item', 'item-simple', 'line', 'wine', 'winehead', 'formule-heading', 'note', 'image', 'divider', 'cols', 'colbreak', 'colsend', 'pagebreak'],
+  carte:       ['section', 'item', 'legend', 'item-simple', 'line', 'wine', 'winehead', 'formule-heading', 'note', 'image', 'divider', 'cols', 'colbreak', 'colsend', 'pagebreak'],
   // Pizzas : noms bruns + garniture sur une ligne
-  pizzas:      ['item-simple', 'section', 'line', 'note', 'image', 'divider', 'pagebreak'],
-  'pizzas-en': ['item-simple', 'section', 'line', 'note', 'image', 'divider', 'pagebreak'],
+  pizzas:      ['item-simple', 'legend', 'section', 'line', 'note', 'image', 'divider', 'pagebreak'],
+  'pizzas-en': ['item-simple', 'legend', 'section', 'line', 'note', 'image', 'divider', 'pagebreak'],
   // Affiche noir & or : 2 colonnes, bandeaux or
   emporter:    ['item', 'item-simple', 'section', 'banner', 'image', 'note', 'cols', 'colbreak', 'colsend', 'pagebreak'],
 };

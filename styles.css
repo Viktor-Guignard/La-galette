@@ -823,3 +823,91 @@ body.exporting .block.blk-banner, body.print-mode .block.blk-banner{background:v
 .theme-emporter .blk-item .fr, .theme-emporter .blk-item .price{font-size:12.2px;}
 .blk-emp-header{margin-bottom:8px;}
 .blk-banner{border-radius:0;}
+
+/* =====================================================
+   Thème « moderne » — PROPOSITION graphique La Galette
+   Même identité (logo, brun, rouge) ; hiérarchie plus nette :
+   une police géométrique comme le logo (Jost), noms / description /
+   traduction sur 3 niveaux, prix alignés, titres aérés, légende.
+   ===================================================== */
+.theme-moderne .pdf-page{color:#2b2523; font-family:var(--font-body);}
+.theme-moderne .blk-image img{border-radius:3px;}
+.theme-moderne .blk-image:first-child img{border-radius:0;}
+
+/* titres : petites capitales espacées, filet court centré dessous */
+.theme-moderne .blk-section h2{
+  display:table; margin:16px auto 14px; text-align:center;
+  font-family:var(--font-title); font-weight:500; font-size:19px; letter-spacing:.24em;
+  color:var(--title-color); text-transform:uppercase;
+  border:none; border-bottom:1.5px solid var(--title-color); padding:0 2px 6px .24em;
+}
+.theme-moderne .blk-section h2 .item-tags{vertical-align:-2px;}
+.theme-moderne .blk-section.sub h2{
+  display:block; text-align:left; font-size:12px; font-weight:600; letter-spacing:.2em;
+  border-bottom:1px solid rgba(136,108,78,.35); padding:0 0 5px; margin:14px 0 8px;
+}
+
+/* plats : nom / description FR / traduction EN */
+.theme-moderne .blk-item{gap:10px; padding-top:var(--item-pad-v,3px); padding-bottom:var(--item-pad-v,3px);}
+.theme-moderne .blk-item .txt{max-width:calc(100% - 70px);}
+.theme-moderne .blk-item .fr{font-size:12.2px; font-weight:500; letter-spacing:.07em; text-transform:uppercase; line-height:1.3; color:var(--name-color,#2b2523);}
+.theme-moderne .blk-item .fr .desc{
+  display:block; text-transform:none; letter-spacing:.01em; font-weight:400;
+  font-size:11px; color:#75685e; line-height:1.35; margin-top:1px;
+}
+.theme-moderne .blk-item .sub{font-size:11px; color:#75685e; letter-spacing:.01em; line-height:1.35; text-transform:none;}
+.theme-moderne .blk-item .en{font-size:10.6px; font-style:italic; color:var(--accent); letter-spacing:.01em; line-height:1.35; text-transform:none;}
+.theme-moderne .blk-item .price{font-size:12.2px; font-weight:500; color:var(--title-color); min-width:52px; letter-spacing:.02em;}
+.theme-moderne .blk-item .leader{border-bottom:1px dotted rgba(136,108,78,.45); height:12px;}
+.theme-moderne.leaders-off .blk-item .leader{border-bottom:none;}
+.theme-moderne .item-tags .item-tag{width:16px; height:16px;}
+.theme-moderne .blk-item .item-tags{top:calc(var(--item-pad-v,3px) + 8px);}
+
+/* en colonnes : un cran plus petit */
+.theme-moderne .page-col .blk-item .fr{font-size:11px;}
+.theme-moderne .page-col .blk-item .price{font-size:11px; min-width:44px;}
+.theme-moderne .page-col .blk-item .fr .desc, .theme-moderne .page-col .blk-item .sub{font-size:10px;}
+.theme-moderne .page-col .blk-item .en{font-size:9.8px;}
+
+/* vins */
+.theme-moderne .blk-formule.heading{
+  font-family:var(--font-title); font-style:normal; font-weight:600; font-size:11.5px;
+  letter-spacing:.2em; text-transform:uppercase; margin:13px 0 3px;
+}
+.theme-moderne .blk-wine .fr .desc{display:inline; margin-left:4px; font-size:10.2px;}
+.theme-moderne .wprices .wp{width:50px; font-size:11.4px; font-weight:500; color:var(--title-color);}
+.theme-moderne .blk-winehead .txt{font-size:10.5px; letter-spacing:.14em; color:#75685e;}
+.theme-moderne .blk-winehead .wp{font-size:10px; color:var(--title-color); font-weight:500;}
+
+/* séparateur : filet court centré */
+.theme-moderne .blk-divider{height:1px; width:70px; margin:16px auto 8px; background:var(--title-color); opacity:.7;}
+
+/* notes */
+.theme-moderne .blk-note{font-size:10px; font-style:normal; color:#75685e; text-align:center;}
+.theme-moderne .blk-note.italic{font-style:italic;}
+.theme-moderne .blk-note.align-right{text-align:right;}
+
+/* menus du midi */
+.theme-moderne .blk-line.v-title{font-family:var(--font-title); font-size:24px; font-weight:500; letter-spacing:.14em; margin-top:6px; margin-bottom:2px;}
+.theme-moderne .blk-line.v-title .ln-price{display:block; font-style:normal; font-size:30px; letter-spacing:.02em; margin-top:2px;}
+.theme-moderne .blk-line.v-main{font-size:12.6px; font-weight:500; letter-spacing:.1em; text-transform:uppercase; color:#2b2523; margin-top:6px;}
+.theme-moderne .blk-line.v-sub{font-size:10.6px; font-weight:400; font-style:italic; text-transform:none; letter-spacing:.01em;}
+.theme-moderne .blk-line.v-small{font-size:9.8px; font-weight:500; letter-spacing:.16em; color:#75685e;}
+.theme-moderne .blk-line.v-or{font-size:11px; font-style:italic; font-weight:400; color:var(--title-color); text-transform:lowercase; margin:3px 0;}
+.theme-moderne .blk-line.v-stars{font-size:12px; color:var(--title-color); opacity:.6; letter-spacing:.4em; margin:8px 0 2px;}
+.page-cols.boxed{align-items:stretch;}
+.page-cols.boxed > .page-col{border:1px solid rgba(136,108,78,.55); padding:20px 14px 22px; justify-content:flex-start;}
+
+/* légende des pictos */
+.blk-legend{display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:6px 18px; font-size:9.6px; color:#75685e; padding:6px 4px 0; letter-spacing:.02em;}
+.blk-legend .lg{display:inline-flex; align-items:center; gap:5px;}
+.blk-legend .lg img{width:14px; height:14px;}
+.blk-legend .lg-note{flex-basis:100%; text-align:center; font-size:9px; letter-spacing:.04em; margin-top:1px;}
+
+/* la légende se cale en bas de page */
+.theme-moderne .pdf-page{display:flex; flex-direction:column;}
+.theme-moderne .pdf-page > .blk-legend{margin-top:auto;}
+@media (max-width:900px){ .theme-moderne .pdf-page{display:block;} }
+.theme-moderne .blk-section h2{margin:9px auto 10px;}
+.theme-moderne .blk-item{padding-top:2px; padding-bottom:2px;}
+.theme-moderne .pdf-page > .block, .theme-moderne .page-col > .block{margin-bottom:2px;}
