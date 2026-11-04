@@ -118,6 +118,7 @@
     el.classList.contains('row-controls') ||
     el.classList.contains('page-label') ||
     el.classList.contains('page-overflow-warning') ||
+    el.classList.contains('holder-guide') ||
     el.classList.contains('hidden-badge') ||
     el.classList.contains('blk-pagebreak') ||
     el.classList.contains('blk-marker') ||

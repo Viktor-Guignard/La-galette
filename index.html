@@ -89,6 +89,16 @@
         <input type="checkbox" id="mirrorChk">
         <label for="mirrorChk">Marges en miroir (reliure) sur les pages paires</label>
       </div>
+      <div class="field margins-field">
+        <label>Porte-menu : mm cachés par le cadre — haut / droite / bas / gauche</label>
+        <div class="margin-inputs">
+          <input type="number" id="holderT" step="0.5" min="0" title="Haut">
+          <input type="number" id="holderR" step="0.5" min="0" title="Droite">
+          <input type="number" id="holderB" step="0.5" min="0" title="Bas">
+          <input type="number" id="holderL" step="0.5" min="0" title="Gauche">
+        </div>
+        <div class="hint">Mesurez ce que le cadre ou les coins du porte-menu recouvrent. Un pointillé rouge (jamais imprimé) montre la zone visible ; un texte qui passe dessous est signalé.</div>
+      </div>
       <div class="field">
         <label>Thème graphique</label>
         <select id="themeSel"></select>

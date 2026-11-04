@@ -515,6 +515,15 @@ function render(){
     if(pageBlocks.length > 0){
       target.appendChild(buildInsertBar(state.doc.indexOf(pageBlocks[pageBlocks.length-1])));
     }
+    const hd = state.style.holderMm;
+    if(hd && (hd.t || hd.r || hd.b || hd.l)){
+      const k = pxPerMm(fmt);
+      const g = document.createElement('div');
+      g.className = 'holder-guide';
+      g.style.inset = `${hd.t*k}px ${hd.r*k}px ${hd.b*k}px ${hd.l*k}px`;
+      g.title = 'Zone visible dans le porte-menu';
+      pageEl.appendChild(g);
+    }
     const warn = document.createElement('div');
     warn.className = 'page-overflow-warning';
     warn.textContent = '⚠️ Le contenu dépasse la page — déplacez des blocs ou ajoutez un saut de page';
@@ -546,6 +555,18 @@ function checkOverflow(){
     // gonflerait scrollHeight et rendrait l'état collant
     page.classList.remove('overflowing');
     page.classList.toggle('overflowing', page.scrollHeight > pageH + 2);
+    /* porte-menu : un texte sous le cadre (hors zone visible) est signalé */
+    const g = page.querySelector('.holder-guide');
+    page.classList.remove('under-holder');
+    page.querySelectorAll('.block.under-holder').forEach(b => b.classList.remove('under-holder'));
+    if(g){
+      const gr = g.getBoundingClientRect();
+      page.querySelectorAll('.block:not(.blk-marker):not(.blk-pagebreak):not(.i18n-skip)').forEach(b => {
+        const r = b.getBoundingClientRect();
+        if(!r.width || !r.height) return;
+        if(r.top < gr.top - 1 || r.bottom > gr.bottom + 1 || r.left < gr.left - 1 || r.right > gr.right + 1){ b.classList.add('under-holder'); page.classList.add('under-holder'); }
+      });
+    }
   });
 }
 
@@ -824,6 +845,8 @@ function fillAppearanceForm(){
   document.getElementById('marginB').value = m.b;
   document.getElementById('marginL').value = m.l;
   document.getElementById('mirrorChk').checked = !!st.mirror;
+  const hd = st.holderMm || {t:0,r:0,b:0,l:0};
+  ['T','R','B','L'].forEach(k => { document.getElementById('holder'+k).value = hd[k.toLowerCase()] || 0; });
   document.getElementById('themeSel').innerHTML = Object.entries(PAGE_THEMES)
     .map(([k,t]) => `<option value="${k}"${k===(st.theme||'classique')?' selected':''}>${t.label}</option>`).join('');
   document.getElementById('titleColorInp').value = st.titleColor;
@@ -852,9 +875,16 @@ function readAppearanceForm(){
       l: parseFloat(document.getElementById('marginL').value) || 0,
     },
     mirror: document.getElementById('mirrorChk').checked,
+    holderMm: {
+      t: parseFloat(document.getElementById('holderT').value) || 0,
+      r: parseFloat(document.getElementById('holderR').value) || 0,
+      b: parseFloat(document.getElementById('holderB').value) || 0,
+      l: parseFloat(document.getElementById('holderL').value) || 0,
+    },
     theme: document.getElementById('themeSel').value,
   };
   applyStyle();
+  render();                       // repère du porte-menu, formats…
   markDirty();
   requestAnimationFrame(checkOverflow);
 }
@@ -865,7 +895,7 @@ document.getElementById('appearanceBtn').addEventListener('click', () => {
 });
 document.getElementById('appearanceClose').addEventListener('click', ()=> appearanceBackdrop.classList.remove('open'));
 appearanceBackdrop.addEventListener('click', (e)=>{ if(e.target===appearanceBackdrop) appearanceBackdrop.classList.remove('open'); });
-['titleFontSel','bodyFontSel','titleColorInp','accentColorInp','pageBgSel','leadersChk','underlineChk','itemSpacingInp','formatSel','marginT','marginR','marginB','marginL','mirrorChk','themeSel'].forEach(id => {
+['titleFontSel','bodyFontSel','titleColorInp','accentColorInp','pageBgSel','leadersChk','underlineChk','itemSpacingInp','formatSel','marginT','marginR','marginB','marginL','mirrorChk','themeSel','holderT','holderR','holderB','holderL'].forEach(id => {
   document.getElementById(id).addEventListener('change', readAppearanceForm);
 });
 document.getElementById('appearanceReset').addEventListener('click', () => {

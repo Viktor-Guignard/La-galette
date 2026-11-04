@@ -975,3 +975,11 @@ body.print-mode #langBanner, body.exporting #langBanner{display:none !important;
   .blk-item{flex-wrap:wrap;}
   .blk-item > .row-controls{flex-basis:100%;}
 }
+
+/* ---------- Porte-menu : zone visible ---------- */
+.holder-guide{position:absolute; border:1.5px dashed rgba(201,75,75,.7); pointer-events:none; z-index:2;}
+.holder-guide::after{content:'zone visible du porte-menu'; position:absolute; top:-15px; right:0; font-size:9px; color:var(--danger); letter-spacing:.05em; font-family:'Poppins',sans-serif;}
+.block.under-holder{box-shadow:inset 3px 0 0 var(--danger); background:rgba(201,75,75,.06);}
+body.exporting .holder-guide, body.print-mode .holder-guide{display:none !important;}
+body.exporting .block.under-holder{box-shadow:none !important; background:none !important;}
+@media print{ .holder-guide{display:none !important;} .block.under-holder{box-shadow:none !important; background:none !important;} }
