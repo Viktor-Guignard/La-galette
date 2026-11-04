@@ -458,8 +458,8 @@ function commitMessage(c) {
   ].filter(Boolean).join(' · ') + ' (app mobile)';
 }
 
-async function saveVersion(key, data) {
-  const name = menuOf(key).slug + '_' + GHUB.timestampSuffix();
+async function saveVersion(key, data, latestName) {
+  const name = GHUB.nextName(menuOf(key).slug, latestName);
   let res = await GHUB.createJson(`versions/${key}/${name}.json`, data, 'Version ' + name + ' (app mobile)');
   if (res.status === 422) {   // même minute qu'une autre version
     const name2 = name + 's' + GHUB.pad(new Date().getSeconds());
@@ -518,7 +518,7 @@ $('saveBtn').addEventListener('click', async () => {
         const data = Array.isArray(f.data) ? { style: null, blocks: f.data } : f.data;
         if (applyOps(key, data.blocks, ops)) {
           await translate(data.blocks);
-          const name = await saveVersion(key, data);
+          const name = await saveVersion(key, data, latest.name);
           /* même contenu des deux côtés : la page Publier dira « à jour » */
           const pm = (pub.data.menus || []).find((x) => x.key === key);
           if (pm && name && sameLayout(pm, latest.name)) pm.version = name;

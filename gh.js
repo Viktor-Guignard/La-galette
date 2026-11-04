@@ -152,9 +152,53 @@
   }
 
   function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  /* Nom de version à l'heure de Paris, quel que soit le réglage de l'appareil
+     (un ordinateur resté en heure UTC ou sur un autre fuseau rangeait sa
+     version « avant » la précédente). */
   function timestampSuffix() {
     const d = new Date();
+    try {
+      const o = {};
+      new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(d).forEach(p => { o[p.type] = p.value; });
+      if (o.year && o.month && o.day && o.hour && o.minute) return `${o.year}-${o.month}-${o.day}_${o.hour === '24' ? '00' : o.hour}h${o.minute}`;
+    } catch (e) { /* navigateur ancien : heure locale */ }
     return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}_${pad(d.getHours())}h${pad(d.getMinutes())}`;
+  }
+  /* Instant réel d'un nom de version (écrit à l'heure de Paris), quel que soit
+     le fuseau de l'appareil qui le lit. */
+  function parisOffsetMinutes(dt) {
+    try {
+      const o = {};
+      new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', hourCycle: 'h23', year: 'numeric', month: '2-digit',
+        day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }).formatToParts(dt).forEach(p => { o[p.type] = p.value; });
+      return Math.round((Date.UTC(+o.year, +o.month - 1, +o.day, (+o.hour) % 24, +o.minute, +o.second) - dt.getTime()) / 60000);
+    } catch (e) { return -dt.getTimezoneOffset(); }
+  }
+  function nameDate(name) {
+    const k = dateKey(name || '');
+    if (!k) return null;
+    const guess = Date.UTC(+k.slice(0, 4), +k.slice(4, 6) - 1, +k.slice(6, 8), +k.slice(8, 10), +k.slice(10, 12), +k.slice(12, 14));
+    return new Date(guess - parisOffsetMinutes(new Date(guess)) * 60000);
+  }
+  /* Nom de la version à enregistrer : jamais « avant » la dernière version
+     existante, même si l'horloge de l'appareil retarde (sinon, au retour, la
+     carte affichée serait la précédente). */
+  function nextName(prefix, latestName) {
+    const name = timestampName(prefix);
+    const k = dateKey(latestName || '');
+    if (!k) return name;
+    const nk = dateKey(name);
+    if (nk.slice(0, 12) === k.slice(0, 12)) {
+      /* même minute que la dernière version : on ajoute les secondes */
+      const s = Math.max(new Date().getSeconds(), +k.slice(12, 14) + 1);
+      if (s <= 59) return name + 's' + pad(s);
+    } else if (nk > k) {
+      return name;
+    }
+    /* horloge de l'appareil en retard : juste après la dernière version */
+    const d = new Date(+k.slice(0, 4), +k.slice(4, 6) - 1, +k.slice(6, 8), +k.slice(8, 10), +k.slice(10, 12) + 1);
+    return `${prefix || 'carte'}_${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}_${pad(d.getHours())}h${pad(d.getMinutes())}`;
   }
   function timestampName(prefix) {
     return `${prefix || 'carte'}_${timestampSuffix()}`;
@@ -163,6 +207,6 @@
   global.GHUB = {
     conf: GH, getToken, hasToken, setToken,
     listDir, getFile, createJson, putJson, deleteFile, isTokenRejected,
-    consumeMagicLink, magicUrl, timestampName, timestampSuffix, dateKey, pad,
+    consumeMagicLink, magicUrl, timestampName, timestampSuffix, nextName, nameDate, dateKey, pad,
   };
 })(window);

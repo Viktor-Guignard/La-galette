@@ -1047,7 +1047,7 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
   background:url('assets/deco/alpage-crest.svg') 0 0/100% 100% no-repeat;
 }
 .theme-alpage .pdf-page > .block, .theme-alpage .pdf-page > .page-cols{position:relative; z-index:1;}
-.theme-alpage .pdf-page > .block.blk-image:nth-child(1 of .block){margin-bottom:6px !important;}
+.theme-alpage .pdf-page > .block.blk-image:nth-child(1 of .block){margin-bottom:12px !important;}
 .theme-alpage .pdf-page > .block.blk-image:nth-child(1 of .block) img{border-radius:0;}
 @media (max-width:900px){
   .theme-alpage .pdf-page::before{left:22px; right:22px;}
@@ -1055,7 +1055,7 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
 
 /* titres de section */
 .theme-alpage .blk-section h2{
-  display:block; text-align:center; border:none; padding:0; margin:6px auto 5px;
+  display:block; text-align:center; border:none; padding:0; margin:5px auto 4px;
   font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500;
   font-size:24px; letter-spacing:0; text-transform:none; color:var(--ink-a); line-height:1.1;
 }
@@ -1106,7 +1106,7 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
 
 /* notes et légende */
 .theme-alpage .blk-note{color:var(--muted-a);}
-.theme-alpage .blk-legend{color:var(--muted-a); padding-bottom:4px;}
+.theme-alpage .blk-legend{color:var(--muted-a); padding-top:4px; padding-bottom:2px;}
 .theme-alpage .pdf-page > .blk-legend{margin-bottom:0;}
 
 /* =====================================================

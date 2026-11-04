@@ -9,7 +9,7 @@
   "format": "a4",
   "theme": "alpage",
   "marginMm": {
-   "t": 8,
+   "t": 12,
    "r": 20,
    "b": 5,
    "l": 22
@@ -1121,7 +1121,7 @@
   {
    "id": "m441",
    "type": "cols",
-   "ratio": "72/28",
+   "ratio": "76/24",
    "gap": 22
   },
   {
@@ -1363,7 +1363,7 @@
    "type": "image",
    "src": "assets/photos/raclette.jpg",
    "widthPct": 100,
-   "heightPx": 140,
+   "heightPx": 128,
    "mt": 4
   },
   {
@@ -1401,7 +1401,7 @@
   {
    "id": "m452",
    "type": "cols",
-   "ratio": "28/72",
+   "ratio": "24/76",
    "gap": 34
   },
   {

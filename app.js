@@ -232,7 +232,7 @@ function saveDraft(){
     localStorage.setItem(DRAFT_KEY, JSON.stringify({ts: new Date().toISOString(), doc: state.doc, style: state.style, base: state.baseVersion || null}));
   }catch(e){ /* stockage plein : tant pis, le brouillon est un filet de sécurité */ }
 }
-function clearDraft(){ localStorage.removeItem(DRAFT_KEY); state.dirty = false; updateSyncStatus(); }
+function clearDraft(){ clearTimeout(draftTimer); localStorage.removeItem(DRAFT_KEY); state.dirty = false; updateSyncStatus(); }
 function getDraft(){
   try{
     const raw = localStorage.getItem(DRAFT_KEY);

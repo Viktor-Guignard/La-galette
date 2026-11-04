@@ -18,8 +18,8 @@ async function loadVersion(path) {
   const f = await GHUB.getFile(path);
   return normalizeVersion(f ? f.data : []);
 }
-async function saveVersion(doc, style) {
-  const name = GHUB.timestampName(window.currentMenuSlug());
+async function saveVersion(doc, style, latestName) {
+  const name = GHUB.nextName(window.currentMenuSlug(), latestName);
   const body = { style, blocks: doc };
   let res = await GHUB.createJson(`${MENU_DIR}/${name}.json`, body, 'Version ' + name);
   if (res.status === 422) {
@@ -122,16 +122,18 @@ saveBtn.addEventListener('click', async () => {
       if (!ok) H().toast('Certains textes n\'ont pas pu être traduits (connexion ?) : ils resteront en français dans les autres langues.');
     }
     saveBtn.textContent = 'Enregistrement…';
+    let latestName = null;
     try {
       const latest = (await listVersions())[0];
+      latestName = latest ? latest.name : null;
       if (latest && latest.name !== S().baseVersion) {
         const ok = confirm(
-          'Attention : une version plus récente (« ' + latest.name + ' ») de cette carte a été enregistrée depuis votre point de départ — probablement depuis un autre ordinateur.\n\n' +
+          'Attention : une version plus récente (« ' + latest.name + ' ») de cette carte a été enregistrée depuis votre point de départ — depuis un autre ordinateur ou un autre onglet.\n\n' +
           'Si vous continuez, VOTRE version deviendra la version courante ; l\'autre restera consultable dans 🕑 Versions.\n\nEnregistrer quand même ?');
-        if (!ok) { return; }
+        if (!ok) { H().toast('Rien n\'a été enregistré : vos modifications restent à l\'écran.'); return; }
       }
     } catch (e) { /* hors-ligne : on tente quand même */ }
-    const name = await saveVersion(S().doc, S().style);
+    const name = await saveVersion(S().doc, S().style, latestName);
     S().baseVersion = name;
     H().clearDraft();
     try { localStorage.setItem('galette_a_publier_' + MENU_KEY, '1'); } catch (e) { }
@@ -231,10 +233,12 @@ versionsBackdrop.addEventListener('click', (e) => { if (e.target === versionsBac
       H().toast('Carte ouverte ✓ (' + friendlyDate(versions[0].name) + ')');
     }
     if (draft) {
-      const k = GHUB.dateKey(versions.length ? versions[0].name : '');
-      const vDate = k ? new Date(+k.slice(0, 4), +k.slice(4, 6) - 1, +k.slice(6, 8), +k.slice(8, 10), +k.slice(10, 12), +k.slice(12, 14)) : null;
+      const vDate = versions.length ? GHUB.nameDate(versions[0].name) : null;   // nom écrit à l'heure de Paris
       const same = versions.length && JSON.stringify(draft.doc) === JSON.stringify(S().doc);
-      if (same || (vDate && new Date(draft.ts) <= vDate)) archiveDraft();
+      const onLatest = versions.length && draft.base && draft.base === versions[0].name;   // fait à partir de la dernière version
+      if (same) archiveDraft();
+      else if (onLatest) offerDraft();
+      else if (vDate && new Date(draft.ts) <= vDate) archiveDraft();   // plus ancien que la dernière version
       else offerDraft();
     }
   } catch (err) {
