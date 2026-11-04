@@ -7,13 +7,19 @@
 
   function esc(s) { const d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
 
+  /* Langue du visiteur : celle du téléphone par défaut, choix mémorisé */
+  const I18N = window.CarteI18n;
+  let LANG = I18N ? I18N.preferred() : 'fr';
+  const T = k => I18N ? I18N.ui(LANG, k) : k;
+  let lastPub = null, activeKey = null;
+
   const TAG_ICONS = {
-    veg:   { src:'assets/icon-veg.svg',   label:'Végétarien' },
-    gf:    { src:'assets/icon-gf.svg',    label:'Sans gluten' },
-    new:   { src:'assets/icon-new.svg',   label:'Nouveauté' },
-    coeur: { src:'assets/icon-coeur.svg', label:'Coup de cœur' },
+    veg:   { src:'assets/icon-veg.svg' },
+    gf:    { src:'assets/icon-gf.svg' },
+    new:   { src:'assets/icon-new.svg' },
+    coeur: { src:'assets/icon-coeur.svg' },
   };
-  const tagsHtml = b => (b.tags||[]).map(t => TAG_ICONS[t] ? `<img class="item-tag tag-${t}" src="${TAG_ICONS[t].src}" alt="${TAG_ICONS[t].label}" title="${TAG_ICONS[t].label}">` : '').join('');
+  const tagsHtml = b => (b.tags||[]).map(t => TAG_ICONS[t] ? `<img class="item-tag tag-${t}" src="${TAG_ICONS[t].src}" alt="${T(t)}" title="${T(t)}">` : '').join('');
   let wineCols = ['37,5cl','50cl','75cl','150cl'];
 
   function renderMenu(menu) {
@@ -23,8 +29,10 @@
     const ensure = () => { if (!sec) { sec = document.createElement('div'); sec.className = 'm-section'; wrap.appendChild(sec); } return sec; };
 
     wineCols = ['37,5cl','50cl','75cl','150cl'];
-    (menu.blocks || []).forEach(b => {
-      if (b.hidden) return;   // plat masqué temporairement : jamais côté client
+    (menu.blocks || []).forEach(b0 => {
+      if (b0.hidden) return;   // plat masqué temporairement : jamais côté client
+      const b = I18N ? I18N.view(b0, LANG) : b0;
+      if (b.__skip) return;    // ligne de traduction anglaise : inutile hors français
       switch (b.type) {
         case 'section': {
           sec = document.createElement('div'); sec.className = 'm-section';
@@ -98,21 +106,28 @@
   }
 
   function build(pub) {
-    const menus = (pub.menus || []).filter(m => (m.blocks || []).length);
+    lastPub = pub;
+    document.documentElement.lang = LANG;
+    buildLangs();
+    let menus = (pub.menus || []).filter(m => (m.blocks || []).length);
+    /* la carte « Pizzas (EN) » est faite pour l'impression : en ligne, l'onglet
+       Pizzas se lit déjà dans la langue choisie */
+    if (menus.some(m => m.key === 'pizzas')) menus = menus.filter(m => m.key !== 'pizzas-en');
     const tabsEl = document.getElementById('tabs');
     const root = document.getElementById('menuRoot');
     tabsEl.innerHTML = ''; root.innerHTML = '';
-    if (!menus.length) { root.innerHTML = '<div class="err">La carte sera bientôt disponible.</div>'; return; }
+    if (!menus.length) { root.innerHTML = `<div class="err">${T('soon')}</div>`; return; }
+    if (!menus.some(m => m.key === activeKey)) activeKey = menus[0].key;
 
     const panels = [];
     menus.forEach((m, i) => {
       const tab = document.createElement('button');
-      tab.className = 'tab' + (i === 0 ? ' active' : '');
-      tab.textContent = m.label || m.key;
+      tab.className = 'tab' + (m.key === activeKey ? ' active' : '');
+      tab.textContent = I18N ? I18N.menuLabel(m.key, LANG, m.label) : (m.label || m.key);
       tabsEl.appendChild(tab);
 
       const panel = renderMenu(m);
-      panel.style.display = i === 0 ? '' : 'none';
+      panel.style.display = m.key === activeKey ? '' : 'none';
       root.appendChild(panel);
       panels.push(panel);
 
@@ -120,16 +135,20 @@
         tabsEl.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
         panels.forEach((p, j) => p.style.display = j === i ? '' : 'none');
+        activeKey = m.key;
         buildJump(panel);
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
 
-    buildJump(panels[0]);
+    buildJump(panels[Math.max(0, menus.findIndex(m => m.key === activeKey))]);
+    const foot = document.getElementById('footNote'); if (foot) foot.textContent = T('foot');
+    const tb = document.getElementById('topBtn'); if (tb) tb.setAttribute('aria-label', T('top'));
 
     if (pub.updatedAt) {
       const d = new Date(pub.updatedAt);
-      if (!isNaN(d)) document.getElementById('updated').textContent = 'Carte mise à jour le ' + d.toLocaleDateString('fr-FR');
+      const loc = { fr: 'fr-FR', en: 'en-GB', it: 'it-IT', de: 'de-DE' }[LANG] || 'fr-FR';
+      if (!isNaN(d)) document.getElementById('updated').textContent = T('updated') + ' ' + d.toLocaleDateString(loc);
     }
   }
 
@@ -176,8 +195,32 @@
       const r = await fetch('published.json?t=' + Date.now(), { cache: 'no-store' });
       if (r.ok) { build(await r.json()); return; }
     } catch (e) { /* échec */ }
-    document.getElementById('menuRoot').innerHTML = '<div class="err">La carte n\'a pas pu être chargée. Vérifiez votre connexion et réessayez.</div>';
+    document.getElementById('menuRoot').innerHTML = `<div class="err">${T('error')}</div>`;
   }
 
+  /* Sélecteur de langue (drapeaux) */
+  function buildLangs() {
+    const el = document.getElementById('langs');
+    if (!el || !I18N) return;
+    el.innerHTML = '';
+    el.setAttribute('aria-label', T('lang'));
+    I18N.LANGS.forEach(l => {
+      const b = document.createElement('button');
+      b.className = 'lang' + (l.code === LANG ? ' active' : '');
+      b.innerHTML = `<span class="flag">${l.flag}</span><span>${l.short}</span>`;
+      b.title = l.label;
+      b.setAttribute('aria-pressed', l.code === LANG ? 'true' : 'false');
+      b.onclick = () => {
+        if (l.code === LANG) return;
+        LANG = l.code; I18N.remember(LANG);
+        const y = window.scrollY;
+        if (lastPub) build(lastPub);
+        window.scrollTo(0, Math.min(y, document.body.scrollHeight));
+      };
+      el.appendChild(b);
+    });
+  }
+
+  const ld = document.querySelector('#menuRoot .loading'); if (ld) ld.textContent = T('loading');
   load();
 })();

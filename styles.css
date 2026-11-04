@@ -911,3 +911,26 @@ body.exporting .block.blk-banner, body.print-mode .block.blk-banner{background:v
 .theme-moderne .blk-section h2{margin:9px auto 10px;}
 .theme-moderne .blk-item{padding-top:2px; padding-bottom:2px;}
 .theme-moderne .pdf-page > .block, .theme-moderne .page-col > .block{margin-bottom:2px;}
+
+/* ---------- Langues ---------- */
+.lang-pick select{
+  font-family:'Poppins',sans-serif; font-size:13px; font-weight:600; padding:8px 6px; border-radius:8px;
+  border:1px solid var(--line); background:#fff; cursor:pointer;
+}
+.tr-status{font-size:11.5px; color:var(--grey); white-space:nowrap;}
+.tr-status.ok{color:var(--teal-dark);}
+.tr-status.run{color:#b0782a;}
+.tr-status.warn{color:var(--danger); font-weight:600;}
+#langBanner:empty{display:none;}
+#langBanner{
+  position:sticky; top:110px; z-index:150; margin:0; padding:9px 18px; text-align:center;
+  background:#f3ece2; border-bottom:1px solid #e3d6c3; color:#5a4430; font-size:13px;
+}
+#langBanner a{color:var(--teal-dark); font-weight:600;}
+.page-label .page-lang{color:#b0782a; font-weight:700; margin-left:6px;}
+.block.i18n-skip{display:none !important;}
+/* affiche traduite (allemand surtout, plus long) : un cran plus serré */
+.lang-foreign.theme-emporter .blk-item .fr, .lang-foreign.theme-emporter .blk-item .price{font-size:11.6px;}
+.lang-foreign.theme-emporter .blk-item .fr .desc, .lang-foreign.theme-emporter .blk-item .sub{font-size:8.2px;}
+body.print-mode #langBanner, body.exporting #langBanner{display:none !important;}
+@media print{ #langBanner{display:none !important;} }

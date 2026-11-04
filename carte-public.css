@@ -130,3 +130,13 @@ main{max-width:760px; margin:0 auto; padding:24px 20px 10px;}
 .m-line.v-stars{color:#aaa; font-size:10px; letter-spacing:.1em;}
 .m-banner{background:var(--or); color:#fff; text-align:center; font-weight:700; padding:8px 10px; text-transform:uppercase; letter-spacing:.05em; font-size:13px; margin:10px 0;}
 .m-image img{border-radius:8px;}
+
+/* ---------- Langues ---------- */
+.langs{display:flex; justify-content:center; gap:6px; padding:10px 14px 0;}
+.langs .lang{
+  display:inline-flex; align-items:center; gap:5px; font-family:var(--fb); font-size:12px; font-weight:600;
+  color:var(--creme); background:none; border:1px solid rgba(136,108,78,.3); border-radius:20px;
+  padding:5px 10px; cursor:pointer; -webkit-tap-highlight-color:transparent;
+}
+.langs .lang .flag{font-size:14px; line-height:1;}
+.langs .lang.active{background:var(--or); border-color:var(--or); color:#fff;}

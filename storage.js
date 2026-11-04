@@ -51,6 +51,8 @@ function applyLoaded(data, versionName) {
   H().applyStyle();
   window.__CARTE_RENDER__();
   H().resetHistory();
+  /* textes pas encore traduits (nouvelle version, ancien fichier) : on complète */
+  if (H().scheduleTranslate) H().scheduleTranslate(600);
 }
 
 /* ---------- Lien magique ---------- */
@@ -106,8 +108,14 @@ saveBtn.addEventListener('click', async () => {
   }
   saveBtn.disabled = true;
   const original = saveBtn.textContent;
-  saveBtn.textContent = 'Enregistrement…';
+  saveBtn.textContent = 'Traduction…';
   try {
+    /* la version enregistrée part toujours traduite (EN · IT · DE) */
+    if (H().ensureTranslations) {
+      const ok = await H().ensureTranslations();
+      if (!ok) H().toast('Certains textes n\'ont pas pu être traduits (connexion ?) : ils resteront en français dans les autres langues.');
+    }
+    saveBtn.textContent = 'Enregistrement…';
     try {
       const latest = (await listVersions())[0];
       if (latest && latest.name !== S().baseVersion) {
@@ -193,6 +201,7 @@ versionsBackdrop.addEventListener('click', (e) => { if (e.target === versionsBac
       if (draft.style) S().style = draft.style;
       S().dirty = true;
       H().applyStyle(); window.__CARTE_RENDER__(); H().resetHistory(); H().updateSyncStatus();
+      if (H().scheduleTranslate) H().scheduleTranslate(600);
       banner.classList.remove('show');
       H().toast('Brouillon repris — pensez à Enregistrer une version.');
     };

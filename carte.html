@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/logo-noir.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="carte-public.css?v=24">
+<link rel="stylesheet" href="carte-public.css?v=30">
 </head>
 <body>
 
@@ -19,6 +19,7 @@
 </header>
 
 <div class="tabs-zone">
+  <nav id="langs" class="langs"></nav>
   <nav id="tabs" class="tabs"></nav>
   <div id="jump" class="jump"></div>
 </div>
@@ -28,7 +29,7 @@
 </main>
 
 <footer class="pub-foot">
-  <p>Prix nets en euros, service compris.</p>
+  <p id="footNote">Prix nets en euros, service compris.</p>
   <p class="tiny" id="updated"></p>
 </footer>
 <!-- Aucune signature de studio sur cette page : elle s'adresse aux clients
@@ -37,6 +38,7 @@
 
 
 <button id="topBtn" aria-label="Revenir en haut">↑</button>
-<script src="carte-public.js?v=24"></script>
+<script src="i18n.js?v=30"></script>
+<script src="carte-public.js?v=30"></script>
 </body>
 </html>

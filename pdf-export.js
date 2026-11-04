@@ -21,7 +21,8 @@ if (new URLSearchParams(location.search).has('print')) {
 
 function exportFilename(suffix) {
   const slug = window.currentMenuSlug ? window.currentMenuSlug() : 'carte';
-  return `${slug}${suffix || ''}_${EXPORT_VERSION}_${GHUB.timestampSuffix()}.pdf`;
+  const lang = (XP_S() && XP_S().lang && XP_S().lang !== 'fr') ? '-' + XP_S().lang : '';
+  return `${slug}${lang}${suffix || ''}_${GHUB.timestampSuffix()}.pdf`;
 }
 
 async function exportPdf() {

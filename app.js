@@ -168,6 +168,7 @@ const state = {
   doc: defaultDoc(),
   style: defaultStyle(),
   selectedId: null,
+  lang: (function(){ const q = new URLSearchParams(location.search).get('lang'); return ['en','it','de'].includes(q) ? q : 'fr'; })(),
   dirty: false,           // modifications non enregistrées dans le cloud
   baseVersion: null,      // nom de la version cloud dont on est parti (détection de conflit)
 };
@@ -241,6 +242,55 @@ function markDirty(){
   pushHistory();
   clearTimeout(draftTimer);
   draftTimer = setTimeout(saveDraft, 800);
+  scheduleTranslate();
+}
+
+/* ===================== Traductions automatiques (EN · IT · DE) ===================== */
+
+const I18N = window.CarteI18n;
+let trTimer = null, trRunning = null, trFailed = 0;
+function scheduleTranslate(delay){
+  if(!I18N) return;
+  clearTimeout(trTimer);
+  trTimer = setTimeout(runTranslate, delay == null ? 1200 : delay);
+  updateTrStatus();
+}
+async function runTranslate(){
+  if(!I18N) return;
+  if(trRunning) return trRunning;
+  const before = I18N.pending(state.doc).length;
+  if(!before){ trFailed = 0; updateTrStatus(); return; }
+  trRunning = (async () => {
+    updateTrStatus('run', 0, before);
+    const res = await I18N.translateBlocks(state.doc, (d, t) => updateTrStatus('run', d, t));
+    trFailed = res.failed;
+    if(res.total - res.failed > 0){
+      /* des traductions ont été ajoutées : elles partiront avec le prochain enregistrement */
+      state.dirty = true; updateSyncStatus();
+      clearTimeout(draftTimer); draftTimer = setTimeout(saveDraft, 300);
+      if(state.lang !== 'fr') render();
+    }
+  })();
+  try { await trRunning; } finally { trRunning = null; updateTrStatus(); }
+  /* le texte a pu changer pendant la passe */
+  if(I18N.pending(state.doc).length && !trFailed) scheduleTranslate(400);
+}
+/* Avant d'enregistrer : on attend que tout soit traduit (15 s maximum) */
+async function ensureTranslations(){
+  if(!I18N) return true;
+  clearTimeout(trTimer);
+  await Promise.race([runTranslate(), new Promise(r => setTimeout(r, 15000))]);
+  return I18N.pending(state.doc).length === 0;
+}
+function updateTrStatus(mode, d, t){
+  const el = document.getElementById('trStatus');
+  if(!el || !I18N) return;
+  const left = I18N.pending(state.doc).length;
+  el.classList.remove('ok','warn','run');
+  if(mode === 'run'){ el.classList.add('run'); el.textContent = `🌐 Traduction… ${d}/${t}`; el.title = 'Traduction automatique en anglais, italien et allemand'; }
+  else if(left === 0){ el.classList.add('ok'); el.textContent = '🌐 Traduit'; el.title = 'Toute la carte est traduite en anglais, italien et allemand'; }
+  else if(trFailed){ el.classList.add('warn'); el.textContent = `🌐 ${left} à traduire`; el.title = 'Traduction automatique indisponible (connexion ?) — réessai au prochain changement, ou corrigez à la main dans la vue de la langue'; }
+  else { el.classList.add('run'); el.textContent = `🌐 ${left} à traduire`; el.title = 'La traduction démarre dans un instant'; }
 }
 
 function updateSyncStatus(){
@@ -352,6 +402,9 @@ function renderBlockInner(blk){
       return ed(blk.id,'text',esc(blk.text),'', 'div');
     case 'legend':
       if(blk.onlyNote) return `<span class="lg-note">${ed(blk.id,'text',esc(blk.text || ''))}</span>`;
+      if(state.lang !== 'fr' && I18N) return `<span class="lg"><img src="${TAG_ICONS.veg.src}" alt=""> ${I18N.ui(state.lang,'veg')}</span>
+        <span class="lg"><img src="${TAG_ICONS.gf.src}" alt=""> ${I18N.ui(state.lang,'gf')}</span>
+        ${blk.text != null ? `<span class="lg-note">${ed(blk.id,'text',esc(blk.text))}</span>` : ''}`;
       return `<span class="lg"><img src="${TAG_ICONS.veg.src}" alt=""> Végétarien · <i>Vegetarian</i></span>
         <span class="lg"><img src="${TAG_ICONS.gf.src}" alt=""> Sans gluten · <i>Gluten free</i></span>
         ${blk.text != null ? `<span class="lg-note">${ed(blk.id,'text',esc(blk.text))}</span>` : ''}`;
@@ -411,7 +464,8 @@ function render(){
     const [wMm, hMm] = fmt.mm;
     const label = document.createElement('div');
     label.className = 'page-label';
-    label.innerHTML = `Page ${pageNum} <span class="page-fmt">— ${wMm} × ${hMm} mm (${fmt.label.replace(/ \(.*\)/,'')})</span>`;
+    const lg = I18N && state.lang !== 'fr' ? ` <span class="page-lang">${I18N.LANGS.find(l=>l.code===state.lang).flag} ${I18N.LANGS.find(l=>l.code===state.lang).label}</span>` : '';
+    label.innerHTML = `Page ${pageNum} <span class="page-fmt">— ${wMm} × ${hMm} mm (${fmt.label.replace(/ \(.*\)/,'')})</span>${lg}`;
     pageEl.appendChild(label);
     if(pageBlocks.length === 0){
       const hint = document.createElement('div');
@@ -506,9 +560,10 @@ function buildInsertBar(afterIndex){
 
 function buildBlockEl(blk){
   const wrap = document.createElement('div');
-  wrap.className = 'block ' + blockClass(blk) + (state.selectedId===blk.id ? ' selected' : '');
+  const vb = I18N ? I18N.view(blk, state.lang) : blk;
+  wrap.className = 'block ' + blockClass(vb) + (state.selectedId===blk.id ? ' selected' : '') + (vb.__skip ? ' i18n-skip' : '');
   wrap.dataset.blockId = blk.id;
-  wrap.innerHTML = renderBlockInner(blk);
+  wrap.innerHTML = renderBlockInner(vb);
   if(blk.type === 'formule' && blk.color) wrap.style.setProperty('--formule-color-override', blk.color);
   if(blk.size) wrap.style.fontSize = blk.size + 'px';
   if(blk.mt != null) wrap.style.marginTop = blk.mt + 'px';
@@ -649,6 +704,11 @@ canvasWrap.addEventListener('blur', (e) => {
   const newVal = MULTILINE_FIELDS.has(field)
     ? el.innerHTML.replace(/<div><br><\/div>/g,'<br>').replace(/<div>/g,'<br>').replace(/<\/div>/g,'')
     : el.textContent;
+  if(state.lang !== 'fr' && I18N && I18N.isTranslatable(blk, field)){
+    const cur = I18N.view(blk, state.lang)[field];
+    if(cur !== newVal){ I18N.setManual(blk, state.lang, field, newVal); markDirty(); }
+    return;
+  }
   if(blk[field] !== newVal){
     blk[field] = newVal;
     markDirty();
@@ -845,6 +905,29 @@ applyStyle();
 render();
 resetHistory();
 
+/* Sélecteur de langue : FR = la carte (source) ; EN/IT/DE = vue traduite,
+   corrigeable au clic. Le PDF sort dans la langue affichée. */
+(function setupLang(){
+  const sel = document.getElementById('langSel');
+  if(!sel || !I18N) return;
+  sel.innerHTML = I18N.LANGS.map(l => `<option value="${l.code}"${l.code===state.lang?' selected':''}>${l.flag} ${l.short}</option>`).join('');
+  const banner = document.getElementById('langBanner');
+  const apply = () => {
+    document.body.classList.toggle('lang-foreign', state.lang !== 'fr');
+    if(banner){
+      const L = I18N.LANGS.find(l => l.code === state.lang);
+      banner.innerHTML = state.lang === 'fr' ? '' :
+        `${L.flag} Vous voyez la carte en <b>${L.label}</b>, traduite automatiquement. Cliquez sur un texte pour corriger la traduction — les prix, les plats et leur ordre se modifient en <a href="#" data-lang="fr">🇫🇷 français</a>.`;
+      const a = banner.querySelector('[data-lang]');
+      if(a) a.onclick = (e) => { e.preventDefault(); sel.value = 'fr'; sel.onchange(); };
+    }
+    try { const u = new URL(location.href); if(state.lang === 'fr') u.searchParams.delete('lang'); else u.searchParams.set('lang', state.lang); history.replaceState(null, '', u); } catch(e){}
+  };
+  sel.onchange = () => { state.lang = sel.value; state.selectedId = null; apply(); render(); };
+  apply();
+  updateTrStatus();
+})();
+
 /* La mesure de débordement n'est fiable qu'une fois styles + polices chargés */
 window.addEventListener('load', checkOverflow);
 if(document.fonts && document.fonts.ready) document.fonts.ready.then(checkOverflow);
@@ -860,5 +943,5 @@ window.__CARTE_RENDER__ = render;
 window.__CARTE_HELPERS__ = {
   toast, markDirty, clearDraft, getDraft, updateSyncStatus,
   applyStyle, resetHistory, defaultStyle, checkOverflow,
-  PAGE_FORMATS, pxPerMm,
+  PAGE_FORMATS, pxPerMm, ensureTranslations, scheduleTranslate, updateTrStatus,
 };
