@@ -229,7 +229,7 @@ const DRAFT_KEY = 'galette_draft_' + window.currentMenuKey();
 
 function saveDraft(){
   try{
-    localStorage.setItem(DRAFT_KEY, JSON.stringify({ts: new Date().toISOString(), doc: state.doc, style: state.style}));
+    localStorage.setItem(DRAFT_KEY, JSON.stringify({ts: new Date().toISOString(), doc: state.doc, style: state.style, base: state.baseVersion || null}));
   }catch(e){ /* stockage plein : tant pis, le brouillon est un filet de sécurité */ }
 }
 function clearDraft(){ localStorage.removeItem(DRAFT_KEY); state.dirty = false; updateSyncStatus(); }
