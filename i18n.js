@@ -269,6 +269,8 @@
       });
     }
     if (blk.type === 'line' && blk.variant === 'sub') v.__skip = true;
+    /* sous-titre anglais d'une section (carte bilingue) : inutile à l'étranger */
+    if (blk.type === 'section') v.en = '';
     /* drapeau de la carte : celui de la langue affichée */
     if (blk.type === 'image' && /assets\/flag-(fr|gb|en|it|de)\.svg/.test(blk.src || '')) v.src = blk.src.replace(/flag-(fr|gb|en|it|de)\.svg/, 'flag-' + (lang === 'en' ? 'gb' : lang) + '.svg');
     if (blk.type === 'note' && blk.italic && /\b(people|price|minimum)\b/i.test(blk.text || '')) v.__skip = true;

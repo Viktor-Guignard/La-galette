@@ -1023,3 +1023,124 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
   #syncStatus{cursor:help; max-width:none;}
   a.tbtn[href="tuto.html"] .lbl{display:none;}
 }
+
+/* =====================================================
+   Thème « alpage » — 2e PROPOSITION graphique La Galette
+   Prolonge « moderne » (le corps reçoit les deux classes).
+   Pensé pour l'impression maison sur papier BLANC : aucun aplat
+   pleine page, rien ne touche les bords de la feuille (marges de
+   prise de pince). En-tête : crêtes au trait de part et d'autre du
+   logo ; titres en Fraunces italique avec leur traduction anglaise
+   en petites capitales ; prix en Fraunces.
+   Tout est dessiné par le moteur PDF : fonds, filets, images de fond
+   (SVG) et pseudo-éléments.
+   ===================================================== */
+@font-face{font-family:'Fraunces'; font-style:normal; font-weight:600; src:url('assets/fonts/Fraunces-SemiBold.ttf') format('truetype'); font-display:swap;}
+@font-face{font-family:'Fraunces'; font-style:italic; font-weight:500 600; src:url('assets/fonts/Fraunces-Italic.ttf') format('truetype'); font-display:swap;}
+
+.theme-alpage{--crest-h:56px; --ink-a:#26211d; --wheat:#9a6331; --wheat-soft:#efe5d6; --muted-a:#6f645b;}
+.theme-alpage .pdf-page{color:var(--ink-a);}
+/* crêtes de l'en-tête : dans les marges de la page, à hauteur du logo */
+.theme-alpage .pdf-page::before{
+  content:''; position:absolute; top:calc(var(--crest-top, 30px) + 2px); left:var(--bleed-l, 80px); right:var(--bleed-r, 76px);
+  height:var(--crest-h); pointer-events:none;
+  background:url('assets/deco/alpage-crest.svg') 0 0/100% 100% no-repeat;
+}
+.theme-alpage .pdf-page > .block, .theme-alpage .pdf-page > .page-cols{position:relative; z-index:1;}
+.theme-alpage .pdf-page > .block.blk-image:nth-child(1 of .block){margin-bottom:6px !important;}
+.theme-alpage .pdf-page > .block.blk-image:nth-child(1 of .block) img{border-radius:0;}
+@media (max-width:900px){
+  .theme-alpage .pdf-page::before{left:22px; right:22px;}
+}
+
+/* titres de section */
+.theme-alpage .blk-section h2{
+  display:block; text-align:center; border:none; padding:0; margin:6px auto 5px;
+  font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500;
+  font-size:24px; letter-spacing:0; text-transform:none; color:var(--ink-a); line-height:1.1;
+}
+.theme-alpage .blk-section h2 .en{
+  display:block; margin-top:2px; font-family:var(--font-body); font-style:normal; font-weight:500;
+  font-size:9.6px; letter-spacing:.3em; text-transform:uppercase; color:var(--wheat);
+}
+.theme-alpage .blk-section h2 .en .sl{display:none;}
+.theme-alpage .blk-section h2::after{
+  content:''; display:block; height:10px; max-width:110px; margin:3px auto 0;
+  background:url('assets/deco/alpage-orn.svg') center/contain no-repeat;
+}
+/* titre, pictos sur la même ligne ; anglais et ornement dessous */
+.theme-alpage .blk-section h2{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; column-gap:6px;}
+.theme-alpage .blk-section h2 .item-tags{order:1; position:static; display:inline-flex; gap:3px;}
+.theme-alpage .blk-section h2 .en{order:2; flex-basis:100%;}
+.theme-alpage .blk-section h2::after{order:3; flex-basis:100%;}
+.theme-alpage .blk-section.sub h2{display:block;}
+/* sous-sections (boissons) : petites capitales, filet sarrasin */
+.theme-alpage .blk-section.sub h2{
+  text-align:left; font-family:var(--font-body); font-style:normal; font-weight:600; font-size:11px;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--wheat);
+  border-bottom:1px solid rgba(154,99,49,.35); padding:0 0 5px; margin:14px 0 7px;
+}
+.theme-alpage .blk-section.sub h2::after{display:none;}
+.theme-alpage .blk-section.sub h2 .en{display:inline; margin-left:8px; letter-spacing:.14em; font-weight:400; color:var(--muted-a);}
+
+/* plats */
+.theme-alpage .blk-item .fr{color:var(--ink-a); font-weight:500; letter-spacing:.06em;}
+.theme-alpage .blk-item .fr .desc, .theme-alpage .blk-item .sub{color:var(--muted-a);}
+.theme-alpage .blk-item .en{font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; font-size:11px; color:var(--accent); letter-spacing:0;}
+.theme-alpage .blk-item .price{font-family:'Fraunces', Georgia, serif; font-weight:600; font-size:14px; color:var(--wheat); letter-spacing:0; min-width:48px;}
+.theme-alpage .blk-item .leader{border-bottom:1px dotted rgba(154,99,49,.45); height:11px; align-self:flex-start; margin-top:3px;}
+.theme-alpage .page-col .blk-item .price{font-size:12.6px; min-width:42px;}
+.theme-alpage .page-col .blk-item .en{font-size:10.2px;}
+
+/* vins */
+.theme-alpage .blk-formule.heading{font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; font-size:15px; letter-spacing:0; text-transform:none; margin:12px 0 3px;}
+.theme-alpage .wprices .wp{font-family:'Fraunces', Georgia, serif; font-weight:600; font-size:12.4px; color:var(--wheat);}
+.theme-alpage .blk-winehead .txt{color:var(--muted-a);}
+
+/* menus du midi : encadrés teintés */
+.theme-alpage .page-cols.boxed > .page-col{border:none; background:var(--wheat-soft); border-radius:6px; padding:22px 16px 24px;}
+.theme-alpage .blk-line.v-title{font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; font-size:28px; letter-spacing:0; text-transform:none; color:var(--ink-a);}
+.theme-alpage .blk-line.v-title .ln-price{font-style:normal; font-weight:600; font-size:30px; color:var(--wheat);}
+.theme-alpage .blk-line.v-or{font-family:'Fraunces', Georgia, serif; font-style:italic; font-size:13px; text-transform:none; color:var(--wheat);}
+.theme-alpage .blk-line.v-small{color:var(--wheat); letter-spacing:.22em;}
+
+/* notes et légende */
+.theme-alpage .blk-note{color:var(--muted-a);}
+.theme-alpage .blk-legend{color:var(--muted-a); padding-bottom:4px;}
+.theme-alpage .pdf-page > .blk-legend{margin-bottom:0;}
+
+/* =====================================================
+   Thème « nuit » — affiche à emporter retravaillée (2e proposition)
+   Prolonge « emporter » (noir & or) : titres Fraunces italique or,
+   noms en Jost, prix en Fraunces, or adouci, ornement de crêtes.
+   ===================================================== */
+.theme-nuit{--gold:#c39a45; --cream:#efe6d6; --muted-n:#bdb3a4;}
+.theme-nuit .blk-emp-header .emp-title{font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; text-transform:none; font-size:58px; line-height:1.02; letter-spacing:0; color:var(--cream);}
+.theme-nuit .blk-emp-header .emp-box{background:var(--gold); border-radius:4px; padding:12px 14px 14px;}
+.theme-nuit .blk-emp-header .emp-box1{font-family:var(--font-body); font-weight:600; font-size:24px; letter-spacing:.3em; text-transform:uppercase; color:#16130f;}
+.theme-nuit .blk-emp-header .emp-box2{font-family:'Fraunces', Georgia, serif; font-weight:600; font-size:30px; color:#16130f; letter-spacing:.01em;}
+.theme-nuit .blk-banner{background:var(--gold) !important; color:#16130f !important; font-family:var(--font-body); font-weight:600; font-size:19px; letter-spacing:.32em; text-transform:uppercase; padding:9px 12px;}
+.theme-nuit .blk-banner.ink-dark{font-size:15px; letter-spacing:.22em; border-radius:4px;}
+.theme-nuit .blk-section h2{
+  font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; text-transform:none;
+  font-size:30px; letter-spacing:0; color:var(--gold); text-align:center; margin:8px 0 8px; line-height:1.05;
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center; border:none; padding:0;
+}
+.theme-nuit .blk-section h2 .en{
+  order:2; flex-basis:100%; display:block; margin-top:3px; font-family:var(--font-body); font-style:normal;
+  font-weight:500; font-size:9.5px; letter-spacing:.32em; text-transform:uppercase; color:var(--muted-n);
+}
+.theme-nuit .blk-section h2 .en .sl{display:none;}
+.theme-nuit .blk-section h2::after{
+  content:''; order:3; flex-basis:100%; display:block; height:10px; max-width:120px; margin:5px auto 0;
+  background:url('assets/deco/alpage-orn-or.svg') center/contain no-repeat;
+}
+.theme-nuit .blk-item .fr{font-family:var(--font-body); font-weight:600; font-size:12.4px; letter-spacing:.05em; color:var(--cream);}
+.theme-nuit .blk-item .fr .desc, .theme-nuit .blk-item .sub{font-family:var(--font-body); font-weight:400; color:var(--muted-n); font-size:9px; letter-spacing:.01em;}
+.theme-nuit .blk-item .en{font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; color:var(--gold); font-size:9.4px; letter-spacing:0;}
+.theme-nuit .blk-item .price{font-family:'Fraunces', Georgia, serif; font-weight:600; font-size:14px; color:var(--gold); letter-spacing:0;}
+.theme-nuit .blk-item .leader{border-bottom:1px dotted rgba(195,154,69,.45);}
+.theme-nuit .blk-note{color:var(--muted-n); letter-spacing:.2em; font-weight:500;}
+.lang-foreign.theme-nuit .blk-item .fr{font-size:11.8px;}
+.lang-foreign.theme-nuit .blk-emp-header .emp-box1{font-size:15px; letter-spacing:.18em;}
+.theme-nuit .blk-emp-header .emp-logo{flex-basis:42%;}

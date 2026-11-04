@@ -1,0 +1,610 @@
+{
+ "style": {
+  "titleFont": "Fraunces",
+  "bodyFont": "Jost",
+  "titleColor": "#9a6331",
+  "accent": "#a4483a",
+  "pageBg": "#ffffff",
+  "leaders": true,
+  "format": "a4",
+  "theme": "alpage",
+  "marginMm": {
+   "t": 8,
+   "r": 18,
+   "b": 5,
+   "l": 18
+  },
+  "mirror": false,
+  "sectionUnderline": false,
+  "itemSpacing": 4,
+  "nameColor": "#26211d"
+ },
+ "blocks": [
+  {
+   "id": "m675",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 12,
+   "mt": 0,
+   "mb": 0
+  },
+  {
+   "id": "m680",
+   "type": "section",
+   "fr": "Nos pizzas",
+   "tr": {
+    "en": {
+     "fr": "Our pizzas"
+    },
+    "src": {
+     "en": {
+      "fr": "Nos pizzas"
+     },
+     "it": {
+      "fr": "Nos pizzas"
+     },
+     "de": {
+      "fr": "Nos pizzas"
+     }
+    },
+    "it": {
+     "fr": "Le nostre pizze"
+    },
+    "de": {
+     "fr": "Unsere Pizzen"
+    }
+   },
+   "en": "Our pizzas"
+  },
+  {
+   "id": "m679",
+   "type": "line",
+   "text": "SERVICE EN SALLE DE 12H À 18H",
+   "variant": "small",
+   "mt": 0,
+   "mb": 10,
+   "size": null,
+   "tr": {
+    "en": {
+     "text": "TABLE SERVICE FROM 12 NOON TO 6 PM"
+    },
+    "src": {
+     "en": {
+      "text": "SERVICE EN SALLE DE 12H À 18H"
+     },
+     "it": {
+      "text": "SERVICE EN SALLE DE 12H À 18H"
+     },
+     "de": {
+      "text": "SERVICE EN SALLE DE 12H À 18H"
+     }
+    },
+    "it": {
+     "text": "SERVIZIO AL TAVOLO DALLE 12.00 ALLE 18.00"
+    },
+    "de": {
+     "text": "BEDIENUNG IM RESTAURANT VON 12 BIS 18 UHR"
+    }
+   }
+  },
+  {
+   "id": "m681",
+   "type": "item",
+   "fr": "MARGARITA",
+   "price": "13,50",
+   "desc": "Tomates, mozza, olives, origan",
+   "tr": {
+    "en": {
+     "fr": "MARGHERITA",
+     "desc": "Tomatoes, mozzarella, olives, oregano"
+    },
+    "src": {
+     "en": {
+      "fr": "MARGARITA",
+      "desc": "Tomates, mozza, olives, origan"
+     },
+     "it": {
+      "fr": "MARGARITA",
+      "desc": "Tomates, mozza, olives, origan"
+     },
+     "de": {
+      "fr": "MARGARITA",
+      "desc": "Tomates, mozza, olives, origan"
+     }
+    },
+    "it": {
+     "fr": "MARGHERITA",
+     "desc": "Pomodoro, mozzarella, olive, origano"
+    },
+    "de": {
+     "fr": "MARGHERITA",
+     "desc": "Tomaten, Mozzarella, Oliven, Oregano"
+    }
+   }
+  },
+  {
+   "id": "m682",
+   "type": "item",
+   "fr": "PAMPLUNE",
+   "price": "15,50",
+   "desc": "Tomates, mozza, jambon, oeuf, origan",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, ham, egg, oregano"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, mozza, jambon, oeuf, origan"
+     },
+     "it": {
+      "desc": "Tomates, mozza, jambon, oeuf, origan"
+     },
+     "de": {
+      "desc": "Tomates, mozza, jambon, oeuf, origan"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, prosciutto, uovo, origano"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Schinken, Ei, Oregano"
+    }
+   }
+  },
+  {
+   "id": "m683",
+   "type": "item",
+   "fr": "REINE",
+   "price": "15,50",
+   "desc": "Tomates, mozza, jambon, champignons",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, ham, mushrooms"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, mozza, jambon, champignons"
+     },
+     "it": {
+      "desc": "Tomates, mozza, jambon, champignons"
+     },
+     "de": {
+      "desc": "Tomates, mozza, jambon, champignons"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, prosciutto, funghi"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Schinken, Champignons"
+    }
+   }
+  },
+  {
+   "id": "m684",
+   "type": "item",
+   "fr": "NAPOLITAINE",
+   "price": "15,50",
+   "desc": "Tomates, mozza, anchois, câpres, olives, origan",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, anchovies, capers, olives, oregano"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, mozza, anchois, câpres, olives, origan"
+     },
+     "it": {
+      "desc": "Tomates, mozza, anchois, câpres, olives, origan"
+     },
+     "de": {
+      "desc": "Tomates, mozza, anchois, câpres, olives, origan"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, acciughe, capperi, olive, origano"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Sardellen, Kapern, Oliven, Oregano"
+    }
+   }
+  },
+  {
+   "id": "m685",
+   "type": "item",
+   "fr": "3 VALLÉES",
+   "price": "15,50",
+   "desc": "Tomates, mozza, poivrons, champignons, olives, origan, roquette",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, peppers, mushrooms, olives, oregano, rocket"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, mozza, poivrons, champignons, olives, origan, roquette"
+     },
+     "it": {
+      "desc": "Tomates, mozza, poivrons, champignons, olives, origan, roquette"
+     },
+     "de": {
+      "desc": "Tomates, mozza, poivrons, champignons, olives, origan, roquette"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, peperoni, funghi, olive, origano, rucola"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Paprika, Champignons, Oliven, Oregano, Rucola"
+    }
+   }
+  },
+  {
+   "id": "m686",
+   "type": "item",
+   "fr": "TOSCANE",
+   "price": "16,00",
+   "desc": "Tomates, mozza, jambon, ananas, olives",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, ham, pineapple, olives"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, mozza, jambon, ananas, olives"
+     },
+     "it": {
+      "desc": "Tomates, mozza, jambon, ananas, olives"
+     },
+     "de": {
+      "desc": "Tomates, mozza, jambon, ananas, olives"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, prosciutto, ananas, olive"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Schinken, Ananas, Oliven"
+    }
+   }
+  },
+  {
+   "id": "m687",
+   "type": "item",
+   "fr": "4 SAISONS",
+   "price": "17,50",
+   "desc": "Tomates, mozza, artichaut, champignons, poivrons, olives, origan, roquette",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, artichoke, mushrooms, peppers, olives, oregano, rocket"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, mozza, artichaut, champignons, poivrons, olives, origan, roquette"
+     },
+     "it": {
+      "desc": "Tomates, mozza, artichaut, champignons, poivrons, olives, origan, roquette"
+     },
+     "de": {
+      "desc": "Tomates, mozza, artichaut, champignons, poivrons, olives, origan, roquette"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, carciofi, funghi, peperoni, olive, origano, rucola"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Artischocke, Champignons, Paprika, Oliven, Oregano, Rucola"
+    }
+   }
+  },
+  {
+   "id": "m688",
+   "type": "item",
+   "fr": "TARENTAISE",
+   "price": "17,50",
+   "desc": "Tomates, mozza, jambon fumé Speck, oeuf, roquette",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, smoked Speck ham, egg, rocket"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, mozza, jambon fumé Speck, oeuf, roquette"
+     },
+     "it": {
+      "desc": "Tomates, mozza, jambon fumé Speck, oeuf, roquette"
+     },
+     "de": {
+      "desc": "Tomates, mozza, jambon fumé Speck, oeuf, roquette"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, prosciutto affumicato Speck, uovo, rucola"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, geräucherter Speck-Schinken, Ei, Rucola"
+    }
+   }
+  },
+  {
+   "id": "m689",
+   "type": "item",
+   "fr": "CALZONE",
+   "price": "17,50",
+   "desc": "Tomates, mozza, jambon, champignons, oeuf, crème",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, ham, mushrooms, egg, cream"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, mozza, jambon, champignons, oeuf, crème"
+     },
+     "it": {
+      "desc": "Tomates, mozza, jambon, champignons, oeuf, crème"
+     },
+     "de": {
+      "desc": "Tomates, mozza, jambon, champignons, oeuf, crème"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, prosciutto, funghi, uovo, panna"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Schinken, Champignons, Ei, Sahne"
+    }
+   }
+  },
+  {
+   "id": "m690",
+   "type": "item",
+   "fr": "CHÈVRE",
+   "price": "17,50",
+   "desc": "Crème, mozza, chèvre, miel, noix, roquette",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Cream, mozzarella, goat's cheese, honey, walnuts, rocket"
+    },
+    "src": {
+     "en": {
+      "desc": "Crème, mozza, chèvre, miel, noix, roquette"
+     },
+     "it": {
+      "desc": "Crème, mozza, chèvre, miel, noix, roquette"
+     },
+     "de": {
+      "desc": "Crème, mozza, chèvre, miel, noix, roquette"
+     }
+    },
+    "it": {
+     "desc": "Panna, mozzarella, formaggio di capra, miele, noci, rucola"
+    },
+    "de": {
+     "desc": "Sahne, Mozzarella, Ziegenkäse, Honig, Walnüsse, Rucola"
+    }
+   }
+  },
+  {
+   "id": "m691",
+   "type": "item",
+   "fr": "MEXICAINE",
+   "price": "18,00",
+   "desc": "Tomates, mozza, chorizo, merguez, poivrons",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, chorizo, merguez, peppers"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, mozza, chorizo, merguez, poivrons"
+     },
+     "it": {
+      "desc": "Tomates, mozza, chorizo, merguez, poivrons"
+     },
+     "de": {
+      "desc": "Tomates, mozza, chorizo, merguez, poivrons"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, chorizo, merguez, peperoni"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Chorizo, Merguez, Paprika"
+    }
+   }
+  },
+  {
+   "id": "m692",
+   "type": "item",
+   "fr": "ORIENTALE",
+   "price": "18,00",
+   "desc": "Crème, mozza, viande kebab, oignons, salade, sauce burger",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Cream, mozzarella, kebab meat, onions, salad, burger sauce"
+    },
+    "src": {
+     "en": {
+      "desc": "Crème, mozza, viande kebab, oignons, salade, sauce burger"
+     },
+     "it": {
+      "desc": "Crème, mozza, viande kebab, oignons, salade, sauce burger"
+     },
+     "de": {
+      "desc": "Crème, mozza, viande kebab, oignons, salade, sauce burger"
+     }
+    },
+    "it": {
+     "desc": "Panna, mozzarella, carne kebab, cipolle, insalata, salsa burger"
+    },
+    "de": {
+     "desc": "Sahne, Mozzarella, Kebabfleisch, Zwiebeln, Salat, Burgersauce"
+    }
+   }
+  },
+  {
+   "id": "m693",
+   "type": "item",
+   "fr": "MERIBELOISE",
+   "price": "18,00",
+   "desc": "Crème, mozza, lardons, pomme de terre, oignons, Reblochon",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Cream, mozzarella, lardons, potatoes, onions, Reblochon"
+    },
+    "src": {
+     "en": {
+      "desc": "Crème, mozza, lardons, pomme de terre, oignons, Reblochon"
+     },
+     "it": {
+      "desc": "Crème, mozza, lardons, pomme de terre, oignons, Reblochon"
+     },
+     "de": {
+      "desc": "Crème, mozza, lardons, pomme de terre, oignons, Reblochon"
+     }
+    },
+    "it": {
+     "desc": "Panna, mozzarella, pancetta, patate, cipolle, Reblochon"
+    },
+    "de": {
+     "desc": "Sahne, Mozzarella, Speckwürfel, Kartoffeln, Zwiebeln, Reblochon"
+    }
+   }
+  },
+  {
+   "id": "m694",
+   "type": "item",
+   "fr": "4 FROMAGES",
+   "price": "18,00",
+   "desc": "Tomates, mozza, chèvre, Roquefort, Reblochon",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, goat's cheese, Roquefort, Reblochon"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, mozza, chèvre, Roquefort, Reblochon"
+     },
+     "it": {
+      "desc": "Tomates, mozza, chèvre, Roquefort, Reblochon"
+     },
+     "de": {
+      "desc": "Tomates, mozza, chèvre, Roquefort, Reblochon"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, formaggio di capra, Roquefort, Reblochon"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Ziegenkäse, Roquefort, Reblochon"
+    }
+   }
+  },
+  {
+   "id": "m695",
+   "type": "item",
+   "fr": "SAUMON",
+   "price": "20,00",
+   "desc": "Crème, ciboulette, mozza, saumon, citron",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Cream, chives, mozzarella, salmon, lemon"
+    },
+    "src": {
+     "en": {
+      "desc": "Crème, ciboulette, mozza, saumon, citron"
+     },
+     "it": {
+      "desc": "Crème, ciboulette, mozza, saumon, citron"
+     },
+     "de": {
+      "desc": "Crème, ciboulette, mozza, saumon, citron"
+     }
+    },
+    "it": {
+     "desc": "Panna, erba cipollina, mozzarella, salmone, limone"
+    },
+    "de": {
+     "desc": "Sahne, Schnittlauch, Mozzarella, Lachs, Zitrone"
+    }
+   }
+  },
+  {
+   "id": "m696",
+   "type": "item",
+   "fr": "LASAGNE MAISON · SALADE",
+   "price": "17,50",
+   "tr": {
+    "en": {
+     "fr": "HOMEMADE LASAGNE · SALAD"
+    },
+    "src": {
+     "en": {
+      "fr": "LASAGNE MAISON · SALADE"
+     },
+     "it": {
+      "fr": "LASAGNE MAISON · SALADE"
+     },
+     "de": {
+      "fr": "LASAGNE MAISON · SALADE"
+     }
+    },
+    "it": {
+     "fr": "LASAGNE FATTE IN CASA · INSALATA"
+    },
+    "de": {
+     "fr": "HAUSGEMACHTE LASAGNE · SALAT"
+    }
+   }
+  },
+  {
+   "id": "m697",
+   "type": "image",
+   "src": "assets/photos/pizza.jpg",
+   "widthPct": 100,
+   "mt": 18,
+   "heightPx": 230
+  },
+  {
+   "id": "m698",
+   "type": "legend",
+   "text": "Prix nets en euros, service compris",
+   "onlyNote": true,
+   "tr": {
+    "en": {
+     "text": "Net prices in euros, service included"
+    },
+    "src": {
+     "en": {
+      "text": "Prix nets en euros, service compris"
+     },
+     "it": {
+      "text": "Prix nets en euros, service compris"
+     },
+     "de": {
+      "text": "Prix nets en euros, service compris"
+     }
+    },
+    "it": {
+     "text": "Prezzi netti in euro, servizio incluso"
+    },
+    "de": {
+     "text": "Nettopreise in Euro, Bedienung inbegriffen"
+    }
+   }
+  }
+ ]
+}

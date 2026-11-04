@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="56" viewBox="0 0 640 56" preserveAspectRatio="none">
+<g fill="none" stroke="#9a6331" stroke-width="1" stroke-linejoin="round" opacity=".6">
+<path d="M10 48 L44 36 L70 30 L92 34 L118 20 L150 30 L186 24 L214 36 L248 44"/><path d="M392 44 L424 34 L452 22 L482 30 L512 26 L548 22 L578 32 L606 38 L632 46"/>
+</g>
+<polygon points="0,54 18,50 40,44 62,36 78,40 100,22 112,28 126,10 140,24 156,18 176,34 198,30 222,42 246,48 268,54" fill="#efe5d6"/>
+<polygon points="372,54 392,48 416,40 436,44 458,26 472,32 490,8 506,22 520,16 540,32 562,28 588,40 612,46 640,54" fill="#efe5d6"/>
+<path d="M126 10 L118 19.6 L122.4 17.439999999999998 L126 22 L130.0 17.2 L134 19.0 Z" fill="#ffffff"/><path d="M490 8 L481 18.4 L485.95 16.060000000000002 L490 21 L494.5 15.8 L499 17.75 Z" fill="#ffffff"/>
+<path d="M100 22 L94 28.4 L97.3 26.96 L100 30 L103.0 26.8 L106 28.0 Z" fill="#ffffff"/><path d="M458 26 L452 32.4 L455.3 30.96 L458 34 L461.0 30.8 L464 32.0 Z" fill="#ffffff"/>
+<g fill="none" stroke="#26211d" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round">
+<path d="M0 54 L18 50 L40 44 L62 36 L78 40 L100 22 L112 28 L126 10 L140 24 L156 18 L176 34 L198 30 L222 42 L246 48 L268 54"/><path d="M372 54 L392 48 L416 40 L436 44 L458 26 L472 32 L490 8 L506 22 L520 16 L540 32 L562 28 L588 40 L612 46 L640 54"/>
+<path d="M0 54.5 H268"/><path d="M372 54.5 H640"/>
+</g>
+</svg>

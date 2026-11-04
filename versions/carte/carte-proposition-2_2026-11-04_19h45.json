@@ -1,0 +1,7806 @@
+{
+ "style": {
+  "titleFont": "Fraunces",
+  "bodyFont": "Jost",
+  "titleColor": "#9a6331",
+  "accent": "#a4483a",
+  "pageBg": "#ffffff",
+  "leaders": true,
+  "format": "a4",
+  "theme": "alpage",
+  "marginMm": {
+   "t": 8,
+   "r": 20,
+   "b": 5,
+   "l": 22
+  },
+  "mirror": false,
+  "sectionUnderline": false,
+  "itemSpacing": 2
+ },
+ "blocks": [
+  {
+   "id": "m403",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 12,
+   "mb": 0,
+   "mt": 0
+  },
+  {
+   "id": "m404",
+   "type": "section",
+   "fr": "Les entrées",
+   "tr": {
+    "en": {
+     "fr": "Starters"
+    },
+    "src": {
+     "en": {
+      "fr": "Les entrées"
+     },
+     "it": {
+      "fr": "Les entrées"
+     },
+     "de": {
+      "fr": "Les entrées"
+     }
+    },
+    "it": {
+     "fr": "Gli antipasti"
+    },
+    "de": {
+     "fr": "Vorspeisen"
+    }
+   },
+   "en": "Starters"
+  },
+  {
+   "id": "m405",
+   "type": "item",
+   "fr": "SOUPE DE LÉGUMES MAISON OU À L'OIGNON",
+   "price": "17,00",
+   "tags": [
+    "veg"
+   ],
+   "en": "Vegetables soup or onions soup",
+   "tr": {
+    "en": {
+     "fr": "HOMEMADE VEGETABLE OR ONION SOUP",
+     "en": "Homemade vegetable or onion soup"
+    },
+    "src": {
+     "en": {
+      "fr": "SOUPE DE LÉGUMES MAISON OU À L'OIGNON",
+      "en": "Vegetables soup or onions soup"
+     },
+     "it": {
+      "fr": "SOUPE DE LÉGUMES MAISON OU À L'OIGNON",
+      "en": "Vegetables soup or onions soup"
+     },
+     "de": {
+      "fr": "SOUPE DE LÉGUMES MAISON OU À L'OIGNON",
+      "en": "Vegetables soup or onions soup"
+     }
+    },
+    "it": {
+     "fr": "ZUPPA DI VERDURE FATTA IN CASA O DI CIPOLLE",
+     "en": "Zuppa di verdure fatta in casa o zuppa di cipolle"
+    },
+    "de": {
+     "fr": "HAUSGEMACHTE GEMÜSESUPPE ODER ZWIEBELSUPPE",
+     "en": "Hausgemachte Gemüsesuppe oder Zwiebelsuppe"
+    }
+   }
+  },
+  {
+   "id": "m406",
+   "type": "item",
+   "fr": "ESCARGOTS LES 6",
+   "price": "16,50",
+   "en": "Snails (half dozen)",
+   "tr": {
+    "en": {
+     "fr": "6 SNAILS",
+     "en": "Snails (half a dozen)"
+    },
+    "src": {
+     "en": {
+      "fr": "ESCARGOTS LES 6",
+      "en": "Snails (half dozen)"
+     },
+     "it": {
+      "fr": "ESCARGOTS LES 6",
+      "en": "Snails (half dozen)"
+     },
+     "de": {
+      "fr": "ESCARGOTS LES 6",
+      "en": "Snails (half dozen)"
+     }
+    },
+    "it": {
+     "fr": "LUMACHE (6)",
+     "en": "Lumache (mezza dozzina)"
+    },
+    "de": {
+     "fr": "SCHNECKEN, 6 STÜCK",
+     "en": "Schnecken (6 Stück)"
+    }
+   }
+  },
+  {
+   "id": "m407",
+   "type": "item",
+   "fr": "ESCARGOTS LES 12",
+   "price": "23,50",
+   "en": "Snails (twelve)",
+   "tr": {
+    "en": {
+     "fr": "12 SNAILS",
+     "en": "Snails (a dozen)"
+    },
+    "src": {
+     "en": {
+      "fr": "ESCARGOTS LES 12",
+      "en": "Snails (twelve)"
+     },
+     "it": {
+      "fr": "ESCARGOTS LES 12",
+      "en": "Snails (twelve)"
+     },
+     "de": {
+      "fr": "ESCARGOTS LES 12",
+      "en": "Snails (twelve)"
+     }
+    },
+    "it": {
+     "fr": "LUMACHE (12)",
+     "en": "Lumache (una dozzina)"
+    },
+    "de": {
+     "fr": "SCHNECKEN, 12 STÜCK",
+     "en": "Schnecken (12 Stück)"
+    }
+   }
+  },
+  {
+   "id": "m408",
+   "type": "item",
+   "fr": "ASSIETTE DE SAUMON FUMÉ",
+   "price": "21,50",
+   "en": "Plate of smoked salmon",
+   "tr": {
+    "en": {
+     "fr": "SMOKED SALMON PLATTER",
+     "en": "Smoked salmon platter"
+    },
+    "src": {
+     "en": {
+      "fr": "ASSIETTE DE SAUMON FUMÉ",
+      "en": "Plate of smoked salmon"
+     },
+     "it": {
+      "fr": "ASSIETTE DE SAUMON FUMÉ",
+      "en": "Plate of smoked salmon"
+     },
+     "de": {
+      "fr": "ASSIETTE DE SAUMON FUMÉ",
+      "en": "Plate of smoked salmon"
+     }
+    },
+    "it": {
+     "fr": "PIATTO DI SALMONE AFFUMICATO",
+     "en": "Piatto di salmone affumicato"
+    },
+    "de": {
+     "fr": "TELLER RÄUCHERLACHS",
+     "en": "Teller Räucherlachs"
+    }
+   }
+  },
+  {
+   "id": "m409",
+   "type": "item",
+   "fr": "ASSIETTE DE VIANDE DES GRISONS",
+   "price": "17,50",
+   "en": "Plate of dry beef",
+   "tr": {
+    "en": {
+     "fr": "GRISONS AIR-DRIED BEEF PLATTER",
+     "en": "Grisons air-dried beef platter"
+    },
+    "src": {
+     "en": {
+      "fr": "ASSIETTE DE VIANDE DES GRISONS",
+      "en": "Plate of dry beef"
+     },
+     "it": {
+      "fr": "ASSIETTE DE VIANDE DES GRISONS",
+      "en": "Plate of dry beef"
+     },
+     "de": {
+      "fr": "ASSIETTE DE VIANDE DES GRISONS",
+      "en": "Plate of dry beef"
+     }
+    },
+    "it": {
+     "fr": "PIATTO DI CARNE SECCA DEI GRIGIONI",
+     "en": "Piatto di carne secca dei Grigioni"
+    },
+    "de": {
+     "fr": "TELLER BÜNDNERFLEISCH",
+     "en": "Teller Bündnerfleisch"
+    }
+   }
+  },
+  {
+   "id": "m410",
+   "type": "item",
+   "fr": "ASSIETTE DU BERGER",
+   "en": "Plate of Berger: Parm ham, sausage, dry beef, Beaufort, Reblochon cheeses",
+   "price": "21,70",
+   "desc": "Jambon Speck, saucisse sèche, viande des Grisons, Beaufort, Reblochon",
+   "tr": {
+    "en": {
+     "fr": "SHEPHERD'S PLATTER",
+     "desc": "Speck ham, dry-cured sausage, Grisons air-dried beef, Beaufort, Reblochon",
+     "en": "Shepherd's platter: Speck ham, dry-cured sausage, Grisons air-dried beef, Beaufort, Reblochon"
+    },
+    "src": {
+     "en": {
+      "fr": "ASSIETTE DU BERGER",
+      "desc": "Jambon Speck, saucisse sèche, viande des Grisons, Beaufort, Reblochon",
+      "en": "Plate of Berger: Parm ham, sausage, dry beef, Beaufort, Reblochon cheeses"
+     },
+     "it": {
+      "fr": "ASSIETTE DU BERGER",
+      "desc": "Jambon Speck, saucisse sèche, viande des Grisons, Beaufort, Reblochon",
+      "en": "Plate of Berger: Parm ham, sausage, dry beef, Beaufort, Reblochon cheeses"
+     },
+     "de": {
+      "fr": "ASSIETTE DU BERGER",
+      "desc": "Jambon Speck, saucisse sèche, viande des Grisons, Beaufort, Reblochon",
+      "en": "Plate of Berger: Parm ham, sausage, dry beef, Beaufort, Reblochon cheeses"
+     }
+    },
+    "it": {
+     "fr": "PIATTO DEL PASTORE",
+     "desc": "Prosciutto Speck, salame stagionato, carne secca dei Grigioni, Beaufort, Reblochon",
+     "en": "Piatto del pastore: prosciutto Speck, salame stagionato, carne secca dei Grigioni, Beaufort, Reblochon"
+    },
+    "de": {
+     "fr": "HIRTENTELLER",
+     "desc": "Speck-Schinken, Trockenwurst, Bündnerfleisch, Beaufort, Reblochon",
+     "en": "Hirtenteller: Speck-Schinken, Trockenwurst, Bündnerfleisch, Beaufort, Reblochon"
+    }
+   }
+  },
+  {
+   "id": "m411",
+   "type": "section",
+   "fr": "Les salades",
+   "tr": {
+    "en": {
+     "fr": "Salads"
+    },
+    "src": {
+     "en": {
+      "fr": "Les salades"
+     },
+     "it": {
+      "fr": "Les salades"
+     },
+     "de": {
+      "fr": "Les salades"
+     }
+    },
+    "it": {
+     "fr": "Le insalate"
+    },
+    "de": {
+     "fr": "Salate"
+    }
+   },
+   "en": "Salads"
+  },
+  {
+   "id": "m412",
+   "type": "item",
+   "fr": "SALADE VERTE",
+   "price": "8,00",
+   "en": "Green salad",
+   "tr": {
+    "en": {
+     "fr": "GREEN SALAD",
+     "en": "Green salad"
+    },
+    "src": {
+     "en": {
+      "fr": "SALADE VERTE",
+      "en": "Green salad"
+     },
+     "it": {
+      "fr": "SALADE VERTE",
+      "en": "Green salad"
+     },
+     "de": {
+      "fr": "SALADE VERTE",
+      "en": "Green salad"
+     }
+    },
+    "it": {
+     "fr": "INSALATA VERDE",
+     "en": "Insalata verde"
+    },
+    "de": {
+     "fr": "GRÜNER SALAT",
+     "en": "Grüner Salat"
+    }
+   }
+  },
+  {
+   "id": "m413",
+   "type": "item",
+   "fr": "SALADE MIXTE",
+   "en": "Green salad, egg, corn, ham, Comté",
+   "price": "19,70",
+   "tags": [
+    "gf"
+   ],
+   "desc": "Salade verte, oeuf, maïs, jambon, Comté",
+   "tr": {
+    "en": {
+     "fr": "MIXED SALAD",
+     "desc": "Green salad, egg, sweetcorn, ham, Comté",
+     "en": "Green salad, egg, sweetcorn, ham, Comté"
+    },
+    "src": {
+     "en": {
+      "fr": "SALADE MIXTE",
+      "desc": "Salade verte, oeuf, maïs, jambon, Comté",
+      "en": "Green salad, egg, corn, ham, Comté"
+     },
+     "it": {
+      "fr": "SALADE MIXTE",
+      "desc": "Salade verte, oeuf, maïs, jambon, Comté",
+      "en": "Green salad, egg, corn, ham, Comté"
+     },
+     "de": {
+      "fr": "SALADE MIXTE",
+      "desc": "Salade verte, oeuf, maïs, jambon, Comté",
+      "en": "Green salad, egg, corn, ham, Comté"
+     }
+    },
+    "it": {
+     "fr": "INSALATA MISTA",
+     "desc": "Insalata verde, uovo, mais, prosciutto, Comté",
+     "en": "Insalata verde, uovo, mais, prosciutto, Comté"
+    },
+    "de": {
+     "fr": "GEMISCHTER SALAT",
+     "desc": "Grüner Salat, Ei, Mais, Schinken, Comté",
+     "en": "Grüner Salat, Ei, Mais, Schinken, Comté"
+    }
+   }
+  },
+  {
+   "id": "m414",
+   "type": "item",
+   "fr": "SALADE CAMPAGNARDE",
+   "en": "Green salad, bacon, cheese, croûtons, tomatoes",
+   "price": "20,70",
+   "desc": "Salade verte, croûtons, fromage, lardons, tomates",
+   "tr": {
+    "en": {
+     "fr": "COUNTRY SALAD",
+     "desc": "Green salad, croutons, cheese, lardons, tomatoes",
+     "en": "Green salad, lardons, cheese, croutons, tomatoes"
+    },
+    "src": {
+     "en": {
+      "fr": "SALADE CAMPAGNARDE",
+      "desc": "Salade verte, croûtons, fromage, lardons, tomates",
+      "en": "Green salad, bacon, cheese, croûtons, tomatoes"
+     },
+     "it": {
+      "fr": "SALADE CAMPAGNARDE",
+      "desc": "Salade verte, croûtons, fromage, lardons, tomates",
+      "en": "Green salad, bacon, cheese, croûtons, tomatoes"
+     },
+     "de": {
+      "fr": "SALADE CAMPAGNARDE",
+      "desc": "Salade verte, croûtons, fromage, lardons, tomates",
+      "en": "Green salad, bacon, cheese, croûtons, tomatoes"
+     }
+    },
+    "it": {
+     "fr": "INSALATA CAMPAGNOLA",
+     "desc": "Insalata verde, crostini, formaggio, pancetta, pomodori",
+     "en": "Insalata verde, pancetta, formaggio, crostini, pomodori"
+    },
+    "de": {
+     "fr": "BAUERNSALAT",
+     "desc": "Grüner Salat, Croûtons, Käse, Speckwürfel, Tomaten",
+     "en": "Grüner Salat, Speckwürfel, Käse, Croûtons, Tomaten"
+    }
+   }
+  },
+  {
+   "id": "m415",
+   "type": "item",
+   "fr": "SALADE SAVOYARDE",
+   "en": "Green salad, cheese Raclette toast, tomatoes, egg",
+   "price": "21,70",
+   "tags": [
+    "veg"
+   ],
+   "desc": "Salade verte, fromage à Raclette sur toast, tomates, oeuf",
+   "tr": {
+    "en": {
+     "fr": "SAVOYARD SALAD",
+     "desc": "Green salad, Raclette cheese on toast, tomatoes, egg",
+     "en": "Green salad, Raclette cheese on toast, tomatoes, egg"
+    },
+    "src": {
+     "en": {
+      "fr": "SALADE SAVOYARDE",
+      "desc": "Salade verte, fromage à Raclette sur toast, tomates, oeuf",
+      "en": "Green salad, cheese Raclette toast, tomatoes, egg"
+     },
+     "it": {
+      "fr": "SALADE SAVOYARDE",
+      "desc": "Salade verte, fromage à Raclette sur toast, tomates, oeuf",
+      "en": "Green salad, cheese Raclette toast, tomatoes, egg"
+     },
+     "de": {
+      "fr": "SALADE SAVOYARDE",
+      "desc": "Salade verte, fromage à Raclette sur toast, tomates, oeuf",
+      "en": "Green salad, cheese Raclette toast, tomatoes, egg"
+     }
+    },
+    "it": {
+     "fr": "INSALATA SAVOIARDA",
+     "desc": "Insalata verde, formaggio da Raclette su pane tostato, pomodori, uovo",
+     "en": "Insalata verde, formaggio da Raclette su pane tostato, pomodori, uovo"
+    },
+    "de": {
+     "fr": "SAVOYARDISCHER SALAT",
+     "desc": "Grüner Salat, Raclette-Käse auf Toast, Tomaten, Ei",
+     "en": "Grüner Salat, Raclette-Käse auf Toast, Tomaten, Ei"
+    }
+   }
+  },
+  {
+   "id": "m416",
+   "type": "item",
+   "fr": "SALADE DE CHÈVRE CHAUD AU MIEL, TOMATES CONFITES ET NOIX",
+   "price": "21,70",
+   "tags": [
+    "veg"
+   ],
+   "tr": {
+    "en": {
+     "fr": "WARM GOAT'S CHEESE SALAD WITH HONEY, CONFIT TOMATOES AND WALNUTS"
+    },
+    "src": {
+     "en": {
+      "fr": "SALADE DE CHÈVRE CHAUD AU MIEL, TOMATES CONFITES ET NOIX"
+     },
+     "it": {
+      "fr": "SALADE DE CHÈVRE CHAUD AU MIEL, TOMATES CONFITES ET NOIX"
+     },
+     "de": {
+      "fr": "SALADE DE CHÈVRE CHAUD AU MIEL, TOMATES CONFITES ET NOIX"
+     }
+    },
+    "it": {
+     "fr": "INSALATA DI CAPRINO CALDO AL MIELE, POMODORI CONFIT E NOCI"
+    },
+    "de": {
+     "fr": "WARMER ZIEGENKÄSESALAT MIT HONIG, GETROCKNETEN TOMATEN UND WALNÜSSEN"
+    }
+   }
+  },
+  {
+   "id": "m422",
+   "type": "section",
+   "fr": "Omelettes, lasagnes & frites",
+   "tr": {
+    "en": {
+     "fr": "Omelettes, lasagne & chips"
+    },
+    "src": {
+     "en": {
+      "fr": "Omelettes, lasagnes & frites"
+     },
+     "it": {
+      "fr": "Omelettes, lasagnes & frites"
+     },
+     "de": {
+      "fr": "Omelettes, lasagnes & frites"
+     }
+    },
+    "it": {
+     "fr": "Omelette, lasagne e patatine"
+    },
+    "de": {
+     "fr": "Omeletts, Lasagne & Pommes frites"
+    }
+   },
+   "en": "Omelettes, lasagne & chips"
+  },
+  {
+   "id": "m423",
+   "type": "item",
+   "fr": "OMELETTE NATURE",
+   "price": "13,50",
+   "en": "Plain omelet and green salad",
+   "tr": {
+    "en": {
+     "fr": "PLAIN OMELETTE",
+     "en": "Plain omelette and green salad"
+    },
+    "src": {
+     "en": {
+      "fr": "OMELETTE NATURE",
+      "en": "Plain omelet and green salad"
+     },
+     "it": {
+      "fr": "OMELETTE NATURE",
+      "en": "Plain omelet and green salad"
+     },
+     "de": {
+      "fr": "OMELETTE NATURE",
+      "en": "Plain omelet and green salad"
+     }
+    },
+    "it": {
+     "fr": "OMELETTE SEMPLICE",
+     "en": "Omelette semplice e insalata verde"
+    },
+    "de": {
+     "fr": "OMELETT NATUR",
+     "en": "Omelett natur mit grünem Salat"
+    }
+   }
+  },
+  {
+   "id": "m424",
+   "type": "item",
+   "fr": "OMELETTE JAMBON ET FROMAGE",
+   "price": "16,70",
+   "tags": [
+    "gf"
+   ],
+   "en": "Omelet ham and cheese, green salad",
+   "tr": {
+    "en": {
+     "fr": "HAM AND CHEESE OMELETTE",
+     "en": "Ham and cheese omelette, green salad"
+    },
+    "src": {
+     "en": {
+      "fr": "OMELETTE JAMBON ET FROMAGE",
+      "en": "Omelet ham and cheese, green salad"
+     },
+     "it": {
+      "fr": "OMELETTE JAMBON ET FROMAGE",
+      "en": "Omelet ham and cheese, green salad"
+     },
+     "de": {
+      "fr": "OMELETTE JAMBON ET FROMAGE",
+      "en": "Omelet ham and cheese, green salad"
+     }
+    },
+    "it": {
+     "fr": "OMELETTE PROSCIUTTO E FORMAGGIO",
+     "en": "Omelette prosciutto e formaggio, insalata verde"
+    },
+    "de": {
+     "fr": "OMELETT MIT SCHINKEN UND KÄSE",
+     "en": "Omelett mit Schinken und Käse, grüner Salat"
+    }
+   }
+  },
+  {
+   "id": "m425",
+   "type": "item",
+   "fr": "OMELETTE POMMES DE TERRE, SAUCISSE, CHAMPIGNONS",
+   "en": "Omelet with potatoes, sausage, mushrooms and green salad",
+   "price": "18,70",
+   "tags": [
+    "gf"
+   ],
+   "tr": {
+    "en": {
+     "fr": "OMELETTE WITH POTATOES, SAUSAGE, MUSHROOMS",
+     "en": "Omelette with potatoes, sausage, mushrooms and green salad"
+    },
+    "src": {
+     "en": {
+      "fr": "OMELETTE POMMES DE TERRE, SAUCISSE, CHAMPIGNONS",
+      "en": "Omelet with potatoes, sausage, mushrooms and green salad"
+     },
+     "it": {
+      "fr": "OMELETTE POMMES DE TERRE, SAUCISSE, CHAMPIGNONS",
+      "en": "Omelet with potatoes, sausage, mushrooms and green salad"
+     },
+     "de": {
+      "fr": "OMELETTE POMMES DE TERRE, SAUCISSE, CHAMPIGNONS",
+      "en": "Omelet with potatoes, sausage, mushrooms and green salad"
+     }
+    },
+    "it": {
+     "fr": "OMELETTE CON PATATE, SALSICCIA, FUNGHI",
+     "en": "Omelette con patate, salsiccia, funghi e insalata verde"
+    },
+    "de": {
+     "fr": "OMELETT MIT KARTOFFELN, WURST, CHAMPIGNONS",
+     "en": "Omelett mit Kartoffeln, Wurst, Champignons und grünem Salat"
+    }
+   }
+  },
+  {
+   "id": "m426",
+   "type": "item",
+   "fr": "OMELETTE AUX MORILLES",
+   "price": "20,00",
+   "en": "Omelet with morels mushrooms and green salad",
+   "tr": {
+    "en": {
+     "fr": "MOREL MUSHROOM OMELETTE",
+     "en": "Morel mushroom omelette with green salad"
+    },
+    "src": {
+     "en": {
+      "fr": "OMELETTE AUX MORILLES",
+      "en": "Omelet with morels mushrooms and green salad"
+     },
+     "it": {
+      "fr": "OMELETTE AUX MORILLES",
+      "en": "Omelet with morels mushrooms and green salad"
+     },
+     "de": {
+      "fr": "OMELETTE AUX MORILLES",
+      "en": "Omelet with morels mushrooms and green salad"
+     }
+    },
+    "it": {
+     "fr": "OMELETTE ALLE SPUGNOLE",
+     "en": "Omelette alle spugnole e insalata verde"
+    },
+    "de": {
+     "fr": "OMELETT MIT MORCHELN",
+     "en": "Omelett mit Morcheln und grünem Salat"
+    }
+   }
+  },
+  {
+   "id": "m427",
+   "type": "item",
+   "fr": "ASSIETTE DE FRITES",
+   "price": "8,50",
+   "tags": [
+    "veg"
+   ],
+   "en": "French fries",
+   "tr": {
+    "en": {
+     "fr": "PLATE OF CHIPS",
+     "en": "Chips"
+    },
+    "src": {
+     "en": {
+      "fr": "ASSIETTE DE FRITES",
+      "en": "French fries"
+     },
+     "it": {
+      "fr": "ASSIETTE DE FRITES",
+      "en": "French fries"
+     },
+     "de": {
+      "fr": "ASSIETTE DE FRITES",
+      "en": "French fries"
+     }
+    },
+    "it": {
+     "fr": "PIATTO DI PATATINE FRITTE",
+     "en": "Patatine fritte"
+    },
+    "de": {
+     "fr": "TELLER POMMES FRITES",
+     "en": "Pommes frites"
+    }
+   }
+  },
+  {
+   "id": "m428",
+   "type": "item",
+   "fr": "LASAGNES MAISON SALADE",
+   "price": "25,00",
+   "en": "Home-made lasagna - salad",
+   "tr": {
+    "en": {
+     "fr": "HOMEMADE LASAGNE, SALAD",
+     "en": "Homemade lasagne - salad"
+    },
+    "src": {
+     "en": {
+      "fr": "LASAGNES MAISON SALADE",
+      "en": "Home-made lasagna - salad"
+     },
+     "it": {
+      "fr": "LASAGNES MAISON SALADE",
+      "en": "Home-made lasagna - salad"
+     },
+     "de": {
+      "fr": "LASAGNES MAISON SALADE",
+      "en": "Home-made lasagna - salad"
+     }
+    },
+    "it": {
+     "fr": "LASAGNE FATTE IN CASA CON INSALATA",
+     "en": "Lasagne fatte in casa - insalata"
+    },
+    "de": {
+     "fr": "HAUSGEMACHTE LASAGNE MIT SALAT",
+     "en": "Hausgemachte Lasagne - Salat"
+    }
+   }
+  },
+  {
+   "id": "m429",
+   "type": "legend",
+   "text": "Prix nets en euros, service compris · Net prices in euros, service included",
+   "tr": {
+    "en": {
+     "text": "Net prices in euros, service included"
+    },
+    "src": {
+     "en": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "it": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "de": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     }
+    },
+    "it": {
+     "text": "Prezzi netti in euro, servizio incluso"
+    },
+    "de": {
+     "text": "Nettopreise in Euro, Bedienung inbegriffen"
+    }
+   }
+  },
+  {
+   "id": "m430",
+   "type": "pagebreak"
+  },
+  {
+   "id": "m431",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 12,
+   "mb": 0,
+   "mt": 0
+  },
+  {
+   "id": "m432",
+   "type": "section",
+   "fr": "Les spécialités",
+   "tr": {
+    "en": {
+     "fr": "Savoyard specialities"
+    },
+    "src": {
+     "en": {
+      "fr": "Les spécialités"
+     },
+     "it": {
+      "fr": "Les spécialités"
+     },
+     "de": {
+      "fr": "Les spécialités"
+     }
+    },
+    "it": {
+     "fr": "Le specialità"
+    },
+    "de": {
+     "fr": "Spezialitäten"
+    }
+   },
+   "en": "Savoyard specialities"
+  },
+  {
+   "id": "m433",
+   "type": "note",
+   "text": "Prix par personne, minimum 2 personnes (sauf tartiflette) · Price per person, minimum 2 people",
+   "mb": 4,
+   "tr": {
+    "en": {
+     "text": "Price per person, minimum 2 people (except tartiflette)"
+    },
+    "src": {
+     "en": {
+      "text": "Prix par personne, minimum 2 personnes (sauf tartiflette) · Price per person, minimum 2 people"
+     },
+     "it": {
+      "text": "Prix par personne, minimum 2 personnes (sauf tartiflette) · Price per person, minimum 2 people"
+     },
+     "de": {
+      "text": "Prix par personne, minimum 2 personnes (sauf tartiflette) · Price per person, minimum 2 people"
+     }
+    },
+    "it": {
+     "text": "Prezzo a persona, minimo 2 persone (tartiflette esclusa)"
+    },
+    "de": {
+     "text": "Preis pro Person, mindestens 2 Personen (außer Tartiflette)"
+    }
+   }
+  },
+  {
+   "id": "m434",
+   "type": "item",
+   "fr": "PIERRE CHAUDE ROYALE",
+   "en": "Hot stone: Beef 125 g, turkey 125 g, onions, french fries, 2 sauces, green salad",
+   "price": "34,50",
+   "desc": "Assortiment de tranches de boeuf 125 g et de filet de dinde 125 g, frites, 2 sauces, oignons, salade verte",
+   "tr": {
+    "en": {
+     "fr": "PIERRE CHAUDE ROYALE",
+     "desc": "Selection of sliced beef (125 g) and turkey fillet (125 g), chips, 2 sauces, onions, green salad",
+     "en": "Hot stone grill: beef (125 g), turkey (125 g), onions, chips, 2 sauces, green salad"
+    },
+    "src": {
+     "en": {
+      "fr": "PIERRE CHAUDE ROYALE",
+      "desc": "Assortiment de tranches de boeuf 125 g et de filet de dinde 125 g, frites, 2 sauces, oignons, salade verte",
+      "en": "Hot stone: Beef 125 g, turkey 125 g, onions, french fries, 2 sauces, green salad"
+     },
+     "it": {
+      "fr": "PIERRE CHAUDE ROYALE",
+      "desc": "Assortiment de tranches de boeuf 125 g et de filet de dinde 125 g, frites, 2 sauces, oignons, salade verte",
+      "en": "Hot stone: Beef 125 g, turkey 125 g, onions, french fries, 2 sauces, green salad"
+     },
+     "de": {
+      "fr": "PIERRE CHAUDE ROYALE",
+      "desc": "Assortiment de tranches de boeuf 125 g et de filet de dinde 125 g, frites, 2 sauces, oignons, salade verte",
+      "en": "Hot stone: Beef 125 g, turkey 125 g, onions, french fries, 2 sauces, green salad"
+     }
+    },
+    "it": {
+     "fr": "PIERRE CHAUDE ROYALE",
+     "desc": "Assortimento di fettine di manzo 125 g e filetto di tacchino 125 g, patatine fritte, 2 salse, cipolle, insalata verde",
+     "en": "Pierre chaude: manzo 125 g, tacchino 125 g, cipolle, patatine fritte, 2 salse, insalata verde"
+    },
+    "de": {
+     "fr": "PIERRE CHAUDE ROYALE",
+     "desc": "Auswahl an Rindfleischscheiben 125 g und Putenfilet 125 g, Pommes frites, 2 Saucen, Zwiebeln, grüner Salat",
+     "en": "Pierre Chaude (heißer Stein): Rindfleisch 125 g, Putenfleisch 125 g, Zwiebeln, Pommes frites, 2 Saucen, grüner Salat"
+    }
+   }
+  },
+  {
+   "id": "m435",
+   "type": "item",
+   "fr": "TARTIFLETTE",
+   "en": "Potatoes, onions, Reblochon, bacon, fresh cream and green salad",
+   "price": "25,00",
+   "tags": [
+    "gf"
+   ],
+   "desc": "Pommes de terre, oignons, Reblochon, lardons, crème fraiche, salade",
+   "tr": {
+    "en": {
+     "fr": "TARTIFLETTE",
+     "desc": "Potatoes, onions, Reblochon, lardons, crème fraîche, salad",
+     "en": "Potatoes, onions, Reblochon, lardons, crème fraîche and green salad"
+    },
+    "src": {
+     "en": {
+      "fr": "TARTIFLETTE",
+      "desc": "Pommes de terre, oignons, Reblochon, lardons, crème fraiche, salade",
+      "en": "Potatoes, onions, Reblochon, bacon, fresh cream and green salad"
+     },
+     "it": {
+      "fr": "TARTIFLETTE",
+      "desc": "Pommes de terre, oignons, Reblochon, lardons, crème fraiche, salade",
+      "en": "Potatoes, onions, Reblochon, bacon, fresh cream and green salad"
+     },
+     "de": {
+      "fr": "TARTIFLETTE",
+      "desc": "Pommes de terre, oignons, Reblochon, lardons, crème fraiche, salade",
+      "en": "Potatoes, onions, Reblochon, bacon, fresh cream and green salad"
+     }
+    },
+    "it": {
+     "fr": "TARTIFLETTE",
+     "desc": "Patate, cipolle, Reblochon, pancetta, panna fresca, insalata",
+     "en": "Patate, cipolle, Reblochon, pancetta, panna fresca e insalata verde"
+    },
+    "de": {
+     "fr": "TARTIFLETTE",
+     "desc": "Kartoffeln, Zwiebeln, Reblochon, Speckwürfel, Crème fraîche, Salat",
+     "en": "Kartoffeln, Zwiebeln, Reblochon, Speckwürfel, Crème fraîche und grüner Salat"
+    }
+   }
+  },
+  {
+   "id": "m436",
+   "type": "item",
+   "fr": "TARTIFLETTE SPECK",
+   "en": "Potatoes, onions, Reblochon, bacon, Speck, fresh cream and green salad",
+   "price": "27,00",
+   "tags": [
+    "gf"
+   ],
+   "desc": "Pommes de terre, oignons, Reblochon, lardons, crème fraiche, salade",
+   "tr": {
+    "en": {
+     "fr": "TARTIFLETTE WITH SPECK HAM",
+     "desc": "Potatoes, onions, Reblochon, lardons, crème fraîche, salad",
+     "en": "Potatoes, onions, Reblochon, lardons, Speck ham, crème fraîche and green salad"
+    },
+    "src": {
+     "en": {
+      "fr": "TARTIFLETTE SPECK",
+      "desc": "Pommes de terre, oignons, Reblochon, lardons, crème fraiche, salade",
+      "en": "Potatoes, onions, Reblochon, bacon, Speck, fresh cream and green salad"
+     },
+     "it": {
+      "fr": "TARTIFLETTE SPECK",
+      "desc": "Pommes de terre, oignons, Reblochon, lardons, crème fraiche, salade",
+      "en": "Potatoes, onions, Reblochon, bacon, Speck, fresh cream and green salad"
+     },
+     "de": {
+      "fr": "TARTIFLETTE SPECK",
+      "desc": "Pommes de terre, oignons, Reblochon, lardons, crème fraiche, salade",
+      "en": "Potatoes, onions, Reblochon, bacon, Speck, fresh cream and green salad"
+     }
+    },
+    "it": {
+     "fr": "TARTIFLETTE CON SPECK",
+     "desc": "Patate, cipolle, Reblochon, pancetta, panna fresca, insalata",
+     "en": "Patate, cipolle, Reblochon, pancetta, Speck, panna fresca e insalata verde"
+    },
+    "de": {
+     "fr": "TARTIFLETTE MIT SPECK-SCHINKEN",
+     "desc": "Kartoffeln, Zwiebeln, Reblochon, Speckwürfel, Crème fraîche, Salat",
+     "en": "Kartoffeln, Zwiebeln, Reblochon, Speckwürfel, Speck-Schinken, Crème fraîche und grüner Salat"
+    }
+   }
+  },
+  {
+   "id": "m437",
+   "type": "item",
+   "fr": "FONDUE BOURGUIGNONNE",
+   "en": "Beef fondue 230 g, french fries, green salad, 2 sauces",
+   "price": "34,50",
+   "desc": "Servie avec frites, salade verte, 2 sauces, 230 g de boeuf",
+   "tr": {
+    "en": {
+     "fr": "FONDUE BOURGUIGNONNE",
+     "desc": "Served with chips, green salad, 2 sauces, 230 g of beef",
+     "en": "Beef fondue (230 g of beef), chips, green salad, 2 sauces"
+    },
+    "src": {
+     "en": {
+      "fr": "FONDUE BOURGUIGNONNE",
+      "desc": "Servie avec frites, salade verte, 2 sauces, 230 g de boeuf",
+      "en": "Beef fondue 230 g, french fries, green salad, 2 sauces"
+     },
+     "it": {
+      "fr": "FONDUE BOURGUIGNONNE",
+      "desc": "Servie avec frites, salade verte, 2 sauces, 230 g de boeuf",
+      "en": "Beef fondue 230 g, french fries, green salad, 2 sauces"
+     },
+     "de": {
+      "fr": "FONDUE BOURGUIGNONNE",
+      "desc": "Servie avec frites, salade verte, 2 sauces, 230 g de boeuf",
+      "en": "Beef fondue 230 g, french fries, green salad, 2 sauces"
+     }
+    },
+    "it": {
+     "fr": "FONDUE BOURGUIGNONNE (DI MANZO)",
+     "desc": "Servita con patatine fritte, insalata verde, 2 salse, 230 g di manzo",
+     "en": "Fondue bourguignonne (di manzo) 230 g, patatine fritte, insalata verde, 2 salse"
+    },
+    "de": {
+     "fr": "FONDUE BOURGUIGNONNE",
+     "desc": "Serviert mit Pommes frites, grünem Salat, 2 Saucen, 230 g Rindfleisch",
+     "en": "Fondue Bourguignonne: 230 g Rindfleisch, Pommes frites, grüner Salat, 2 Saucen"
+    }
+   }
+  },
+  {
+   "id": "m438",
+   "type": "item",
+   "fr": "SUPPLÉMENT DE VIANDE",
+   "price": "20,00",
+   "en": "Extra beef 200 g",
+   "tr": {
+    "en": {
+     "fr": "EXTRA MEAT",
+     "en": "Extra beef (200 g)"
+    },
+    "src": {
+     "en": {
+      "fr": "SUPPLÉMENT DE VIANDE",
+      "en": "Extra beef 200 g"
+     },
+     "it": {
+      "fr": "SUPPLÉMENT DE VIANDE",
+      "en": "Extra beef 200 g"
+     },
+     "de": {
+      "fr": "SUPPLÉMENT DE VIANDE",
+      "en": "Extra beef 200 g"
+     }
+    },
+    "it": {
+     "fr": "SUPPLEMENTO DI CARNE",
+     "en": "Supplemento manzo 200 g"
+    },
+    "de": {
+     "fr": "EXTRA FLEISCHPORTION",
+     "en": "Extra Rindfleisch 200 g"
+    }
+   }
+  },
+  {
+   "id": "m439",
+   "type": "item",
+   "fr": "SUPP SAUCE ROQUEFORT OU MORILLES",
+   "price": "3,00",
+   "en": "Extra sauce blue cheese or morels",
+   "tr": {
+    "en": {
+     "fr": "EXTRA ROQUEFORT OR MOREL SAUCE",
+     "en": "Extra Roquefort or morel sauce"
+    },
+    "src": {
+     "en": {
+      "fr": "SUPP SAUCE ROQUEFORT OU MORILLES",
+      "en": "Extra sauce blue cheese or morels"
+     },
+     "it": {
+      "fr": "SUPP SAUCE ROQUEFORT OU MORILLES",
+      "en": "Extra sauce blue cheese or morels"
+     },
+     "de": {
+      "fr": "SUPP SAUCE ROQUEFORT OU MORILLES",
+      "en": "Extra sauce blue cheese or morels"
+     }
+    },
+    "it": {
+     "fr": "SUPPL. SALSA AL ROQUEFORT O ALLE SPUGNOLE",
+     "en": "Supplemento salsa al Roquefort o alle spugnole"
+    },
+    "de": {
+     "fr": "EXTRA ROQUEFORT- ODER MORCHELSAUCE",
+     "en": "Extra Roquefort- oder Morchelsauce"
+    }
+   }
+  },
+  {
+   "id": "m440",
+   "type": "section",
+   "fr": "Les raclettes",
+   "tags": [
+    "gf"
+   ],
+   "tr": {
+    "en": {
+     "fr": "Raclettes"
+    },
+    "src": {
+     "en": {
+      "fr": "Les raclettes"
+     },
+     "it": {
+      "fr": "Les raclettes"
+     },
+     "de": {
+      "fr": "Les raclettes"
+     }
+    },
+    "it": {
+     "fr": "Le raclette"
+    },
+    "de": {
+     "fr": "Raclettes"
+    }
+   },
+   "en": "Raclettes"
+  },
+  {
+   "id": "m441",
+   "type": "cols",
+   "ratio": "72/28",
+   "gap": 22
+  },
+  {
+   "id": "m442",
+   "type": "item",
+   "fr": "RACLETTE NATURE",
+   "en": "Cheese, potatoes, onions, gherkins",
+   "price": "23,50",
+   "tags": [
+    "veg"
+   ],
+   "tr": {
+    "en": {
+     "fr": "PLAIN RACLETTE",
+     "en": "Raclette cheese, potatoes, onions, gherkins"
+    },
+    "src": {
+     "en": {
+      "fr": "RACLETTE NATURE",
+      "en": "Cheese, potatoes, onions, gherkins"
+     },
+     "it": {
+      "fr": "RACLETTE NATURE",
+      "en": "Cheese, potatoes, onions, gherkins"
+     },
+     "de": {
+      "fr": "RACLETTE NATURE",
+      "en": "Cheese, potatoes, onions, gherkins"
+     }
+    },
+    "it": {
+     "fr": "RACLETTE CLASSICA",
+     "en": "Formaggio, patate, cipolle, cetriolini"
+    },
+    "de": {
+     "fr": "RACLETTE NATUR",
+     "en": "Käse, Kartoffeln, Zwiebeln, Cornichons"
+    }
+   }
+  },
+  {
+   "id": "m443",
+   "type": "item",
+   "fr": "RACLETTE JAMBON SPECK",
+   "en": "Cheese, potatoes, onions, smoked ham Speck, gherkins",
+   "price": "28,50",
+   "tr": {
+    "en": {
+     "fr": "RACLETTE WITH SPECK HAM",
+     "en": "Raclette cheese, potatoes, onions, Speck ham, gherkins"
+    },
+    "src": {
+     "en": {
+      "fr": "RACLETTE JAMBON SPECK",
+      "en": "Cheese, potatoes, onions, smoked ham Speck, gherkins"
+     },
+     "it": {
+      "fr": "RACLETTE JAMBON SPECK",
+      "en": "Cheese, potatoes, onions, smoked ham Speck, gherkins"
+     },
+     "de": {
+      "fr": "RACLETTE JAMBON SPECK",
+      "en": "Cheese, potatoes, onions, smoked ham Speck, gherkins"
+     }
+    },
+    "it": {
+     "fr": "RACLETTE CON PROSCIUTTO SPECK",
+     "en": "Formaggio, patate, cipolle, prosciutto affumicato Speck, cetriolini"
+    },
+    "de": {
+     "fr": "RACLETTE MIT SPECK-SCHINKEN",
+     "en": "Käse, Kartoffeln, Zwiebeln, geräucherter Speck-Schinken, Cornichons"
+    }
+   }
+  },
+  {
+   "id": "m444",
+   "type": "item",
+   "fr": "RACLETTE VIANDE DES GRISONS",
+   "en": "Cheese, potatoes, dry beef, onions, gherkins",
+   "price": "30,50",
+   "tr": {
+    "en": {
+     "fr": "RACLETTE WITH GRISONS AIR-DRIED BEEF",
+     "en": "Raclette cheese, potatoes, Grisons air-dried beef, onions, gherkins"
+    },
+    "src": {
+     "en": {
+      "fr": "RACLETTE VIANDE DES GRISONS",
+      "en": "Cheese, potatoes, dry beef, onions, gherkins"
+     },
+     "it": {
+      "fr": "RACLETTE VIANDE DES GRISONS",
+      "en": "Cheese, potatoes, dry beef, onions, gherkins"
+     },
+     "de": {
+      "fr": "RACLETTE VIANDE DES GRISONS",
+      "en": "Cheese, potatoes, dry beef, onions, gherkins"
+     }
+    },
+    "it": {
+     "fr": "RACLETTE CON CARNE SECCA DEI GRIGIONI",
+     "en": "Formaggio, patate, carne secca dei Grigioni, cipolle, cetriolini"
+    },
+    "de": {
+     "fr": "RACLETTE MIT BÜNDNERFLEISCH",
+     "en": "Käse, Kartoffeln, Bündnerfleisch, Zwiebeln, Cornichons"
+    }
+   }
+  },
+  {
+   "id": "m445",
+   "type": "item",
+   "fr": "RACLETTE JAMBON BLANC À LA TRUFFE",
+   "en": "Cheese, potatoes, truffle ham, onions, salad, gherkins",
+   "price": "36,50",
+   "tr": {
+    "en": {
+     "fr": "RACLETTE WITH TRUFFLED HAM",
+     "en": "Raclette cheese, potatoes, truffled ham, onions, salad, gherkins"
+    },
+    "src": {
+     "en": {
+      "fr": "RACLETTE JAMBON BLANC À LA TRUFFE",
+      "en": "Cheese, potatoes, truffle ham, onions, salad, gherkins"
+     },
+     "it": {
+      "fr": "RACLETTE JAMBON BLANC À LA TRUFFE",
+      "en": "Cheese, potatoes, truffle ham, onions, salad, gherkins"
+     },
+     "de": {
+      "fr": "RACLETTE JAMBON BLANC À LA TRUFFE",
+      "en": "Cheese, potatoes, truffle ham, onions, salad, gherkins"
+     }
+    },
+    "it": {
+     "fr": "RACLETTE CON PROSCIUTTO COTTO AL TARTUFO",
+     "en": "Formaggio, patate, prosciutto cotto al tartufo, cipolle, insalata, cetriolini"
+    },
+    "de": {
+     "fr": "RACLETTE MIT TRÜFFEL-KOCHSCHINKEN",
+     "en": "Käse, Kartoffeln, Trüffel-Kochschinken, Zwiebeln, Salat, Cornichons"
+    }
+   }
+  },
+  {
+   "id": "m446",
+   "type": "item",
+   "fr": "RACLETTE ROYALE",
+   "en": "Cheese, potatoes, onions, charcuterie, green salad, gherkins",
+   "price": "33,50",
+   "desc": "Assiette de charcuterie, salade",
+   "tr": {
+    "en": {
+     "fr": "RACLETTE ROYALE",
+     "desc": "Charcuterie platter, salad",
+     "en": "Raclette cheese, potatoes, onions, charcuterie, green salad, gherkins"
+    },
+    "src": {
+     "en": {
+      "fr": "RACLETTE ROYALE",
+      "desc": "Assiette de charcuterie, salade",
+      "en": "Cheese, potatoes, onions, charcuterie, green salad, gherkins"
+     },
+     "it": {
+      "fr": "RACLETTE ROYALE",
+      "desc": "Assiette de charcuterie, salade",
+      "en": "Cheese, potatoes, onions, charcuterie, green salad, gherkins"
+     },
+     "de": {
+      "fr": "RACLETTE ROYALE",
+      "desc": "Assiette de charcuterie, salade",
+      "en": "Cheese, potatoes, onions, charcuterie, green salad, gherkins"
+     }
+    },
+    "it": {
+     "fr": "RACLETTE ROYALE",
+     "desc": "Piatto di salumi, insalata",
+     "en": "Formaggio, patate, cipolle, salumi, insalata verde, cetriolini"
+    },
+    "de": {
+     "fr": "RACLETTE ROYALE",
+     "desc": "Aufschnittplatte, Salat",
+     "en": "Käse, Kartoffeln, Zwiebeln, Aufschnitt, grüner Salat, Cornichons"
+    }
+   }
+  },
+  {
+   "id": "m447",
+   "type": "item",
+   "fr": "RACLETTE VÉGÉTARIENNE",
+   "en": "Cheese, tomatoes, corn, potatoes, green salad, gherkins, artichoke",
+   "price": "29,50",
+   "tags": [
+    "veg"
+   ],
+   "desc": "Assiette de crudités",
+   "tr": {
+    "en": {
+     "fr": "VEGETARIAN RACLETTE",
+     "desc": "Crudités platter",
+     "en": "Raclette cheese, tomatoes, sweetcorn, potatoes, green salad, gherkins, artichoke"
+    },
+    "src": {
+     "en": {
+      "fr": "RACLETTE VÉGÉTARIENNE",
+      "desc": "Assiette de crudités",
+      "en": "Cheese, tomatoes, corn, potatoes, green salad, gherkins, artichoke"
+     },
+     "it": {
+      "fr": "RACLETTE VÉGÉTARIENNE",
+      "desc": "Assiette de crudités",
+      "en": "Cheese, tomatoes, corn, potatoes, green salad, gherkins, artichoke"
+     },
+     "de": {
+      "fr": "RACLETTE VÉGÉTARIENNE",
+      "desc": "Assiette de crudités",
+      "en": "Cheese, tomatoes, corn, potatoes, green salad, gherkins, artichoke"
+     }
+    },
+    "it": {
+     "fr": "RACLETTE VEGETARIANA",
+     "desc": "Piatto di verdure crude",
+     "en": "Formaggio, pomodori, mais, patate, insalata verde, cetriolini, carciofi"
+    },
+    "de": {
+     "fr": "VEGETARISCHE RACLETTE",
+     "desc": "Rohkostteller",
+     "en": "Käse, Tomaten, Mais, Kartoffeln, grüner Salat, Cornichons, Artischocke"
+    }
+   }
+  },
+  {
+   "id": "m448",
+   "type": "colbreak"
+  },
+  {
+   "id": "m449",
+   "type": "image",
+   "src": "assets/photos/raclette.jpg",
+   "widthPct": 100,
+   "heightPx": 140,
+   "mt": 4
+  },
+  {
+   "id": "m450",
+   "type": "colsend"
+  },
+  {
+   "id": "m451",
+   "type": "section",
+   "fr": "Les fondues aux 3 fromages",
+   "tr": {
+    "en": {
+     "fr": "3-cheese fondues"
+    },
+    "src": {
+     "en": {
+      "fr": "Les fondues aux 3 fromages"
+     },
+     "it": {
+      "fr": "Les fondues aux 3 fromages"
+     },
+     "de": {
+      "fr": "Les fondues aux 3 fromages"
+     }
+    },
+    "it": {
+     "fr": "Le fondute ai 3 formaggi"
+    },
+    "de": {
+     "fr": "Fondues mit 3 Käsesorten"
+    }
+   },
+   "en": "3-cheese fondues"
+  },
+  {
+   "id": "m452",
+   "type": "cols",
+   "ratio": "28/72",
+   "gap": 34
+  },
+  {
+   "id": "m453",
+   "type": "image",
+   "src": "assets/photos/fondue.jpg",
+   "widthPct": 100,
+   "heightPx": 118,
+   "mt": 2
+  },
+  {
+   "id": "m454",
+   "type": "colbreak"
+  },
+  {
+   "id": "m455",
+   "type": "item",
+   "fr": "FONDUE SAVOYARDE",
+   "en": "Cheese fondue, (Comté, Emmental, Beaufort), bread",
+   "price": "26,50",
+   "tags": [
+    "veg"
+   ],
+   "desc": "Salade verte",
+   "tr": {
+    "en": {
+     "fr": "FONDUE SAVOYARDE",
+     "desc": "Green salad",
+     "en": "Cheese fondue (Comté, Emmental, Beaufort), bread"
+    },
+    "src": {
+     "en": {
+      "fr": "FONDUE SAVOYARDE",
+      "desc": "Salade verte",
+      "en": "Cheese fondue, (Comté, Emmental, Beaufort), bread"
+     },
+     "it": {
+      "fr": "FONDUE SAVOYARDE",
+      "desc": "Salade verte",
+      "en": "Cheese fondue, (Comté, Emmental, Beaufort), bread"
+     },
+     "de": {
+      "fr": "FONDUE SAVOYARDE",
+      "desc": "Salade verte",
+      "en": "Cheese fondue, (Comté, Emmental, Beaufort), bread"
+     }
+    },
+    "it": {
+     "fr": "FONDUE SAVOYARDE",
+     "desc": "Insalata verde",
+     "en": "Fonduta di formaggi (Comté, Emmental, Beaufort), pane"
+    },
+    "de": {
+     "fr": "FONDUE SAVOYARDE",
+     "desc": "Grüner Salat",
+     "en": "Käsefondue (Comté, Emmentaler, Beaufort), Brot"
+    }
+   }
+  },
+  {
+   "id": "m456",
+   "type": "item",
+   "fr": "FONDUE SAVOYARDE ROYALE",
+   "en": "Cheese fondue, bread, charcuterie plate, green salad",
+   "price": "31,50",
+   "desc": "Assiette de charcuterie, salade verte",
+   "tr": {
+    "en": {
+     "fr": "FONDUE SAVOYARDE ROYALE",
+     "desc": "Charcuterie platter, green salad",
+     "en": "Cheese fondue, bread, charcuterie platter, green salad"
+    },
+    "src": {
+     "en": {
+      "fr": "FONDUE SAVOYARDE ROYALE",
+      "desc": "Assiette de charcuterie, salade verte",
+      "en": "Cheese fondue, bread, charcuterie plate, green salad"
+     },
+     "it": {
+      "fr": "FONDUE SAVOYARDE ROYALE",
+      "desc": "Assiette de charcuterie, salade verte",
+      "en": "Cheese fondue, bread, charcuterie plate, green salad"
+     },
+     "de": {
+      "fr": "FONDUE SAVOYARDE ROYALE",
+      "desc": "Assiette de charcuterie, salade verte",
+      "en": "Cheese fondue, bread, charcuterie plate, green salad"
+     }
+    },
+    "it": {
+     "fr": "FONDUE SAVOYARDE ROYALE",
+     "desc": "Piatto di salumi, insalata verde",
+     "en": "Fonduta di formaggi, pane, piatto di salumi, insalata verde"
+    },
+    "de": {
+     "fr": "FONDUE SAVOYARDE ROYALE",
+     "desc": "Aufschnittplatte, grüner Salat",
+     "en": "Käsefondue, Brot, Aufschnittplatte, grüner Salat"
+    }
+   }
+  },
+  {
+   "id": "m457",
+   "type": "item",
+   "fr": "FONDUE SAVOYARDE AUX MORILLES ***",
+   "en": "Cheese fondue, bread, mushrooms",
+   "price": "34,50",
+   "tags": [
+    "veg"
+   ],
+   "tr": {
+    "en": {
+     "fr": "FONDUE SAVOYARDE WITH MORELS ***",
+     "en": "Cheese fondue, bread, mushrooms"
+    },
+    "src": {
+     "en": {
+      "fr": "FONDUE SAVOYARDE AUX MORILLES ***",
+      "en": "Cheese fondue, bread, mushrooms"
+     },
+     "it": {
+      "fr": "FONDUE SAVOYARDE AUX MORILLES ***",
+      "en": "Cheese fondue, bread, mushrooms"
+     },
+     "de": {
+      "fr": "FONDUE SAVOYARDE AUX MORILLES ***",
+      "en": "Cheese fondue, bread, mushrooms"
+     }
+    },
+    "it": {
+     "fr": "FONDUE SAVOYARDE CON SPUGNOLE ***",
+     "en": "Fonduta di formaggi, pane, funghi"
+    },
+    "de": {
+     "fr": "FONDUE SAVOYARDE MIT MORCHELN ***",
+     "en": "Käsefondue, Brot, Pilze"
+    }
+   }
+  },
+  {
+   "id": "m458",
+   "type": "item",
+   "fr": "FONDUE SAVOYARDE AUX CÈPES ***",
+   "en": "Cheese fondue, bread, mushrooms",
+   "price": "32,50",
+   "tags": [
+    "veg"
+   ],
+   "tr": {
+    "en": {
+     "fr": "FONDUE SAVOYARDE WITH PORCINI ***",
+     "en": "Cheese fondue, bread, mushrooms"
+    },
+    "src": {
+     "en": {
+      "fr": "FONDUE SAVOYARDE AUX CÈPES ***",
+      "en": "Cheese fondue, bread, mushrooms"
+     },
+     "it": {
+      "fr": "FONDUE SAVOYARDE AUX CÈPES ***",
+      "en": "Cheese fondue, bread, mushrooms"
+     },
+     "de": {
+      "fr": "FONDUE SAVOYARDE AUX CÈPES ***",
+      "en": "Cheese fondue, bread, mushrooms"
+     }
+    },
+    "it": {
+     "fr": "FONDUE SAVOYARDE CON PORCINI ***",
+     "en": "Fonduta di formaggi, pane, funghi"
+    },
+    "de": {
+     "fr": "FONDUE SAVOYARDE MIT STEINPILZEN ***",
+     "en": "Käsefondue, Brot, Pilze"
+    }
+   }
+  },
+  {
+   "id": "m459",
+   "type": "item",
+   "fr": "FONDUE SAVOYARDE À LA TRUFFE FRAÎCHE",
+   "en": "Cheese fondue, bread, truffle ***",
+   "price": "53,00",
+   "tags": [
+    "veg"
+   ],
+   "tr": {
+    "en": {
+     "fr": "FONDUE SAVOYARDE WITH FRESH TRUFFLE",
+     "en": "Cheese fondue, bread, fresh truffle ***"
+    },
+    "src": {
+     "en": {
+      "fr": "FONDUE SAVOYARDE À LA TRUFFE FRAÎCHE",
+      "en": "Cheese fondue, bread, truffle ***"
+     },
+     "it": {
+      "fr": "FONDUE SAVOYARDE À LA TRUFFE FRAÎCHE",
+      "en": "Cheese fondue, bread, truffle ***"
+     },
+     "de": {
+      "fr": "FONDUE SAVOYARDE À LA TRUFFE FRAÎCHE",
+      "en": "Cheese fondue, bread, truffle ***"
+     }
+    },
+    "it": {
+     "fr": "FONDUE SAVOYARDE AL TARTUFO FRESCO",
+     "en": "Fonduta di formaggi, pane, tartufo ***"
+    },
+    "de": {
+     "fr": "FONDUE SAVOYARDE MIT FRISCHEM TRÜFFEL",
+     "en": "Käsefondue, Brot, Trüffel ***"
+    }
+   }
+  },
+  {
+   "id": "m460",
+   "type": "item",
+   "fr": "***SUPPLÉMENT CHARCUTERIE ROYALE",
+   "price": "8,00",
+   "tr": {
+    "en": {
+     "fr": "***EXTRA CHARCUTERIE FOR THE ROYALE"
+    },
+    "src": {
+     "en": {
+      "fr": "***SUPPLÉMENT CHARCUTERIE ROYALE"
+     },
+     "it": {
+      "fr": "***SUPPLÉMENT CHARCUTERIE ROYALE"
+     },
+     "de": {
+      "fr": "***SUPPLÉMENT CHARCUTERIE ROYALE"
+     }
+    },
+    "it": {
+     "fr": "***SUPPLEMENTO SALUMI ROYALE"
+    },
+    "de": {
+     "fr": "***AUFPREIS AUFSCHNITTPLATTE ROYALE"
+    }
+   }
+  },
+  {
+   "id": "m461",
+   "type": "colsend"
+  },
+  {
+   "id": "m462",
+   "type": "legend",
+   "text": "Prix nets en euros, service compris · Net prices in euros, service included",
+   "tr": {
+    "en": {
+     "text": "Net prices in euros, service included"
+    },
+    "src": {
+     "en": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "it": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "de": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     }
+    },
+    "it": {
+     "text": "Prezzi netti in euro, servizio incluso"
+    },
+    "de": {
+     "text": "Nettopreise in Euro, Bedienung inbegriffen"
+    }
+   }
+  },
+  {
+   "id": "m463",
+   "type": "pagebreak"
+  },
+  {
+   "id": "m464",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 12,
+   "mb": 0,
+   "mt": 0
+  },
+  {
+   "id": "m465",
+   "type": "section",
+   "fr": "Les galettes",
+   "tr": {
+    "en": {
+     "fr": "Buckwheat galettes"
+    },
+    "src": {
+     "en": {
+      "fr": "Les galettes"
+     },
+     "it": {
+      "fr": "Les galettes"
+     },
+     "de": {
+      "fr": "Les galettes"
+     }
+    },
+    "it": {
+     "fr": "Le galettes"
+    },
+    "de": {
+     "fr": "Galettes"
+    }
+   },
+   "en": "Buckwheat galettes"
+  },
+  {
+   "id": "m466",
+   "type": "item",
+   "fr": "GALETTE, OEUF, JAMBON",
+   "price": "14,00",
+   "en": "Egg, ham",
+   "tr": {
+    "en": {
+     "fr": "GALETTE, EGG, HAM",
+     "en": "Egg, ham"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE, OEUF, JAMBON",
+      "en": "Egg, ham"
+     },
+     "it": {
+      "fr": "GALETTE, OEUF, JAMBON",
+      "en": "Egg, ham"
+     },
+     "de": {
+      "fr": "GALETTE, OEUF, JAMBON",
+      "en": "Egg, ham"
+     }
+    },
+    "it": {
+     "fr": "GALETTE, UOVO, PROSCIUTTO",
+     "en": "Uovo, prosciutto"
+    },
+    "de": {
+     "fr": "GALETTE, EI, SCHINKEN",
+     "en": "Ei, Schinken"
+    }
+   }
+  },
+  {
+   "id": "m467",
+   "type": "item",
+   "fr": "GALETTE, JAMBON, FROMAGE",
+   "price": "14,00",
+   "en": "Ham, cheese",
+   "tr": {
+    "en": {
+     "fr": "GALETTE, HAM, CHEESE",
+     "en": "Ham, cheese"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE, JAMBON, FROMAGE",
+      "en": "Ham, cheese"
+     },
+     "it": {
+      "fr": "GALETTE, JAMBON, FROMAGE",
+      "en": "Ham, cheese"
+     },
+     "de": {
+      "fr": "GALETTE, JAMBON, FROMAGE",
+      "en": "Ham, cheese"
+     }
+    },
+    "it": {
+     "fr": "GALETTE, PROSCIUTTO, FORMAGGIO",
+     "en": "Prosciutto, formaggio"
+    },
+    "de": {
+     "fr": "GALETTE, SCHINKEN, KÄSE",
+     "en": "Schinken, Käse"
+    }
+   }
+  },
+  {
+   "id": "m468",
+   "type": "item",
+   "fr": "GALETTE, OEUF, JAMBON, FROMAGE",
+   "price": "16,00",
+   "en": "Egg, ham, cheese",
+   "tr": {
+    "en": {
+     "fr": "GALETTE, EGG, HAM, CHEESE",
+     "en": "Egg, ham, cheese"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE, OEUF, JAMBON, FROMAGE",
+      "en": "Egg, ham, cheese"
+     },
+     "it": {
+      "fr": "GALETTE, OEUF, JAMBON, FROMAGE",
+      "en": "Egg, ham, cheese"
+     },
+     "de": {
+      "fr": "GALETTE, OEUF, JAMBON, FROMAGE",
+      "en": "Egg, ham, cheese"
+     }
+    },
+    "it": {
+     "fr": "GALETTE, UOVO, PROSCIUTTO, FORMAGGIO",
+     "en": "Uovo, prosciutto, formaggio"
+    },
+    "de": {
+     "fr": "GALETTE, EI, SCHINKEN, KÄSE",
+     "en": "Ei, Schinken, Käse"
+    }
+   }
+  },
+  {
+   "id": "m469",
+   "type": "item",
+   "fr": "GALETTE, CHAMPIGNONS, SAUCISSE, FROMAGE",
+   "price": "15,00",
+   "en": "Mushrooms, sausage, cheese",
+   "tr": {
+    "en": {
+     "fr": "GALETTE, MUSHROOMS, SAUSAGE, CHEESE",
+     "en": "Mushrooms, sausage, cheese"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE, CHAMPIGNONS, SAUCISSE, FROMAGE",
+      "en": "Mushrooms, sausage, cheese"
+     },
+     "it": {
+      "fr": "GALETTE, CHAMPIGNONS, SAUCISSE, FROMAGE",
+      "en": "Mushrooms, sausage, cheese"
+     },
+     "de": {
+      "fr": "GALETTE, CHAMPIGNONS, SAUCISSE, FROMAGE",
+      "en": "Mushrooms, sausage, cheese"
+     }
+    },
+    "it": {
+     "fr": "GALETTE, FUNGHI, SALSICCIA, FORMAGGIO",
+     "en": "Funghi, salsiccia, formaggio"
+    },
+    "de": {
+     "fr": "GALETTE, CHAMPIGNONS, WURST, KÄSE",
+     "en": "Champignons, Wurst, Käse"
+    }
+   }
+  },
+  {
+   "id": "m470",
+   "type": "item",
+   "fr": "GALETTE CAUCHOISE",
+   "price": "17,00",
+   "desc": "Pommes, Grison et 3 fromages",
+   "en": "Apple, dry beef, 3 cheeses",
+   "tr": {
+    "en": {
+     "fr": "GALETTE CAUCHOISE",
+     "desc": "Apples, Grisons air-dried beef and 3 cheeses",
+     "en": "Apples, Grisons air-dried beef, 3 cheeses"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE CAUCHOISE",
+      "desc": "Pommes, Grison et 3 fromages",
+      "en": "Apple, dry beef, 3 cheeses"
+     },
+     "it": {
+      "fr": "GALETTE CAUCHOISE",
+      "desc": "Pommes, Grison et 3 fromages",
+      "en": "Apple, dry beef, 3 cheeses"
+     },
+     "de": {
+      "fr": "GALETTE CAUCHOISE",
+      "desc": "Pommes, Grison et 3 fromages",
+      "en": "Apple, dry beef, 3 cheeses"
+     }
+    },
+    "it": {
+     "fr": "GALETTE CAUCHOISE",
+     "desc": "Mele, carne secca dei Grigioni e 3 formaggi",
+     "en": "Mele, carne secca dei Grigioni, 3 formaggi"
+    },
+    "de": {
+     "fr": "GALETTE CAUCHOISE",
+     "desc": "Äpfel, Bündnerfleisch und 3 Käsesorten",
+     "en": "Äpfel, Bündnerfleisch, 3 Käsesorten"
+    }
+   }
+  },
+  {
+   "id": "m471",
+   "type": "item",
+   "fr": "GALETTE NIÇOISE",
+   "price": "17,50",
+   "desc": "Oeuf, jambon, fromage, ratatouille",
+   "en": "Egg, ham, cheese, ratatouille",
+   "tr": {
+    "en": {
+     "fr": "GALETTE NIÇOISE",
+     "desc": "Egg, ham, cheese, ratatouille",
+     "en": "Egg, ham, cheese, ratatouille"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE NIÇOISE",
+      "desc": "Oeuf, jambon, fromage, ratatouille",
+      "en": "Egg, ham, cheese, ratatouille"
+     },
+     "it": {
+      "fr": "GALETTE NIÇOISE",
+      "desc": "Oeuf, jambon, fromage, ratatouille",
+      "en": "Egg, ham, cheese, ratatouille"
+     },
+     "de": {
+      "fr": "GALETTE NIÇOISE",
+      "desc": "Oeuf, jambon, fromage, ratatouille",
+      "en": "Egg, ham, cheese, ratatouille"
+     }
+    },
+    "it": {
+     "fr": "GALETTE NIÇOISE",
+     "desc": "Uovo, prosciutto, formaggio, ratatouille",
+     "en": "Uovo, prosciutto, formaggio, ratatouille"
+    },
+    "de": {
+     "fr": "GALETTE NIÇOISE",
+     "desc": "Ei, Schinken, Käse, Ratatouille",
+     "en": "Ei, Schinken, Käse, Ratatouille"
+    }
+   }
+  },
+  {
+   "id": "m472",
+   "type": "item",
+   "fr": "GALETTE DU SKIEUR",
+   "price": "17,50",
+   "desc": "Oeuf, jambon, fromage, crème",
+   "en": "Egg, ham, cheese, fresh cream",
+   "tr": {
+    "en": {
+     "fr": "GALETTE DU SKIEUR",
+     "desc": "Egg, ham, cheese, cream",
+     "en": "Egg, ham, cheese, cream"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE DU SKIEUR",
+      "desc": "Oeuf, jambon, fromage, crème",
+      "en": "Egg, ham, cheese, fresh cream"
+     },
+     "it": {
+      "fr": "GALETTE DU SKIEUR",
+      "desc": "Oeuf, jambon, fromage, crème",
+      "en": "Egg, ham, cheese, fresh cream"
+     },
+     "de": {
+      "fr": "GALETTE DU SKIEUR",
+      "desc": "Oeuf, jambon, fromage, crème",
+      "en": "Egg, ham, cheese, fresh cream"
+     }
+    },
+    "it": {
+     "fr": "GALETTE DU SKIEUR",
+     "desc": "Uovo, prosciutto, formaggio, panna",
+     "en": "Uovo, prosciutto, formaggio, panna fresca"
+    },
+    "de": {
+     "fr": "GALETTE DU SKIEUR",
+     "desc": "Ei, Schinken, Käse, Sahne",
+     "en": "Ei, Schinken, Käse, Sahne"
+    }
+   }
+  },
+  {
+   "id": "m473",
+   "type": "item",
+   "fr": "GALETTE ROYALE",
+   "price": "17,50",
+   "desc": "Jambon, tomate, champignons, fromage",
+   "en": "Ham, tomato, mushrooms, cheese",
+   "tr": {
+    "en": {
+     "fr": "GALETTE ROYALE",
+     "desc": "Ham, tomato, mushrooms, cheese",
+     "en": "Ham, tomato, mushrooms, cheese"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE ROYALE",
+      "desc": "Jambon, tomate, champignons, fromage",
+      "en": "Ham, tomato, mushrooms, cheese"
+     },
+     "it": {
+      "fr": "GALETTE ROYALE",
+      "desc": "Jambon, tomate, champignons, fromage",
+      "en": "Ham, tomato, mushrooms, cheese"
+     },
+     "de": {
+      "fr": "GALETTE ROYALE",
+      "desc": "Jambon, tomate, champignons, fromage",
+      "en": "Ham, tomato, mushrooms, cheese"
+     }
+    },
+    "it": {
+     "fr": "GALETTE ROYALE",
+     "desc": "Prosciutto, pomodoro, funghi, formaggio",
+     "en": "Prosciutto, pomodoro, funghi, formaggio"
+    },
+    "de": {
+     "fr": "GALETTE ROYALE",
+     "desc": "Schinken, Tomate, Champignons, Käse",
+     "en": "Schinken, Tomate, Champignons, Käse"
+    }
+   }
+  },
+  {
+   "id": "m474",
+   "type": "item",
+   "fr": "GALETTE BRETONNE",
+   "price": "18,00",
+   "desc": "Oeuf, jambon, fromage, tomate, salade",
+   "en": "Egg, ham, cheese, tomato, salad",
+   "tr": {
+    "en": {
+     "fr": "GALETTE BRETONNE",
+     "desc": "Egg, ham, cheese, tomato, salad",
+     "en": "Egg, ham, cheese, tomato, salad"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE BRETONNE",
+      "desc": "Oeuf, jambon, fromage, tomate, salade",
+      "en": "Egg, ham, cheese, tomato, salad"
+     },
+     "it": {
+      "fr": "GALETTE BRETONNE",
+      "desc": "Oeuf, jambon, fromage, tomate, salade",
+      "en": "Egg, ham, cheese, tomato, salad"
+     },
+     "de": {
+      "fr": "GALETTE BRETONNE",
+      "desc": "Oeuf, jambon, fromage, tomate, salade",
+      "en": "Egg, ham, cheese, tomato, salad"
+     }
+    },
+    "it": {
+     "fr": "GALETTE BRETONNE",
+     "desc": "Uovo, prosciutto, formaggio, pomodoro, insalata",
+     "en": "Uovo, prosciutto, formaggio, pomodoro, insalata"
+    },
+    "de": {
+     "fr": "GALETTE BRETONNE",
+     "desc": "Ei, Schinken, Käse, Tomate, Salat",
+     "en": "Ei, Schinken, Käse, Tomate, Salat"
+    }
+   }
+  },
+  {
+   "id": "m475",
+   "type": "item",
+   "fr": "GALETTE PAYSANNE",
+   "en": "Egg, bacon, cheese, mushrooms, fresh cream",
+   "price": "18,00",
+   "desc": "Oeuf, lardons, fromage, champignons, crème",
+   "tr": {
+    "en": {
+     "fr": "GALETTE PAYSANNE",
+     "desc": "Egg, lardons, cheese, mushrooms, cream",
+     "en": "Egg, lardons, cheese, mushrooms, cream"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE PAYSANNE",
+      "desc": "Oeuf, lardons, fromage, champignons, crème",
+      "en": "Egg, bacon, cheese, mushrooms, fresh cream"
+     },
+     "it": {
+      "fr": "GALETTE PAYSANNE",
+      "desc": "Oeuf, lardons, fromage, champignons, crème",
+      "en": "Egg, bacon, cheese, mushrooms, fresh cream"
+     },
+     "de": {
+      "fr": "GALETTE PAYSANNE",
+      "desc": "Oeuf, lardons, fromage, champignons, crème",
+      "en": "Egg, bacon, cheese, mushrooms, fresh cream"
+     }
+    },
+    "it": {
+     "fr": "GALETTE PAYSANNE",
+     "desc": "Uovo, pancetta, formaggio, funghi, panna",
+     "en": "Uovo, pancetta, formaggio, funghi, panna fresca"
+    },
+    "de": {
+     "fr": "GALETTE PAYSANNE",
+     "desc": "Ei, Speckwürfel, Käse, Champignons, Sahne",
+     "en": "Ei, Speckwürfel, Käse, Champignons, Sahne"
+    }
+   }
+  },
+  {
+   "id": "m476",
+   "type": "item",
+   "fr": "GALETTE VIROISE",
+   "en": "Egg, Normandy country sausage, cheese, mushrooms, fresh cream",
+   "price": "18,00",
+   "desc": "Oeuf, andouille, fromage, champignons, crème",
+   "tr": {
+    "en": {
+     "fr": "GALETTE VIROISE",
+     "desc": "Egg, andouille (Normandy pork tripe sausage), cheese, mushrooms, cream",
+     "en": "Egg, andouille (Normandy pork tripe sausage), cheese, mushrooms, cream"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE VIROISE",
+      "desc": "Oeuf, andouille, fromage, champignons, crème",
+      "en": "Egg, Normandy country sausage, cheese, mushrooms, fresh cream"
+     },
+     "it": {
+      "fr": "GALETTE VIROISE",
+      "desc": "Oeuf, andouille, fromage, champignons, crème",
+      "en": "Egg, Normandy country sausage, cheese, mushrooms, fresh cream"
+     },
+     "de": {
+      "fr": "GALETTE VIROISE",
+      "desc": "Oeuf, andouille, fromage, champignons, crème",
+      "en": "Egg, Normandy country sausage, cheese, mushrooms, fresh cream"
+     }
+    },
+    "it": {
+     "fr": "GALETTE VIROISE",
+     "desc": "Uovo, andouille (insaccato di trippa di maiale), formaggio, funghi, panna",
+     "en": "Uovo, andouille (insaccato di trippa di maiale), formaggio, funghi, panna fresca"
+    },
+    "de": {
+     "fr": "GALETTE VIROISE",
+     "desc": "Ei, Andouille (Kuttelwurst aus der Normandie), Käse, Champignons, Sahne",
+     "en": "Ei, Andouille (Kuttelwurst aus der Normandie), Käse, Champignons, Sahne"
+    }
+   }
+  },
+  {
+   "id": "m477",
+   "type": "item",
+   "fr": "GALETTE DES ALPES",
+   "en": "Raclette cheese, potatoes, smoked ham Speck",
+   "price": "18,00",
+   "desc": "Raclette, pomme de terre, jambon Speck",
+   "tr": {
+    "en": {
+     "fr": "GALETTE DES ALPES",
+     "desc": "Raclette, potatoes, Speck ham",
+     "en": "Raclette cheese, potatoes, Speck ham"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE DES ALPES",
+      "desc": "Raclette, pomme de terre, jambon Speck",
+      "en": "Raclette cheese, potatoes, smoked ham Speck"
+     },
+     "it": {
+      "fr": "GALETTE DES ALPES",
+      "desc": "Raclette, pomme de terre, jambon Speck",
+      "en": "Raclette cheese, potatoes, smoked ham Speck"
+     },
+     "de": {
+      "fr": "GALETTE DES ALPES",
+      "desc": "Raclette, pomme de terre, jambon Speck",
+      "en": "Raclette cheese, potatoes, smoked ham Speck"
+     }
+    },
+    "it": {
+     "fr": "GALETTE DES ALPES",
+     "desc": "Raclette, patate, prosciutto Speck",
+     "en": "Formaggio da Raclette, patate, prosciutto affumicato Speck"
+    },
+    "de": {
+     "fr": "GALETTE DES ALPES",
+     "desc": "Raclette, Kartoffeln, Speck-Schinken",
+     "en": "Raclette-Käse, Kartoffeln, geräucherter Speck-Schinken"
+    }
+   }
+  },
+  {
+   "id": "m478",
+   "type": "item",
+   "fr": "GALETTE BERRICHONNE",
+   "en": "Goat cheese, dry tomatoes, honey, nuts, arugula salad",
+   "price": "18,00",
+   "tags": [
+    "veg"
+   ],
+   "desc": "Chèvre, tomates confites, miel, noix, roquette",
+   "tr": {
+    "en": {
+     "fr": "GALETTE BERRICHONNE",
+     "desc": "Goat's cheese, confit tomatoes, honey, walnuts, rocket",
+     "en": "Goat's cheese, confit tomatoes, honey, walnuts, rocket"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE BERRICHONNE",
+      "desc": "Chèvre, tomates confites, miel, noix, roquette",
+      "en": "Goat cheese, dry tomatoes, honey, nuts, arugula salad"
+     },
+     "it": {
+      "fr": "GALETTE BERRICHONNE",
+      "desc": "Chèvre, tomates confites, miel, noix, roquette",
+      "en": "Goat cheese, dry tomatoes, honey, nuts, arugula salad"
+     },
+     "de": {
+      "fr": "GALETTE BERRICHONNE",
+      "desc": "Chèvre, tomates confites, miel, noix, roquette",
+      "en": "Goat cheese, dry tomatoes, honey, nuts, arugula salad"
+     }
+    },
+    "it": {
+     "fr": "GALETTE BERRICHONNE",
+     "desc": "Formaggio di capra, pomodori confit, miele, noci, rucola",
+     "en": "Formaggio di capra, pomodori confit, miele, noci, rucola"
+    },
+    "de": {
+     "fr": "GALETTE BERRICHONNE",
+     "desc": "Ziegenkäse, getrocknete Tomaten, Honig, Walnüsse, Rucola",
+     "en": "Ziegenkäse, getrocknete Tomaten, Honig, Walnüsse, Rucola"
+    }
+   }
+  },
+  {
+   "id": "m479",
+   "type": "item",
+   "fr": "GALETTE SAUMON FUMÉ",
+   "en": "Chive cream, smoked salmon, lemon, arugula salad",
+   "price": "19,00",
+   "desc": "Crème ciboulette, saumon fumé, citron, roquette",
+   "tr": {
+    "en": {
+     "fr": "SMOKED SALMON GALETTE",
+     "desc": "Chive cream, smoked salmon, lemon, rocket",
+     "en": "Chive cream, smoked salmon, lemon, rocket"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE SAUMON FUMÉ",
+      "desc": "Crème ciboulette, saumon fumé, citron, roquette",
+      "en": "Chive cream, smoked salmon, lemon, arugula salad"
+     },
+     "it": {
+      "fr": "GALETTE SAUMON FUMÉ",
+      "desc": "Crème ciboulette, saumon fumé, citron, roquette",
+      "en": "Chive cream, smoked salmon, lemon, arugula salad"
+     },
+     "de": {
+      "fr": "GALETTE SAUMON FUMÉ",
+      "desc": "Crème ciboulette, saumon fumé, citron, roquette",
+      "en": "Chive cream, smoked salmon, lemon, arugula salad"
+     }
+    },
+    "it": {
+     "fr": "GALETTE AL SALMONE AFFUMICATO",
+     "desc": "Crema all'erba cipollina, salmone affumicato, limone, rucola",
+     "en": "Crema all'erba cipollina, salmone affumicato, limone, rucola"
+    },
+    "de": {
+     "fr": "GALETTE MIT RÄUCHERLACHS",
+     "desc": "Schnittlauchcreme, Räucherlachs, Zitrone, Rucola",
+     "en": "Schnittlauchcreme, Räucherlachs, Zitrone, Rucola"
+    }
+   }
+  },
+  {
+   "id": "m480",
+   "type": "item",
+   "fr": "GALETTE KEBAB",
+   "en": "Kebab meat, onions, dry tomatoes, egg, green salad",
+   "price": "18,00",
+   "desc": "Viande kebab, oignons, tomates confites, oeuf, salade",
+   "tr": {
+    "en": {
+     "fr": "KEBAB GALETTE",
+     "desc": "Kebab meat, onions, confit tomatoes, egg, salad",
+     "en": "Kebab meat, onions, confit tomatoes, egg, green salad"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE KEBAB",
+      "desc": "Viande kebab, oignons, tomates confites, oeuf, salade",
+      "en": "Kebab meat, onions, dry tomatoes, egg, green salad"
+     },
+     "it": {
+      "fr": "GALETTE KEBAB",
+      "desc": "Viande kebab, oignons, tomates confites, oeuf, salade",
+      "en": "Kebab meat, onions, dry tomatoes, egg, green salad"
+     },
+     "de": {
+      "fr": "GALETTE KEBAB",
+      "desc": "Viande kebab, oignons, tomates confites, oeuf, salade",
+      "en": "Kebab meat, onions, dry tomatoes, egg, green salad"
+     }
+    },
+    "it": {
+     "fr": "GALETTE KEBAB",
+     "desc": "Carne kebab, cipolle, pomodori confit, uovo, insalata",
+     "en": "Carne kebab, cipolle, pomodori confit, uovo, insalata verde"
+    },
+    "de": {
+     "fr": "GALETTE MIT KEBAB",
+     "desc": "Kebabfleisch, Zwiebeln, getrocknete Tomaten, Ei, Salat",
+     "en": "Kebabfleisch, Zwiebeln, getrocknete Tomaten, Ei, grüner Salat"
+    }
+   }
+  },
+  {
+   "id": "m481",
+   "type": "image",
+   "src": "assets/photos/galette.jpg",
+   "widthPct": 100,
+   "heightPx": 128,
+   "mt": 10
+  },
+  {
+   "id": "m482",
+   "type": "legend",
+   "text": "Prix nets en euros, service compris · Net prices in euros, service included",
+   "tr": {
+    "en": {
+     "text": "Net prices in euros, service included"
+    },
+    "src": {
+     "en": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "it": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "de": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     }
+    },
+    "it": {
+     "text": "Prezzi netti in euro, servizio incluso"
+    },
+    "de": {
+     "text": "Nettopreise in Euro, Bedienung inbegriffen"
+    }
+   }
+  },
+  {
+   "id": "m483",
+   "type": "pagebreak"
+  },
+  {
+   "id": "m484",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 12,
+   "mb": 0,
+   "mt": 0
+  },
+  {
+   "id": "m485",
+   "type": "section",
+   "fr": "Les crêpes",
+   "tr": {
+    "en": {
+     "fr": "Sweet crêpes"
+    },
+    "src": {
+     "en": {
+      "fr": "Les crêpes"
+     },
+     "it": {
+      "fr": "Les crêpes"
+     },
+     "de": {
+      "fr": "Les crêpes"
+     }
+    },
+    "it": {
+     "fr": "Le crêpes"
+    },
+    "de": {
+     "fr": "Crêpes"
+    }
+   },
+   "en": "Sweet crêpes"
+  },
+  {
+   "id": "m486",
+   "type": "image",
+   "src": "assets/photos/crepes.jpg",
+   "widthPct": 100,
+   "heightPx": 72,
+   "mb": 6
+  },
+  {
+   "id": "m487",
+   "type": "item",
+   "fr": "CRÊPE AU SUCRE OU BEURRE SUCRE",
+   "price": "6,70",
+   "en": "Sugar, butter and sugar",
+   "tr": {
+    "en": {
+     "fr": "SUGAR OR BUTTER AND SUGAR CRÊPE",
+     "en": "Sugar, or butter and sugar"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE AU SUCRE OU BEURRE SUCRE",
+      "en": "Sugar, butter and sugar"
+     },
+     "it": {
+      "fr": "CRÊPE AU SUCRE OU BEURRE SUCRE",
+      "en": "Sugar, butter and sugar"
+     },
+     "de": {
+      "fr": "CRÊPE AU SUCRE OU BEURRE SUCRE",
+      "en": "Sugar, butter and sugar"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE ALLO ZUCCHERO O BURRO E ZUCCHERO",
+     "en": "Zucchero oppure burro e zucchero"
+    },
+    "de": {
+     "fr": "CRÊPE MIT ZUCKER ODER MIT BUTTER UND ZUCKER",
+     "en": "Zucker oder Butter und Zucker"
+    }
+   }
+  },
+  {
+   "id": "m488",
+   "type": "item",
+   "fr": "CRÊPE CONFITURE",
+   "price": "8,20",
+   "desc": "Abricot, fraise, framboise, myrtille",
+   "en": "Apricot, strawberry, raspberry, blueberry",
+   "tr": {
+    "en": {
+     "fr": "JAM CRÊPE",
+     "desc": "Apricot, strawberry, raspberry, blueberry",
+     "en": "Apricot, strawberry, raspberry, blueberry"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE CONFITURE",
+      "desc": "Abricot, fraise, framboise, myrtille",
+      "en": "Apricot, strawberry, raspberry, blueberry"
+     },
+     "it": {
+      "fr": "CRÊPE CONFITURE",
+      "desc": "Abricot, fraise, framboise, myrtille",
+      "en": "Apricot, strawberry, raspberry, blueberry"
+     },
+     "de": {
+      "fr": "CRÊPE CONFITURE",
+      "desc": "Abricot, fraise, framboise, myrtille",
+      "en": "Apricot, strawberry, raspberry, blueberry"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE ALLA CONFETTURA",
+     "desc": "Albicocca, fragola, lampone, mirtillo",
+     "en": "Albicocca, fragola, lampone, mirtillo"
+    },
+    "de": {
+     "fr": "CRÊPE MIT KONFITÜRE",
+     "desc": "Aprikose, Erdbeere, Himbeere, Heidelbeere",
+     "en": "Aprikose, Erdbeere, Himbeere, Heidelbeere"
+    }
+   }
+  },
+  {
+   "id": "m489",
+   "type": "item",
+   "fr": "CRÊPE AU SIROP D'ÉRABLE",
+   "price": "8,20",
+   "en": "Maple syrup",
+   "tr": {
+    "en": {
+     "fr": "MAPLE SYRUP CRÊPE",
+     "en": "Maple syrup"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE AU SIROP D'ÉRABLE",
+      "en": "Maple syrup"
+     },
+     "it": {
+      "fr": "CRÊPE AU SIROP D'ÉRABLE",
+      "en": "Maple syrup"
+     },
+     "de": {
+      "fr": "CRÊPE AU SIROP D'ÉRABLE",
+      "en": "Maple syrup"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE ALLO SCIROPPO D'ACERO",
+     "en": "Sciroppo d'acero"
+    },
+    "de": {
+     "fr": "CRÊPE MIT AHORNSIRUP",
+     "en": "Ahornsirup"
+    }
+   }
+  },
+  {
+   "id": "m490",
+   "type": "item",
+   "fr": "CRÊPE CARAMEL AU BEURRE SALÉ",
+   "price": "9,00",
+   "desc": "Caramel",
+   "tr": {
+    "en": {
+     "fr": "SALTED BUTTER CARAMEL CRÊPE",
+     "desc": "Caramel"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE CARAMEL AU BEURRE SALÉ",
+      "desc": "Caramel"
+     },
+     "it": {
+      "fr": "CRÊPE CARAMEL AU BEURRE SALÉ",
+      "desc": "Caramel"
+     },
+     "de": {
+      "fr": "CRÊPE CARAMEL AU BEURRE SALÉ",
+      "desc": "Caramel"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE AL CARAMELLO AL BURRO SALATO",
+     "desc": "Caramello"
+    },
+    "de": {
+     "fr": "CRÊPE MIT SALZBUTTERKARAMELL",
+     "desc": "Karamell"
+    }
+   }
+  },
+  {
+   "id": "m491",
+   "type": "item",
+   "fr": "CRÊPE CITRON, BEURRE, SUCRE",
+   "price": "8,50",
+   "en": "Lemon, butter, sugar",
+   "tr": {
+    "en": {
+     "fr": "LEMON, BUTTER AND SUGAR CRÊPE",
+     "en": "Lemon, butter, sugar"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE CITRON, BEURRE, SUCRE",
+      "en": "Lemon, butter, sugar"
+     },
+     "it": {
+      "fr": "CRÊPE CITRON, BEURRE, SUCRE",
+      "en": "Lemon, butter, sugar"
+     },
+     "de": {
+      "fr": "CRÊPE CITRON, BEURRE, SUCRE",
+      "en": "Lemon, butter, sugar"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE LIMONE, BURRO, ZUCCHERO",
+     "en": "Limone, burro, zucchero"
+    },
+    "de": {
+     "fr": "CRÊPE MIT ZITRONE, BUTTER, ZUCKER",
+     "en": "Zitrone, Butter, Zucker"
+    }
+   }
+  },
+  {
+   "id": "m492",
+   "type": "item",
+   "fr": "CRÊPE CHOCOLAT MAISON OU NUTELLA",
+   "price": "9,00",
+   "en": "Chocolate homemade or Nutella",
+   "tr": {
+    "en": {
+     "fr": "HOMEMADE CHOCOLATE OR NUTELLA CRÊPE",
+     "en": "Homemade chocolate or Nutella"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE CHOCOLAT MAISON OU NUTELLA",
+      "en": "Chocolate homemade or Nutella"
+     },
+     "it": {
+      "fr": "CRÊPE CHOCOLAT MAISON OU NUTELLA",
+      "en": "Chocolate homemade or Nutella"
+     },
+     "de": {
+      "fr": "CRÊPE CHOCOLAT MAISON OU NUTELLA",
+      "en": "Chocolate homemade or Nutella"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE AL CIOCCOLATO FATTO IN CASA O ALLA NUTELLA",
+     "en": "Cioccolato fatto in casa o Nutella"
+    },
+    "de": {
+     "fr": "CRÊPE MIT HAUSGEMACHTER SCHOKOLADE ODER NUTELLA",
+     "en": "Hausgemachte Schokolade oder Nutella"
+    }
+   }
+  },
+  {
+   "id": "m493",
+   "type": "item",
+   "fr": "CRÊPE POMMES",
+   "price": "9,00",
+   "en": "Apples",
+   "tr": {
+    "en": {
+     "fr": "APPLE CRÊPE",
+     "en": "Apples"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE POMMES",
+      "en": "Apples"
+     },
+     "it": {
+      "fr": "CRÊPE POMMES",
+      "en": "Apples"
+     },
+     "de": {
+      "fr": "CRÊPE POMMES",
+      "en": "Apples"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE ALLE MELE",
+     "en": "Mele"
+    },
+    "de": {
+     "fr": "CRÊPE MIT ÄPFELN",
+     "en": "Äpfel"
+    }
+   }
+  },
+  {
+   "id": "m494",
+   "type": "item",
+   "fr": "CRÊPE AU MIEL ET NOIX",
+   "price": "9,30",
+   "en": "Honey and nuts",
+   "tr": {
+    "en": {
+     "fr": "HONEY AND WALNUT CRÊPE",
+     "en": "Honey and walnuts"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE AU MIEL ET NOIX",
+      "en": "Honey and nuts"
+     },
+     "it": {
+      "fr": "CRÊPE AU MIEL ET NOIX",
+      "en": "Honey and nuts"
+     },
+     "de": {
+      "fr": "CRÊPE AU MIEL ET NOIX",
+      "en": "Honey and nuts"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE AL MIELE E NOCI",
+     "en": "Miele e noci"
+    },
+    "de": {
+     "fr": "CRÊPE MIT HONIG UND WALNÜSSEN",
+     "en": "Honig und Walnüsse"
+    }
+   }
+  },
+  {
+   "id": "m495",
+   "type": "item",
+   "fr": "CRÊPE POMMES ET CHOCOLAT",
+   "price": "10,50",
+   "en": "Apples and chocolate",
+   "tr": {
+    "en": {
+     "fr": "APPLE AND CHOCOLATE CRÊPE",
+     "en": "Apples and chocolate"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE POMMES ET CHOCOLAT",
+      "en": "Apples and chocolate"
+     },
+     "it": {
+      "fr": "CRÊPE POMMES ET CHOCOLAT",
+      "en": "Apples and chocolate"
+     },
+     "de": {
+      "fr": "CRÊPE POMMES ET CHOCOLAT",
+      "en": "Apples and chocolate"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE MELE E CIOCCOLATO",
+     "en": "Mele e cioccolato"
+    },
+    "de": {
+     "fr": "CRÊPE MIT ÄPFELN UND SCHOKOLADE",
+     "en": "Äpfel und Schokolade"
+    }
+   }
+  },
+  {
+   "id": "m496",
+   "type": "item",
+   "fr": "CRÊPE BANANE ET CHOCOLAT",
+   "price": "10,50",
+   "en": "Banana and chocolate",
+   "tr": {
+    "en": {
+     "fr": "BANANA AND CHOCOLATE CRÊPE",
+     "en": "Banana and chocolate"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE BANANE ET CHOCOLAT",
+      "en": "Banana and chocolate"
+     },
+     "it": {
+      "fr": "CRÊPE BANANE ET CHOCOLAT",
+      "en": "Banana and chocolate"
+     },
+     "de": {
+      "fr": "CRÊPE BANANE ET CHOCOLAT",
+      "en": "Banana and chocolate"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE BANANA E CIOCCOLATO",
+     "en": "Banana e cioccolato"
+    },
+    "de": {
+     "fr": "CRÊPE MIT BANANE UND SCHOKOLADE",
+     "en": "Banane und Schokolade"
+    }
+   }
+  },
+  {
+   "id": "m497",
+   "type": "item",
+   "fr": "CRÊPE FLAMBÉE",
+   "price": "10,30",
+   "desc": "Rhum, Grand-Marnier, Calvados (au choix)",
+   "tr": {
+    "en": {
+     "fr": "FLAMBÉED CRÊPE",
+     "desc": "Rum, Grand-Marnier, Calvados (your choice)"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE FLAMBÉE",
+      "desc": "Rhum, Grand-Marnier, Calvados (au choix)"
+     },
+     "it": {
+      "fr": "CRÊPE FLAMBÉE",
+      "desc": "Rhum, Grand-Marnier, Calvados (au choix)"
+     },
+     "de": {
+      "fr": "CRÊPE FLAMBÉE",
+      "desc": "Rhum, Grand-Marnier, Calvados (au choix)"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE FLAMBÉ",
+     "desc": "Rum, Grand-Marnier, Calvados (a scelta)"
+    },
+    "de": {
+     "fr": "FLAMBIERTE CRÊPE",
+     "desc": "Rum, Grand-Marnier, Calvados (nach Wahl)"
+    }
+   }
+  },
+  {
+   "id": "m498",
+   "type": "item",
+   "fr": "CRÊPE CÉVENOLE",
+   "price": "11,30",
+   "desc": "Crème de marron arrosée de rhum",
+   "en": "Chestnuts, rum",
+   "tr": {
+    "en": {
+     "fr": "CRÊPE CÉVENOLE",
+     "desc": "Chestnut cream drizzled with rum",
+     "en": "Chestnut cream drizzled with rum"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE CÉVENOLE",
+      "desc": "Crème de marron arrosée de rhum",
+      "en": "Chestnuts, rum"
+     },
+     "it": {
+      "fr": "CRÊPE CÉVENOLE",
+      "desc": "Crème de marron arrosée de rhum",
+      "en": "Chestnuts, rum"
+     },
+     "de": {
+      "fr": "CRÊPE CÉVENOLE",
+      "desc": "Crème de marron arrosée de rhum",
+      "en": "Chestnuts, rum"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE CÉVENOLE",
+     "desc": "Crema di marroni con rum",
+     "en": "Crema di marroni con rum"
+    },
+    "de": {
+     "fr": "CRÊPE CÉVENOLE",
+     "desc": "Maronencreme mit Rum",
+     "en": "Maronencreme mit Rum"
+    }
+   }
+  },
+  {
+   "id": "m499",
+   "type": "item",
+   "fr": "CRÊPE COCONUTS",
+   "price": "11,30",
+   "desc": "Glace noix de coco, Malibu",
+   "en": "Coconut ice-cream, Malibu",
+   "tr": {
+    "en": {
+     "fr": "CRÊPE COCONUTS",
+     "desc": "Coconut ice cream, Malibu",
+     "en": "Coconut ice cream, Malibu"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE COCONUTS",
+      "desc": "Glace noix de coco, Malibu",
+      "en": "Coconut ice-cream, Malibu"
+     },
+     "it": {
+      "fr": "CRÊPE COCONUTS",
+      "desc": "Glace noix de coco, Malibu",
+      "en": "Coconut ice-cream, Malibu"
+     },
+     "de": {
+      "fr": "CRÊPE COCONUTS",
+      "desc": "Glace noix de coco, Malibu",
+      "en": "Coconut ice-cream, Malibu"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE COCONUTS",
+     "desc": "Gelato al cocco, Malibu",
+     "en": "Gelato al cocco, Malibu"
+    },
+    "de": {
+     "fr": "CRÊPE COCONUTS",
+     "desc": "Kokoseis, Malibu",
+     "en": "Kokoseis, Malibu"
+    }
+   }
+  },
+  {
+   "id": "m500",
+   "type": "item",
+   "fr": "CRÊPE SUZETTE",
+   "price": "12,00",
+   "desc": "Zestes d'orange, beurre, sucre, Grand-Marnier",
+   "en": "Peel orange, butter, sugar, Grand-Marnier",
+   "tr": {
+    "en": {
+     "fr": "CRÊPE SUZETTE",
+     "desc": "Orange zest, butter, sugar, Grand-Marnier",
+     "en": "Orange zest, butter, sugar, Grand-Marnier"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE SUZETTE",
+      "desc": "Zestes d'orange, beurre, sucre, Grand-Marnier",
+      "en": "Peel orange, butter, sugar, Grand-Marnier"
+     },
+     "it": {
+      "fr": "CRÊPE SUZETTE",
+      "desc": "Zestes d'orange, beurre, sucre, Grand-Marnier",
+      "en": "Peel orange, butter, sugar, Grand-Marnier"
+     },
+     "de": {
+      "fr": "CRÊPE SUZETTE",
+      "desc": "Zestes d'orange, beurre, sucre, Grand-Marnier",
+      "en": "Peel orange, butter, sugar, Grand-Marnier"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE SUZETTE",
+     "desc": "Scorza d'arancia, burro, zucchero, Grand-Marnier",
+     "en": "Scorza d'arancia, burro, zucchero, Grand-Marnier"
+    },
+    "de": {
+     "fr": "CRÊPE SUZETTE",
+     "desc": "Orangenzesten, Butter, Zucker, Grand-Marnier",
+     "en": "Orangenzesten, Butter, Zucker, Grand-Marnier"
+    }
+   }
+  },
+  {
+   "id": "m501",
+   "type": "item",
+   "fr": "CRÊPE FLAMBÉE BANANE",
+   "price": "12,00",
+   "en": "Banana and rum",
+   "tr": {
+    "en": {
+     "fr": "FLAMBÉED BANANA CRÊPE",
+     "en": "Banana and rum"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE FLAMBÉE BANANE",
+      "en": "Banana and rum"
+     },
+     "it": {
+      "fr": "CRÊPE FLAMBÉE BANANE",
+      "en": "Banana and rum"
+     },
+     "de": {
+      "fr": "CRÊPE FLAMBÉE BANANE",
+      "en": "Banana and rum"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE FLAMBÉ ALLA BANANA",
+     "en": "Banana e rum"
+    },
+    "de": {
+     "fr": "FLAMBIERTE CRÊPE MIT BANANE",
+     "en": "Banane und Rum"
+    }
+   }
+  },
+  {
+   "id": "m502",
+   "type": "item",
+   "fr": "CRÊPE FLAMBÉE AMANDES ET CHOCOLAT",
+   "price": "12,00",
+   "en": "Almonds, Grand-Marnier, chocolate",
+   "tr": {
+    "en": {
+     "fr": "FLAMBÉED CRÊPE WITH ALMONDS AND CHOCOLATE",
+     "en": "Almonds, Grand-Marnier, chocolate"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE FLAMBÉE AMANDES ET CHOCOLAT",
+      "en": "Almonds, Grand-Marnier, chocolate"
+     },
+     "it": {
+      "fr": "CRÊPE FLAMBÉE AMANDES ET CHOCOLAT",
+      "en": "Almonds, Grand-Marnier, chocolate"
+     },
+     "de": {
+      "fr": "CRÊPE FLAMBÉE AMANDES ET CHOCOLAT",
+      "en": "Almonds, Grand-Marnier, chocolate"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE FLAMBÉ MANDORLE E CIOCCOLATO",
+     "en": "Mandorle, Grand-Marnier, cioccolato"
+    },
+    "de": {
+     "fr": "FLAMBIERTE CRÊPE MIT MANDELN UND SCHOKOLADE",
+     "en": "Mandeln, Grand-Marnier, Schokolade"
+    }
+   }
+  },
+  {
+   "id": "m503",
+   "type": "item",
+   "fr": "CRÊPE FLAMBÉE POMMES",
+   "price": "12,00",
+   "en": "Apples and Calvados",
+   "tr": {
+    "en": {
+     "fr": "FLAMBÉED APPLE CRÊPE",
+     "en": "Apples and Calvados"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE FLAMBÉE POMMES",
+      "en": "Apples and Calvados"
+     },
+     "it": {
+      "fr": "CRÊPE FLAMBÉE POMMES",
+      "en": "Apples and Calvados"
+     },
+     "de": {
+      "fr": "CRÊPE FLAMBÉE POMMES",
+      "en": "Apples and Calvados"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE FLAMBÉ ALLE MELE",
+     "en": "Mele e Calvados"
+    },
+    "de": {
+     "fr": "FLAMBIERTE CRÊPE MIT ÄPFELN",
+     "en": "Äpfel und Calvados"
+    }
+   }
+  },
+  {
+   "id": "m504",
+   "type": "item",
+   "fr": "CRÊPE NORMANDE",
+   "price": "12,50",
+   "desc": "Pommes, crème, Calvados",
+   "en": "Apples, cream, Calvados",
+   "tr": {
+    "en": {
+     "fr": "CRÊPE NORMANDE",
+     "desc": "Apples, cream, Calvados",
+     "en": "Apples, cream, Calvados"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE NORMANDE",
+      "desc": "Pommes, crème, Calvados",
+      "en": "Apples, cream, Calvados"
+     },
+     "it": {
+      "fr": "CRÊPE NORMANDE",
+      "desc": "Pommes, crème, Calvados",
+      "en": "Apples, cream, Calvados"
+     },
+     "de": {
+      "fr": "CRÊPE NORMANDE",
+      "desc": "Pommes, crème, Calvados",
+      "en": "Apples, cream, Calvados"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE NORMANDE",
+     "desc": "Mele, panna, Calvados",
+     "en": "Mele, panna, Calvados"
+    },
+    "de": {
+     "fr": "CRÊPE NORMANDE",
+     "desc": "Äpfel, Sahne, Calvados",
+     "en": "Äpfel, Sahne, Calvados"
+    }
+   }
+  },
+  {
+   "id": "m505",
+   "type": "item",
+   "fr": "CRÊPE MARTINIQUAISE",
+   "price": "12,50",
+   "desc": "Banane, chocolat, rhum",
+   "en": "Banana, chocolate, rum",
+   "tr": {
+    "en": {
+     "fr": "CRÊPE MARTINIQUAISE",
+     "desc": "Banana, chocolate, rum",
+     "en": "Banana, chocolate, rum"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE MARTINIQUAISE",
+      "desc": "Banane, chocolat, rhum",
+      "en": "Banana, chocolate, rum"
+     },
+     "it": {
+      "fr": "CRÊPE MARTINIQUAISE",
+      "desc": "Banane, chocolat, rhum",
+      "en": "Banana, chocolate, rum"
+     },
+     "de": {
+      "fr": "CRÊPE MARTINIQUAISE",
+      "desc": "Banane, chocolat, rhum",
+      "en": "Banana, chocolate, rum"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE MARTINIQUAISE",
+     "desc": "Banana, cioccolato, rum",
+     "en": "Banana, cioccolato, rum"
+    },
+    "de": {
+     "fr": "CRÊPE MARTINIQUAISE",
+     "desc": "Banane, Schokolade, Rum",
+     "en": "Banane, Schokolade, Rum"
+    }
+   }
+  },
+  {
+   "id": "m506",
+   "type": "legend",
+   "text": "Prix nets en euros, service compris · Net prices in euros, service included",
+   "onlyNote": true,
+   "tr": {
+    "en": {
+     "text": "Net prices in euros, service included"
+    },
+    "src": {
+     "en": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "it": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "de": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     }
+    },
+    "it": {
+     "text": "Prezzi netti in euro, servizio incluso"
+    },
+    "de": {
+     "text": "Nettopreise in Euro, Bedienung inbegriffen"
+    }
+   }
+  },
+  {
+   "id": "m507",
+   "type": "pagebreak"
+  },
+  {
+   "id": "m508",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 12,
+   "mt": 0,
+   "mb": 0
+  },
+  {
+   "id": "m509",
+   "type": "section",
+   "fr": "Les crêpes glacées",
+   "tr": {
+    "en": {
+     "fr": "Ice cream crêpes"
+    },
+    "src": {
+     "en": {
+      "fr": "Les crêpes glacées"
+     },
+     "it": {
+      "fr": "Les crêpes glacées"
+     },
+     "de": {
+      "fr": "Les crêpes glacées"
+     }
+    },
+    "it": {
+     "fr": "Le crêpes con gelato"
+    },
+    "de": {
+     "fr": "Eis-Crêpes"
+    }
+   },
+   "en": "Ice cream crêpes"
+  },
+  {
+   "id": "m510",
+   "type": "item",
+   "fr": "CRÊPE GLACE VANILLE",
+   "price": "10,00",
+   "en": "Vanilla ice-cream",
+   "tr": {
+    "en": {
+     "fr": "VANILLA ICE CREAM CRÊPE",
+     "en": "Vanilla ice cream"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE GLACE VANILLE",
+      "en": "Vanilla ice-cream"
+     },
+     "it": {
+      "fr": "CRÊPE GLACE VANILLE",
+      "en": "Vanilla ice-cream"
+     },
+     "de": {
+      "fr": "CRÊPE GLACE VANILLE",
+      "en": "Vanilla ice-cream"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE CON GELATO ALLA VANIGLIA",
+     "en": "Gelato alla vaniglia"
+    },
+    "de": {
+     "fr": "CRÊPE MIT VANILLEEIS",
+     "en": "Vanilleeis"
+    }
+   }
+  },
+  {
+   "id": "m511",
+   "type": "item",
+   "fr": "CRÊPE GLACÉE CARAMEL AU BEURRE SALÉ",
+   "price": "12,00",
+   "en": "Vanilla ice-cream, caramel",
+   "tr": {
+    "en": {
+     "fr": "ICE CREAM CRÊPE WITH SALTED BUTTER CARAMEL",
+     "en": "Vanilla ice cream, caramel"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE GLACÉE CARAMEL AU BEURRE SALÉ",
+      "en": "Vanilla ice-cream, caramel"
+     },
+     "it": {
+      "fr": "CRÊPE GLACÉE CARAMEL AU BEURRE SALÉ",
+      "en": "Vanilla ice-cream, caramel"
+     },
+     "de": {
+      "fr": "CRÊPE GLACÉE CARAMEL AU BEURRE SALÉ",
+      "en": "Vanilla ice-cream, caramel"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE CON GELATO E CARAMELLO AL BURRO SALATO",
+     "en": "Gelato alla vaniglia, caramello"
+    },
+    "de": {
+     "fr": "EIS-CRÊPE MIT SALZBUTTERKARAMELL",
+     "en": "Vanilleeis, Karamell"
+    }
+   }
+  },
+  {
+   "id": "m512",
+   "type": "item",
+   "fr": "CRÊPE GLACÉE AU CHOCOLAT",
+   "price": "12,00",
+   "en": "Vanilla ice-cream, chocolate",
+   "tr": {
+    "en": {
+     "fr": "ICE CREAM CRÊPE WITH CHOCOLATE",
+     "en": "Vanilla ice cream, chocolate"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE GLACÉE AU CHOCOLAT",
+      "en": "Vanilla ice-cream, chocolate"
+     },
+     "it": {
+      "fr": "CRÊPE GLACÉE AU CHOCOLAT",
+      "en": "Vanilla ice-cream, chocolate"
+     },
+     "de": {
+      "fr": "CRÊPE GLACÉE AU CHOCOLAT",
+      "en": "Vanilla ice-cream, chocolate"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE CON GELATO AL CIOCCOLATO",
+     "en": "Gelato alla vaniglia, cioccolato"
+    },
+    "de": {
+     "fr": "EIS-CRÊPE MIT SCHOKOLADE",
+     "en": "Vanilleeis, Schokolade"
+    }
+   }
+  },
+  {
+   "id": "m513",
+   "type": "item",
+   "fr": "CRÊPE GLACÉE À LA CHANTILLY",
+   "price": "12,00",
+   "en": "Vanilla ice-cream, chantilly",
+   "tr": {
+    "en": {
+     "fr": "ICE CREAM CRÊPE WITH WHIPPED CREAM",
+     "en": "Vanilla ice cream, whipped cream"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE GLACÉE À LA CHANTILLY",
+      "en": "Vanilla ice-cream, chantilly"
+     },
+     "it": {
+      "fr": "CRÊPE GLACÉE À LA CHANTILLY",
+      "en": "Vanilla ice-cream, chantilly"
+     },
+     "de": {
+      "fr": "CRÊPE GLACÉE À LA CHANTILLY",
+      "en": "Vanilla ice-cream, chantilly"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE CON GELATO E PANNA MONTATA",
+     "en": "Gelato alla vaniglia, panna montata"
+    },
+    "de": {
+     "fr": "EIS-CRÊPE MIT SCHLAGSAHNE",
+     "en": "Vanilleeis, Schlagsahne"
+    }
+   }
+  },
+  {
+   "id": "m514",
+   "type": "item",
+   "fr": "CRÊPE GLACÉE AUX POMMES",
+   "price": "12,00",
+   "en": "Vanilla ice-cream, apples",
+   "tr": {
+    "en": {
+     "fr": "ICE CREAM CRÊPE WITH APPLES",
+     "en": "Vanilla ice cream, apples"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE GLACÉE AUX POMMES",
+      "en": "Vanilla ice-cream, apples"
+     },
+     "it": {
+      "fr": "CRÊPE GLACÉE AUX POMMES",
+      "en": "Vanilla ice-cream, apples"
+     },
+     "de": {
+      "fr": "CRÊPE GLACÉE AUX POMMES",
+      "en": "Vanilla ice-cream, apples"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE CON GELATO E MELE",
+     "en": "Gelato alla vaniglia, mele"
+    },
+    "de": {
+     "fr": "EIS-CRÊPE MIT ÄPFELN",
+     "en": "Vanilleeis, Äpfel"
+    }
+   }
+  },
+  {
+   "id": "m515",
+   "type": "item",
+   "fr": "CRÊPE BELLE HÉLÈNE",
+   "en": "Pear, chocolate, vanilla ice-cream, chantilly",
+   "price": "12,50",
+   "desc": "Poire, chocolat, glace vanille, chantilly",
+   "tr": {
+    "en": {
+     "fr": "CRÊPE BELLE HÉLÈNE",
+     "desc": "Pear, chocolate, vanilla ice cream, whipped cream",
+     "en": "Pear, chocolate, vanilla ice cream, whipped cream"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE BELLE HÉLÈNE",
+      "desc": "Poire, chocolat, glace vanille, chantilly",
+      "en": "Pear, chocolate, vanilla ice-cream, chantilly"
+     },
+     "it": {
+      "fr": "CRÊPE BELLE HÉLÈNE",
+      "desc": "Poire, chocolat, glace vanille, chantilly",
+      "en": "Pear, chocolate, vanilla ice-cream, chantilly"
+     },
+     "de": {
+      "fr": "CRÊPE BELLE HÉLÈNE",
+      "desc": "Poire, chocolat, glace vanille, chantilly",
+      "en": "Pear, chocolate, vanilla ice-cream, chantilly"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE BELLE HÉLÈNE",
+     "desc": "Pera, cioccolato, gelato alla vaniglia, panna montata",
+     "en": "Pera, cioccolato, gelato alla vaniglia, panna montata"
+    },
+    "de": {
+     "fr": "CRÊPE BELLE HÉLÈNE",
+     "desc": "Birne, Schokolade, Vanilleeis, Schlagsahne",
+     "en": "Birne, Schokolade, Vanilleeis, Schlagsahne"
+    }
+   }
+  },
+  {
+   "id": "m516",
+   "type": "item",
+   "fr": "CRÊPE GLACÉE AU CHOCOLAT, CHANTILLY ET NOIX",
+   "price": "12,50",
+   "en": "Vanilla ice-cream, chocolate, chantilly, nuts",
+   "tr": {
+    "en": {
+     "fr": "ICE CREAM CRÊPE WITH CHOCOLATE, WHIPPED CREAM AND WALNUTS",
+     "en": "Vanilla ice cream, chocolate, whipped cream, walnuts"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE GLACÉE AU CHOCOLAT, CHANTILLY ET NOIX",
+      "en": "Vanilla ice-cream, chocolate, chantilly, nuts"
+     },
+     "it": {
+      "fr": "CRÊPE GLACÉE AU CHOCOLAT, CHANTILLY ET NOIX",
+      "en": "Vanilla ice-cream, chocolate, chantilly, nuts"
+     },
+     "de": {
+      "fr": "CRÊPE GLACÉE AU CHOCOLAT, CHANTILLY ET NOIX",
+      "en": "Vanilla ice-cream, chocolate, chantilly, nuts"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE CON GELATO AL CIOCCOLATO, PANNA MONTATA E NOCI",
+     "en": "Gelato alla vaniglia, cioccolato, panna montata, noci"
+    },
+    "de": {
+     "fr": "EIS-CRÊPE MIT SCHOKOLADE, SCHLAGSAHNE UND WALNÜSSEN",
+     "en": "Vanilleeis, Schokolade, Schlagsahne, Walnüsse"
+    }
+   }
+  },
+  {
+   "id": "m517",
+   "type": "item",
+   "fr": "CRÊPE GLACÉE BOUNTY",
+   "en": "Coconut ice-cream, hot chocolate, chantilly",
+   "price": "12,50",
+   "desc": "Glace noix de coco, chocolat chaud, chantilly",
+   "tr": {
+    "en": {
+     "fr": "CRÊPE GLACÉE BOUNTY",
+     "desc": "Coconut ice cream, hot chocolate sauce, whipped cream",
+     "en": "Coconut ice cream, hot chocolate sauce, whipped cream"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE GLACÉE BOUNTY",
+      "desc": "Glace noix de coco, chocolat chaud, chantilly",
+      "en": "Coconut ice-cream, hot chocolate, chantilly"
+     },
+     "it": {
+      "fr": "CRÊPE GLACÉE BOUNTY",
+      "desc": "Glace noix de coco, chocolat chaud, chantilly",
+      "en": "Coconut ice-cream, hot chocolate, chantilly"
+     },
+     "de": {
+      "fr": "CRÊPE GLACÉE BOUNTY",
+      "desc": "Glace noix de coco, chocolat chaud, chantilly",
+      "en": "Coconut ice-cream, hot chocolate, chantilly"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE GLACÉE BOUNTY",
+     "desc": "Gelato al cocco, cioccolato caldo, panna montata",
+     "en": "Gelato al cocco, cioccolato caldo, panna montata"
+    },
+    "de": {
+     "fr": "CRÊPE GLACÉE BOUNTY",
+     "desc": "Kokoseis, heiße Schokolade, Schlagsahne",
+     "en": "Kokoseis, heiße Schokolade, Schlagsahne"
+    }
+   }
+  },
+  {
+   "id": "m518",
+   "type": "section",
+   "fr": "Fromage",
+   "tr": {
+    "en": {
+     "fr": "Cheese"
+    },
+    "src": {
+     "en": {
+      "fr": "Fromage"
+     },
+     "it": {
+      "fr": "Fromage"
+     },
+     "de": {
+      "fr": "Fromage"
+     }
+    },
+    "it": {
+     "fr": "Formaggio"
+    },
+    "de": {
+     "fr": "Käse"
+    }
+   },
+   "en": "Cheese"
+  },
+  {
+   "id": "m519",
+   "type": "item",
+   "fr": "ASSIETTE DE FROMAGES",
+   "en": "Plate of cheeses (Reblochon, Comté, goat's cheese)",
+   "price": "12,80",
+   "desc": "Reblochon, Comté, chèvre",
+   "tr": {
+    "en": {
+     "fr": "CHEESE PLATTER",
+     "desc": "Reblochon, Comté, goat's cheese",
+     "en": "Cheese platter (Reblochon, Comté, goat's cheese)"
+    },
+    "src": {
+     "en": {
+      "fr": "ASSIETTE DE FROMAGES",
+      "desc": "Reblochon, Comté, chèvre",
+      "en": "Plate of cheeses (Reblochon, Comté, goat's cheese)"
+     },
+     "it": {
+      "fr": "ASSIETTE DE FROMAGES",
+      "desc": "Reblochon, Comté, chèvre",
+      "en": "Plate of cheeses (Reblochon, Comté, goat's cheese)"
+     },
+     "de": {
+      "fr": "ASSIETTE DE FROMAGES",
+      "desc": "Reblochon, Comté, chèvre",
+      "en": "Plate of cheeses (Reblochon, Comté, goat's cheese)"
+     }
+    },
+    "it": {
+     "fr": "PIATTO DI FORMAGGI",
+     "desc": "Reblochon, Comté, formaggio di capra",
+     "en": "Piatto di formaggi (Reblochon, Comté, formaggio di capra)"
+    },
+    "de": {
+     "fr": "KÄSETELLER",
+     "desc": "Reblochon, Comté, Ziegenkäse",
+     "en": "Käseteller (Reblochon, Comté, Ziegenkäse)"
+    }
+   }
+  },
+  {
+   "id": "m520",
+   "type": "section",
+   "fr": "Les desserts",
+   "tr": {
+    "en": {
+     "fr": "Desserts"
+    },
+    "src": {
+     "en": {
+      "fr": "Les desserts"
+     },
+     "it": {
+      "fr": "Les desserts"
+     },
+     "de": {
+      "fr": "Les desserts"
+     }
+    },
+    "it": {
+     "fr": "I dessert"
+    },
+    "de": {
+     "fr": "Desserts"
+    }
+   },
+   "en": "Desserts"
+  },
+  {
+   "id": "m521",
+   "type": "item",
+   "fr": "FONDUE AU CHOCOLAT",
+   "price": "14,50",
+   "desc": "Minimum 2 personnes — prix par personne",
+   "tr": {
+    "en": {
+     "fr": "CHOCOLATE FONDUE",
+     "desc": "Minimum 2 people — price per person"
+    },
+    "src": {
+     "en": {
+      "fr": "FONDUE AU CHOCOLAT",
+      "desc": "Minimum 2 personnes — prix par personne"
+     },
+     "it": {
+      "fr": "FONDUE AU CHOCOLAT",
+      "desc": "Minimum 2 personnes — prix par personne"
+     },
+     "de": {
+      "fr": "FONDUE AU CHOCOLAT",
+      "desc": "Minimum 2 personnes — prix par personne"
+     }
+    },
+    "it": {
+     "fr": "FONDUE AL CIOCCOLATO",
+     "desc": "Minimo 2 persone — prezzo a persona"
+    },
+    "de": {
+     "fr": "SCHOKOLADENFONDUE",
+     "desc": "Mindestens 2 Personen — Preis pro Person"
+    }
+   }
+  },
+  {
+   "id": "m522",
+   "type": "item",
+   "fr": "FROMAGE BLANC, CRÈME FRAÎCHE, CONFITURE DE MYRTILLES",
+   "price": "10,00",
+   "tags": [
+    "gf"
+   ],
+   "en": "Cottage cheese and blueberry jam",
+   "tr": {
+    "en": {
+     "fr": "FROMAGE FRAIS, CRÈME FRAÎCHE, BLUEBERRY JAM",
+     "en": "Fromage frais and blueberry jam"
+    },
+    "src": {
+     "en": {
+      "fr": "FROMAGE BLANC, CRÈME FRAÎCHE, CONFITURE DE MYRTILLES",
+      "en": "Cottage cheese and blueberry jam"
+     },
+     "it": {
+      "fr": "FROMAGE BLANC, CRÈME FRAÎCHE, CONFITURE DE MYRTILLES",
+      "en": "Cottage cheese and blueberry jam"
+     },
+     "de": {
+      "fr": "FROMAGE BLANC, CRÈME FRAÎCHE, CONFITURE DE MYRTILLES",
+      "en": "Cottage cheese and blueberry jam"
+     }
+    },
+    "it": {
+     "fr": "FORMAGGIO FRESCO, PANNA FRESCA, CONFETTURA DI MIRTILLI",
+     "en": "Formaggio fresco e confettura di mirtilli"
+    },
+    "de": {
+     "fr": "QUARK, CRÈME FRAÎCHE, HEIDELBEERKONFITÜRE",
+     "en": "Quark und Heidelbeerkonfitüre"
+    }
+   }
+  },
+  {
+   "id": "m523",
+   "type": "item",
+   "fr": "MOELLEUX AU CHOCOLAT ET GLACE VANILLE",
+   "price": "11,50",
+   "en": "Chocolate fondant and vanilla ice cream",
+   "tr": {
+    "en": {
+     "fr": "CHOCOLATE FONDANT WITH VANILLA ICE CREAM",
+     "en": "Chocolate fondant with vanilla ice cream"
+    },
+    "src": {
+     "en": {
+      "fr": "MOELLEUX AU CHOCOLAT ET GLACE VANILLE",
+      "en": "Chocolate fondant and vanilla ice cream"
+     },
+     "it": {
+      "fr": "MOELLEUX AU CHOCOLAT ET GLACE VANILLE",
+      "en": "Chocolate fondant and vanilla ice cream"
+     },
+     "de": {
+      "fr": "MOELLEUX AU CHOCOLAT ET GLACE VANILLE",
+      "en": "Chocolate fondant and vanilla ice cream"
+     }
+    },
+    "it": {
+     "fr": "TORTINO AL CIOCCOLATO E GELATO ALLA VANIGLIA",
+     "en": "Tortino al cioccolato e gelato alla vaniglia"
+    },
+    "de": {
+     "fr": "SCHOKOLADENKÜCHLEIN MIT VANILLEEIS",
+     "en": "Schokoladenküchlein mit Vanilleeis"
+    }
+   }
+  },
+  {
+   "id": "m524",
+   "type": "item",
+   "fr": "CRÈME BRÛLÉE MAISON",
+   "price": "11,50",
+   "tags": [
+    "gf"
+   ],
+   "desc": "Homemade crème brûlée",
+   "tr": {
+    "en": {
+     "fr": "HOMEMADE CRÈME BRÛLÉE",
+     "desc": "Homemade crème brûlée"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÈME BRÛLÉE MAISON",
+      "desc": "Homemade crème brûlée"
+     },
+     "it": {
+      "fr": "CRÈME BRÛLÉE MAISON",
+      "desc": "Homemade crème brûlée"
+     },
+     "de": {
+      "fr": "CRÈME BRÛLÉE MAISON",
+      "desc": "Homemade crème brûlée"
+     }
+    },
+    "it": {
+     "fr": "CRÈME BRÛLÉE FATTA IN CASA",
+     "desc": "Crème brûlée fatta in casa"
+    },
+    "de": {
+     "fr": "HAUSGEMACHTE CRÈME BRÛLÉE",
+     "desc": "Hausgemachte Crème brûlée"
+    }
+   }
+  },
+  {
+   "id": "m525",
+   "type": "item",
+   "fr": "PANNA COTTA MAISON AUX FRUITS ROUGES",
+   "price": "11,00",
+   "tags": [
+    "gf"
+   ],
+   "en": "Homemade panna cotta with red fruits",
+   "tr": {
+    "en": {
+     "fr": "HOMEMADE PANNA COTTA WITH RED BERRIES",
+     "en": "Homemade panna cotta with red berries"
+    },
+    "src": {
+     "en": {
+      "fr": "PANNA COTTA MAISON AUX FRUITS ROUGES",
+      "en": "Homemade panna cotta with red fruits"
+     },
+     "it": {
+      "fr": "PANNA COTTA MAISON AUX FRUITS ROUGES",
+      "en": "Homemade panna cotta with red fruits"
+     },
+     "de": {
+      "fr": "PANNA COTTA MAISON AUX FRUITS ROUGES",
+      "en": "Homemade panna cotta with red fruits"
+     }
+    },
+    "it": {
+     "fr": "PANNA COTTA FATTA IN CASA AI FRUTTI ROSSI",
+     "en": "Panna cotta fatta in casa ai frutti rossi"
+    },
+    "de": {
+     "fr": "HAUSGEMACHTE PANNA COTTA MIT ROTEN BEEREN",
+     "en": "Hausgemachte Panna cotta mit roten Beeren"
+    }
+   }
+  },
+  {
+   "id": "m526",
+   "type": "item",
+   "fr": "CAFÉ GOURMAND",
+   "price": "12,50",
+   "en": "Coffee with a selection of cakes",
+   "tr": {
+    "en": {
+     "fr": "CAFÉ GOURMAND",
+     "en": "Coffee with a selection of mini desserts"
+    },
+    "src": {
+     "en": {
+      "fr": "CAFÉ GOURMAND",
+      "en": "Coffee with a selection of cakes"
+     },
+     "it": {
+      "fr": "CAFÉ GOURMAND",
+      "en": "Coffee with a selection of cakes"
+     },
+     "de": {
+      "fr": "CAFÉ GOURMAND",
+      "en": "Coffee with a selection of cakes"
+     }
+    },
+    "it": {
+     "fr": "CAFÉ GOURMAND",
+     "en": "Caffè con assortimento di piccoli dolci"
+    },
+    "de": {
+     "fr": "CAFÉ GOURMAND",
+     "en": "Kaffee mit kleiner Dessertauswahl"
+    }
+   }
+  },
+  {
+   "id": "m527",
+   "type": "legend",
+   "text": "Prix nets en euros, service compris · Net prices in euros, service included",
+   "tr": {
+    "en": {
+     "text": "Net prices in euros, service included"
+    },
+    "src": {
+     "en": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "it": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "de": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     }
+    },
+    "it": {
+     "text": "Prezzi netti in euro, servizio incluso"
+    },
+    "de": {
+     "text": "Nettopreise in Euro, Bedienung inbegriffen"
+    }
+   }
+  },
+  {
+   "id": "m528",
+   "type": "pagebreak"
+  },
+  {
+   "id": "m529",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 12,
+   "mt": 0,
+   "mb": 0
+  },
+  {
+   "id": "m530",
+   "type": "section",
+   "fr": "Les glaces",
+   "tr": {
+    "en": {
+     "fr": "Ice creams"
+    },
+    "src": {
+     "en": {
+      "fr": "Les glaces"
+     },
+     "it": {
+      "fr": "Les glaces"
+     },
+     "de": {
+      "fr": "Les glaces"
+     }
+    },
+    "it": {
+     "fr": "I gelati"
+    },
+    "de": {
+     "fr": "Eis"
+    }
+   },
+   "en": "Ice creams"
+  },
+  {
+   "id": "m531",
+   "type": "item",
+   "fr": "2 BOULES DE GLACE",
+   "sub": "Vanille, chocolat, café, caramel beurre salé, rhum raisins, menthe chocolat, noix de coco, framboise, myrtille, citron, génépi, mojito",
+   "en": "Vanilla, choco, coffee, caramel, rum raisin, chocolate mint, coconut, raspberry, blueberry, lemon, génépi, mojito",
+   "price": "8,00",
+   "desc": "2 scoops",
+   "tr": {
+    "en": {
+     "fr": "2 SCOOPS OF ICE CREAM",
+     "desc": "2 scoops",
+     "sub": "Vanilla, chocolate, coffee, salted butter caramel, rum and raisin, mint chocolate, coconut, raspberry, blueberry, lemon, génépi, mojito",
+     "en": "Vanilla, chocolate, coffee, salted butter caramel, rum and raisin, mint chocolate, coconut, raspberry, blueberry, lemon, génépi, mojito"
+    },
+    "src": {
+     "en": {
+      "fr": "2 BOULES DE GLACE",
+      "desc": "2 scoops",
+      "sub": "Vanille, chocolat, café, caramel beurre salé, rhum raisins, menthe chocolat, noix de coco, framboise, myrtille, citron, génépi, mojito",
+      "en": "Vanilla, choco, coffee, caramel, rum raisin, chocolate mint, coconut, raspberry, blueberry, lemon, génépi, mojito"
+     },
+     "it": {
+      "fr": "2 BOULES DE GLACE",
+      "desc": "2 scoops",
+      "sub": "Vanille, chocolat, café, caramel beurre salé, rhum raisins, menthe chocolat, noix de coco, framboise, myrtille, citron, génépi, mojito",
+      "en": "Vanilla, choco, coffee, caramel, rum raisin, chocolate mint, coconut, raspberry, blueberry, lemon, génépi, mojito"
+     },
+     "de": {
+      "fr": "2 BOULES DE GLACE",
+      "desc": "2 scoops",
+      "sub": "Vanille, chocolat, café, caramel beurre salé, rhum raisins, menthe chocolat, noix de coco, framboise, myrtille, citron, génépi, mojito",
+      "en": "Vanilla, choco, coffee, caramel, rum raisin, chocolate mint, coconut, raspberry, blueberry, lemon, génépi, mojito"
+     }
+    },
+    "it": {
+     "fr": "2 PALLINE DI GELATO",
+     "desc": "2 palline",
+     "sub": "Vaniglia, cioccolato, caffè, caramello al burro salato, rum e uvetta, menta e cioccolato, cocco, lampone, mirtillo, limone, génépi, mojito",
+     "en": "Vaniglia, cioccolato, caffè, caramello al burro salato, rum e uvetta, menta e cioccolato, cocco, lampone, mirtillo, limone, génépi, mojito"
+    },
+    "de": {
+     "fr": "2 KUGELN EIS",
+     "desc": "2 Kugeln",
+     "sub": "Vanille, Schokolade, Kaffee, Salzbutterkaramell, Rum-Rosinen, Minze-Schokolade, Kokosnuss, Himbeere, Heidelbeere, Zitrone, Génépi, Mojito",
+     "en": "Vanille, Schokolade, Kaffee, Salzbutterkaramell, Rum-Rosinen, Minze-Schokolade, Kokosnuss, Himbeere, Heidelbeere, Zitrone, Génépi, Mojito"
+    }
+   }
+  },
+  {
+   "id": "m532",
+   "type": "item",
+   "fr": "3 BOULES DE GLACE",
+   "price": "9,50",
+   "en": "3 scoops",
+   "tr": {
+    "en": {
+     "fr": "3 SCOOPS OF ICE CREAM",
+     "en": "3 scoops"
+    },
+    "src": {
+     "en": {
+      "fr": "3 BOULES DE GLACE",
+      "en": "3 scoops"
+     },
+     "it": {
+      "fr": "3 BOULES DE GLACE",
+      "en": "3 scoops"
+     },
+     "de": {
+      "fr": "3 BOULES DE GLACE",
+      "en": "3 scoops"
+     }
+    },
+    "it": {
+     "fr": "3 PALLINE DI GELATO",
+     "en": "3 palline"
+    },
+    "de": {
+     "fr": "3 KUGELN EIS",
+     "en": "3 Kugeln"
+    }
+   }
+  },
+  {
+   "id": "m533",
+   "type": "item",
+   "fr": "FRAMBOISE MELBA",
+   "en": "Vanilla & raspberry ice-cream, raspberries, raspberry coulis, chantilly",
+   "price": "13,00",
+   "desc": "Glace vanille & framboise, coulis de framboise, framboise, chantilly",
+   "tr": {
+    "en": {
+     "fr": "FRAMBOISE MELBA",
+     "desc": "Vanilla & raspberry ice cream, raspberry coulis, raspberries, whipped cream",
+     "en": "Vanilla & raspberry ice cream, raspberries, raspberry coulis, whipped cream"
+    },
+    "src": {
+     "en": {
+      "fr": "FRAMBOISE MELBA",
+      "desc": "Glace vanille & framboise, coulis de framboise, framboise, chantilly",
+      "en": "Vanilla & raspberry ice-cream, raspberries, raspberry coulis, chantilly"
+     },
+     "it": {
+      "fr": "FRAMBOISE MELBA",
+      "desc": "Glace vanille & framboise, coulis de framboise, framboise, chantilly",
+      "en": "Vanilla & raspberry ice-cream, raspberries, raspberry coulis, chantilly"
+     },
+     "de": {
+      "fr": "FRAMBOISE MELBA",
+      "desc": "Glace vanille & framboise, coulis de framboise, framboise, chantilly",
+      "en": "Vanilla & raspberry ice-cream, raspberries, raspberry coulis, chantilly"
+     }
+    },
+    "it": {
+     "fr": "FRAMBOISE MELBA",
+     "desc": "Gelato vaniglia e lampone, coulis di lamponi, lamponi, panna montata",
+     "en": "Gelato vaniglia e lampone, lamponi, coulis di lamponi, panna montata"
+    },
+    "de": {
+     "fr": "FRAMBOISE MELBA",
+     "desc": "Vanille- & Himbeereis, Himbeersauce, Himbeeren, Schlagsahne",
+     "en": "Vanille- & Himbeereis, Himbeeren, Himbeersauce, Schlagsahne"
+    }
+   }
+  },
+  {
+   "id": "m534",
+   "type": "item",
+   "fr": "POIRE BELLE HÉLÈNE",
+   "en": "Vanilla ice-cream, pear, hot chocolate, chantilly",
+   "price": "13,00",
+   "desc": "Glace vanille, poires, chocolat chaud, chantilly",
+   "tr": {
+    "en": {
+     "fr": "POIRE BELLE HÉLÈNE",
+     "desc": "Vanilla ice cream, pears, hot chocolate sauce, whipped cream",
+     "en": "Vanilla ice cream, pear, hot chocolate sauce, whipped cream"
+    },
+    "src": {
+     "en": {
+      "fr": "POIRE BELLE HÉLÈNE",
+      "desc": "Glace vanille, poires, chocolat chaud, chantilly",
+      "en": "Vanilla ice-cream, pear, hot chocolate, chantilly"
+     },
+     "it": {
+      "fr": "POIRE BELLE HÉLÈNE",
+      "desc": "Glace vanille, poires, chocolat chaud, chantilly",
+      "en": "Vanilla ice-cream, pear, hot chocolate, chantilly"
+     },
+     "de": {
+      "fr": "POIRE BELLE HÉLÈNE",
+      "desc": "Glace vanille, poires, chocolat chaud, chantilly",
+      "en": "Vanilla ice-cream, pear, hot chocolate, chantilly"
+     }
+    },
+    "it": {
+     "fr": "POIRE BELLE HÉLÈNE",
+     "desc": "Gelato alla vaniglia, pere, cioccolato caldo, panna montata",
+     "en": "Gelato alla vaniglia, pera, cioccolato caldo, panna montata"
+    },
+    "de": {
+     "fr": "POIRE BELLE HÉLÈNE",
+     "desc": "Vanilleeis, Birnen, heiße Schokolade, Schlagsahne",
+     "en": "Vanilleeis, Birne, heiße Schokolade, Schlagsahne"
+    }
+   }
+  },
+  {
+   "id": "m535",
+   "type": "item",
+   "fr": "CHOCOLAT LIÉGEOIS",
+   "en": "Vanilla & chocolate ice-cream, hot chocolate, chantilly",
+   "price": "13,00",
+   "desc": "Glace chocolat & vanille, chocolat chaud, chantilly",
+   "tr": {
+    "en": {
+     "fr": "CHOCOLAT LIÉGEOIS",
+     "desc": "Chocolate & vanilla ice cream, hot chocolate sauce, whipped cream",
+     "en": "Vanilla & chocolate ice cream, hot chocolate sauce, whipped cream"
+    },
+    "src": {
+     "en": {
+      "fr": "CHOCOLAT LIÉGEOIS",
+      "desc": "Glace chocolat & vanille, chocolat chaud, chantilly",
+      "en": "Vanilla & chocolate ice-cream, hot chocolate, chantilly"
+     },
+     "it": {
+      "fr": "CHOCOLAT LIÉGEOIS",
+      "desc": "Glace chocolat & vanille, chocolat chaud, chantilly",
+      "en": "Vanilla & chocolate ice-cream, hot chocolate, chantilly"
+     },
+     "de": {
+      "fr": "CHOCOLAT LIÉGEOIS",
+      "desc": "Glace chocolat & vanille, chocolat chaud, chantilly",
+      "en": "Vanilla & chocolate ice-cream, hot chocolate, chantilly"
+     }
+    },
+    "it": {
+     "fr": "CHOCOLAT LIÉGEOIS",
+     "desc": "Gelato cioccolato e vaniglia, cioccolato caldo, panna montata",
+     "en": "Gelato vaniglia e cioccolato, cioccolato caldo, panna montata"
+    },
+    "de": {
+     "fr": "CHOCOLAT LIÉGEOIS",
+     "desc": "Schokoladen- & Vanilleeis, heiße Schokolade, Schlagsahne",
+     "en": "Vanille- & Schokoladeneis, heiße Schokolade, Schlagsahne"
+    }
+   }
+  },
+  {
+   "id": "m536",
+   "type": "item",
+   "fr": "CAFÉ LIÉGEOIS",
+   "price": "13,00",
+   "desc": "Glace café, café, chantilly",
+   "en": "Coffee ice-cream, coffee, chantilly",
+   "tr": {
+    "en": {
+     "fr": "CAFÉ LIÉGEOIS",
+     "desc": "Coffee ice cream, coffee, whipped cream",
+     "en": "Coffee ice cream, coffee, whipped cream"
+    },
+    "src": {
+     "en": {
+      "fr": "CAFÉ LIÉGEOIS",
+      "desc": "Glace café, café, chantilly",
+      "en": "Coffee ice-cream, coffee, chantilly"
+     },
+     "it": {
+      "fr": "CAFÉ LIÉGEOIS",
+      "desc": "Glace café, café, chantilly",
+      "en": "Coffee ice-cream, coffee, chantilly"
+     },
+     "de": {
+      "fr": "CAFÉ LIÉGEOIS",
+      "desc": "Glace café, café, chantilly",
+      "en": "Coffee ice-cream, coffee, chantilly"
+     }
+    },
+    "it": {
+     "fr": "CAFÉ LIÉGEOIS",
+     "desc": "Gelato al caffè, caffè, panna montata",
+     "en": "Gelato al caffè, caffè, panna montata"
+    },
+    "de": {
+     "fr": "CAFÉ LIÉGEOIS",
+     "desc": "Kaffee-Eis, Kaffee, Schlagsahne",
+     "en": "Kaffee-Eis, Kaffee, Schlagsahne"
+    }
+   }
+  },
+  {
+   "id": "m537",
+   "type": "item",
+   "fr": "CARAMEL LIÉGEOIS",
+   "en": "Vanilla & caramel ice-cream, caramel sauce, chantilly",
+   "price": "13,00",
+   "desc": "Glace caramel & vanille, sauce caramel, chantilly",
+   "tr": {
+    "en": {
+     "fr": "CARAMEL LIÉGEOIS",
+     "desc": "Caramel & vanilla ice cream, caramel sauce, whipped cream",
+     "en": "Vanilla & caramel ice cream, caramel sauce, whipped cream"
+    },
+    "src": {
+     "en": {
+      "fr": "CARAMEL LIÉGEOIS",
+      "desc": "Glace caramel & vanille, sauce caramel, chantilly",
+      "en": "Vanilla & caramel ice-cream, caramel sauce, chantilly"
+     },
+     "it": {
+      "fr": "CARAMEL LIÉGEOIS",
+      "desc": "Glace caramel & vanille, sauce caramel, chantilly",
+      "en": "Vanilla & caramel ice-cream, caramel sauce, chantilly"
+     },
+     "de": {
+      "fr": "CARAMEL LIÉGEOIS",
+      "desc": "Glace caramel & vanille, sauce caramel, chantilly",
+      "en": "Vanilla & caramel ice-cream, caramel sauce, chantilly"
+     }
+    },
+    "it": {
+     "fr": "CARAMEL LIÉGEOIS",
+     "desc": "Gelato caramello e vaniglia, salsa al caramello, panna montata",
+     "en": "Gelato vaniglia e caramello, salsa al caramello, panna montata"
+    },
+    "de": {
+     "fr": "CARAMEL LIÉGEOIS",
+     "desc": "Karamell- & Vanilleeis, Karamellsauce, Schlagsahne",
+     "en": "Vanille- & Karamelleis, Karamellsauce, Schlagsahne"
+    }
+   }
+  },
+  {
+   "id": "m538",
+   "type": "item",
+   "fr": "DAME BLANCHE",
+   "en": "Vanilla ice-cream, hot chocolate, chantilly",
+   "price": "13,00",
+   "desc": "Glace vanille, chocolat chaud, chantilly",
+   "tr": {
+    "en": {
+     "fr": "DAME BLANCHE",
+     "desc": "Vanilla ice cream, hot chocolate sauce, whipped cream",
+     "en": "Vanilla ice cream, hot chocolate sauce, whipped cream"
+    },
+    "src": {
+     "en": {
+      "fr": "DAME BLANCHE",
+      "desc": "Glace vanille, chocolat chaud, chantilly",
+      "en": "Vanilla ice-cream, hot chocolate, chantilly"
+     },
+     "it": {
+      "fr": "DAME BLANCHE",
+      "desc": "Glace vanille, chocolat chaud, chantilly",
+      "en": "Vanilla ice-cream, hot chocolate, chantilly"
+     },
+     "de": {
+      "fr": "DAME BLANCHE",
+      "desc": "Glace vanille, chocolat chaud, chantilly",
+      "en": "Vanilla ice-cream, hot chocolate, chantilly"
+     }
+    },
+    "it": {
+     "fr": "DAME BLANCHE",
+     "desc": "Gelato alla vaniglia, cioccolato caldo, panna montata",
+     "en": "Gelato alla vaniglia, cioccolato caldo, panna montata"
+    },
+    "de": {
+     "fr": "DAME BLANCHE",
+     "desc": "Vanilleeis, heiße Schokolade, Schlagsahne",
+     "en": "Vanilleeis, heiße Schokolade, Schlagsahne"
+    }
+   }
+  },
+  {
+   "id": "m539",
+   "type": "item",
+   "fr": "BANANA SPLIT",
+   "en": "Vanilla and chocolate ice-cream, banana, hot chocolate, chantilly",
+   "price": "13,00",
+   "desc": "Glace chocolat, glace vanille, banane, chocolat chaud, chantilly",
+   "tr": {
+    "en": {
+     "fr": "BANANA SPLIT",
+     "desc": "Chocolate ice cream, vanilla ice cream, banana, hot chocolate sauce, whipped cream",
+     "en": "Vanilla and chocolate ice cream, banana, hot chocolate sauce, whipped cream"
+    },
+    "src": {
+     "en": {
+      "fr": "BANANA SPLIT",
+      "desc": "Glace chocolat, glace vanille, banane, chocolat chaud, chantilly",
+      "en": "Vanilla and chocolate ice-cream, banana, hot chocolate, chantilly"
+     },
+     "it": {
+      "fr": "BANANA SPLIT",
+      "desc": "Glace chocolat, glace vanille, banane, chocolat chaud, chantilly",
+      "en": "Vanilla and chocolate ice-cream, banana, hot chocolate, chantilly"
+     },
+     "de": {
+      "fr": "BANANA SPLIT",
+      "desc": "Glace chocolat, glace vanille, banane, chocolat chaud, chantilly",
+      "en": "Vanilla and chocolate ice-cream, banana, hot chocolate, chantilly"
+     }
+    },
+    "it": {
+     "fr": "BANANA SPLIT",
+     "desc": "Gelato al cioccolato, gelato alla vaniglia, banana, cioccolato caldo, panna montata",
+     "en": "Gelato vaniglia e cioccolato, banana, cioccolato caldo, panna montata"
+    },
+    "de": {
+     "fr": "BANANA SPLIT",
+     "desc": "Schokoladeneis, Vanilleeis, Banane, heiße Schokolade, Schlagsahne",
+     "en": "Vanille- und Schokoladeneis, Banane, heiße Schokolade, Schlagsahne"
+    }
+   }
+  },
+  {
+   "id": "m540",
+   "type": "item",
+   "fr": "COUPE GÉNÉPI",
+   "price": "13,00",
+   "desc": "Sorbet génépi, génépi",
+   "en": "Génépi ice-cream, génépi",
+   "tr": {
+    "en": {
+     "fr": "COUPE GÉNÉPI",
+     "desc": "Génépi sorbet, génépi",
+     "en": "Génépi sorbet, génépi"
+    },
+    "src": {
+     "en": {
+      "fr": "COUPE GÉNÉPI",
+      "desc": "Sorbet génépi, génépi",
+      "en": "Génépi ice-cream, génépi"
+     },
+     "it": {
+      "fr": "COUPE GÉNÉPI",
+      "desc": "Sorbet génépi, génépi",
+      "en": "Génépi ice-cream, génépi"
+     },
+     "de": {
+      "fr": "COUPE GÉNÉPI",
+      "desc": "Sorbet génépi, génépi",
+      "en": "Génépi ice-cream, génépi"
+     }
+    },
+    "it": {
+     "fr": "COUPE GÉNÉPI",
+     "desc": "Sorbetto al génépi, génépi",
+     "en": "Sorbetto al génépi, génépi"
+    },
+    "de": {
+     "fr": "COUPE GÉNÉPI",
+     "desc": "Génépi-Sorbet, Génépi",
+     "en": "Génépi-Sorbet, Génépi"
+    }
+   }
+  },
+  {
+   "id": "m541",
+   "type": "item",
+   "fr": "COUPE COLONEL",
+   "price": "13,00",
+   "desc": "Sorbet citron, vodka",
+   "en": "Lemon ice-cream, vodka",
+   "tr": {
+    "en": {
+     "fr": "COUPE COLONEL",
+     "desc": "Lemon sorbet, vodka",
+     "en": "Lemon sorbet, vodka"
+    },
+    "src": {
+     "en": {
+      "fr": "COUPE COLONEL",
+      "desc": "Sorbet citron, vodka",
+      "en": "Lemon ice-cream, vodka"
+     },
+     "it": {
+      "fr": "COUPE COLONEL",
+      "desc": "Sorbet citron, vodka",
+      "en": "Lemon ice-cream, vodka"
+     },
+     "de": {
+      "fr": "COUPE COLONEL",
+      "desc": "Sorbet citron, vodka",
+      "en": "Lemon ice-cream, vodka"
+     }
+    },
+    "it": {
+     "fr": "COUPE COLONEL",
+     "desc": "Sorbetto al limone, vodka",
+     "en": "Sorbetto al limone, vodka"
+    },
+    "de": {
+     "fr": "COUPE COLONEL",
+     "desc": "Zitronensorbet, Wodka",
+     "en": "Zitronensorbet, Wodka"
+    }
+   }
+  },
+  {
+   "id": "m542",
+   "type": "item",
+   "fr": "COUPE AFTER EIGHT",
+   "price": "13,00",
+   "desc": "Boule menthe chocolat, peppermint",
+   "en": "Mint & chocolate ice-cream, peppermint",
+   "tr": {
+    "en": {
+     "fr": "COUPE AFTER EIGHT",
+     "desc": "Mint chocolate ice cream, peppermint liqueur",
+     "en": "Mint chocolate ice cream, peppermint liqueur"
+    },
+    "src": {
+     "en": {
+      "fr": "COUPE AFTER EIGHT",
+      "desc": "Boule menthe chocolat, peppermint",
+      "en": "Mint & chocolate ice-cream, peppermint"
+     },
+     "it": {
+      "fr": "COUPE AFTER EIGHT",
+      "desc": "Boule menthe chocolat, peppermint",
+      "en": "Mint & chocolate ice-cream, peppermint"
+     },
+     "de": {
+      "fr": "COUPE AFTER EIGHT",
+      "desc": "Boule menthe chocolat, peppermint",
+      "en": "Mint & chocolate ice-cream, peppermint"
+     }
+    },
+    "it": {
+     "fr": "COUPE AFTER EIGHT",
+     "desc": "Pallina menta e cioccolato, liquore alla menta",
+     "en": "Gelato menta e cioccolato, liquore alla menta"
+    },
+    "de": {
+     "fr": "COUPE AFTER EIGHT",
+     "desc": "Kugel Minz-Schokoladen-Eis, Pfefferminzlikör",
+     "en": "Minz-Schokoladen-Eis, Pfefferminzlikör"
+    }
+   }
+  },
+  {
+   "id": "m543",
+   "type": "item",
+   "fr": "SUPPLÉMENT CHANTILLY",
+   "price": "1,00",
+   "en": "Extra chantilly",
+   "tr": {
+    "en": {
+     "fr": "EXTRA WHIPPED CREAM",
+     "en": "Extra whipped cream"
+    },
+    "src": {
+     "en": {
+      "fr": "SUPPLÉMENT CHANTILLY",
+      "en": "Extra chantilly"
+     },
+     "it": {
+      "fr": "SUPPLÉMENT CHANTILLY",
+      "en": "Extra chantilly"
+     },
+     "de": {
+      "fr": "SUPPLÉMENT CHANTILLY",
+      "en": "Extra chantilly"
+     }
+    },
+    "it": {
+     "fr": "SUPPLEMENTO PANNA MONTATA",
+     "en": "Supplemento panna montata"
+    },
+    "de": {
+     "fr": "EXTRA SCHLAGSAHNE",
+     "en": "Extra Schlagsahne"
+    }
+   }
+  },
+  {
+   "id": "m544",
+   "type": "item",
+   "fr": "DEMANDEZ LA GROLLE",
+   "price": "13,00",
+   "mt": 4,
+   "tr": {
+    "en": {
+     "fr": "ASK FOR THE GROLLE (SAVOYARD FLAMBÉED COFFEE TO SHARE)"
+    },
+    "src": {
+     "en": {
+      "fr": "DEMANDEZ LA GROLLE"
+     },
+     "it": {
+      "fr": "DEMANDEZ LA GROLLE"
+     },
+     "de": {
+      "fr": "DEMANDEZ LA GROLLE"
+     }
+    },
+    "it": {
+     "fr": "CHIEDETE LA GROLLE (CAFFÈ FLAMBÉ SAVOIARDO DA CONDIVIDERE)"
+    },
+    "de": {
+     "fr": "FRAGEN SIE NACH DER GROLLE (SAVOYARDISCHER FLAMBIERTER KAFFEE ZUM TEILEN)"
+    }
+   }
+  },
+  {
+   "id": "m545",
+   "type": "image",
+   "src": "assets/photos/crepe-chocolat.jpg",
+   "widthPct": 34,
+   "heightPx": 140,
+   "mt": 10
+  },
+  {
+   "id": "m546",
+   "type": "legend",
+   "text": "Prix nets en euros, service compris · Net prices in euros, service included",
+   "onlyNote": true,
+   "tr": {
+    "en": {
+     "text": "Net prices in euros, service included"
+    },
+    "src": {
+     "en": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "it": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "de": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     }
+    },
+    "it": {
+     "text": "Prezzi netti in euro, servizio incluso"
+    },
+    "de": {
+     "text": "Nettopreise in Euro, Bedienung inbegriffen"
+    }
+   }
+  },
+  {
+   "id": "m547",
+   "type": "pagebreak"
+  },
+  {
+   "id": "m548",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 12,
+   "mt": 0,
+   "mb": 0
+  },
+  {
+   "id": "m549",
+   "type": "section",
+   "fr": "Les menus du midi",
+   "tr": {
+    "en": {
+     "fr": "Lunch menus"
+    },
+    "src": {
+     "en": {
+      "fr": "Les menus du midi"
+     },
+     "it": {
+      "fr": "Les menus du midi"
+     },
+     "de": {
+      "fr": "Les menus du midi"
+     }
+    },
+    "it": {
+     "fr": "I menù del pranzo"
+    },
+    "de": {
+     "fr": "Mittagsmenüs"
+    }
+   },
+   "en": "Lunch menus"
+  },
+  {
+   "id": "m550",
+   "type": "line",
+   "text": "SERVIS UNIQUEMENT LE MIDI, JUSQU’À 14H30",
+   "variant": "small",
+   "tr": {
+    "en": {
+     "text": "SERVED AT LUNCHTIME ONLY, UNTIL 2.30 PM"
+    },
+    "src": {
+     "en": {
+      "text": "SERVIS UNIQUEMENT LE MIDI, JUSQU’À 14H30"
+     },
+     "it": {
+      "text": "SERVIS UNIQUEMENT LE MIDI, JUSQU’À 14H30"
+     },
+     "de": {
+      "text": "SERVIS UNIQUEMENT LE MIDI, JUSQU’À 14H30"
+     }
+    },
+    "it": {
+     "text": "SERVITI SOLO A PRANZO, FINO ALLE 14.30"
+    },
+    "de": {
+     "text": "NUR MITTAGS SERVIERT, BIS 14:30 UHR"
+    }
+   }
+  },
+  {
+   "id": "m551",
+   "type": "line",
+   "text": "Served for lunch only, until 2.30 pm",
+   "variant": "sub",
+   "mb": 22,
+   "tr": {
+    "en": {
+     "text": "Served at lunchtime only, until 2.30 pm"
+    },
+    "src": {
+     "en": {
+      "text": "Served for lunch only, until 2.30 pm"
+     },
+     "it": {
+      "text": "Served for lunch only, until 2.30 pm"
+     },
+     "de": {
+      "text": "Served for lunch only, until 2.30 pm"
+     }
+    },
+    "it": {
+     "text": "Servito solo a pranzo, fino alle 14.30"
+    },
+    "de": {
+     "text": "Nur mittags serviert, bis 14:30 Uhr"
+    }
+   }
+  },
+  {
+   "id": "m552",
+   "type": "cols",
+   "ratio": "50/50",
+   "gap": 28,
+   "boxed": true
+  },
+  {
+   "id": "m553",
+   "type": "line",
+   "text": "Menu enfant",
+   "variant": "title",
+   "price": "18,90 €",
+   "tr": {
+    "en": {
+     "text": "Kids' menu"
+    },
+    "src": {
+     "en": {
+      "text": "Menu enfant"
+     },
+     "it": {
+      "text": "Menu enfant"
+     },
+     "de": {
+      "text": "Menu enfant"
+     }
+    },
+    "it": {
+     "text": "Menù bambini"
+    },
+    "de": {
+     "text": "Kindermenü"
+    }
+   }
+  },
+  {
+   "id": "m554",
+   "type": "line",
+   "text": "PIZZA BAMBINO jambon fromage",
+   "variant": "main",
+   "tr": {
+    "en": {
+     "text": "PIZZA BAMBINO ham and cheese"
+    },
+    "src": {
+     "en": {
+      "text": "PIZZA BAMBINO jambon fromage"
+     },
+     "it": {
+      "text": "PIZZA BAMBINO jambon fromage"
+     },
+     "de": {
+      "text": "PIZZA BAMBINO jambon fromage"
+     }
+    },
+    "it": {
+     "text": "PIZZA BAMBINO prosciutto e formaggio"
+    },
+    "de": {
+     "text": "PIZZA BAMBINO Schinken, Käse"
+    }
+   }
+  },
+  {
+   "id": "m555",
+   "type": "line",
+   "text": "ou",
+   "variant": "or",
+   "tr": {
+    "en": {
+     "text": "or"
+    },
+    "src": {
+     "en": {
+      "text": "ou"
+     },
+     "it": {
+      "text": "ou"
+     },
+     "de": {
+      "text": "ou"
+     }
+    },
+    "it": {
+     "text": "o"
+    },
+    "de": {
+     "text": "oder"
+    }
+   }
+  },
+  {
+   "id": "m556",
+   "type": "line",
+   "text": "GALETTE JAMBON FROMAGE",
+   "variant": "main",
+   "tr": {
+    "en": {
+     "text": "HAM AND CHEESE GALETTE"
+    },
+    "src": {
+     "en": {
+      "text": "GALETTE JAMBON FROMAGE"
+     },
+     "it": {
+      "text": "GALETTE JAMBON FROMAGE"
+     },
+     "de": {
+      "text": "GALETTE JAMBON FROMAGE"
+     }
+    },
+    "it": {
+     "text": "GALETTE PROSCIUTTO E FORMAGGIO"
+    },
+    "de": {
+     "text": "GALETTE MIT SCHINKEN UND KÄSE"
+    }
+   }
+  },
+  {
+   "id": "m557",
+   "type": "line",
+   "text": "OU",
+   "variant": "or",
+   "tr": {
+    "en": {
+     "text": "OR"
+    },
+    "src": {
+     "en": {
+      "text": "OU"
+     },
+     "it": {
+      "text": "OU"
+     },
+     "de": {
+      "text": "OU"
+     }
+    },
+    "it": {
+     "text": "O"
+    },
+    "de": {
+     "text": "ODER"
+    }
+   }
+  },
+  {
+   "id": "m558",
+   "type": "line",
+   "text": "SAUCISSE DIOT - FRITES",
+   "variant": "main",
+   "tr": {
+    "en": {
+     "text": "DIOT SAUSAGE - CHIPS"
+    },
+    "src": {
+     "en": {
+      "text": "SAUCISSE DIOT - FRITES"
+     },
+     "it": {
+      "text": "SAUCISSE DIOT - FRITES"
+     },
+     "de": {
+      "text": "SAUCISSE DIOT - FRITES"
+     }
+    },
+    "it": {
+     "text": "SALSICCIA DIOT - PATATINE FRITTE"
+    },
+    "de": {
+     "text": "DIOT-WURST - POMMES FRITES"
+    }
+   }
+  },
+  {
+   "id": "m559",
+   "type": "line",
+   "text": "Pizza ham & cheese or Diot sausage & chips",
+   "variant": "sub",
+   "tr": {
+    "en": {
+     "text": "Ham & cheese pizza or Diot sausage & chips"
+    },
+    "src": {
+     "en": {
+      "text": "Pizza ham & cheese or Diot sausage & chips"
+     },
+     "it": {
+      "text": "Pizza ham & cheese or Diot sausage & chips"
+     },
+     "de": {
+      "text": "Pizza ham & cheese or Diot sausage & chips"
+     }
+    },
+    "it": {
+     "text": "Pizza prosciutto e formaggio o salsiccia Diot e patatine fritte"
+    },
+    "de": {
+     "text": "Pizza Schinken & Käse oder Diot-Wurst & Pommes frites"
+    }
+   }
+  },
+  {
+   "id": "m560",
+   "type": "line",
+   "text": "—",
+   "variant": "stars"
+  },
+  {
+   "id": "m561",
+   "type": "line",
+   "text": "1 CRÊPE SUCRE OU NUTELLA",
+   "variant": "main",
+   "tr": {
+    "en": {
+     "text": "1 SUGAR OR NUTELLA CRÊPE"
+    },
+    "src": {
+     "en": {
+      "text": "1 CRÊPE SUCRE OU NUTELLA"
+     },
+     "it": {
+      "text": "1 CRÊPE SUCRE OU NUTELLA"
+     },
+     "de": {
+      "text": "1 CRÊPE SUCRE OU NUTELLA"
+     }
+    },
+    "it": {
+     "text": "1 CRÊPE ALLO ZUCCHERO O ALLA NUTELLA"
+    },
+    "de": {
+     "text": "1 CRÊPE MIT ZUCKER ODER NUTELLA"
+    }
+   }
+  },
+  {
+   "id": "m562",
+   "type": "line",
+   "text": "OU",
+   "variant": "or",
+   "tr": {
+    "en": {
+     "text": "OR"
+    },
+    "src": {
+     "en": {
+      "text": "OU"
+     },
+     "it": {
+      "text": "OU"
+     },
+     "de": {
+      "text": "OU"
+     }
+    },
+    "it": {
+     "text": "O"
+    },
+    "de": {
+     "text": "ODER"
+    }
+   }
+  },
+  {
+   "id": "m563",
+   "type": "line",
+   "text": "GLACE 2 BOULES",
+   "variant": "main",
+   "tr": {
+    "en": {
+     "text": "ICE CREAM, 2 SCOOPS"
+    },
+    "src": {
+     "en": {
+      "text": "GLACE 2 BOULES"
+     },
+     "it": {
+      "text": "GLACE 2 BOULES"
+     },
+     "de": {
+      "text": "GLACE 2 BOULES"
+     }
+    },
+    "it": {
+     "text": "GELATO 2 PALLINE"
+    },
+    "de": {
+     "text": "EIS, 2 KUGELN"
+    }
+   }
+  },
+  {
+   "id": "m564",
+   "type": "line",
+   "text": "1 sugar or Nutella pancakes or ice-cream 2 scoops",
+   "variant": "sub",
+   "tr": {
+    "en": {
+     "text": "1 sugar or Nutella crêpe or 2 scoops of ice cream"
+    },
+    "src": {
+     "en": {
+      "text": "1 sugar or Nutella pancakes or ice-cream 2 scoops"
+     },
+     "it": {
+      "text": "1 sugar or Nutella pancakes or ice-cream 2 scoops"
+     },
+     "de": {
+      "text": "1 sugar or Nutella pancakes or ice-cream 2 scoops"
+     }
+    },
+    "it": {
+     "text": "1 crêpe allo zucchero o alla Nutella oppure gelato 2 palline"
+    },
+    "de": {
+     "text": "1 Crêpe mit Zucker oder Nutella oder Eis (2 Kugeln)"
+    }
+   }
+  },
+  {
+   "id": "m565",
+   "type": "line",
+   "text": "—",
+   "variant": "stars"
+  },
+  {
+   "id": "m566",
+   "type": "line",
+   "text": "1 BOISSON AU CHOIX",
+   "variant": "main",
+   "tr": {
+    "en": {
+     "text": "1 DRINK OF YOUR CHOICE"
+    },
+    "src": {
+     "en": {
+      "text": "1 BOISSON AU CHOIX"
+     },
+     "it": {
+      "text": "1 BOISSON AU CHOIX"
+     },
+     "de": {
+      "text": "1 BOISSON AU CHOIX"
+     }
+    },
+    "it": {
+     "text": "1 BEVANDA A SCELTA"
+    },
+    "de": {
+     "text": "1 GETRÄNK NACH WAHL"
+    }
+   }
+  },
+  {
+   "id": "m567",
+   "type": "line",
+   "text": "1 drink",
+   "variant": "sub",
+   "tr": {
+    "en": {
+     "text": "1 drink"
+    },
+    "src": {
+     "en": {
+      "text": "1 drink"
+     },
+     "it": {
+      "text": "1 drink"
+     },
+     "de": {
+      "text": "1 drink"
+     }
+    },
+    "it": {
+     "text": "1 bevanda"
+    },
+    "de": {
+     "text": "1 Getränk"
+    }
+   }
+  },
+  {
+   "id": "m568",
+   "type": "colbreak"
+  },
+  {
+   "id": "m569",
+   "type": "line",
+   "text": "Menu crêpes",
+   "variant": "title",
+   "price": "25,90 €",
+   "tr": {
+    "en": {
+     "text": "Crêpe menu"
+    },
+    "src": {
+     "en": {
+      "text": "Menu crêpes"
+     },
+     "it": {
+      "text": "Menu crêpes"
+     },
+     "de": {
+      "text": "Menu crêpes"
+     }
+    },
+    "it": {
+     "text": "Menù crêpes"
+    },
+    "de": {
+     "text": "Crêpe-Menü"
+    }
+   }
+  },
+  {
+   "id": "m570",
+   "type": "line",
+   "text": "1 GALETTE AU CHOIX",
+   "variant": "main",
+   "tr": {
+    "en": {
+     "text": "1 GALETTE OF YOUR CHOICE"
+    },
+    "src": {
+     "en": {
+      "text": "1 GALETTE AU CHOIX"
+     },
+     "it": {
+      "text": "1 GALETTE AU CHOIX"
+     },
+     "de": {
+      "text": "1 GALETTE AU CHOIX"
+     }
+    },
+    "it": {
+     "text": "1 GALETTE A SCELTA"
+    },
+    "de": {
+     "text": "1 GALETTE NACH WAHL"
+    }
+   }
+  },
+  {
+   "id": "m571",
+   "type": "line",
+   "text": "1 galette of your choice",
+   "variant": "sub",
+   "tr": {
+    "en": {
+     "text": "1 galette of your choice"
+    },
+    "src": {
+     "en": {
+      "text": "1 galette of your choice"
+     },
+     "it": {
+      "text": "1 galette of your choice"
+     },
+     "de": {
+      "text": "1 galette of your choice"
+     }
+    },
+    "it": {
+     "text": "1 galette a scelta"
+    },
+    "de": {
+     "text": "1 Galette nach Wahl"
+    }
+   }
+  },
+  {
+   "id": "m572",
+   "type": "line",
+   "text": "—",
+   "variant": "stars"
+  },
+  {
+   "id": "m573",
+   "type": "line",
+   "text": "1 CRÊPE  1 INGRÉDIENT",
+   "variant": "main",
+   "tr": {
+    "en": {
+     "text": "1 CRÊPE WITH 1 TOPPING OF YOUR CHOICE"
+    },
+    "src": {
+     "en": {
+      "text": "1 CRÊPE  1 INGRÉDIENT"
+     },
+     "it": {
+      "text": "1 CRÊPE  1 INGRÉDIENT"
+     },
+     "de": {
+      "text": "1 CRÊPE  1 INGRÉDIENT"
+     }
+    },
+    "it": {
+     "text": "1 CRÊPE CON 1 INGREDIENTE A SCELTA"
+    },
+    "de": {
+     "text": "1 CRÊPE MIT 1 ZUTAT NACH WAHL"
+    }
+   }
+  },
+  {
+   "id": "m574",
+   "type": "line",
+   "text": "1 pancake with 1 ingredient to choose",
+   "variant": "sub",
+   "tr": {
+    "en": {
+     "text": "1 crêpe with 1 topping of your choice"
+    },
+    "src": {
+     "en": {
+      "text": "1 pancake with 1 ingredient to choose"
+     },
+     "it": {
+      "text": "1 pancake with 1 ingredient to choose"
+     },
+     "de": {
+      "text": "1 pancake with 1 ingredient to choose"
+     }
+    },
+    "it": {
+     "text": "1 crêpe con 1 ingrediente a scelta"
+    },
+    "de": {
+     "text": "1 Crêpe mit 1 Zutat nach Wahl"
+    }
+   }
+  },
+  {
+   "id": "m575",
+   "type": "line",
+   "text": "—",
+   "variant": "stars"
+  },
+  {
+   "id": "m576",
+   "type": "line",
+   "text": "1 BOLÉE DE CIDRE",
+   "variant": "main",
+   "tr": {
+    "en": {
+     "text": "1 BOWL OF CIDER"
+    },
+    "src": {
+     "en": {
+      "text": "1 BOLÉE DE CIDRE"
+     },
+     "it": {
+      "text": "1 BOLÉE DE CIDRE"
+     },
+     "de": {
+      "text": "1 BOLÉE DE CIDRE"
+     }
+    },
+    "it": {
+     "text": "1 TAZZA DI SIDRO"
+    },
+    "de": {
+     "text": "1 SCHALE CIDRE"
+    }
+   }
+  },
+  {
+   "id": "m577",
+   "type": "line",
+   "text": "1 bowl of cider",
+   "variant": "sub",
+   "tr": {
+    "en": {
+     "text": "1 bowl of cider"
+    },
+    "src": {
+     "en": {
+      "text": "1 bowl of cider"
+     },
+     "it": {
+      "text": "1 bowl of cider"
+     },
+     "de": {
+      "text": "1 bowl of cider"
+     }
+    },
+    "it": {
+     "text": "1 tazza di sidro"
+    },
+    "de": {
+     "text": "1 Schale Cidre"
+    }
+   }
+  },
+  {
+   "id": "m578",
+   "type": "colsend"
+  },
+  {
+   "id": "m579",
+   "type": "image",
+   "src": "assets/photos/galette-emporter.jpg",
+   "widthPct": 100,
+   "heightPx": 200,
+   "mt": 30
+  },
+  {
+   "id": "m580",
+   "type": "legend",
+   "text": "Prix nets en euros, service compris · Net prices in euros, service included",
+   "onlyNote": true,
+   "tr": {
+    "en": {
+     "text": "Net prices in euros, service included"
+    },
+    "src": {
+     "en": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "it": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "de": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     }
+    },
+    "it": {
+     "text": "Prezzi netti in euro, servizio incluso"
+    },
+    "de": {
+     "text": "Nettopreise in Euro, Bedienung inbegriffen"
+    }
+   }
+  },
+  {
+   "id": "m581",
+   "type": "pagebreak"
+  },
+  {
+   "id": "m582",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 12,
+   "mb": 0,
+   "mt": 0
+  },
+  {
+   "id": "m583",
+   "type": "section",
+   "fr": "Boissons",
+   "tr": {
+    "en": {
+     "fr": "Drinks"
+    },
+    "src": {
+     "en": {
+      "fr": "Boissons"
+     },
+     "it": {
+      "fr": "Boissons"
+     },
+     "de": {
+      "fr": "Boissons"
+     }
+    },
+    "it": {
+     "fr": "Bevande"
+    },
+    "de": {
+     "fr": "Getränke"
+    }
+   },
+   "en": "Drinks"
+  },
+  {
+   "id": "m584",
+   "type": "cols",
+   "ratio": "50/50",
+   "gap": 30
+  },
+  {
+   "id": "m585",
+   "type": "section",
+   "fr": "APÉRITIFS",
+   "sub": true,
+   "tr": {
+    "en": {
+     "fr": "APERITIFS"
+    },
+    "src": {
+     "en": {
+      "fr": "APÉRITIFS"
+     },
+     "it": {
+      "fr": "APÉRITIFS"
+     },
+     "de": {
+      "fr": "APÉRITIFS"
+     }
+    },
+    "it": {
+     "fr": "APERITIVI"
+    },
+    "de": {
+     "fr": "APERITIFS"
+    }
+   }
+  },
+  {
+   "id": "m586",
+   "type": "item",
+   "fr": "SANGRIA MAISON",
+   "price": "10,00",
+   "tr": {
+    "en": {
+     "fr": "HOMEMADE SANGRIA"
+    },
+    "src": {
+     "en": {
+      "fr": "SANGRIA MAISON"
+     },
+     "it": {
+      "fr": "SANGRIA MAISON"
+     },
+     "de": {
+      "fr": "SANGRIA MAISON"
+     }
+    },
+    "it": {
+     "fr": "SANGRIA DELLA CASA"
+    },
+    "de": {
+     "fr": "HAUSGEMACHTE SANGRIA"
+    }
+   }
+  },
+  {
+   "id": "m587",
+   "type": "item",
+   "fr": "PUNCH MAISON",
+   "price": "10,00",
+   "tr": {
+    "en": {
+     "fr": "HOMEMADE PUNCH"
+    },
+    "src": {
+     "en": {
+      "fr": "PUNCH MAISON"
+     },
+     "it": {
+      "fr": "PUNCH MAISON"
+     },
+     "de": {
+      "fr": "PUNCH MAISON"
+     }
+    },
+    "it": {
+     "fr": "PUNCH DELLA CASA"
+    },
+    "de": {
+     "fr": "HAUSGEMACHTER PUNSCH"
+    }
+   }
+  },
+  {
+   "id": "m588",
+   "type": "item",
+   "fr": "PASTIS",
+   "price": "5,00",
+   "tr": {
+    "en": {
+     "fr": "PASTIS"
+    },
+    "src": {
+     "en": {
+      "fr": "PASTIS"
+     },
+     "it": {
+      "fr": "PASTIS"
+     },
+     "de": {
+      "fr": "PASTIS"
+     }
+    },
+    "it": {
+     "fr": "PASTIS"
+    },
+    "de": {
+     "fr": "PASTIS"
+    }
+   }
+  },
+  {
+   "id": "m589",
+   "type": "item",
+   "fr": "MARTINI",
+   "price": "6,50",
+   "desc": "Rouge ou blanc",
+   "tr": {
+    "en": {
+     "fr": "MARTINI",
+     "desc": "Red or white"
+    },
+    "src": {
+     "en": {
+      "fr": "MARTINI",
+      "desc": "Rouge ou blanc"
+     },
+     "it": {
+      "fr": "MARTINI",
+      "desc": "Rouge ou blanc"
+     },
+     "de": {
+      "fr": "MARTINI",
+      "desc": "Rouge ou blanc"
+     }
+    },
+    "it": {
+     "fr": "MARTINI",
+     "desc": "Rosso o bianco"
+    },
+    "de": {
+     "fr": "MARTINI",
+     "desc": "Rot oder weiß"
+    }
+   }
+  },
+  {
+   "id": "m590_0",
+   "type": "item",
+   "fr": "VODKA SMIRNOFF",
+   "price": "9,00",
+   "tr": {
+    "en": {
+     "fr": "VODKA SMIRNOFF"
+    },
+    "src": {
+     "en": {
+      "fr": "VODKA SMIRNOFF"
+     },
+     "it": {
+      "fr": "VODKA SMIRNOFF"
+     },
+     "de": {
+      "fr": "VODKA SMIRNOFF"
+     }
+    },
+    "it": {
+     "fr": "VODKA SMIRNOFF"
+    },
+    "de": {
+     "fr": "VODKA SMIRNOFF"
+    }
+   }
+  },
+  {
+   "id": "m590_1",
+   "type": "item",
+   "fr": "VODKA BELVEDERE",
+   "price": "13,00",
+   "tr": {
+    "en": {
+     "fr": "VODKA BELVEDERE"
+    },
+    "src": {
+     "en": {
+      "fr": "VODKA BELVEDERE"
+     },
+     "it": {
+      "fr": "VODKA BELVEDERE"
+     },
+     "de": {
+      "fr": "VODKA BELVEDERE"
+     }
+    },
+    "it": {
+     "fr": "VODKA BELVEDERE"
+    },
+    "de": {
+     "fr": "VODKA BELVEDERE"
+    }
+   }
+  },
+  {
+   "id": "m591_0",
+   "type": "item",
+   "fr": "WHISKY, GIN, RHUM",
+   "price": "9,00",
+   "tr": {
+    "en": {
+     "fr": "WHISKY, GIN, RUM"
+    },
+    "src": {
+     "en": {
+      "fr": "WHISKY, GIN, RHUM"
+     },
+     "it": {
+      "fr": "WHISKY, GIN, RHUM"
+     },
+     "de": {
+      "fr": "WHISKY, GIN, RHUM"
+     }
+    },
+    "it": {
+     "fr": "WHISKY, GIN, RUM"
+    },
+    "de": {
+     "fr": "WHISKY, GIN, RUM"
+    }
+   }
+  },
+  {
+   "id": "m591_1",
+   "type": "item",
+   "fr": "JACK DANIELS",
+   "price": "12,00",
+   "tr": {
+    "en": {
+     "fr": "JACK DANIELS"
+    },
+    "src": {
+     "en": {
+      "fr": "JACK DANIELS"
+     },
+     "it": {
+      "fr": "JACK DANIELS"
+     },
+     "de": {
+      "fr": "JACK DANIELS"
+     }
+    },
+    "it": {
+     "fr": "JACK DANIELS"
+    },
+    "de": {
+     "fr": "JACK DANIELS"
+    }
+   }
+  },
+  {
+   "id": "m592",
+   "type": "item",
+   "fr": "KIR",
+   "price": "8,50",
+   "desc": "Cassis ou pêche",
+   "tr": {
+    "en": {
+     "fr": "KIR",
+     "desc": "Blackcurrant or peach"
+    },
+    "src": {
+     "en": {
+      "fr": "KIR",
+      "desc": "Cassis ou pêche"
+     },
+     "it": {
+      "fr": "KIR",
+      "desc": "Cassis ou pêche"
+     },
+     "de": {
+      "fr": "KIR",
+      "desc": "Cassis ou pêche"
+     }
+    },
+    "it": {
+     "fr": "KIR",
+     "desc": "Ribes nero o pesca"
+    },
+    "de": {
+     "fr": "KIR",
+     "desc": "Cassis oder Pfirsich"
+    }
+   }
+  },
+  {
+   "id": "m593",
+   "type": "item",
+   "fr": "KIR ROYAL PÉTILLANT",
+   "price": "11,00",
+   "tr": {
+    "en": {
+     "fr": "SPARKLING KIR ROYAL"
+    },
+    "src": {
+     "en": {
+      "fr": "KIR ROYAL PÉTILLANT"
+     },
+     "it": {
+      "fr": "KIR ROYAL PÉTILLANT"
+     },
+     "de": {
+      "fr": "KIR ROYAL PÉTILLANT"
+     }
+    },
+    "it": {
+     "fr": "KIR ROYAL FRIZZANTE"
+    },
+    "de": {
+     "fr": "KIR ROYAL MIT SCHAUMWEIN"
+    }
+   }
+  },
+  {
+   "id": "m594",
+   "type": "item",
+   "fr": "KIR BRETON",
+   "price": "6,50",
+   "desc": "Cidre & crème de cassis",
+   "tr": {
+    "en": {
+     "fr": "KIR BRETON",
+     "desc": "Cider & crème de cassis"
+    },
+    "src": {
+     "en": {
+      "fr": "KIR BRETON",
+      "desc": "Cidre & crème de cassis"
+     },
+     "it": {
+      "fr": "KIR BRETON",
+      "desc": "Cidre & crème de cassis"
+     },
+     "de": {
+      "fr": "KIR BRETON",
+      "desc": "Cidre & crème de cassis"
+     }
+    },
+    "it": {
+     "fr": "KIR BRETON",
+     "desc": "Sidro & crème de cassis"
+    },
+    "de": {
+     "fr": "KIR BRETON",
+     "desc": "Cidre & Cassislikör"
+    }
+   }
+  },
+  {
+   "id": "m595",
+   "type": "item",
+   "fr": "KIR ROSÉ PAMPLEMOUSSE",
+   "price": "7,50",
+   "tr": {
+    "en": {
+     "fr": "GRAPEFRUIT ROSÉ KIR"
+    },
+    "src": {
+     "en": {
+      "fr": "KIR ROSÉ PAMPLEMOUSSE"
+     },
+     "it": {
+      "fr": "KIR ROSÉ PAMPLEMOUSSE"
+     },
+     "de": {
+      "fr": "KIR ROSÉ PAMPLEMOUSSE"
+     }
+    },
+    "it": {
+     "fr": "KIR ROSÉ AL POMPELMO"
+    },
+    "de": {
+     "fr": "KIR ROSÉ MIT GRAPEFRUIT"
+    }
+   }
+  },
+  {
+   "id": "m596",
+   "type": "item",
+   "fr": "CIDRE ROSÉ",
+   "price": "7,00",
+   "desc": "33 cl",
+   "tr": {
+    "en": {
+     "fr": "ROSÉ CIDER",
+     "desc": "33 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "CIDRE ROSÉ",
+      "desc": "33 cl"
+     },
+     "it": {
+      "fr": "CIDRE ROSÉ",
+      "desc": "33 cl"
+     },
+     "de": {
+      "fr": "CIDRE ROSÉ",
+      "desc": "33 cl"
+     }
+    },
+    "it": {
+     "fr": "SIDRO ROSÉ",
+     "desc": "33 cl"
+    },
+    "de": {
+     "fr": "CIDRE ROSÉ",
+     "desc": "33 cl"
+    }
+   }
+  },
+  {
+   "id": "m597",
+   "type": "section",
+   "fr": "BIÈRES ET CIDRES",
+   "sub": true,
+   "tr": {
+    "en": {
+     "fr": "BEERS AND CIDERS"
+    },
+    "src": {
+     "en": {
+      "fr": "BIÈRES ET CIDRES"
+     },
+     "it": {
+      "fr": "BIÈRES ET CIDRES"
+     },
+     "de": {
+      "fr": "BIÈRES ET CIDRES"
+     }
+    },
+    "it": {
+     "fr": "BIRRE E SIDRI"
+    },
+    "de": {
+     "fr": "BIERE UND CIDRES"
+    }
+   }
+  },
+  {
+   "id": "m617",
+   "type": "item",
+   "fr": "BOLÉE DE CIDRE DOUX OU BRUT",
+   "price": "4,80",
+   "desc": "20 cl",
+   "tr": {
+    "en": {
+     "fr": "BOWL OF SWEET OR DRY CIDER",
+     "desc": "20 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "BOLÉE DE CIDRE DOUX OU BRUT",
+      "desc": "20 cl"
+     },
+     "it": {
+      "fr": "BOLÉE DE CIDRE DOUX OU BRUT",
+      "desc": "20 cl"
+     },
+     "de": {
+      "fr": "BOLÉE DE CIDRE DOUX OU BRUT",
+      "desc": "20 cl"
+     }
+    },
+    "it": {
+     "fr": "TAZZA DI SIDRO DOLCE O SECCO",
+     "desc": "20 cl"
+    },
+    "de": {
+     "fr": "SCHALE CIDRE, SÜSS ODER HERB",
+     "desc": "20 cl"
+    }
+   }
+  },
+  {
+   "id": "m598",
+   "type": "item",
+   "fr": "CIDRE BRETON BRUT · DOUX",
+   "price": "18,50",
+   "desc": "75 cl",
+   "tr": {
+    "en": {
+     "fr": "BRETON CIDER, DRY · SWEET",
+     "desc": "75 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "CIDRE BRETON BRUT · DOUX",
+      "desc": "75 cl"
+     },
+     "it": {
+      "fr": "CIDRE BRETON BRUT · DOUX",
+      "desc": "75 cl"
+     },
+     "de": {
+      "fr": "CIDRE BRETON BRUT · DOUX",
+      "desc": "75 cl"
+     }
+    },
+    "it": {
+     "fr": "SIDRO BRETONE SECCO · DOLCE",
+     "desc": "75 cl"
+    },
+    "de": {
+     "fr": "BRETONISCHER CIDRE HERB · SÜSS",
+     "desc": "75 cl"
+    }
+   }
+  },
+  {
+   "id": "m599",
+   "type": "item",
+   "fr": "CIDRE BRETON ROSÉ",
+   "price": "19,70",
+   "desc": "75 cl",
+   "tr": {
+    "en": {
+     "fr": "BRETON ROSÉ CIDER",
+     "desc": "75 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "CIDRE BRETON ROSÉ",
+      "desc": "75 cl"
+     },
+     "it": {
+      "fr": "CIDRE BRETON ROSÉ",
+      "desc": "75 cl"
+     },
+     "de": {
+      "fr": "CIDRE BRETON ROSÉ",
+      "desc": "75 cl"
+     }
+    },
+    "it": {
+     "fr": "SIDRO BRETONE ROSÉ",
+     "desc": "75 cl"
+    },
+    "de": {
+     "fr": "BRETONISCHER CIDRE ROSÉ",
+     "desc": "75 cl"
+    }
+   }
+  },
+  {
+   "id": "m600",
+   "type": "item",
+   "fr": "BIÈRE BLANCHE DU MONT BLANC",
+   "price": "8,50",
+   "desc": "33 cl",
+   "tr": {
+    "en": {
+     "fr": "MONT BLANC WHEAT BEER",
+     "desc": "33 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "BIÈRE BLANCHE DU MONT BLANC",
+      "desc": "33 cl"
+     },
+     "it": {
+      "fr": "BIÈRE BLANCHE DU MONT BLANC",
+      "desc": "33 cl"
+     },
+     "de": {
+      "fr": "BIÈRE BLANCHE DU MONT BLANC",
+      "desc": "33 cl"
+     }
+    },
+    "it": {
+     "fr": "BIRRA BIANCA DEL MONT BLANC",
+     "desc": "33 cl"
+    },
+    "de": {
+     "fr": "WEISSBIER VOM MONT BLANC",
+     "desc": "33 cl"
+    }
+   }
+  },
+  {
+   "id": "m601",
+   "type": "item",
+   "fr": "IPA MONT BLANC",
+   "price": "8,50",
+   "desc": "33 cl",
+   "tr": {
+    "en": {
+     "fr": "MONT BLANC IPA",
+     "desc": "33 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "IPA MONT BLANC",
+      "desc": "33 cl"
+     },
+     "it": {
+      "fr": "IPA MONT BLANC",
+      "desc": "33 cl"
+     },
+     "de": {
+      "fr": "IPA MONT BLANC",
+      "desc": "33 cl"
+     }
+    },
+    "it": {
+     "fr": "IPA MONT BLANC",
+     "desc": "33 cl"
+    },
+    "de": {
+     "fr": "IPA MONT BLANC",
+     "desc": "33 cl"
+    }
+   }
+  },
+  {
+   "id": "m602_0",
+   "type": "item",
+   "fr": "PRESSION",
+   "price": "5,50",
+   "desc": "25 cl",
+   "tr": {
+    "en": {
+     "fr": "DRAUGHT BEER",
+     "desc": "25 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "PRESSION",
+      "desc": "25 cl"
+     },
+     "it": {
+      "fr": "PRESSION",
+      "desc": "25 cl"
+     },
+     "de": {
+      "fr": "PRESSION",
+      "desc": "25 cl"
+     }
+    },
+    "it": {
+     "fr": "BIRRA ALLA SPINA",
+     "desc": "25 cl"
+    },
+    "de": {
+     "fr": "BIER VOM FASS",
+     "desc": "25 cl"
+    }
+   }
+  },
+  {
+   "id": "m602_1",
+   "type": "item",
+   "fr": "PRESSION",
+   "price": "10,00",
+   "desc": "50 cl",
+   "tr": {
+    "en": {
+     "fr": "DRAUGHT BEER",
+     "desc": "50 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "PRESSION",
+      "desc": "50 cl"
+     },
+     "it": {
+      "fr": "PRESSION",
+      "desc": "50 cl"
+     },
+     "de": {
+      "fr": "PRESSION",
+      "desc": "50 cl"
+     }
+    },
+    "it": {
+     "fr": "BIRRA ALLA SPINA",
+     "desc": "50 cl"
+    },
+    "de": {
+     "fr": "BIER VOM FASS",
+     "desc": "50 cl"
+    }
+   }
+  },
+  {
+   "id": "m603",
+   "type": "section",
+   "fr": "DIGESTIFS · 4 CL",
+   "sub": true,
+   "tr": {
+    "en": {
+     "fr": "DIGESTIFS · 4 CL"
+    },
+    "src": {
+     "en": {
+      "fr": "DIGESTIFS · 4 CL"
+     },
+     "it": {
+      "fr": "DIGESTIFS · 4 CL"
+     },
+     "de": {
+      "fr": "DIGESTIFS · 4 CL"
+     }
+    },
+    "it": {
+     "fr": "DIGESTIVI · 4 CL"
+    },
+    "de": {
+     "fr": "DIGESTIFS · 4 CL"
+    }
+   }
+  },
+  {
+   "id": "m604",
+   "type": "item",
+   "fr": "GÉNÉPI DES ALPES",
+   "price": "8,50",
+   "tr": {
+    "en": {
+     "fr": "ALPINE GÉNÉPI"
+    },
+    "src": {
+     "en": {
+      "fr": "GÉNÉPI DES ALPES"
+     },
+     "it": {
+      "fr": "GÉNÉPI DES ALPES"
+     },
+     "de": {
+      "fr": "GÉNÉPI DES ALPES"
+     }
+    },
+    "it": {
+     "fr": "GÉNÉPI DELLE ALPI"
+    },
+    "de": {
+     "fr": "GÉNÉPI AUS DEN ALPEN"
+    }
+   }
+  },
+  {
+   "id": "m605",
+   "type": "item",
+   "fr": "COGNAC",
+   "price": "10,00",
+   "tr": {
+    "en": {
+     "fr": "COGNAC"
+    },
+    "src": {
+     "en": {
+      "fr": "COGNAC"
+     },
+     "it": {
+      "fr": "COGNAC"
+     },
+     "de": {
+      "fr": "COGNAC"
+     }
+    },
+    "it": {
+     "fr": "COGNAC"
+    },
+    "de": {
+     "fr": "COGNAC"
+    }
+   }
+  },
+  {
+   "id": "m606",
+   "type": "item",
+   "fr": "CALVADOS",
+   "price": "8,50",
+   "tr": {
+    "en": {
+     "fr": "CALVADOS"
+    },
+    "src": {
+     "en": {
+      "fr": "CALVADOS"
+     },
+     "it": {
+      "fr": "CALVADOS"
+     },
+     "de": {
+      "fr": "CALVADOS"
+     }
+    },
+    "it": {
+     "fr": "CALVADOS"
+    },
+    "de": {
+     "fr": "CALVADOS"
+    }
+   }
+  },
+  {
+   "id": "m607",
+   "type": "item",
+   "fr": "CHARTREUSE VERTE",
+   "price": "10,00",
+   "tr": {
+    "en": {
+     "fr": "GREEN CHARTREUSE"
+    },
+    "src": {
+     "en": {
+      "fr": "CHARTREUSE VERTE"
+     },
+     "it": {
+      "fr": "CHARTREUSE VERTE"
+     },
+     "de": {
+      "fr": "CHARTREUSE VERTE"
+     }
+    },
+    "it": {
+     "fr": "CHARTREUSE VERDE"
+    },
+    "de": {
+     "fr": "CHARTREUSE VERTE"
+    }
+   }
+  },
+  {
+   "id": "m608",
+   "type": "item",
+   "fr": "IRISH COFFEE",
+   "price": "12,00",
+   "tr": {
+    "en": {
+     "fr": "IRISH COFFEE"
+    },
+    "src": {
+     "en": {
+      "fr": "IRISH COFFEE"
+     },
+     "it": {
+      "fr": "IRISH COFFEE"
+     },
+     "de": {
+      "fr": "IRISH COFFEE"
+     }
+    },
+    "it": {
+     "fr": "IRISH COFFEE"
+    },
+    "de": {
+     "fr": "IRISH COFFEE"
+    }
+   }
+  },
+  {
+   "id": "m609",
+   "type": "item",
+   "fr": "POIRE WILLIAMS",
+   "price": "10,00",
+   "tr": {
+    "en": {
+     "fr": "POIRE WILLIAMS"
+    },
+    "src": {
+     "en": {
+      "fr": "POIRE WILLIAMS"
+     },
+     "it": {
+      "fr": "POIRE WILLIAMS"
+     },
+     "de": {
+      "fr": "POIRE WILLIAMS"
+     }
+    },
+    "it": {
+     "fr": "POIRE WILLIAMS"
+    },
+    "de": {
+     "fr": "WILLIAMS-BIRNENBRAND"
+    }
+   }
+  },
+  {
+   "id": "m610",
+   "type": "item",
+   "fr": "BAILEYS",
+   "price": "8,50",
+   "tr": {
+    "en": {
+     "fr": "BAILEYS"
+    },
+    "src": {
+     "en": {
+      "fr": "BAILEYS"
+     },
+     "it": {
+      "fr": "BAILEYS"
+     },
+     "de": {
+      "fr": "BAILEYS"
+     }
+    },
+    "it": {
+     "fr": "BAILEYS"
+    },
+    "de": {
+     "fr": "BAILEYS"
+    }
+   }
+  },
+  {
+   "id": "m611",
+   "type": "item",
+   "fr": "GET 27",
+   "price": "8,50",
+   "tr": {
+    "en": {
+     "fr": "GET 27"
+    },
+    "src": {
+     "en": {
+      "fr": "GET 27"
+     },
+     "it": {
+      "fr": "GET 27"
+     },
+     "de": {
+      "fr": "GET 27"
+     }
+    },
+    "it": {
+     "fr": "GET 27"
+    },
+    "de": {
+     "fr": "GET 27"
+    }
+   }
+  },
+  {
+   "id": "m612",
+   "type": "item",
+   "fr": "AMARETTO",
+   "price": "8,00",
+   "tr": {
+    "en": {
+     "fr": "AMARETTO"
+    },
+    "src": {
+     "en": {
+      "fr": "AMARETTO"
+     },
+     "it": {
+      "fr": "AMARETTO"
+     },
+     "de": {
+      "fr": "AMARETTO"
+     }
+    },
+    "it": {
+     "fr": "AMARETTO"
+    },
+    "de": {
+     "fr": "AMARETTO"
+    }
+   }
+  },
+  {
+   "id": "m613",
+   "type": "item",
+   "fr": "LIMONCELLO",
+   "price": "8,00",
+   "tr": {
+    "en": {
+     "fr": "LIMONCELLO"
+    },
+    "src": {
+     "en": {
+      "fr": "LIMONCELLO"
+     },
+     "it": {
+      "fr": "LIMONCELLO"
+     },
+     "de": {
+      "fr": "LIMONCELLO"
+     }
+    },
+    "it": {
+     "fr": "LIMONCELLO"
+    },
+    "de": {
+     "fr": "LIMONCELLO"
+    }
+   }
+  },
+  {
+   "id": "m614",
+   "type": "colbreak"
+  },
+  {
+   "id": "m615",
+   "type": "section",
+   "fr": "BOISSONS SANS ALCOOL",
+   "sub": true,
+   "tr": {
+    "en": {
+     "fr": "SOFT DRINKS"
+    },
+    "src": {
+     "en": {
+      "fr": "BOISSONS SANS ALCOOL"
+     },
+     "it": {
+      "fr": "BOISSONS SANS ALCOOL"
+     },
+     "de": {
+      "fr": "BOISSONS SANS ALCOOL"
+     }
+    },
+    "it": {
+     "fr": "BEVANDE ANALCOLICHE"
+    },
+    "de": {
+     "fr": "ALKOHOLFREIE GETRÄNKE"
+    }
+   }
+  },
+  {
+   "id": "m616",
+   "type": "item",
+   "fr": "GRAND VERRE DE SIROP",
+   "en": "Menthe, fraise, grenadine, citron",
+   "price": "3,50",
+   "tr": {
+    "en": {
+     "fr": "LARGE GLASS OF CORDIAL",
+     "en": "Mint, strawberry, grenadine, lemon"
+    },
+    "src": {
+     "en": {
+      "fr": "GRAND VERRE DE SIROP",
+      "en": "Menthe, fraise, grenadine, citron"
+     },
+     "it": {
+      "fr": "GRAND VERRE DE SIROP",
+      "en": "Menthe, fraise, grenadine, citron"
+     },
+     "de": {
+      "fr": "GRAND VERRE DE SIROP",
+      "en": "Menthe, fraise, grenadine, citron"
+     }
+    },
+    "it": {
+     "fr": "GRANDE BICCHIERE DI SCIROPPO CON ACQUA",
+     "en": "Menta, fragola, granatina, limone"
+    },
+    "de": {
+     "fr": "GROSSES GLAS SIRUP MIT WASSER",
+     "en": "Minze, Erdbeere, Grenadine, Zitrone"
+    }
+   }
+  },
+  {
+   "id": "m618",
+   "type": "item",
+   "fr": "SCHWEPPES",
+   "price": "5,50",
+   "desc": "25 cl",
+   "tr": {
+    "en": {
+     "fr": "SCHWEPPES",
+     "desc": "25 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "SCHWEPPES",
+      "desc": "25 cl"
+     },
+     "it": {
+      "fr": "SCHWEPPES",
+      "desc": "25 cl"
+     },
+     "de": {
+      "fr": "SCHWEPPES",
+      "desc": "25 cl"
+     }
+    },
+    "it": {
+     "fr": "SCHWEPPES",
+     "desc": "25 cl"
+    },
+    "de": {
+     "fr": "SCHWEPPES",
+     "desc": "25 cl"
+    }
+   }
+  },
+  {
+   "id": "m619",
+   "type": "item",
+   "fr": "LIMONADE, ICE TEA",
+   "price": "5,50",
+   "desc": "30 cl",
+   "tr": {
+    "en": {
+     "fr": "LEMONADE, ICED TEA",
+     "desc": "30 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "LIMONADE, ICE TEA",
+      "desc": "30 cl"
+     },
+     "it": {
+      "fr": "LIMONADE, ICE TEA",
+      "desc": "30 cl"
+     },
+     "de": {
+      "fr": "LIMONADE, ICE TEA",
+      "desc": "30 cl"
+     }
+    },
+    "it": {
+     "fr": "LIMONATA, TÈ FREDDO",
+     "desc": "30 cl"
+    },
+    "de": {
+     "fr": "LIMONADE, EISTEE",
+     "desc": "30 cl"
+    }
+   }
+  },
+  {
+   "id": "m620",
+   "type": "item",
+   "fr": "JUS D'ORANGE, ANANAS, POMME",
+   "price": "5,50",
+   "desc": "30 cl",
+   "tr": {
+    "en": {
+     "fr": "ORANGE, PINEAPPLE, APPLE JUICE",
+     "desc": "30 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "JUS D'ORANGE, ANANAS, POMME",
+      "desc": "30 cl"
+     },
+     "it": {
+      "fr": "JUS D'ORANGE, ANANAS, POMME",
+      "desc": "30 cl"
+     },
+     "de": {
+      "fr": "JUS D'ORANGE, ANANAS, POMME",
+      "desc": "30 cl"
+     }
+    },
+    "it": {
+     "fr": "SUCCO D'ARANCIA, ANANAS, MELA",
+     "desc": "30 cl"
+    },
+    "de": {
+     "fr": "ORANGEN-, ANANAS-, APFELSAFT",
+     "desc": "30 cl"
+    }
+   }
+  },
+  {
+   "id": "m621",
+   "type": "item",
+   "fr": "ORANGINA",
+   "price": "5,50",
+   "desc": "25 cl",
+   "tr": {
+    "en": {
+     "fr": "ORANGINA",
+     "desc": "25 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "ORANGINA",
+      "desc": "25 cl"
+     },
+     "it": {
+      "fr": "ORANGINA",
+      "desc": "25 cl"
+     },
+     "de": {
+      "fr": "ORANGINA",
+      "desc": "25 cl"
+     }
+    },
+    "it": {
+     "fr": "ORANGINA",
+     "desc": "25 cl"
+    },
+    "de": {
+     "fr": "ORANGINA",
+     "desc": "25 cl"
+    }
+   }
+  },
+  {
+   "id": "m622",
+   "type": "item",
+   "fr": "PERRIER",
+   "price": "5,50",
+   "desc": "33 cl",
+   "tr": {
+    "en": {
+     "fr": "PERRIER",
+     "desc": "33 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "PERRIER",
+      "desc": "33 cl"
+     },
+     "it": {
+      "fr": "PERRIER",
+      "desc": "33 cl"
+     },
+     "de": {
+      "fr": "PERRIER",
+      "desc": "33 cl"
+     }
+    },
+    "it": {
+     "fr": "PERRIER",
+     "desc": "33 cl"
+    },
+    "de": {
+     "fr": "PERRIER",
+     "desc": "33 cl"
+    }
+   }
+  },
+  {
+   "id": "m623",
+   "type": "item",
+   "fr": "COCA-COLA, COCA-COLA ZERO",
+   "price": "5,50",
+   "desc": "30 cl",
+   "tr": {
+    "en": {
+     "fr": "COCA-COLA, COCA-COLA ZERO",
+     "desc": "30 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "COCA-COLA, COCA-COLA ZERO",
+      "desc": "30 cl"
+     },
+     "it": {
+      "fr": "COCA-COLA, COCA-COLA ZERO",
+      "desc": "30 cl"
+     },
+     "de": {
+      "fr": "COCA-COLA, COCA-COLA ZERO",
+      "desc": "30 cl"
+     }
+    },
+    "it": {
+     "fr": "COCA-COLA, COCA-COLA ZERO",
+     "desc": "30 cl"
+    },
+    "de": {
+     "fr": "COCA-COLA, COCA-COLA ZERO",
+     "desc": "30 cl"
+    }
+   }
+  },
+  {
+   "id": "m624",
+   "type": "item",
+   "fr": "EAU MINÉRALE",
+   "price": "8,00",
+   "desc": "75 cl",
+   "tr": {
+    "en": {
+     "fr": "MINERAL WATER",
+     "desc": "75 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "EAU MINÉRALE",
+      "desc": "75 cl"
+     },
+     "it": {
+      "fr": "EAU MINÉRALE",
+      "desc": "75 cl"
+     },
+     "de": {
+      "fr": "EAU MINÉRALE",
+      "desc": "75 cl"
+     }
+    },
+    "it": {
+     "fr": "ACQUA MINERALE",
+     "desc": "75 cl"
+    },
+    "de": {
+     "fr": "MINERALWASSER",
+     "desc": "75 cl"
+    }
+   }
+  },
+  {
+   "id": "m625",
+   "type": "item",
+   "fr": "EAU MINÉRALE GAZEUSE",
+   "price": "8,00",
+   "desc": "75 cl",
+   "tr": {
+    "en": {
+     "fr": "SPARKLING MINERAL WATER",
+     "desc": "75 cl"
+    },
+    "src": {
+     "en": {
+      "fr": "EAU MINÉRALE GAZEUSE",
+      "desc": "75 cl"
+     },
+     "it": {
+      "fr": "EAU MINÉRALE GAZEUSE",
+      "desc": "75 cl"
+     },
+     "de": {
+      "fr": "EAU MINÉRALE GAZEUSE",
+      "desc": "75 cl"
+     }
+    },
+    "it": {
+     "fr": "ACQUA MINERALE FRIZZANTE",
+     "desc": "75 cl"
+    },
+    "de": {
+     "fr": "MINERALWASSER MIT KOHLENSÄURE",
+     "desc": "75 cl"
+    }
+   }
+  },
+  {
+   "id": "m626",
+   "type": "section",
+   "fr": "BOISSONS CHAUDES",
+   "sub": true,
+   "tr": {
+    "en": {
+     "fr": "HOT DRINKS"
+    },
+    "src": {
+     "en": {
+      "fr": "BOISSONS CHAUDES"
+     },
+     "it": {
+      "fr": "BOISSONS CHAUDES"
+     },
+     "de": {
+      "fr": "BOISSONS CHAUDES"
+     }
+    },
+    "it": {
+     "fr": "BEVANDE CALDE"
+    },
+    "de": {
+     "fr": "HEISSGETRÄNKE"
+    }
+   }
+  },
+  {
+   "id": "m627",
+   "type": "item",
+   "fr": "CAFÉ",
+   "price": "3,50",
+   "tr": {
+    "en": {
+     "fr": "ESPRESSO"
+    },
+    "src": {
+     "en": {
+      "fr": "CAFÉ"
+     },
+     "it": {
+      "fr": "CAFÉ"
+     },
+     "de": {
+      "fr": "CAFÉ"
+     }
+    },
+    "it": {
+     "fr": "CAFFÈ"
+    },
+    "de": {
+     "fr": "KAFFEE"
+    }
+   }
+  },
+  {
+   "id": "m628",
+   "type": "item",
+   "fr": "CAFÉ ALLONGÉ",
+   "price": "3,80",
+   "tr": {
+    "en": {
+     "fr": "AMERICANO"
+    },
+    "src": {
+     "en": {
+      "fr": "CAFÉ ALLONGÉ"
+     },
+     "it": {
+      "fr": "CAFÉ ALLONGÉ"
+     },
+     "de": {
+      "fr": "CAFÉ ALLONGÉ"
+     }
+    },
+    "it": {
+     "fr": "CAFFÈ AMERICANO"
+    },
+    "de": {
+     "fr": "KAFFEE AMERICANO"
+    }
+   }
+  },
+  {
+   "id": "m629",
+   "type": "item",
+   "fr": "CAFÉ GOURMAND",
+   "price": "12,50",
+   "tr": {
+    "en": {
+     "fr": "CAFÉ GOURMAND"
+    },
+    "src": {
+     "en": {
+      "fr": "CAFÉ GOURMAND"
+     },
+     "it": {
+      "fr": "CAFÉ GOURMAND"
+     },
+     "de": {
+      "fr": "CAFÉ GOURMAND"
+     }
+    },
+    "it": {
+     "fr": "CAFÉ GOURMAND"
+    },
+    "de": {
+     "fr": "CAFÉ GOURMAND"
+    }
+   }
+  },
+  {
+   "id": "m630",
+   "type": "item",
+   "fr": "CAFÉ CRÈME",
+   "price": "5,80",
+   "tr": {
+    "en": {
+     "fr": "WHITE COFFEE"
+    },
+    "src": {
+     "en": {
+      "fr": "CAFÉ CRÈME"
+     },
+     "it": {
+      "fr": "CAFÉ CRÈME"
+     },
+     "de": {
+      "fr": "CAFÉ CRÈME"
+     }
+    },
+    "it": {
+     "fr": "CAFFELATTE"
+    },
+    "de": {
+     "fr": "MILCHKAFFEE"
+    }
+   }
+  },
+  {
+   "id": "m631",
+   "type": "item",
+   "fr": "THÉ",
+   "price": "5,20",
+   "tr": {
+    "en": {
+     "fr": "TEA"
+    },
+    "src": {
+     "en": {
+      "fr": "THÉ"
+     },
+     "it": {
+      "fr": "THÉ"
+     },
+     "de": {
+      "fr": "THÉ"
+     }
+    },
+    "it": {
+     "fr": "TÈ"
+    },
+    "de": {
+     "fr": "TEE"
+    }
+   }
+  },
+  {
+   "id": "m632",
+   "type": "item",
+   "fr": "CHOCOLAT CHAUD",
+   "price": "6,80",
+   "tr": {
+    "en": {
+     "fr": "HOT CHOCOLATE"
+    },
+    "src": {
+     "en": {
+      "fr": "CHOCOLAT CHAUD"
+     },
+     "it": {
+      "fr": "CHOCOLAT CHAUD"
+     },
+     "de": {
+      "fr": "CHOCOLAT CHAUD"
+     }
+    },
+    "it": {
+     "fr": "CIOCCOLATA CALDA"
+    },
+    "de": {
+     "fr": "HEISSE SCHOKOLADE"
+    }
+   }
+  },
+  {
+   "id": "m633",
+   "type": "item",
+   "fr": "INFUSION",
+   "price": "5,20",
+   "tr": {
+    "en": {
+     "fr": "HERBAL TEA"
+    },
+    "src": {
+     "en": {
+      "fr": "INFUSION"
+     },
+     "it": {
+      "fr": "INFUSION"
+     },
+     "de": {
+      "fr": "INFUSION"
+     }
+    },
+    "it": {
+     "fr": "TISANA"
+    },
+    "de": {
+     "fr": "KRÄUTERTEE"
+    }
+   }
+  },
+  {
+   "id": "m634",
+   "type": "item",
+   "fr": "VIENNOIS",
+   "price": "7,80",
+   "desc": "Chocolat ou café",
+   "tr": {
+    "en": {
+     "fr": "VIENNESE COFFEE OR HOT CHOCOLATE (WITH WHIPPED CREAM)",
+     "desc": "Chocolate or coffee"
+    },
+    "src": {
+     "en": {
+      "fr": "VIENNOIS",
+      "desc": "Chocolat ou café"
+     },
+     "it": {
+      "fr": "VIENNOIS",
+      "desc": "Chocolat ou café"
+     },
+     "de": {
+      "fr": "VIENNOIS",
+      "desc": "Chocolat ou café"
+     }
+    },
+    "it": {
+     "fr": "CAFFÈ O CIOCCOLATA VIENNESE (CON PANNA)",
+     "desc": "Cioccolato o caffè"
+    },
+    "de": {
+     "fr": "KAFFEE ODER HEISSE SCHOKOLADE WIENER ART (MIT SAHNE)",
+     "desc": "Schokolade oder Kaffee"
+    }
+   }
+  },
+  {
+   "id": "m635",
+   "type": "item",
+   "fr": "VIN CHAUD",
+   "price": "9,00",
+   "tr": {
+    "en": {
+     "fr": "MULLED WINE"
+    },
+    "src": {
+     "en": {
+      "fr": "VIN CHAUD"
+     },
+     "it": {
+      "fr": "VIN CHAUD"
+     },
+     "de": {
+      "fr": "VIN CHAUD"
+     }
+    },
+    "it": {
+     "fr": "VIN BRÛLÉ"
+    },
+    "de": {
+     "fr": "GLÜHWEIN"
+    }
+   }
+  },
+  {
+   "id": "m636",
+   "type": "item",
+   "fr": "GROG",
+   "price": "9,00",
+   "tr": {
+    "en": {
+     "fr": "GROG"
+    },
+    "src": {
+     "en": {
+      "fr": "GROG"
+     },
+     "it": {
+      "fr": "GROG"
+     },
+     "de": {
+      "fr": "GROG"
+     }
+    },
+    "it": {
+     "fr": "GROG"
+    },
+    "de": {
+     "fr": "GROG"
+    }
+   }
+  },
+  {
+   "id": "m637",
+   "type": "item",
+   "fr": "CAPPUCCINO",
+   "price": "6,50",
+   "tr": {
+    "en": {
+     "fr": "CAPPUCCINO"
+    },
+    "src": {
+     "en": {
+      "fr": "CAPPUCCINO"
+     },
+     "it": {
+      "fr": "CAPPUCCINO"
+     },
+     "de": {
+      "fr": "CAPPUCCINO"
+     }
+    },
+    "it": {
+     "fr": "CAPPUCCINO"
+    },
+    "de": {
+     "fr": "CAPPUCCINO"
+    }
+   }
+  },
+  {
+   "id": "m638",
+   "type": "image",
+   "src": "assets/photos/chocolat-chaud.jpg",
+   "widthPct": 100,
+   "mt": 8,
+   "heightPx": 105
+  },
+  {
+   "id": "m639",
+   "type": "colsend"
+  },
+  {
+   "id": "m640",
+   "type": "legend",
+   "text": "Prix nets en euros, service compris · Net prices in euros, service included",
+   "onlyNote": true,
+   "tr": {
+    "en": {
+     "text": "Net prices in euros, service included"
+    },
+    "src": {
+     "en": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "it": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     },
+     "de": {
+      "text": "Prix nets en euros, service compris · Net prices in euros, service included"
+     }
+    },
+    "it": {
+     "text": "Prezzi netti in euro, servizio incluso"
+    },
+    "de": {
+     "text": "Nettopreise in Euro, Bedienung inbegriffen"
+    }
+   }
+  },
+  {
+   "id": "m641",
+   "type": "pagebreak"
+  },
+  {
+   "id": "m642",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 12,
+   "mb": 0,
+   "mt": 0
+  },
+  {
+   "id": "m643",
+   "type": "section",
+   "fr": "Les vins",
+   "tr": {
+    "en": {
+     "fr": "Wines"
+    },
+    "src": {
+     "en": {
+      "fr": "Les vins"
+     },
+     "it": {
+      "fr": "Les vins"
+     },
+     "de": {
+      "fr": "Les vins"
+     }
+    },
+    "it": {
+     "fr": "I vini"
+    },
+    "de": {
+     "fr": "Weine"
+    }
+   },
+   "en": "Wines"
+  },
+  {
+   "id": "m644",
+   "type": "image",
+   "src": "assets/photos/vins.jpg",
+   "widthPct": 100,
+   "heightPx": 90,
+   "mb": 2
+  },
+  {
+   "id": "m645",
+   "type": "winehead",
+   "text": "",
+   "c1": "37,5cl",
+   "c2": "50cl",
+   "c3": "75cl",
+   "c4": "150cl"
+  },
+  {
+   "id": "m646",
+   "type": "formule",
+   "text": "Vins blancs de Savoie AOP",
+   "heading": true,
+   "color": "#a8832b",
+   "tr": {
+    "en": {
+     "text": "White wines from Savoie AOP"
+    },
+    "src": {
+     "en": {
+      "text": "Vins blancs de Savoie AOP"
+     },
+     "it": {
+      "text": "Vins blancs de Savoie AOP"
+     },
+     "de": {
+      "text": "Vins blancs de Savoie AOP"
+     }
+    },
+    "it": {
+     "text": "Vini bianchi della Savoia AOP"
+    },
+    "de": {
+     "text": "Weißweine aus Savoyen AOP"
+    }
+   }
+  },
+  {
+   "id": "m647",
+   "type": "wine",
+   "fr": "CHIGNIN BERGERON",
+   "desc": "Les Intemporelles « Sélection Gastronomie »",
+   "p1": "",
+   "p2": "",
+   "p3": "39,50",
+   "p4": "",
+   "tr": {
+    "en": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    },
+    "src": {
+     "en": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     },
+     "it": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     },
+     "de": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     }
+    },
+    "it": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    },
+    "de": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    }
+   }
+  },
+  {
+   "id": "m648",
+   "type": "wine",
+   "fr": "APREMONT",
+   "desc": "Les Intemporelles « Sélection Gastronomie »",
+   "p1": "17,50",
+   "p2": "",
+   "p3": "32,50",
+   "p4": "",
+   "tr": {
+    "en": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    },
+    "src": {
+     "en": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     },
+     "it": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     },
+     "de": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     }
+    },
+    "it": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    },
+    "de": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    }
+   }
+  },
+  {
+   "id": "m649",
+   "type": "wine",
+   "fr": "CHARDONNAY",
+   "desc": "Les Intemporelles « Sélection Gastronomie »",
+   "p1": "",
+   "p2": "",
+   "p3": "33,50",
+   "p4": "",
+   "tr": {
+    "en": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    },
+    "src": {
+     "en": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     },
+     "it": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     },
+     "de": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     }
+    },
+    "it": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    },
+    "de": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    }
+   }
+  },
+  {
+   "id": "m650",
+   "type": "wine",
+   "fr": "CRÉMANT DE SAVOIE",
+   "p1": "",
+   "p2": "",
+   "p3": "33,50",
+   "p4": ""
+  },
+  {
+   "id": "m651",
+   "type": "formule",
+   "text": "Vin blanc · Vin de France",
+   "heading": true,
+   "color": "#a8832b",
+   "tr": {
+    "en": {
+     "text": "White wine · Vin de France"
+    },
+    "src": {
+     "en": {
+      "text": "Vin blanc · Vin de France"
+     },
+     "it": {
+      "text": "Vin blanc · Vin de France"
+     },
+     "de": {
+      "text": "Vin blanc · Vin de France"
+     }
+    },
+    "it": {
+     "text": "Vino bianco · Vin de France"
+    },
+    "de": {
+     "text": "Weißwein · Vin de France"
+    }
+   }
+  },
+  {
+   "id": "m652",
+   "type": "wine",
+   "fr": "SAUVIGNON",
+   "p1": "",
+   "p2": "",
+   "p3": "24,80",
+   "p4": ""
+  },
+  {
+   "id": "m653",
+   "type": "formule",
+   "text": "Vin rosé de Provence AOC bio",
+   "heading": true,
+   "color": "#c06c78",
+   "tr": {
+    "en": {
+     "text": "Organic rosé from Provence AOC"
+    },
+    "src": {
+     "en": {
+      "text": "Vin rosé de Provence AOC bio"
+     },
+     "it": {
+      "text": "Vin rosé de Provence AOC bio"
+     },
+     "de": {
+      "text": "Vin rosé de Provence AOC bio"
+     }
+    },
+    "it": {
+     "text": "Vino rosé di Provenza AOC bio"
+    },
+    "de": {
+     "text": "Bio-Roséwein aus der Provence AOC"
+    }
+   }
+  },
+  {
+   "id": "m654",
+   "type": "wine",
+   "fr": "COTEAUX D'AIX-EN-PROVENCE",
+   "desc": "AOC Domaine St-Julien Les Vignes",
+   "p1": "",
+   "p2": "23,00",
+   "p3": "32,50",
+   "p4": "",
+   "tr": {
+    "en": {
+     "desc": "AOC Domaine St-Julien Les Vignes"
+    },
+    "src": {
+     "en": {
+      "desc": "AOC Domaine St-Julien Les Vignes"
+     },
+     "it": {
+      "desc": "AOC Domaine St-Julien Les Vignes"
+     },
+     "de": {
+      "desc": "AOC Domaine St-Julien Les Vignes"
+     }
+    },
+    "it": {
+     "desc": "AOC Domaine St-Julien Les Vignes"
+    },
+    "de": {
+     "desc": "AOC Domaine St-Julien Les Vignes"
+    }
+   }
+  },
+  {
+   "id": "m655",
+   "type": "formule",
+   "text": "Vins rouges de Savoie AOP",
+   "heading": true,
+   "color": "#8c2f39",
+   "tr": {
+    "en": {
+     "text": "Red wines from Savoie AOP"
+    },
+    "src": {
+     "en": {
+      "text": "Vins rouges de Savoie AOP"
+     },
+     "it": {
+      "text": "Vins rouges de Savoie AOP"
+     },
+     "de": {
+      "text": "Vins rouges de Savoie AOP"
+     }
+    },
+    "it": {
+     "text": "Vini rossi della Savoia AOP"
+    },
+    "de": {
+     "text": "Rotweine aus Savoyen AOP"
+    }
+   }
+  },
+  {
+   "id": "m656",
+   "type": "wine",
+   "fr": "MONDEUSE",
+   "desc": "Les Intemporelles « Sélection Gastronomie »",
+   "p1": "20,50",
+   "p2": "",
+   "p3": "35,50",
+   "p4": "",
+   "tr": {
+    "en": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    },
+    "src": {
+     "en": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     },
+     "it": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     },
+     "de": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     }
+    },
+    "it": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    },
+    "de": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    }
+   }
+  },
+  {
+   "id": "m657",
+   "type": "wine",
+   "fr": "PINOT NOIR",
+   "desc": "Les Intemporelles « Sélection Gastronomie »",
+   "p1": "",
+   "p2": "",
+   "p3": "32,50",
+   "p4": "",
+   "tr": {
+    "en": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    },
+    "src": {
+     "en": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     },
+     "it": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     },
+     "de": {
+      "desc": "Les Intemporelles « Sélection Gastronomie »"
+     }
+    },
+    "it": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    },
+    "de": {
+     "desc": "Les Intemporelles « Sélection Gastronomie »"
+    }
+   }
+  },
+  {
+   "id": "m658",
+   "type": "formule",
+   "text": "Vallée du Rhône AOC",
+   "heading": true,
+   "color": "#8c2f39",
+   "tr": {
+    "en": {
+     "text": "Rhône Valley AOC"
+    },
+    "src": {
+     "en": {
+      "text": "Vallée du Rhône AOC"
+     },
+     "it": {
+      "text": "Vallée du Rhône AOC"
+     },
+     "de": {
+      "text": "Vallée du Rhône AOC"
+     }
+    },
+    "it": {
+     "text": "Valle del Rodano AOC"
+    },
+    "de": {
+     "text": "Rhônetal AOC"
+    }
+   }
+  },
+  {
+   "id": "m659",
+   "type": "wine",
+   "fr": "CÔTES DU RHÔNE",
+   "desc": "« Réserve du Chapitre »",
+   "p1": "19,50",
+   "p2": "",
+   "p3": "33,50",
+   "p4": "",
+   "tr": {
+    "en": {
+     "desc": "« Réserve du Chapitre »"
+    },
+    "src": {
+     "en": {
+      "desc": "« Réserve du Chapitre »"
+     },
+     "it": {
+      "desc": "« Réserve du Chapitre »"
+     },
+     "de": {
+      "desc": "« Réserve du Chapitre »"
+     }
+    },
+    "it": {
+     "desc": "« Réserve du Chapitre »"
+    },
+    "de": {
+     "desc": "« Réserve du Chapitre »"
+    }
+   }
+  },
+  {
+   "id": "m660",
+   "type": "wine",
+   "fr": "SAINT-JOSEPH LES VINS DE VIENNE",
+   "desc": "Cuilleron, Villard, Gaillard",
+   "p1": "",
+   "p2": "35,00",
+   "p3": "50,50",
+   "p4": "99,50",
+   "tr": {
+    "en": {
+     "desc": "Cuilleron, Villard, Gaillard"
+    },
+    "src": {
+     "en": {
+      "desc": "Cuilleron, Villard, Gaillard"
+     },
+     "it": {
+      "desc": "Cuilleron, Villard, Gaillard"
+     },
+     "de": {
+      "desc": "Cuilleron, Villard, Gaillard"
+     }
+    },
+    "it": {
+     "desc": "Cuilleron, Villard, Gaillard"
+    },
+    "de": {
+     "desc": "Cuilleron, Villard, Gaillard"
+    }
+   }
+  },
+  {
+   "id": "m661",
+   "type": "wine",
+   "fr": "CHÂTEAUNEUF-DU-PAPE",
+   "desc": "« Domaine Fontavin »",
+   "p1": "",
+   "p2": "",
+   "p3": "66,50",
+   "p4": "",
+   "tr": {
+    "en": {
+     "desc": "« Domaine Fontavin »"
+    },
+    "src": {
+     "en": {
+      "desc": "« Domaine Fontavin »"
+     },
+     "it": {
+      "desc": "« Domaine Fontavin »"
+     },
+     "de": {
+      "desc": "« Domaine Fontavin »"
+     }
+    },
+    "it": {
+     "desc": "« Domaine Fontavin »"
+    },
+    "de": {
+     "desc": "« Domaine Fontavin »"
+    }
+   }
+  },
+  {
+   "id": "m662",
+   "type": "wine",
+   "fr": "CÔTE RÔTIE",
+   "desc": "Ogier 2023",
+   "p1": "",
+   "p2": "",
+   "p3": "96,50",
+   "p4": "",
+   "tr": {
+    "en": {
+     "desc": "Ogier 2023"
+    },
+    "src": {
+     "en": {
+      "desc": "Ogier 2023"
+     },
+     "it": {
+      "desc": "Ogier 2023"
+     },
+     "de": {
+      "desc": "Ogier 2023"
+     }
+    },
+    "it": {
+     "desc": "Ogier 2023"
+    },
+    "de": {
+     "desc": "Ogier 2023"
+    }
+   }
+  },
+  {
+   "id": "m663",
+   "type": "formule",
+   "text": "Beaujolais · Languedoc AOC",
+   "heading": true,
+   "color": "#8c2f39",
+   "tr": {
+    "en": {
+     "text": "Beaujolais · Languedoc AOC"
+    },
+    "src": {
+     "en": {
+      "text": "Beaujolais · Languedoc AOC"
+     },
+     "it": {
+      "text": "Beaujolais · Languedoc AOC"
+     },
+     "de": {
+      "text": "Beaujolais · Languedoc AOC"
+     }
+    },
+    "it": {
+     "text": "Beaujolais · Languedoc AOC"
+    },
+    "de": {
+     "text": "Beaujolais · Languedoc AOC"
+    }
+   }
+  },
+  {
+   "id": "m664",
+   "type": "wine",
+   "fr": "BROUILLY",
+   "desc": "« Château des Tours »",
+   "p1": "",
+   "p2": "",
+   "p3": "41,50",
+   "p4": "",
+   "tr": {
+    "en": {
+     "desc": "« Château des Tours »"
+    },
+    "src": {
+     "en": {
+      "desc": "« Château des Tours »"
+     },
+     "it": {
+      "desc": "« Château des Tours »"
+     },
+     "de": {
+      "desc": "« Château des Tours »"
+     }
+    },
+    "it": {
+     "desc": "« Château des Tours »"
+    },
+    "de": {
+     "desc": "« Château des Tours »"
+    }
+   }
+  },
+  {
+   "id": "m665",
+   "type": "wine",
+   "fr": "LANGUEDOC",
+   "desc": "« Les Darons » Jeff Carrel",
+   "p1": "",
+   "p2": "",
+   "p3": "35,50",
+   "p4": "",
+   "tags": [
+    "new"
+   ],
+   "tr": {
+    "en": {
+     "desc": "« Les Darons » Jeff Carrel"
+    },
+    "src": {
+     "en": {
+      "desc": "« Les Darons » Jeff Carrel"
+     },
+     "it": {
+      "desc": "« Les Darons » Jeff Carrel"
+     },
+     "de": {
+      "desc": "« Les Darons » Jeff Carrel"
+     }
+    },
+    "it": {
+     "desc": "« Les Darons » Jeff Carrel"
+    },
+    "de": {
+     "desc": "« Les Darons » Jeff Carrel"
+    }
+   }
+  },
+  {
+   "id": "m666",
+   "type": "formule",
+   "text": "Vin rouge · Vin de France",
+   "heading": true,
+   "color": "#8c2f39",
+   "tr": {
+    "en": {
+     "text": "Red wine · Vin de France"
+    },
+    "src": {
+     "en": {
+      "text": "Vin rouge · Vin de France"
+     },
+     "it": {
+      "text": "Vin rouge · Vin de France"
+     },
+     "de": {
+      "text": "Vin rouge · Vin de France"
+     }
+    },
+    "it": {
+     "text": "Vino rosso · Vin de France"
+    },
+    "de": {
+     "text": "Rotwein · Vin de France"
+    }
+   }
+  },
+  {
+   "id": "m667",
+   "type": "wine",
+   "fr": "MERLOT",
+   "p1": "",
+   "p2": "",
+   "p3": "24,80",
+   "p4": ""
+  },
+  {
+   "id": "m668",
+   "type": "formule",
+   "text": "Bordeaux AOC",
+   "heading": true,
+   "color": "#8c2f39",
+   "tr": {
+    "en": {
+     "text": "Bordeaux AOC"
+    },
+    "src": {
+     "en": {
+      "text": "Bordeaux AOC"
+     },
+     "it": {
+      "text": "Bordeaux AOC"
+     },
+     "de": {
+      "text": "Bordeaux AOC"
+     }
+    },
+    "it": {
+     "text": "Bordeaux AOC"
+    },
+    "de": {
+     "text": "Bordeaux AOC"
+    }
+   }
+  },
+  {
+   "id": "m669",
+   "type": "wine",
+   "fr": "LUSSAC-SAINT-ÉMILION",
+   "desc": "Grand Ricombre",
+   "p1": "",
+   "p2": "",
+   "p3": "35,50",
+   "p4": "",
+   "tags": [
+    "coeur"
+   ],
+   "tr": {
+    "en": {
+     "desc": "Grand Ricombre"
+    },
+    "src": {
+     "en": {
+      "desc": "Grand Ricombre"
+     },
+     "it": {
+      "desc": "Grand Ricombre"
+     },
+     "de": {
+      "desc": "Grand Ricombre"
+     }
+    },
+    "it": {
+     "desc": "Grand Ricombre"
+    },
+    "de": {
+     "desc": "Grand Ricombre"
+    }
+   }
+  },
+  {
+   "id": "m670",
+   "type": "wine",
+   "fr": "HAUT-MÉDOC CRU BOURGEOIS",
+   "desc": "« Château Victoria » 2020",
+   "p1": "",
+   "p2": "",
+   "p3": "55,50",
+   "p4": "114,50",
+   "tr": {
+    "en": {
+     "desc": "« Château Victoria » 2020"
+    },
+    "src": {
+     "en": {
+      "desc": "« Château Victoria » 2020"
+     },
+     "it": {
+      "desc": "« Château Victoria » 2020"
+     },
+     "de": {
+      "desc": "« Château Victoria » 2020"
+     }
+    },
+    "it": {
+     "desc": "« Château Victoria » 2020"
+    },
+    "de": {
+     "desc": "« Château Victoria » 2020"
+    }
+   }
+  },
+  {
+   "id": "m671",
+   "type": "wine",
+   "fr": "POMEROL",
+   "desc": "« Fugue de Nénin » 2nd vin du Château Nénin 2019",
+   "p1": "",
+   "p2": "",
+   "p3": "84,50",
+   "p4": "",
+   "tr": {
+    "en": {
+     "desc": "« Fugue de Nénin » second wine of Château Nénin 2019"
+    },
+    "src": {
+     "en": {
+      "desc": "« Fugue de Nénin » 2nd vin du Château Nénin 2019"
+     },
+     "it": {
+      "desc": "« Fugue de Nénin » 2nd vin du Château Nénin 2019"
+     },
+     "de": {
+      "desc": "« Fugue de Nénin » 2nd vin du Château Nénin 2019"
+     }
+    },
+    "it": {
+     "desc": "« Fugue de Nénin » secondo vino di Château Nénin 2019"
+    },
+    "de": {
+     "desc": "« Fugue de Nénin » Zweitwein des Château Nénin 2019"
+    }
+   }
+  },
+  {
+   "id": "m672",
+   "type": "legend",
+   "text": "Prix nets en euros, service compris · L’abus d’alcool est dangereux pour la santé, à consommer avec modération",
+   "onlyNote": true,
+   "tr": {
+    "en": {
+     "text": "Net prices in euros, service included · Excessive drinking is harmful to your health, please drink responsibly"
+    },
+    "src": {
+     "en": {
+      "text": "Prix nets en euros, service compris · L’abus d’alcool est dangereux pour la santé, à consommer avec modération"
+     },
+     "it": {
+      "text": "Prix nets en euros, service compris · L’abus d’alcool est dangereux pour la santé, à consommer avec modération"
+     },
+     "de": {
+      "text": "Prix nets en euros, service compris · L’abus d’alcool est dangereux pour la santé, à consommer avec modération"
+     }
+    },
+    "it": {
+     "text": "Prezzi netti in euro, servizio incluso · L’abuso di alcol è pericoloso per la salute, consumare con moderazione"
+    },
+    "de": {
+     "text": "Nettopreise in Euro, Bedienung inbegriffen · Übermäßiger Alkoholkonsum ist gesundheitsschädlich, bitte in Maßen genießen"
+    }
+   }
+  }
+ ]
+}

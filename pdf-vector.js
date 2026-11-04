@@ -46,6 +46,8 @@
     { file: 'PlayfairDisplay-ExtraBold.ttf', name: 'Playfair Display', style: 'normal', weight: 'extrabold' },
     { file: 'CormorantGaramond-SemiBold.ttf', name: 'Cormorant Garamond', style: 'normal', weight: 'semibold' },
     { file: 'CormorantGaramond-Bold.ttf', name: 'Cormorant Garamond', style: 'normal', weight: 'bold' },
+    { file: 'Fraunces-SemiBold.ttf', name: 'Fraunces', style: 'normal', weight: 'semibold' },
+    { file: 'Fraunces-Italic.ttf', name: 'Fraunces', style: 'italic', weight: 'semibold' },
   ];
 
   let fontCache = null;                 // { file: base64 } — chargé une fois
@@ -79,6 +81,7 @@
     const w = parseInt(cssWeight, 10) || (cssWeight === 'bold' ? 700 : 400);
     if (family === 'Playfair Display') return w >= 800 ? 'extrabold' : 'bold';
     if (family === 'Cormorant Garamond') return w >= 700 ? 'bold' : 'semibold';
+    if (family === 'Fraunces') return 'semibold';
     if (family === 'Jost') return w >= 600 ? 'bold' : (w >= 500 ? 'semibold' : 'normal');
     if (family === 'Arimo') return w >= 600 ? 'bold' : 'normal';
     if (family === 'Montserrat') return w >= 600 ? 'bold' : (w >= 500 ? 'semibold' : 'normal');
@@ -282,11 +285,13 @@
 
   /* Dessine une image de fond dans une boîte, façon
      « background-size: contain; background-position: center ». */
-  async function drawBgImage(pdf, url, box, X, Y) {
+  async function drawBgImage(pdf, url, box, X, Y, stretch) {
     const im = await loadImage(url);
     if (!im || !im.naturalWidth) return;
+    /* « background-size: 100% 100% » (bandeau du thème alpage) : l'image
+       épouse la boîte ; sinon « contain », centrée */
     const k = Math.min(box.width / im.naturalWidth, box.height / im.naturalHeight);
-    const w = im.naturalWidth * k, h = im.naturalHeight * k;
+    const w = stretch ? box.width : im.naturalWidth * k, h = stretch ? box.height : im.naturalHeight * k;
     const x = box.left + (box.width - w) / 2, y = box.top + (box.height - h) / 2;
     /* Un ornement revient à chaque section : on le rasterise une fois
        et jsPDF le réutilise via son alias (sinon le fichier gonfle). */
@@ -366,7 +371,7 @@
       pdf.rect(X(box.left - off), Y(box.top - off),
         (box.width + off * 2) * PX2MM, (box.height + off * 2) * PX2MM, 'S');
     }
-    if (url) await drawBgImage(pdf, url, box, X, Y);
+    if (url) await drawBgImage(pdf, url, box, X, Y, /^100% 100%$/.test(cs.backgroundSize || ''));
   }
 
   /* ---------- Rendu d'une page ---------- */

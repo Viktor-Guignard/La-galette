@@ -46,6 +46,7 @@ const FONT_CHOICES = {
     {name:'Montserrat', gq:'Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400'},
     {name:'Playfair Display', gq:'Playfair+Display:wght@700;800'},
     {name:'Cormorant Garamond', gq:'Cormorant+Garamond:wght@600;700'},
+    {name:'Fraunces', gq:''},          // fichiers locaux (assets/fonts), mêmes que dans le PDF
     {name:'DM Serif Display', gq:'DM+Serif+Display'},
     {name:'Libre Baskerville', gq:'Libre+Baskerville:wght@400;700'},
     {name:'Oswald', gq:'Oswald:wght@500;600'},
@@ -88,6 +89,8 @@ function normMargins(st){
   return LEGACY_MARGINS[st.margin] || LEGACY_MARGINS.normale;
 }
 const PAGE_THEMES = {
+  alpage:    { label:'La Galette — proposition « alpage »' },
+  nuit:      { label:'La Galette — affiche « alpage » noir & or' },
   moderne:   { label:'La Galette — proposition moderne' },
   galette:   { label:'La Galette — carte (filets bruns)' },
   pizza:     { label:'La Galette — pizzas (noms bruns)' },
@@ -129,12 +132,17 @@ function applyStyle(){
   root.style.setProperty('--page-pad', `${px(m.t)} ${px(m.r)} ${px(m.b)} ${px(m.l)}`);
   root.style.setProperty('--name-color', st.nameColor || '#2b2523');
   root.style.setProperty('--bleed-l', px(m.l));
+  root.style.setProperty('--crest-top', px(m.t));      // en-tête du thème alpage, aligné sur le logo
   root.style.setProperty('--bleed-r', px(m.r));
   // pages paires : marges en miroir (reliure) si demandé
   const me = st.mirror ? {t:m.t, r:m.l, b:m.b, l:m.r} : m;
   root.style.setProperty('--page-pad-even', `${px(me.t)} ${px(me.r)} ${px(me.b)} ${px(me.l)}`);
   document.body.classList.toggle('leaders-off', !st.leaders);
   Object.keys(PAGE_THEMES).concat(['vigne']).forEach(t => document.body.classList.toggle('theme-' + t, st.theme === t));
+  /* « alpage » prolonge la proposition moderne (mêmes niveaux de texte) */
+  if(st.theme === 'alpage') document.body.classList.add('theme-moderne');
+  /* « nuit » : l'affiche noir & or, retravaillée dans l'esprit alpage */
+  if(st.theme === 'nuit') document.body.classList.add('theme-emporter');
   document.body.classList.toggle('no-section-underline', st.sectionUnderline === false);
   root.style.setProperty('--item-pad-v', (st.itemSpacing != null ? st.itemSpacing : 2) + 'px');
   loadFonts(st);
@@ -148,8 +156,8 @@ function loadFonts(st){
   const t = FONT_CHOICES.title.find(f => f.name === st.titleFont);
   const b = FONT_CHOICES.body.find(f => f.name === st.bodyFont);
   const parts = [];
-  if(t) parts.push('family=' + t.gq);
-  if(b) parts.push('family=' + b.gq);
+  if(t && t.gq) parts.push('family=' + t.gq);
+  if(b && b.gq) parts.push('family=' + b.gq);
   if(!parts.length) return;
   const href = 'https://fonts.googleapis.com/css2?' + parts.join('&') + '&display=swap';
   let link = document.getElementById('dynFonts');
@@ -392,7 +400,7 @@ function renderBlockInner(blk){
           </div>
         </div>`;
     case 'section':
-      return `<h2>${ed(blk.id,'fr',esc(blk.fr))}${blk.en != null && blk.en !== '' ? ' <span class="en">/ '+ed(blk.id,'en',esc(blk.en))+'</span>' : ''}${tagsHtml(blk)}</h2>`;
+      return `<h2>${ed(blk.id,'fr',esc(blk.fr))}${blk.en != null && blk.en !== '' ? ' <span class="en"><span class="sl">/ </span>'+ed(blk.id,'en',esc(blk.en))+'</span>' : ''}${tagsHtml(blk)}</h2>`;
     case 'item': {
       const hasEn = blk.en != null && blk.en !== '';
       const hasSub = blk.sub != null && blk.sub !== '';

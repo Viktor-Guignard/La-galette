@@ -96,6 +96,17 @@ function findBlock(blocks, id, fr) {
   const k = fold(plain(fr || ''));
   return k ? blocks.find((x) => (x.type === 'item' || x.type === 'wine') && fold(plain(x.fr)) === k) : null;
 }
+/* Le prix suit l'écriture de la mise en page visée : « 20,50€ » (fidèle),
+   « 20,50 » (propositions, sans symbole) ou « 20,50 € » (affiche). */
+function adaptPrice(old, v) {
+  const m = String(v || '').match(/^\s*(\d+)(?:[.,](\d{1,2}))?\s*€?\s*$/);
+  if (!m || old == null || old === '') return v;
+  const num = m[1] + ',' + ((m[2] || '') + '00').slice(0, 2);
+  if (/^\s*\d+,\d\d\s*$/.test(old)) return num;
+  if (/^\s*\d+,\d\d €\s*$/.test(old)) return num + ' €';
+  if (/^\s*\d+[.,]\d\d€\s*$/.test(old)) return (old.includes('.') ? num.replace(',', '.') : num) + '€';
+  return v;
+}
 function applyOp(blocks, op) {
   if (op.t === 'set') {
     const b = findBlock(blocks, op.id, op.fr);
@@ -105,6 +116,7 @@ function applyOp(blocks, op) {
       else if (k === 'tags') { if (v.length) b.tags = v.slice(); else delete b.tags; }
       else if (k === 'desc' && b.en != null && v !== b[k]) { b[op.dField || 'desc'] = v; b.enAuto = true; }   // la ligne anglaise suivra la traduction
       else if (k === 'desc') b[op.dField || 'desc'] = v;
+      else if (k === 'price') b.price = adaptPrice(b.price, v);
       else b[k] = v;
     });
     return 1;

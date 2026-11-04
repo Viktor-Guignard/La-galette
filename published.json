@@ -4,7 +4,7 @@
   {
    "key": "carte",
    "label": "La carte",
-   "version": "carte_2026-11-04_17h00",
+   "version": "carte_2026-11-04_19h40",
    "style": {
     "titleFont": "Arimo",
     "bodyFont": "Arimo",
@@ -1505,7 +1505,7 @@
      "id": "g48",
      "type": "item",
      "fr": "CAFÉ GOURMAND",
-     "price": "12.00€",
+     "price": "12.50€",
      "tr": {
       "en": {
        "fr": "CAFÉ GOURMAND"
@@ -8224,7 +8224,7 @@
   {
    "key": "emporter",
    "label": "Vente à emporter",
-   "version": "vente-a-emporter_2026-11-04_17h00",
+   "version": "vente-a-emporter_2026-11-04_19h40",
    "style": {
     "titleFont": "Montserrat",
     "bodyFont": "Montserrat",
@@ -8585,7 +8585,7 @@
      "id": "g331",
      "type": "item",
      "fr": "PORTION DE FRITES",
-     "price": "3,50 €",
+     "price": "5,00 €",
      "tr": {
       "en": {
        "fr": "PORTION OF CHIPS"
