@@ -219,6 +219,7 @@ async function load() {
   try {
     state.base = await fetchPublished();
     commit();
+    updateStatus();   // la clé a pu être refusée pendant la lecture
   } catch (err) {
     console.error(err);
     $('list').innerHTML = '<div class="empty">La carte n\'a pas pu être chargée.<br>Vérifiez la connexion, puis <a href="" style="color:var(--or-clair)">rechargez</a>.</div>';
@@ -575,9 +576,10 @@ document.querySelectorAll('[data-close]').forEach((b) => b.addEventListener('cli
 
 function updateStatus() {
   const b = $('statusBtn');
-  b.classList.toggle('ok', GHUB.hasToken());
-  b.classList.toggle('warn', !GHUB.hasToken());
-  b.querySelector('.txt').textContent = GHUB.hasToken() ? 'Prêt' : 'À activer';
+  const rejected = GHUB.isTokenRejected && GHUB.isTokenRejected();
+  b.classList.toggle('ok', GHUB.hasToken() && !rejected);
+  b.classList.toggle('warn', !GHUB.hasToken() || rejected);
+  b.querySelector('.txt').textContent = rejected ? 'Clé expirée' : (GHUB.hasToken() ? 'Prêt' : 'À activer');
   $('magicBox').hidden = !GHUB.hasToken();
 }
 $('statusBtn').addEventListener('click', () => openSheet('tokenSheet'));

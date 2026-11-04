@@ -16,7 +16,7 @@
 
   function getToken() { return localStorage.getItem(GH.tokenKey) || ''; }
   function hasToken() { return !!getToken(); }
-  function setToken(t) { if (t) localStorage.setItem(GH.tokenKey, t); else localStorage.removeItem(GH.tokenKey); }
+  function setToken(t) { tokenRejected = false; if (t) localStorage.setItem(GH.tokenKey, t); else localStorage.removeItem(GH.tokenKey); }
 
   /* Par morceaux : « String.fromCharCode(...tout) » dépasse la pile du
      navigateur dès que la carte pèse plus de ~100 Ko (traductions incluses). */
@@ -45,8 +45,23 @@
   }
 
   /* Liste les fichiers .json d'un dossier. -> [{name, path, sha}] trié récent→ancien (par date). */
+  /* Clé refusée par GitHub (expirée, révoquée, mal collée) : les cartes sont
+     publiques, on les relit SANS clé pour que l'écran ne reste jamais vide.
+     L'enregistrement, lui, continuera de signaler la clé à renouveler. */
+  var tokenRejected = false;   // var : connu aussi de setToken, plus haut
+  async function readFetch(url) {
+    const h = authHeaders();
+    let res = await fetch(url, { headers: h });
+    if ((res.status === 401 || res.status === 403) && h.Authorization) {
+      tokenRejected = true;
+      res = await fetch(url, { headers: { 'Accept': 'application/vnd.github+json' } });
+    }
+    return res;
+  }
+  function isTokenRejected() { return tokenRejected; }
+
   async function listDir(dir) {
-    const res = await fetch(`${API}/${dir}?ref=${GH.branch}&t=${Date.now()}`, { headers: authHeaders() });
+    const res = await readFetch(`${API}/${dir}?ref=${GH.branch}&t=${Date.now()}`);
     if (res.status === 404) return [];
     if (!res.ok) throw new Error('GitHub API ' + res.status);
     const items = await res.json();
@@ -59,7 +74,7 @@
 
   /* Récupère un fichier {content parsed, sha}. */
   async function getFile(path) {
-    const res = await fetch(`${API}/${path}?ref=${GH.branch}&t=${Date.now()}`, { headers: authHeaders() });
+    const res = await readFetch(`${API}/${path}?ref=${GH.branch}&t=${Date.now()}`);
     if (res.status === 404) return null;
     if (!res.ok) throw new Error('GitHub API ' + res.status);
     const json = await res.json();
@@ -147,7 +162,7 @@
 
   global.GHUB = {
     conf: GH, getToken, hasToken, setToken,
-    listDir, getFile, createJson, putJson, deleteFile,
+    listDir, getFile, createJson, putJson, deleteFile, isTokenRejected,
     consumeMagicLink, magicUrl, timestampName, timestampSuffix, dateKey, pad,
   };
 })(window);

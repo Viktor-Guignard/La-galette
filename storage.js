@@ -241,7 +241,16 @@ versionsBackdrop.addEventListener('click', (e) => { if (e.target === versionsBac
     console.warn('Chargement initial impossible', err);
     /* hors ligne : le brouillon peut être précieux, on le propose */
     if (draft) offerDraft();
+    else {
+      /* jamais de page blanche sans explication */
+      banner.querySelector('.msg').textContent = 'La carte n\'a pas pu être chargée. Vérifiez la connexion internet, puis réessayez.';
+      document.getElementById('draftResume').textContent = 'Réessayer';
+      document.getElementById('draftResume').onclick = () => location.reload();
+      document.getElementById('draftDiscard').hidden = true;
+      banner.classList.add('show');
+    }
   }
+  H().updateSyncStatus();
   /* Signal pour le rendu cloud (render.mjs attend ce drapeau). */
   window.__BOOT_DONE__ = true;
 })();

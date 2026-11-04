@@ -323,7 +323,10 @@ function updateSyncStatus(){
     const d = document.querySelector('#publishLink .pub-dot');
     if(d) d.hidden = localStorage.getItem('galette_a_publier_' + window.currentMenuKey()) !== '1';
   } catch(e){}
-  if(state.dirty){
+  if(window.GHUB && GHUB.isTokenRejected && GHUB.isTokenRejected()){
+    el.classList.add('warn');
+    txt.textContent = 'Clé d\'accès expirée : la carte s\'affiche, l\'enregistrement est bloqué (⚙️)';
+  } else if(state.dirty){
     el.classList.add('warn');
     txt.textContent = 'Modifications non enregistrées';
   } else if(hasToken){
