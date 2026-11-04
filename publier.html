@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Galette — Publier / QR code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=27">
+</head>
+<body class="publier-page">
+
+<div id="toolbar">
+  <div class="brand">La Galette <small>Publier / QR</small></div>
+  <a class="tbtn secondary" href="index.html">← Retour à l'édition</a>
+  <a class="tbtn secondary" href="tuto.html">🎓 Tuto</a>
+  <span id="syncStatus"><span class="dot"></span><span class="txt"></span></span>
+  <button class="tbtn secondary" id="settingsBtn" title="Réglages">⚙️</button>
+</div>
+
+<div class="publier">
+
+  <section class="pub-card qr-card">
+    <div class="qr-left">
+      <img id="qrImg" src="assets/qr-carte.png" alt="QR code de la carte">
+    </div>
+    <div class="qr-right">
+      <p class="kicker">QR code de table</p>
+      <h2>Un seul QR, pour toujours</h2>
+      <p class="muted">Imprimez ce QR sur vos tables. Il pointe toujours vers la même page —
+        vos clients y voient les cartes que vous avez <b>publiées</b>. Vous pouvez continuer à
+        travailler vos cartes tranquillement : rien ne change côté client tant que vous n'avez pas cliqué <b>Publier</b>.</p>
+      <div class="qr-actions">
+        <a class="tbtn teal" id="dlQr" download="QR-carte-galette.png" href="assets/qr-carte.png">⬇️ Télécharger le QR</a>
+        <a class="tbtn secondary" id="openPublic" target="_blank" rel="noopener" href="carte.html">Voir la page publique ↗</a>
+        <button class="tbtn secondary" id="copyPublic">Copier le lien</button>
+      </div>
+      <div class="public-url" id="publicUrl"></div>
+    </div>
+  </section>
+
+  <section class="pub-card">
+    <p class="kicker">Publier</p>
+    <h2>Quelles cartes sur le QR ?</h2>
+    <p class="muted">Cochez les cartes à montrer aux clients, puis cliquez « Publier ». La page publique
+      prendra la <b>dernière version enregistrée</b> de chaque carte cochée.</p>
+    <div id="pubList" class="pub-list"><div class="empty-state">Chargement…</div></div>
+    <div class="pub-footer">
+      <div id="pubStatus" class="muted"></div>
+      <button class="tbtn teal big" id="publishBtn" disabled>📱 Publier la sélection sur le QR</button>
+    </div>
+  </section>
+
+</div>
+
+<!-- Réglages : jeton GitHub -->
+<div class="modal-backdrop" id="settingsBackdrop">
+  <div class="modal">
+    <button class="modal-close" id="settingsClose">×</button>
+    <h3>Réglages — sauvegarde cloud</h3>
+    <p class="sub">Pour <b>publier</b> (comme pour enregistrer), il faut le jeton GitHub, collé une fois par ordinateur — ou utilisez le lien magique.</p>
+    <form id="tokenForm">
+      <div class="field">
+        <label>Jeton GitHub (stocké uniquement sur cet ordinateur)</label>
+        <input type="password" id="tokenInput" placeholder="github_pat_…" autocomplete="off">
+        <div class="hint">Les 5 étapes de création du jeton sont détaillées dans l'éditeur (⚙️ sur la page d'édition).</div>
+      </div>
+      <div class="modal-actions">
+        <button type="submit" class="tbtn teal">Enregistrer le jeton</button>
+      </div>
+    </form>
+    <div id="magicLinkBox" style="display:none">
+      <div class="ttl">✨ Lien magique</div>
+      <p>Copiez ce lien et mettez-le en favori sur vos autres ordinateurs pour activer la sauvegarde/publication sans recoller le jeton.</p>
+      <button type="button" class="tbtn teal" id="copyMagicLink">Copier le lien magique</button>
+      <input type="text" id="magicLinkText" readonly>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<footer class="vikto-credit">
+  Éditeur de carte conçu par <a href="https://vikto-labs.fr" target="_blank" rel="noopener">VIKTO LABS</a>
+</footer>
+
+<script src="menus-config.js?v=27"></script>
+<script src="gh.js?v=27"></script>
+<script src="publier.js?v=27"></script>
+<script src="aide.js?v=27"></script>
+</body>
+</html>

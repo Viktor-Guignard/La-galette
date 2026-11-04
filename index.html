@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Galette — Éditeur de carte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/logo-noir.png">
+<link rel="stylesheet" href="styles.css?v=27">
+</head>
+<body>
+
+<div id="toolbar">
+  <div class="brand">La Galette <small id="menuBadge">Carte</small></div>
+  <button class="tbtn secondary" id="undoBtn" title="Annuler (Ctrl/Cmd+Z)" disabled>↶</button>
+  <button class="tbtn secondary" id="redoBtn" title="Rétablir (Ctrl/Cmd+Shift+Z)" disabled>↷</button>
+  <button class="tbtn secondary" id="addBlockBtn">+ Ajouter un bloc</button>
+  <button class="tbtn secondary" id="appearanceBtn" title="Polices et couleurs">🎨 Apparence</button>
+  <button class="tbtn teal" id="saveVersionBtn">💾 Enregistrer</button>
+  <button class="tbtn secondary" id="versionsBtn">🕑 Versions</button>
+  <button class="tbtn" id="exportPdfBtn">⬇️ PDF</button>
+  <span id="syncStatus"><span class="dot"></span><span class="txt"></span></span>
+  <a class="tbtn secondary" href="tuto.html" title="Mode d'emploi en démonstrations animées">🎓 Tuto</a>
+  <button class="tbtn secondary" id="settingsBtn" title="Réglages">⚙️</button>
+</div>
+
+<nav id="menuTabs"></nav>
+
+<div id="draftBanner">
+  <span class="msg"></span>
+  <button class="primary" id="draftResume">Reprendre le brouillon</button>
+  <button id="draftDiscard">Ignorer</button>
+</div>
+
+<div id="canvasWrap"></div>
+
+<!-- Sélecteur de blocs -->
+<div class="modal-backdrop" id="pickerBackdrop">
+  <div class="modal">
+    <button class="modal-close" id="pickerClose">×</button>
+    <h3>Ajouter un bloc</h3>
+    <p class="sub" id="pickerSub">Il sera inséré juste après le bloc sélectionné (ou à la fin).</p>
+    <div class="block-grid" id="blockGrid"></div>
+  </div>
+</div>
+
+<!-- Apparence : polices & couleurs -->
+<div class="modal-backdrop" id="appearanceBackdrop">
+  <div class="modal">
+    <button class="modal-close" id="appearanceClose">×</button>
+    <h3>Apparence de la carte</h3>
+    <p class="sub">Les changements s'appliquent en direct et sont enregistrés avec chaque version.</p>
+    <div class="appearance-grid">
+      <div class="field">
+        <label>Police des titres</label>
+        <select id="titleFontSel"></select>
+      </div>
+      <div class="field">
+        <label>Police du texte</label>
+        <select id="bodyFontSel"></select>
+      </div>
+      <div class="field">
+        <label>Couleur des titres et filets</label>
+        <input type="color" id="titleColorInp">
+      </div>
+      <div class="field">
+        <label>Couleur d'accent (descriptions, traductions, bandeaux)</label>
+        <input type="color" id="accentColorInp">
+      </div>
+      <div class="field">
+        <label>Format de page</label>
+        <select id="formatSel"></select>
+      </div>
+      <div class="field margins-field">
+        <label>Marges (mm) — haut / droite / bas / gauche</label>
+        <div class="margin-inputs">
+          <input type="number" id="marginT" step="0.5" min="0" title="Haut">
+          <input type="number" id="marginR" step="0.5" min="0" title="Droite">
+          <input type="number" id="marginB" step="0.5" min="0" title="Bas">
+          <input type="number" id="marginL" step="0.5" min="0" title="Gauche">
+        </div>
+      </div>
+      <div class="field checkbox">
+        <input type="checkbox" id="mirrorChk">
+        <label for="mirrorChk">Marges en miroir (reliure) sur les pages paires</label>
+      </div>
+      <div class="field">
+        <label>Thème graphique</label>
+        <select id="themeSel"></select>
+      </div>
+      <div class="field">
+        <label>Fond de la carte</label>
+        <select id="pageBgSel">
+          <option value="#ffffff">Blanc</option>
+          <option value="#fdfaf3">Crème</option>
+          <option value="#faf6ee">Ivoire</option>
+          <option value="#000000">Noir (affiche)</option>
+        </select>
+      </div>
+      <div class="field checkbox">
+        <input type="checkbox" id="leadersChk">
+        <label for="leadersChk">Pointillés entre plat et prix</label>
+      </div>
+      <div class="field checkbox">
+        <input type="checkbox" id="underlineChk">
+        <label for="underlineChk">Filet sous les titres de section</label>
+      </div>
+      <div class="field">
+        <label>Espacement entre les lignes (px)</label>
+        <input type="number" id="itemSpacingInp" step="1" min="0" max="40">
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="tbtn secondary" id="appearanceReset">Réinitialiser</button>
+    </div>
+  </div>
+</div>
+
+<!-- Réglages : jeton GitHub -->
+<div class="modal-backdrop" id="settingsBackdrop">
+  <div class="modal">
+    <button class="modal-close" id="settingsClose">×</button>
+    <h3>Réglages — sauvegarde cloud</h3>
+    <p class="sub">Les versions sont lisibles partout sans réglage. Pour <b>enregistrer</b> depuis cet ordinateur, collez une fois votre jeton GitHub.</p>
+    <ol class="steps">
+      <li>Ouvrez <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a> (connecté à votre compte GitHub).</li>
+      <li><b>Token name</b> : « carte galette » — <b>Expiration</b> : 1 an.</li>
+      <li><b>Repository access</b> : <i>Only select repositories</i> → choisissez <b>La-galette</b>.</li>
+      <li><b>Permissions</b> → <i>Repository permissions</i> → <b>Contents</b> : <i>Read and write</i>.</li>
+      <li>Bouton <b>Generate token</b>, copiez le jeton (commence par <code>github_pat_…</code>) et collez-le ci-dessous.</li>
+    </ol>
+    <form id="tokenForm">
+      <div class="field">
+        <label>Jeton GitHub (stocké uniquement sur cet ordinateur)</label>
+        <input type="password" id="tokenInput" placeholder="github_pat_…" autocomplete="off">
+        <div class="hint">Ce jeton ne donne accès qu'au repo de la carte, rien d'autre. À coller une fois par ordinateur (PC du resto, Mac, etc.).</div>
+      </div>
+      <div class="modal-actions">
+        <button type="submit" class="tbtn teal">Enregistrer le jeton</button>
+      </div>
+    </form>
+    <div id="magicLinkBox" style="display:none">
+      <div class="ttl">✨ Lien magique — pour vos autres ordinateurs</div>
+      <p>Plus besoin de recoller le jeton ailleurs : copiez ce lien et mettez-le en favori sur le PC du resto, le Mac, etc. L'ouvrir active la sauvegarde automatiquement.</p>
+      <button type="button" class="tbtn teal" id="copyMagicLink">Copier le lien magique</button>
+      <input type="text" id="magicLinkText" readonly>
+    </div>
+  </div>
+</div>
+
+<!-- Versions -->
+<div class="modal-backdrop" id="versionsBackdrop">
+  <div class="modal">
+    <button class="modal-close" id="versionsClose">×</button>
+    <h3>Versions enregistrées</h3>
+    <p class="sub">Chaque enregistrement crée une nouvelle version horodatée, sans jamais écraser les précédentes. La plus récente se charge automatiquement à l'ouverture du site.</p>
+    <div class="version-list" id="versionList"></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<footer class="vikto-credit">
+  Éditeur de carte conçu par <a href="https://vikto-labs.fr" target="_blank" rel="noopener">VIKTO LABS</a>
+</footer>
+
+<script src="menus-config.js?v=27"></script>
+<script src="gh.js?v=27"></script>
+<script src="app.js?v=27"></script>
+<script src="storage.js?v=27"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="pdf-vector.js?v=27"></script>
+<script src="pdf-export.js?v=27"></script>
+<script src="aide.js?v=27"></script>
+
+</body>
+</html>

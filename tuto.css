@@ -1,0 +1,200 @@
+/* Tuto / démo animée — reprend la DA de l'éditeur (Playfair + Poppins,
+   crème, teal) avec des maquettes miniatures rejouables. */
+
+.tuto-page{background:var(--bg); padding-top:0;}
+
+/* ---------- Hero ---------- */
+.tuto-hero{
+  background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);
+  border-bottom:1px solid var(--line);
+  padding:54px 20px 40px; text-align:center;
+}
+.tuto-hero .kicker{
+  font-size:11px; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--teal-dark); font-weight:600; margin:0 0 10px;
+}
+.tuto-hero h1{
+  font-family:'Playfair Display',serif; font-size:40px; font-weight:800;
+  margin:0 0 12px; color:var(--ink); line-height:1.1;
+}
+.tuto-hero p{max-width:620px; margin:0 auto; color:var(--grey); font-size:15px; line-height:1.6;}
+
+/* ---------- Sommaire ---------- */
+.tuto-toc{
+  max-width:1000px; margin:26px auto 0; padding:0 20px;
+  display:flex; flex-wrap:wrap; gap:8px; justify-content:center;
+}
+.tuto-toc a{
+  display:inline-flex; align-items:center; gap:7px;
+  background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:7px 14px; font-size:13px; color:var(--ink); text-decoration:none;
+  transition:border-color .15s, transform .15s;
+}
+.tuto-toc a:hover{border-color:var(--teal); transform:translateY(-1px);}
+.tuto-toc a .n{
+  width:19px; height:19px; border-radius:50%; background:var(--teal); color:#fff;
+  font-size:11px; font-weight:700; display:grid; place-items:center; flex:none;
+}
+
+/* ---------- Chapitres ---------- */
+.tuto-wrap{max-width:1000px; margin:0 auto; padding:40px 20px 90px;}
+.chap{
+  background:#fff; border:1px solid var(--line); border-radius:16px;
+  box-shadow:var(--shadow); padding:28px; margin-bottom:26px;
+  display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.05fr); gap:30px; align-items:center;
+  scroll-margin-top:80px;
+}
+.chap-txt h2{
+  font-family:'Playfair Display',serif; font-size:23px; font-weight:800;
+  margin:0 0 10px; color:var(--ink); display:flex; align-items:center; gap:10px;
+}
+.chap-txt h2 .n{
+  width:28px; height:28px; border-radius:50%; background:var(--teal); color:#fff;
+  font-size:14px; font-weight:700; display:grid; place-items:center; flex:none;
+  font-family:'Poppins',sans-serif;
+}
+.chap-txt p{color:var(--grey); font-size:14px; line-height:1.65; margin:0 0 10px;}
+.chap-txt ol{margin:0 0 10px; padding-left:20px; color:var(--grey); font-size:14px; line-height:1.7;}
+.chap-txt b{color:var(--ink);}
+.chap-note{
+  background:#f0f7f6; border-left:3px solid var(--teal); border-radius:0 8px 8px 0;
+  padding:9px 12px; font-size:13px; color:#2c5a57; line-height:1.55; margin-top:12px;
+}
+.chap-note.warn{background:#fdf3e0; border-left-color:#d09a2c; color:#7a5b1e;}
+
+/* ---------- Maquette animée ---------- */
+.demo{
+  position:relative; background:var(--bg); border:1px solid var(--line);
+  border-radius:12px; overflow:hidden; user-select:none;
+}
+.demo-bar{
+  display:flex; align-items:center; gap:5px; padding:7px 9px;
+  background:#fff; border-bottom:1px solid var(--line); flex-wrap:wrap;
+}
+.demo-brand{
+  font-family:'Playfair Display',serif; font-weight:700; font-size:12px;
+  margin-right:auto; color:var(--ink);
+}
+.dbtn{
+  font-size:10px; padding:4px 8px; border-radius:6px; border:1px solid var(--line);
+  background:#fff; color:var(--ink); white-space:nowrap; transition:all .2s;
+}
+.dbtn.teal{background:var(--teal); border-color:var(--teal); color:#fff;}
+.dbtn.dark{background:var(--ink); border-color:var(--ink); color:#fff;}
+.dbtn.flash{box-shadow:0 0 0 4px rgba(138,109,78,.28); transform:scale(.96);}
+
+.demo-tabs{display:flex; gap:4px; padding:6px 9px; background:#fff; border-bottom:1px solid var(--line);}
+.demo-tabs span{
+  font-size:9.5px; padding:3px 8px; border-radius:999px; border:1px solid var(--line); color:var(--grey);
+}
+.demo-tabs span.on{background:var(--ink); color:#fff; border-color:var(--ink);}
+
+.demo-page{
+  background:#fff; margin:12px; border-radius:6px; padding:14px 15px;
+  box-shadow:0 1px 6px rgba(0,0,0,.06); min-height:172px;
+}
+.demo-h{
+  font-family:'Playfair Display',serif; font-size:15px; font-weight:800;
+  color:#f79359; margin:0 0 9px;
+}
+.drow{
+  display:flex; align-items:baseline; gap:6px; padding:3px 4px; border-radius:4px;
+  transition:background .25s, opacity .3s;
+}
+.drow .nm{font-size:9.5px; font-weight:600; color:var(--ink); white-space:nowrap;}
+.drow .dots{flex:1; border-bottom:1px dotted #c9c9c9; transform:translateY(-2px);}
+.drow .pr{font-size:9.5px; font-weight:700; color:var(--ink);}
+.drow .en{display:block; font-size:8px; font-style:italic; color:#8a8a8a; font-weight:400;}
+.drow.hl{background:rgba(138,109,78,.10);}
+.drow.editing .nm{box-shadow:0 0 0 2px var(--teal) inset; background:rgba(138,109,78,.12); border-radius:3px;}
+.drow.masked{opacity:.4;}
+.drow.masked .nm, .drow.masked .pr{text-decoration:line-through;}
+.drow.gone{opacity:0; height:0; padding:0; overflow:hidden;}
+.dbadge{
+  font-size:7.5px; background:#7a5b1e; color:#fff; border-radius:8px;
+  padding:1px 5px; margin-left:5px; white-space:nowrap;
+}
+.drow-ctrl{
+  margin-left:6px; display:flex; gap:3px; opacity:0; transition:opacity .25s;
+}
+.drow-ctrl span{
+  font-size:9px; width:16px; height:16px; border-radius:4px; border:1px solid var(--line);
+  background:#fff; display:grid; place-items:center;
+}
+.drow.hl .drow-ctrl{opacity:1;}
+.drow-ctrl span.flash{box-shadow:0 0 0 3px rgba(138,109,78,.3); transform:scale(.9);}
+
+/* curseur simulé */
+.cursor{
+  position:absolute; width:16px; height:16px; z-index:6; pointer-events:none;
+  transition:left .55s cubic-bezier(.4,0,.2,1), top .55s cubic-bezier(.4,0,.2,1), opacity .3s;
+  opacity:0; left:0; top:0;
+}
+.cursor svg{filter:drop-shadow(0 1px 2px rgba(0,0,0,.35));}
+.cursor.click::after{
+  content:''; position:absolute; inset:-6px; border-radius:50%;
+  border:2px solid var(--teal); animation:ping .5s ease-out;
+}
+@keyframes ping{from{transform:scale(.4);opacity:1;} to{transform:scale(1.5);opacity:0;}}
+
+/* toast simulé */
+.dtoast{
+  position:absolute; left:50%; bottom:12px; transform:translateX(-50%) translateY(8px);
+  background:var(--ink); color:#fff; font-size:10px; padding:6px 12px; border-radius:8px;
+  opacity:0; transition:opacity .3s, transform .3s; z-index:7; white-space:nowrap; max-width:90%;
+}
+.dtoast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+
+/* écran superposé (modale simulée) */
+.dsheet{
+  position:absolute; inset:0; background:rgba(20,17,16,.45); z-index:5;
+  display:grid; place-items:center; opacity:0; pointer-events:none; transition:opacity .3s;
+}
+.dsheet.show{opacity:1;}
+.dsheet-box{
+  background:#fff; border-radius:10px; padding:14px 16px; width:min(78%,260px);
+  box-shadow:0 14px 40px rgba(0,0,0,.3);
+}
+.dsheet-box h4{font-family:'Playfair Display',serif; font-size:13px; margin:0 0 8px; color:var(--ink);}
+.dsheet-box .line{
+  display:flex; align-items:center; gap:6px; font-size:9.5px; color:var(--grey);
+  padding:4px 0; border-bottom:1px solid var(--line);
+}
+.dsheet-box .line:last-child{border-bottom:none;}
+.dsheet-box .chk{
+  width:12px; height:12px; border-radius:3px; border:1.5px solid var(--teal);
+  display:grid; place-items:center; color:#fff; font-size:8px; flex:none;
+}
+.dsheet-box .chk.on{background:var(--teal);}
+
+/* barre de commande */
+.demo-foot{
+  display:flex; align-items:center; gap:8px; padding:8px 10px;
+  border-top:1px solid var(--line); background:#fff;
+}
+.demo-foot .step{font-size:10.5px; color:var(--grey); flex:1; line-height:1.4;}
+.replay{
+  font-size:11px; padding:5px 11px; border-radius:999px; border:1px solid var(--teal);
+  background:#fff; color:var(--teal-dark); cursor:pointer; font-weight:600; white-space:nowrap;
+  font-family:'Poppins',sans-serif;
+}
+.replay:hover{background:var(--teal); color:#fff;}
+.replay:disabled{opacity:.5; cursor:default;}
+
+/* ---------- Récap ---------- */
+.recap{
+  background:var(--ink); color:#fff; border-radius:16px; padding:30px 28px; margin-top:34px;
+}
+.recap h2{font-family:'Playfair Display',serif; font-size:22px; margin:0 0 16px; font-weight:800;}
+.recap ol{margin:0; padding-left:20px; line-height:2; font-size:14.5px;}
+.recap ol b{color:#7fd3cd;}
+.recap .rappel{
+  margin-top:16px; background:rgba(255,255,255,.08); border-radius:10px;
+  padding:12px 14px; font-size:13.5px; line-height:1.6;
+}
+
+@media (max-width:820px){
+  .chap{grid-template-columns:1fr; gap:20px; padding:20px;}
+  .chap-txt{order:1;} .demo{order:2;}
+  .tuto-hero h1{font-size:30px;}
+}

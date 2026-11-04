@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Galette — Tuto : prendre en main l'éditeur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=27">
+<link rel="stylesheet" href="tuto.css?v=27">
+</head>
+<body class="tuto-page">
+
+<div id="toolbar">
+  <div class="brand">La Galette <small>Tuto</small></div>
+  <a class="tbtn secondary" href="index.html">← Retour à l'édition</a>
+  <a class="tbtn secondary" href="publier.html">Publier / QR</a>
+</div>
+
+<header class="tuto-hero">
+  <p class="kicker">Mode d'emploi</p>
+  <h1>Vos cartes, en autonomie</h1>
+  <p>Sept démonstrations animées : cliquez sur <b>Rejouer</b> pour voir le geste se faire tout seul.
+     Aucun risque — ce sont des maquettes, vos vraies cartes ne bougent pas.</p>
+</header>
+
+<nav class="tuto-toc">
+  <a href="#c1"><span class="n">1</span> Modifier un texte</a>
+  <a href="#c2"><span class="n">2</span> Ajouter un plat</a>
+  <a href="#c3"><span class="n">3</span> Masquer un plat</a>
+  <a href="#c4"><span class="n">4</span> Enregistrer</a>
+  <a href="#c5"><span class="n">5</span> Revenir en arrière</a>
+  <a href="#c6"><span class="n">6</span> Publier sur le QR</a>
+  <a href="#c7"><span class="n">7</span> Le PDF imprimeur</a>
+</nav>
+
+<main class="tuto-wrap">
+
+  <!-- 1 -->
+  <section class="chap" id="c1">
+    <div class="chap-txt">
+      <h2><span class="n">1</span> Modifier un texte</h2>
+      <p>Tout se modifie <b>directement sur la carte</b>, là où le texte s'affiche. Pas de formulaire.</p>
+      <ol>
+        <li>Cliquez sur le texte à changer</li>
+        <li>Tapez — comme dans un traitement de texte</li>
+        <li>Cliquez ailleurs pour valider</li>
+      </ol>
+      <div class="chap-note">Nom du plat, traduction anglaise, prix, titre de section : tout est modifiable de cette façon.</div>
+    </div>
+    <div class="demo" data-demo="edit"></div>
+  </section>
+
+  <!-- 2 -->
+  <section class="chap" id="c2">
+    <div class="chap-txt">
+      <h2><span class="n">2</span> Ajouter un plat</h2>
+      <p>Cliquez sur la ligne après laquelle insérer, puis sur <b>+ Ajouter un bloc</b> et choisissez le type.</p>
+      <div class="chap-note">Les blocs proposés s'adaptent à la carte ouverte : la carte cuisine propose une image,
+        les vins et boissons proposent un sous-titre. Vous ne voyez que ce qui existe dans cette carte-là.</div>
+    </div>
+    <div class="demo" data-demo="add"></div>
+  </section>
+
+  <!-- 3 -->
+  <section class="chap" id="c3">
+    <div class="chap-txt">
+      <h2><span class="n">3</span> Masquer un plat en rupture</h2>
+      <p>Produit épuisé ? Ne le supprimez pas : <b>masquez-le</b>. Il disparaît côté clients mais reste chez vous,
+         prêt à revenir d'un clic.</p>
+      <ol>
+        <li>Survolez la ligne, cliquez sur <b>👁</b></li>
+        <li>Elle se grise et se barre : c'est votre repère</li>
+        <li>Pour le remettre : recliquez sur <b>🚫</b></li>
+      </ol>
+      <div class="chap-note">Une fois publié, le plat disparaît <b>du QR, du site et du PDF</b>. Vous seul continuez à le voir, en grisé.</div>
+    </div>
+    <div class="demo" data-demo="hide"></div>
+  </section>
+
+  <!-- 4 -->
+  <section class="chap" id="c4">
+    <div class="chap-txt">
+      <h2><span class="n">4</span> Enregistrer</h2>
+      <p><b>💾 Enregistrer</b> crée une version datée dans le cloud. Elle n'écrase jamais les précédentes,
+         et se recharge toute seule à votre prochaine ouverture, sur n'importe quel ordinateur.</p>
+      <div class="chap-note warn">Tant que vous n'avez pas enregistré, vos modifications ne vivent que sur cet ordinateur —
+        et ne partiront pas à la publication.</div>
+    </div>
+    <div class="demo" data-demo="save"></div>
+  </section>
+
+  <!-- 5 -->
+  <section class="chap" id="c5">
+    <div class="chap-txt">
+      <h2><span class="n">5</span> Revenir en arrière</h2>
+      <p>Deux filets de sécurité, selon l'ampleur du retour :</p>
+      <ol>
+        <li><b>↶</b> annule la dernière action (ou Cmd/Ctrl + Z)</li>
+        <li><b>🕑 Versions</b> recharge n'importe quel enregistrement passé</li>
+      </ol>
+      <div class="chap-note">Rien n'est jamais perdu : chaque enregistrement reste consultable, daté à la minute.</div>
+    </div>
+    <div class="demo" data-demo="versions"></div>
+  </section>
+
+  <!-- 6 -->
+  <section class="chap" id="c6">
+    <div class="chap-txt">
+      <h2><span class="n">6</span> Publier sur le QR</h2>
+      <p>Vos clients ne voient <b>que ce que vous avez publié</b>. Vous pouvez donc travailler vos cartes
+         tranquillement pendant des jours : rien ne bouge en salle tant que vous n'avez pas cliqué Publier.</p>
+      <ol>
+        <li>Onglet <b>Publier / QR</b></li>
+        <li>Cochez les cartes à montrer</li>
+        <li><b>📱 Publier la sélection</b></li>
+      </ol>
+      <div class="chap-note">Le QR imprimé sur vos tables ne change <b>jamais</b> : c'est son contenu qui se met à jour.
+        Comptez jusqu'à 5 minutes avant que les clients voient la nouveauté.</div>
+    </div>
+    <div class="demo" data-demo="publish"></div>
+  </section>
+
+  <!-- 7 -->
+  <section class="chap" id="c7">
+    <div class="chap-txt">
+      <h2><span class="n">7</span> Le PDF pour l'imprimeur</h2>
+      <p><b>⬇️ PDF</b> télécharge la carte de l'onglet en cours, au format exact réglé dans 🎨 Apparence
+         (A4, 14 × 34 cm…), sans fond perdu ni traits de coupe.</p>
+      <div class="chap-note">Le texte reste du <b>vrai texte</b> : net à l'impression, et votre imprimeur peut le
+        sélectionner pour vérifier un accent ou un prix.</div>
+    </div>
+    <div class="demo" data-demo="pdf"></div>
+  </section>
+
+  <section class="recap">
+    <h2>Le réflexe à garder</h2>
+    <ol>
+      <li>Je modifie ma carte</li>
+      <li>Je clique <b>💾 Enregistrer</b></li>
+      <li>Je vais dans <b>Publier / QR</b> et je clique <b>📱 Publier</b></li>
+    </ol>
+    <div class="rappel">
+      <b>L'ordre compte.</b> La publication envoie la dernière version <i>enregistrée</i> — pas ce qui est à l'écran.
+      Si vous oubliez d'enregistrer, la page Publier vous le signalera en orange sur la carte concernée.
+    </div>
+  </section>
+
+</main>
+
+<footer class="vikto-credit">
+  Éditeur de carte conçu par <a href="https://vikto-labs.fr" target="_blank" rel="noopener">VIKTO LABS</a>
+</footer>
+
+<script src="menus-config.js?v=27"></script>
+<script src="tuto.js?v=27"></script>
+<script src="aide.js?v=27"></script>
+</body>
+</html>

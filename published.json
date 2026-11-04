@@ -1,0 +1,2697 @@
+{
+ "updatedAt": "2026-11-04T16:00:00.000Z",
+ "menus": [
+  {
+   "key": "carte",
+   "label": "La carte",
+   "style": {
+    "titleFont": "Arimo",
+    "bodyFont": "Arimo",
+    "titleColor": "#886c4e",
+    "accent": "#be4344",
+    "pageBg": "#ffffff",
+    "leaders": true,
+    "format": "a4",
+    "theme": "galette",
+    "marginMm": {
+     "t": 6,
+     "r": 18,
+     "b": 8,
+     "l": 23
+    },
+    "mirror": false,
+    "sectionUnderline": true,
+    "itemSpacing": 3
+   },
+   "blocks": [
+    {
+     "id": "g1",
+     "type": "image",
+     "src": "assets/logo-noir.png",
+     "widthPct": 24,
+     "mb": 6
+    },
+    {
+     "id": "g2",
+     "type": "section",
+     "fr": "BOISSONS",
+     "mt": 4
+    },
+    {
+     "id": "g3",
+     "type": "cols",
+     "ratio": "50/50",
+     "gap": 30
+    },
+    {
+     "id": "g4",
+     "type": "section",
+     "fr": "APÉRITIFS",
+     "sub": true
+    },
+    {
+     "id": "g5",
+     "type": "item",
+     "fr": "SANGRIA MAISON",
+     "price": "10.00€"
+    },
+    {
+     "id": "g6",
+     "type": "item",
+     "fr": "PUNCH MAISON",
+     "price": "10.00€"
+    },
+    {
+     "id": "g7",
+     "type": "item",
+     "fr": "PASTIS",
+     "price": "5.00€"
+    },
+    {
+     "id": "g8",
+     "type": "item",
+     "fr": "MARTINI",
+     "desc": "Rouge ou Blanc",
+     "price": "6.50€"
+    },
+    {
+     "id": "g9",
+     "type": "item",
+     "fr": "VODKA",
+     "desc": "Smirnoff 9.00€ · Belvedere",
+     "price": "13.00€"
+    },
+    {
+     "id": "g10",
+     "type": "item",
+     "fr": "WHISKY, GIN, RHUM",
+     "desc": "9.00€ · Jack Daniels",
+     "price": "12.00€"
+    },
+    {
+     "id": "g11",
+     "type": "item",
+     "fr": "KIR",
+     "desc": "Cassis ou Pêche",
+     "price": "8.50€"
+    },
+    {
+     "id": "g12",
+     "type": "item",
+     "fr": "KIR ROYAL PÉTILLANT",
+     "price": "11.00€"
+    },
+    {
+     "id": "g13",
+     "type": "item",
+     "fr": "KIR BRETON",
+     "desc": "Cidre & Crème de cassis",
+     "price": "6.50€"
+    },
+    {
+     "id": "g14",
+     "type": "item",
+     "fr": "KIR ROSÉ PAMPLEMOUSSE",
+     "price": "7.50€"
+    },
+    {
+     "id": "g15",
+     "type": "item",
+     "fr": "CIDRE ROSÉ",
+     "desc": "33 CL",
+     "price": "7.00€"
+    },
+    {
+     "id": "g16",
+     "type": "section",
+     "fr": "BIÈRES ET CIDRES",
+     "sub": true,
+     "mt": 14
+    },
+    {
+     "id": "g17",
+     "type": "item",
+     "fr": "CIDRE BRETON BRUT - DOUX",
+     "desc": "75CL",
+     "price": "18.50€"
+    },
+    {
+     "id": "g18",
+     "type": "item",
+     "fr": "CIDRE BRETON ROSÉ",
+     "desc": "75CL",
+     "price": "19.70€"
+    },
+    {
+     "id": "g19",
+     "type": "item",
+     "fr": "BIÈRE BLANCHE DU MONT BLANC",
+     "desc": "33CL",
+     "price": "8.50€"
+    },
+    {
+     "id": "g20",
+     "type": "item",
+     "fr": "IPA MONT BLANC",
+     "desc": "33CL",
+     "price": "8.50€"
+    },
+    {
+     "id": "g21",
+     "type": "item",
+     "fr": "PRESSION",
+     "desc": "25CL 5.50€ · 50CL",
+     "price": "10.00€"
+    },
+    {
+     "id": "g22",
+     "type": "section",
+     "fr": "BOISSONS AVEC ALCOOL 4cl",
+     "sub": true,
+     "mt": 14
+    },
+    {
+     "id": "g23",
+     "type": "item",
+     "fr": "GENEPI DES ALPES",
+     "price": "8.50€"
+    },
+    {
+     "id": "g24",
+     "type": "item",
+     "fr": "COGNAC",
+     "price": "10.00€"
+    },
+    {
+     "id": "g25",
+     "type": "item",
+     "fr": "CALVADOS",
+     "price": "8.50€"
+    },
+    {
+     "id": "g26",
+     "type": "item",
+     "fr": "CHARTREUSE VERTE",
+     "price": "10.00€"
+    },
+    {
+     "id": "g27",
+     "type": "item",
+     "fr": "IRISH COFFEE",
+     "price": "12.00€"
+    },
+    {
+     "id": "g28",
+     "type": "item",
+     "fr": "POIRE WILLIAMS",
+     "price": "10.00€"
+    },
+    {
+     "id": "g29",
+     "type": "item",
+     "fr": "BAILEYS",
+     "price": "8.50€"
+    },
+    {
+     "id": "g30",
+     "type": "item",
+     "fr": "GET 27",
+     "price": "8.50€"
+    },
+    {
+     "id": "g31",
+     "type": "item",
+     "fr": "AMARETTO",
+     "price": "8.00€"
+    },
+    {
+     "id": "g32",
+     "type": "item",
+     "fr": "LIMONCELLO",
+     "price": "8.00€"
+    },
+    {
+     "id": "g33",
+     "type": "colbreak"
+    },
+    {
+     "id": "g34",
+     "type": "section",
+     "fr": "BOISSONS SANS ALCOOL",
+     "sub": true
+    },
+    {
+     "id": "g35",
+     "type": "item",
+     "fr": "GRAND VERRE DE SIROP",
+     "en": "Menthe, Fraise, Grenadine, Citron",
+     "price": "3.50€"
+    },
+    {
+     "id": "g36",
+     "type": "item",
+     "fr": "BOLÉE DE CIDRE DOUX OU BRUT",
+     "desc": "20CL",
+     "price": "4.80€"
+    },
+    {
+     "id": "g37",
+     "type": "item",
+     "fr": "SCHWEPPES",
+     "desc": "25CL",
+     "price": "5.50€"
+    },
+    {
+     "id": "g38",
+     "type": "item",
+     "fr": "LIMONADE, ICE TEA",
+     "desc": "30CL",
+     "price": "5.50€"
+    },
+    {
+     "id": "g39",
+     "type": "item",
+     "fr": "JUS D'ORANGE, ANANAS, POMME",
+     "desc": "30CL",
+     "price": "5.50€"
+    },
+    {
+     "id": "g40",
+     "type": "item",
+     "fr": "ORANGINA",
+     "desc": "25CL",
+     "price": "5.50€"
+    },
+    {
+     "id": "g41",
+     "type": "item",
+     "fr": "PERRIER",
+     "desc": "33CL",
+     "price": "5.50€"
+    },
+    {
+     "id": "g42",
+     "type": "item",
+     "fr": "COCA-COLA, COCA-COLA ZERO",
+     "desc": "30CL",
+     "price": "5.50€"
+    },
+    {
+     "id": "g43",
+     "type": "item",
+     "fr": "EAU MINÉRALE",
+     "desc": "75CL",
+     "price": "8.00€"
+    },
+    {
+     "id": "g44",
+     "type": "item",
+     "fr": "EAU MINÉRALE GAZEUSE",
+     "desc": "75CL",
+     "price": "8.00€"
+    },
+    {
+     "id": "g45",
+     "type": "section",
+     "fr": "BOISSONS CHAUDES",
+     "sub": true,
+     "mt": 14
+    },
+    {
+     "id": "g46",
+     "type": "item",
+     "fr": "CAFÉ",
+     "price": "3.50€"
+    },
+    {
+     "id": "g47",
+     "type": "item",
+     "fr": "CAFÉ ALLONGÉ",
+     "price": "3.80€"
+    },
+    {
+     "id": "g48",
+     "type": "item",
+     "fr": "CAFÉ GOURMAND",
+     "price": "12.00€"
+    },
+    {
+     "id": "g49",
+     "type": "item",
+     "fr": "CAFÉ CRÈME",
+     "price": "5.80€"
+    },
+    {
+     "id": "g50",
+     "type": "item",
+     "fr": "THÉ",
+     "price": "5.20€"
+    },
+    {
+     "id": "g51",
+     "type": "item",
+     "fr": "CHOCOLAT CHAUD",
+     "price": "6.80€"
+    },
+    {
+     "id": "g52",
+     "type": "item",
+     "fr": "INFUSION",
+     "price": "5.20€"
+    },
+    {
+     "id": "g53",
+     "type": "item",
+     "fr": "VIENNOIS",
+     "desc": "Chocolat ou Café",
+     "price": "7.80€"
+    },
+    {
+     "id": "g54",
+     "type": "item",
+     "fr": "VIN CHAUD",
+     "price": "9.00€"
+    },
+    {
+     "id": "g55",
+     "type": "item",
+     "fr": "GROG",
+     "price": "9.00€"
+    },
+    {
+     "id": "g56",
+     "type": "item",
+     "fr": "CAPPUCCINO",
+     "price": "6.50€"
+    },
+    {
+     "id": "g57",
+     "type": "image",
+     "src": "assets/photos/chocolat-chaud.jpg",
+     "widthPct": 92,
+     "mt": 8
+    },
+    {
+     "id": "g58",
+     "type": "colsend"
+    },
+    {
+     "id": "g59",
+     "type": "pagebreak"
+    },
+    {
+     "id": "g60",
+     "type": "image",
+     "src": "assets/logo-noir.png",
+     "widthPct": 24,
+     "mb": 6
+    },
+    {
+     "id": "g61",
+     "type": "section",
+     "fr": "LES ENTRÉES"
+    },
+    {
+     "id": "g62",
+     "type": "item",
+     "fr": "SOUPE DE LÉGUMES MAISON OU SOUPE À L'OIGNON",
+     "desc": "VEGETABLES SOUP OR ONIONS SOUP",
+     "price": "17.00€",
+     "tags": [
+      "veg"
+     ]
+    },
+    {
+     "id": "g63",
+     "type": "item",
+     "fr": "ESCARGOTS LES 6",
+     "desc": "SNAILS (HALF DOZEN)",
+     "price": "16.50€"
+    },
+    {
+     "id": "g64",
+     "type": "item",
+     "fr": "ESCARGOTS LES 12",
+     "desc": "SNAILS (TWELVE)",
+     "price": "23.50€"
+    },
+    {
+     "id": "g65",
+     "type": "item",
+     "fr": "ASSIETTE DE SAUMON FUMÉ",
+     "desc": "PLATE OF SMOKED SALMON",
+     "price": "21.50€"
+    },
+    {
+     "id": "g66",
+     "type": "item",
+     "fr": "ASSIETTE DE VIANDE DES GRISONS",
+     "desc": "PLATE OF DRY BEEF",
+     "price": "17.50€"
+    },
+    {
+     "id": "g67",
+     "type": "item",
+     "fr": "ASSIETTE DU BERGER",
+     "sub": "JAMBON SPECK, SAUCISSE SÈCHE, VIANDE DES GRISONS, BEAUFORT, REBLOCHON",
+     "en": "PLATE OF BERGER: PARM HAM, SAUSAGE, DRY BEEF, BEAUFORT, REBLOCHON CHEESES",
+     "price": "21.70€"
+    },
+    {
+     "id": "g68",
+     "type": "section",
+     "fr": "LES SALADES",
+     "mt": 8
+    },
+    {
+     "id": "g69",
+     "type": "item",
+     "fr": "SALADE VERTE",
+     "desc": "GREEN SALAD",
+     "price": "8.00€"
+    },
+    {
+     "id": "g70",
+     "type": "item",
+     "fr": "SALADE MIXTE",
+     "desc": "SALADE VERTE, OEUF, MAÏS, JAMBON, COMTÉ",
+     "en": "GREEN SALAD, EGG, CORN, HAM, COMTÉ",
+     "price": "19.70€",
+     "tags": [
+      "gf"
+     ]
+    },
+    {
+     "id": "g71",
+     "type": "item",
+     "fr": "SALADE CAMPAGNARDE",
+     "desc": "SALADE VERTE, CROÛTONS, FROMAGE, LARDONS, TOMATES",
+     "en": "GREEN SALAD, BACON, CHEESE, CROÛTONS, TOMATOES",
+     "price": "20.70€"
+    },
+    {
+     "id": "g72",
+     "type": "item",
+     "fr": "SALADE SAVOYARDE",
+     "desc": "SALADE VERTE, FROMAGE À RACLETTE SUR TOAST, TOMATES, OEUF",
+     "en": "GREEN SALAD, CHEESE RACLETTE TOAST, TOMATOES, EGG",
+     "price": "21.70€",
+     "tags": [
+      "veg"
+     ]
+    },
+    {
+     "id": "g73",
+     "type": "item",
+     "fr": "SALADE DE CHÈVRE CHAUD AU MIEL, TOMATES CONFITES ET NOIX",
+     "price": "21.70€",
+     "tags": [
+      "veg"
+     ]
+    },
+    {
+     "id": "g74",
+     "type": "cols",
+     "ratio": "50/50",
+     "gap": 26,
+     "mt": 6
+    },
+    {
+     "id": "g75",
+     "type": "image",
+     "src": "assets/photos/salade.jpg",
+     "widthPct": 100,
+     "heightPx": 118
+    },
+    {
+     "id": "g76",
+     "type": "colbreak"
+    },
+    {
+     "id": "g77",
+     "type": "image",
+     "src": "assets/photos/omelette.jpg",
+     "widthPct": 100,
+     "heightPx": 118
+    },
+    {
+     "id": "g78",
+     "type": "colsend"
+    },
+    {
+     "id": "g79",
+     "type": "section",
+     "fr": "LES OMELETTES - LASAGNES - FRITES",
+     "mt": 8
+    },
+    {
+     "id": "g80",
+     "type": "item",
+     "fr": "OMELETTE NATURE",
+     "desc": "PLAIN OMELET AND GREEN SALAD",
+     "price": "13.50€"
+    },
+    {
+     "id": "g81",
+     "type": "item",
+     "fr": "OMELETTE JAMBON ET FROMAGE",
+     "desc": "OMELET HAM AND CHEESE, GREEN SALAD",
+     "price": "16.70€",
+     "tags": [
+      "gf"
+     ]
+    },
+    {
+     "id": "g82",
+     "type": "item",
+     "fr": "OMELETTE POMMES DE TERRE, SAUCISSE, CHAMPIGNONS",
+     "en": "OMELET WITH POTATOES, SAUSAGE, MUSHROOMS AND GREEN SALAD",
+     "price": "18.70€",
+     "tags": [
+      "gf"
+     ]
+    },
+    {
+     "id": "g83",
+     "type": "item",
+     "fr": "OMELETTE AUX MORILLES",
+     "desc": "OMELET WITH MORELS MUSHROOMS AND GREEN SALAD",
+     "price": "20.00€"
+    },
+    {
+     "id": "g84",
+     "type": "item",
+     "fr": "ASSIETTE DE FRITES",
+     "desc": "FRENCH FRIES",
+     "price": "8.50€",
+     "tags": [
+      "veg"
+     ]
+    },
+    {
+     "id": "g85",
+     "type": "item",
+     "fr": "LASAGNES MAISON SALADE",
+     "desc": "HOME-MADE LASAGNA - SALAD",
+     "price": "25.00€"
+    },
+    {
+     "id": "g86",
+     "type": "divider",
+     "mt": 8
+    },
+    {
+     "id": "g87",
+     "type": "pagebreak"
+    },
+    {
+     "id": "g88",
+     "type": "image",
+     "src": "assets/logo-noir.png",
+     "widthPct": 24,
+     "mb": 6
+    },
+    {
+     "id": "g89",
+     "type": "note",
+     "text": "Minimum 2 pers sauf tartiflette Prix /Pers",
+     "mb": 0,
+     "mt": -30
+    },
+    {
+     "id": "g90",
+     "type": "note",
+     "text": "Minimum 2 people Price/Pers",
+     "italic": true
+    },
+    {
+     "id": "g91",
+     "type": "section",
+     "fr": "LES SPÉCIALITÉS",
+     "mt": 2
+    },
+    {
+     "id": "g92",
+     "type": "note",
+     "text": "Prix / Pers.",
+     "align": "right",
+     "mb": -4,
+     "mt": -4
+    },
+    {
+     "id": "g93",
+     "type": "item",
+     "fr": "PIERRE CHAUDE ROYALE",
+     "sub": "ASSORTIMENT DE TRANCHES DE BOEUF 125gr ET DE FILET DE DINDE 125gr, FRITES, 2 SAUCES, OIGNONS, SALADE VERTE",
+     "en": "HOT STONE: BEEF 125gr, TURKEY 125gr, ONIONS, FRENCH FRIES, 2 SAUCES, GREEN SALAD",
+     "price": "34.50€"
+    },
+    {
+     "id": "g94",
+     "type": "item",
+     "fr": "TARTIFLETTE",
+     "desc": "POMMES DE TERRE, OIGNONS, REBLOCHON, LARDONS, CRÈME FRAICHE, SALADE",
+     "en": "POTATOES, ONIONS, REBLOCHON, BACON, FRESH CREAM AND GREEN SALAD",
+     "price": "25.00€",
+     "tags": [
+      "gf"
+     ]
+    },
+    {
+     "id": "g95",
+     "type": "item",
+     "fr": "TARTIFLETTE SPECK",
+     "desc": "POMMES DE TERRE, OIGNONS, REBLOCHON, LARDONS, CRÈME FRAICHE, SALADE",
+     "en": "POTATOES, ONIONS, REBLOCHON, BACON, SPECK, FRESH CREAM AND GREEN SALAD",
+     "price": "27.00€",
+     "tags": [
+      "gf"
+     ]
+    },
+    {
+     "id": "g96",
+     "type": "item",
+     "fr": "FONDUE BOURGUIGNONNE",
+     "desc": "SERVIE AVEC FRITES, SALADE VERTE, 2 SAUCES, 230gr DE BOEUF",
+     "en": "BEEF FONDUE 230gr, FRENCH FRIES, GREEN SALAD, 2 SAUCES",
+     "price": "34.50€"
+    },
+    {
+     "id": "g97",
+     "type": "item",
+     "fr": "SUPPLÉMENT DE VIANDE",
+     "desc": "EXTRA BEEF 200gr",
+     "price": "20.00€"
+    },
+    {
+     "id": "g98",
+     "type": "item",
+     "fr": "SUPP SAUCE ROQUEFORT OU MORILLES",
+     "desc": "EXTRA SAUCE BLUE CHEESE or MORELS",
+     "price": "3.00€"
+    },
+    {
+     "id": "g99",
+     "type": "section",
+     "fr": "LES RACLETTES",
+     "tags": [
+      "gf"
+     ],
+     "mt": 4
+    },
+    {
+     "id": "g100",
+     "type": "cols",
+     "ratio": "60/40",
+     "gap": 22
+    },
+    {
+     "id": "g101",
+     "type": "item",
+     "fr": "RACLETTE NATURE",
+     "en": "CHEESE, POTATOES, ONIONS, GHERKINS",
+     "price": "23.50€",
+     "tags": [
+      "veg"
+     ]
+    },
+    {
+     "id": "g102",
+     "type": "item",
+     "fr": "RACLETTE JAMBON SPECK",
+     "en": "CHEESE, POTATOES, ONIONS, SMOKED HAM SPECK, GHERKINS",
+     "price": "28.50€"
+    },
+    {
+     "id": "g103",
+     "type": "item",
+     "fr": "RACLETTE VIANDE DES GRISONS",
+     "en": "CHEESE, POTATOES, DRY BEEF, ONIONS, GHERKINS",
+     "price": "30.50€"
+    },
+    {
+     "id": "g104",
+     "type": "item",
+     "fr": "RACLETTE JAMBON BLANC À LA TRUFFE",
+     "en": "CHEESE, POTATOES, TRUFFLE HAM, ONIONS, SALAD, GHERKINS",
+     "price": "36.50€"
+    },
+    {
+     "id": "g105",
+     "type": "item",
+     "fr": "RACLETTE ROYALE",
+     "desc": "ASSIETTE DE CHARCUTERIE, SALADE",
+     "en": "CHEESE, POTATOES, ONIONS, CHARCUTERIE, GREEN SALAD, GHERKINS",
+     "price": "33.50€"
+    },
+    {
+     "id": "g106",
+     "type": "item",
+     "fr": "RACLETTE VÉGÉTARIENNE",
+     "desc": "ASSIETTE DE CRUDITÉS",
+     "en": "CHEESE, TOMATOES, CORN, POTATOES, GREEN SALAD, GHERKINS, ARTICHOKE",
+     "price": "29.50€",
+     "tags": [
+      "veg"
+     ]
+    },
+    {
+     "id": "g107",
+     "type": "colbreak"
+    },
+    {
+     "id": "g108",
+     "type": "image",
+     "src": "assets/photos/raclette.jpg",
+     "widthPct": 100,
+     "heightPx": 215,
+     "mt": 4
+    },
+    {
+     "id": "g109",
+     "type": "colsend"
+    },
+    {
+     "id": "g110",
+     "type": "section",
+     "fr": "LES FONDUES AUX 3 FROMAGES - SALADE",
+     "mt": 4
+    },
+    {
+     "id": "g111",
+     "type": "cols",
+     "ratio": "38/62",
+     "gap": 34
+    },
+    {
+     "id": "g112",
+     "type": "image",
+     "src": "assets/photos/fondue.jpg",
+     "widthPct": 100,
+     "heightPx": 160,
+     "mt": 2
+    },
+    {
+     "id": "g113",
+     "type": "colbreak"
+    },
+    {
+     "id": "g114",
+     "type": "item",
+     "fr": "FONDUE SAVOYARDE",
+     "desc": "SALADE VERTE",
+     "en": "CHEESE FONDUE, (COMTÉ, EMMENTAL, BEAUFORT), BREAD",
+     "price": "26.50€",
+     "tags": [
+      "veg"
+     ]
+    },
+    {
+     "id": "g115",
+     "type": "item",
+     "fr": "FONDUE SAVOYARDE ROYALE",
+     "sub": "ASSIETTE DE CHARCUTERIE, SALADE VERTE",
+     "en": "CHEESE FONDUE, BREAD, CHARCUTERIE PLATE, GREEN SALAD",
+     "price": "31.50€"
+    },
+    {
+     "id": "g116",
+     "type": "item",
+     "fr": "FONDUE SAVOYARDE AUX MORILLES ***",
+     "en": "CHEESE FONDUE, BREAD, MUSHROOMS",
+     "price": "34.50€",
+     "tags": [
+      "veg"
+     ]
+    },
+    {
+     "id": "g117",
+     "type": "item",
+     "fr": "FONDUE SAVOYARDE AUX CÈPES ***",
+     "en": "CHEESE FONDUE, BREAD, MUSHROOMS",
+     "price": "32.50€",
+     "tags": [
+      "veg"
+     ]
+    },
+    {
+     "id": "g118",
+     "type": "item",
+     "fr": "FONDUE SAVOYARDE À LA TRUFFE FRAÎCHE",
+     "en": "CHEESE FONDUE, BREAD, TRUFFLE ***",
+     "price": "53.00€",
+     "tags": [
+      "veg"
+     ]
+    },
+    {
+     "id": "g119",
+     "type": "item",
+     "fr": "***SUPPLÉMENT CHARCUTERIE ROYALE",
+     "price": "8.00€"
+    },
+    {
+     "id": "g120",
+     "type": "colsend"
+    },
+    {
+     "id": "g121",
+     "type": "divider",
+     "mt": 8
+    },
+    {
+     "id": "g122",
+     "type": "pagebreak"
+    },
+    {
+     "id": "g123",
+     "type": "image",
+     "src": "assets/logo-noir.png",
+     "widthPct": 24,
+     "mb": 6
+    },
+    {
+     "id": "g124",
+     "type": "divider",
+     "mt": 10
+    },
+    {
+     "id": "g139",
+     "type": "line",
+     "text": "MENU ENFANT",
+     "variant": "title",
+     "price": "18,90€",
+     "mt": 34
+    },
+    {
+     "id": "g140",
+     "type": "line",
+     "text": "SERVI UNIQUEMENT LE MIDI, JUSQU’À 14H30",
+     "variant": "small"
+    },
+    {
+     "id": "g141",
+     "type": "line",
+     "text": "SERVED JUST FOR THE LUNCH, UNTIL 2.30PM",
+     "variant": "sub",
+     "mb": 22
+    },
+    {
+     "id": "g125",
+     "type": "line",
+     "text": "PIZZA BAMBINO jambon fromage",
+     "variant": "main"
+    },
+    {
+     "id": "g126",
+     "type": "line",
+     "text": "ou",
+     "variant": "or"
+    },
+    {
+     "id": "g127",
+     "type": "line",
+     "text": "GALETTE JAMBON FROMAGE",
+     "variant": "main",
+     "mt": 2
+    },
+    {
+     "id": "g128",
+     "type": "line",
+     "text": "OU",
+     "variant": "or"
+    },
+    {
+     "id": "g129",
+     "type": "line",
+     "text": "SAUCISSE DIOT - FRITES",
+     "variant": "main",
+     "mt": 2
+    },
+    {
+     "id": "g130",
+     "type": "line",
+     "text": "PIZZA HAM & CHEESE OR DIOT SAUSAGE & CHIPS",
+     "variant": "sub"
+    },
+    {
+     "id": "g131",
+     "type": "line",
+     "text": "**********************",
+     "variant": "stars"
+    },
+    {
+     "id": "g132",
+     "type": "line",
+     "text": "1 CRÊPE SUCRE OU NUTELLA",
+     "variant": "main"
+    },
+    {
+     "id": "g133",
+     "type": "line",
+     "text": "OU",
+     "variant": "or"
+    },
+    {
+     "id": "g134",
+     "type": "line",
+     "text": "GLACE 2 BOULES",
+     "variant": "main",
+     "mt": 2
+    },
+    {
+     "id": "g135",
+     "type": "line",
+     "text": "1 SUGAR OR NUTELLA PANCAKES OR ICE-CREAM 2 SCOOPS",
+     "variant": "sub"
+    },
+    {
+     "id": "g136",
+     "type": "line",
+     "text": "***************************",
+     "variant": "stars"
+    },
+    {
+     "id": "g137",
+     "type": "line",
+     "text": "1 BOISSON AU CHOIX",
+     "variant": "main"
+    },
+    {
+     "id": "g138",
+     "type": "line",
+     "text": "1 DRINK",
+     "variant": "sub"
+    },
+    {
+     "id": "g142",
+     "type": "divider",
+     "mt": 60
+    },
+    {
+     "id": "g151",
+     "type": "line",
+     "text": "MENU CRÊPES",
+     "variant": "title",
+     "price": "25,90€",
+     "mt": 34
+    },
+    {
+     "id": "g152",
+     "type": "line",
+     "text": "SERVI UNIQUEMENT LE MIDI, JUSQU’À 14H30",
+     "variant": "small"
+    },
+    {
+     "id": "g153",
+     "type": "line",
+     "text": "SERVED JUST FOR THE LUNCH, UNTIL 2.30PM",
+     "variant": "sub",
+     "mb": 22
+    },
+    {
+     "id": "g143",
+     "type": "line",
+     "text": "1 GALETTE AU CHOIX",
+     "variant": "main"
+    },
+    {
+     "id": "g144",
+     "type": "line",
+     "text": "1 GALETTE OF YOUR CHOICE",
+     "variant": "sub"
+    },
+    {
+     "id": "g145",
+     "type": "line",
+     "text": "*****************",
+     "variant": "stars"
+    },
+    {
+     "id": "g146",
+     "type": "line",
+     "text": "1 CRÊPE  1 INGRÉDIENT",
+     "variant": "main"
+    },
+    {
+     "id": "g147",
+     "type": "line",
+     "text": "1 PANCAKE WITH 1 INGREDIENT TO CHOOSE",
+     "variant": "sub"
+    },
+    {
+     "id": "g148",
+     "type": "line",
+     "text": "*****************",
+     "variant": "stars"
+    },
+    {
+     "id": "g149",
+     "type": "line",
+     "text": "1 BOLÉE DE CIDRE",
+     "variant": "main"
+    },
+    {
+     "id": "g150",
+     "type": "line",
+     "text": "1 BOWL OF CIDER",
+     "variant": "sub"
+    },
+    {
+     "id": "g154",
+     "type": "divider",
+     "mt": 80
+    },
+    {
+     "id": "g155",
+     "type": "pagebreak"
+    },
+    {
+     "id": "g156",
+     "type": "image",
+     "src": "assets/logo-noir.png",
+     "widthPct": 24,
+     "mb": 6
+    },
+    {
+     "id": "g157",
+     "type": "section",
+     "fr": "LES GALETTES"
+    },
+    {
+     "id": "g158",
+     "type": "item",
+     "fr": "GALETTE, OEUF, JAMBON",
+     "desc": "EGG, HAM",
+     "price": "14.00€"
+    },
+    {
+     "id": "g159",
+     "type": "item",
+     "fr": "GALETTE, JAMBON, FROMAGE",
+     "desc": "HAM, CHEESE",
+     "price": "14.00€"
+    },
+    {
+     "id": "g160",
+     "type": "item",
+     "fr": "GALETTE, OEUF, JAMBON, FROMAGE",
+     "desc": "EGG, HAM, CHEESE",
+     "price": "16.00€"
+    },
+    {
+     "id": "g161",
+     "type": "item",
+     "fr": "GALETTE, CHAMPIGNONS, SAUCISSE, FROMAGE",
+     "desc": "MUSHROOMS, SAUSAGE, CHEESE",
+     "price": "15.00€"
+    },
+    {
+     "id": "g162",
+     "type": "item",
+     "fr": "GALETTE CAUCHOISE",
+     "desc": "POMMES, GRISON ET 3 FROMAGES / APPLE, DRY BEEF, 3 CHEESES",
+     "price": "17.00€"
+    },
+    {
+     "id": "g163",
+     "type": "item",
+     "fr": "GALETTE NIÇOISE",
+     "desc": "OEUF, JAMBON, FROMAGE, RATATOUILLE / EGG, HAM, CHEESE, RATATOUILLE",
+     "price": "17.50€"
+    },
+    {
+     "id": "g164",
+     "type": "item",
+     "fr": "GALETTE DU SKIEUR",
+     "desc": "OEUF, JAMBON, FROMAGE, CRÈME / EGG, HAM, CHEESE, FRESH CREAM",
+     "price": "17.50€"
+    },
+    {
+     "id": "g165",
+     "type": "item",
+     "fr": "GALETTE ROYALE",
+     "desc": "JAMBON, TOMATE, CHAMPIGNONS, FROMAGE / HAM, TOMATO, MUSHROOMS, CHEESE",
+     "price": "17.50€"
+    },
+    {
+     "id": "g166",
+     "type": "item",
+     "fr": "GALETTE BRETONNE",
+     "desc": "OEUF, JAMBON, FROMAGE, TOMATE, SALADE / EGG, HAM, CHEESE, TOMATO, SALAD",
+     "price": "18.00€"
+    },
+    {
+     "id": "g167",
+     "type": "item",
+     "fr": "GALETTE PAYSANNE",
+     "desc": "OEUF, LARDONS, FROMAGE, CHAMPIGNONS, CRÈME",
+     "en": "EGG, BACON, CHEESE, MUSHROOMS, FRESH CREAM",
+     "price": "18.00€"
+    },
+    {
+     "id": "g168",
+     "type": "item",
+     "fr": "GALETTE VIROISE",
+     "desc": "OEUF, ANDOUILLE, FROMAGE, CHAMPIGNONS, CRÈME",
+     "en": "EGG, NORMANDY COUNTRY SAUSAGE, CHEESE, MUSHROOMS, FRESH CREAM",
+     "price": "18.00€"
+    },
+    {
+     "id": "g169",
+     "type": "item",
+     "fr": "GALETTE DES ALPES",
+     "desc": "RACLETTE, POMME DE TERRE, JAMBON SPECK",
+     "en": "RACLETTE CHEESE, POTATOES, SMOKED HAM SPECK",
+     "price": "18.00€"
+    },
+    {
+     "id": "g170",
+     "type": "item",
+     "fr": "GALETTE BERRICHONNE",
+     "desc": "CHÈVRE, TOMATES CONFITES, MIEL, NOIX, ROQUETTE",
+     "en": "GOAT CHEESE, DRY TOMATOES, HONEY, NUTS, ARUGULA SALAD",
+     "price": "18.00€",
+     "tags": [
+      "veg"
+     ]
+    },
+    {
+     "id": "g171",
+     "type": "item",
+     "fr": "GALETTE SAUMON FUMÉ",
+     "desc": "CRÈME CIBOULETTE, SAUMON FUMÉ, CITRON, ROQUETTE",
+     "en": "CHIVE CREAM, SMOKED SALMON, LEMON, ARUGULA SALAD",
+     "price": "19.00€"
+    },
+    {
+     "id": "g172",
+     "type": "item",
+     "fr": "GALETTE KEBAB",
+     "desc": "VIANDE KEBAB, OIGNONS, TOMATES CONFITES, OEUF, SALADE",
+     "en": "KEBAB MEAT, ONIONS, DRY TOMATOES, EGG, GREEN SALAD",
+     "price": "18.00€"
+    },
+    {
+     "id": "g173",
+     "type": "image",
+     "src": "assets/photos/galette.jpg",
+     "widthPct": 100,
+     "heightPx": 290,
+     "mt": 10
+    },
+    {
+     "id": "g174",
+     "type": "divider",
+     "mt": 8
+    },
+    {
+     "id": "g175",
+     "type": "pagebreak"
+    },
+    {
+     "id": "g176",
+     "type": "image",
+     "src": "assets/logo-noir.png",
+     "widthPct": 24,
+     "mb": 6
+    },
+    {
+     "id": "g177",
+     "type": "section",
+     "fr": "LES CRÊPES"
+    },
+    {
+     "id": "g178",
+     "type": "image",
+     "src": "assets/photos/crepes.jpg",
+     "widthPct": 100,
+     "heightPx": 255,
+     "mb": 12
+    },
+    {
+     "id": "g179",
+     "type": "item",
+     "fr": "CRÊPE AU SUCRE OU BEURRE SUCRE",
+     "desc": "SUGAR, BUTTER AND SUGAR",
+     "price": "6.70€"
+    },
+    {
+     "id": "g180",
+     "type": "item",
+     "fr": "CRÊPE CONFITURE",
+     "desc": "ABRICOT, FRAISE, FRAMBOISE, MYRTILLE / APRICOT, STRAWBERRY, RASPBERRY, BLUEBERRY",
+     "price": "8.20€"
+    },
+    {
+     "id": "g181",
+     "type": "item",
+     "fr": "CRÊPE AU SIROP D'ÉRABLE",
+     "desc": "MAPLE SYRUP",
+     "price": "8.20€"
+    },
+    {
+     "id": "g182",
+     "type": "item",
+     "fr": "CRÊPE CARAMEL AU BEURRE SALÉ",
+     "desc": "CARAMEL",
+     "price": "9.00€"
+    },
+    {
+     "id": "g183",
+     "type": "item",
+     "fr": "CRÊPE CITRON, BEURRE, SUCRE",
+     "desc": "LEMON, BUTTER, SUGAR",
+     "price": "8.50€"
+    },
+    {
+     "id": "g184",
+     "type": "item",
+     "fr": "CRÊPE CHOCOLAT MAISON OU NUTELLA",
+     "desc": "CHOCOLATE HOMEMADE OR NUTELLA",
+     "price": "9.00€"
+    },
+    {
+     "id": "g185",
+     "type": "item",
+     "fr": "CRÊPE POMMES",
+     "desc": "APPLES",
+     "price": "9.00€"
+    },
+    {
+     "id": "g186",
+     "type": "item",
+     "fr": "CRÊPE AU MIEL ET NOIX",
+     "desc": "HONEY AND NUTS",
+     "price": "9.30€"
+    },
+    {
+     "id": "g187",
+     "type": "item",
+     "fr": "CRÊPE POMMES ET CHOCOLAT",
+     "desc": "APPLES AND CHOCOLATE",
+     "price": "10.50€"
+    },
+    {
+     "id": "g188",
+     "type": "item",
+     "fr": "CRÊPE BANANE ET CHOCOLAT",
+     "desc": "BANANA AND CHOCOLATE",
+     "price": "10.50€"
+    },
+    {
+     "id": "g189",
+     "type": "item",
+     "fr": "CRÊPE FLAMBÉE",
+     "desc": "RHUM / GRAND-MARNIER / CALVADOS (AU CHOIX)",
+     "price": "10.30€"
+    },
+    {
+     "id": "g190",
+     "type": "item",
+     "fr": "CRÊPE CÉVENOLE",
+     "desc": "CRÈME DE MARRON ARROSÉE DE RHUM / CHESTNUTS, RUM",
+     "price": "11.30€"
+    },
+    {
+     "id": "g191",
+     "type": "item",
+     "fr": "CRÊPE COCONUTS",
+     "desc": "GLACE NOIX DE COCO, MALIBU / COCONUT ICE-CREAM, MALIBU",
+     "price": "11.30€"
+    },
+    {
+     "id": "g192",
+     "type": "item",
+     "fr": "CRÊPE SUZETTE",
+     "desc": "ZESTES D'ORANGE, BEURRE, SUCRE, GRAND-MARNIER / PEEL ORANGE, BUTTER, SUGAR, GRAND-MARNIER",
+     "price": "12.00€"
+    },
+    {
+     "id": "g193",
+     "type": "item",
+     "fr": "CRÊPE FLAMBÉE BANANE",
+     "desc": "BANANA AND RUM",
+     "price": "12.00€"
+    },
+    {
+     "id": "g194",
+     "type": "item",
+     "fr": "CRÊPE FLAMBÉE AMANDES ET CHOCOLAT",
+     "desc": "ALMONDS, GRAND-MARNIER, CHOCOLATE",
+     "price": "12.00€"
+    },
+    {
+     "id": "g195",
+     "type": "item",
+     "fr": "CRÊPE FLAMBÉE POMMES",
+     "desc": "APPLES AND CALVADOS",
+     "price": "12.00€"
+    },
+    {
+     "id": "g196",
+     "type": "item",
+     "fr": "CRÊPE NORMANDE",
+     "desc": "POMMES, CRÈME, CALVADOS / APPLES, CREAM, CALVADOS",
+     "price": "12.50€"
+    },
+    {
+     "id": "g197",
+     "type": "item",
+     "fr": "CRÊPE MARTINIQUAISE",
+     "desc": "BANANE, CHOCOLAT, RHUM / BANANA, CHOCOLATE, RUM",
+     "price": "12.50€"
+    },
+    {
+     "id": "g198",
+     "type": "divider",
+     "mt": 8
+    },
+    {
+     "id": "g199",
+     "type": "pagebreak"
+    },
+    {
+     "id": "g200",
+     "type": "image",
+     "src": "assets/logo-noir.png",
+     "widthPct": 24,
+     "mb": 6
+    },
+    {
+     "id": "g201",
+     "type": "section",
+     "fr": "LES CRÊPES"
+    },
+    {
+     "id": "g202",
+     "type": "item",
+     "fr": "CRÊPE GLACE VANILLE",
+     "desc": "VANILLA ICE-CREAM",
+     "price": "10.00€"
+    },
+    {
+     "id": "g203",
+     "type": "item",
+     "fr": "CRÊPE GLACÉE CARAMEL AU BEURRE SALÉ",
+     "desc": "VANILLA ICE-CREAM, CARAMEL",
+     "price": "12.00€"
+    },
+    {
+     "id": "g204",
+     "type": "item",
+     "fr": "CRÊPE GLACÉE AU CHOCOLAT",
+     "desc": "VANILLA ICE-CREAM, CHOCOLATE",
+     "price": "12.00€"
+    },
+    {
+     "id": "g205",
+     "type": "item",
+     "fr": "CRÊPE GLACÉE À LA CHANTILLY",
+     "desc": "VANILLA ICE-CREAM, CHANTILLY",
+     "price": "12.00€"
+    },
+    {
+     "id": "g206",
+     "type": "item",
+     "fr": "CRÊPE GLACÉE AUX POMMES",
+     "desc": "VANILLA ICE-CREAM, APPLES",
+     "price": "12.00€"
+    },
+    {
+     "id": "g207",
+     "type": "item",
+     "fr": "CRÊPE BELLE HÉLÈNE",
+     "desc": "POIRE, CHOCOLAT, GLACE VANILLE, CHANTILLY",
+     "en": "PEAR, CHOCOLATE, VANILLA ICE-CREAM, CHANTILLY",
+     "price": "12.50€"
+    },
+    {
+     "id": "g208",
+     "type": "item",
+     "fr": "CRÊPE GLACÉE AU CHOCOLAT, CHANTILLY ET NOIX",
+     "desc": "VANILLA ICE-CREAM, CHOCOLATE, CHANTILLY, NUTS",
+     "price": "12.50€"
+    },
+    {
+     "id": "g209",
+     "type": "item",
+     "fr": "CRÊPE GLACÉE BOUNTY",
+     "desc": "GLACE NOIX DE COCO, CHOCOLAT CHAUD, CHANTILLY",
+     "en": "COCONUT ICE-CREAM, HOT CHOCOLATE, CHANTILLY",
+     "price": "12.50€"
+    },
+    {
+     "id": "g210",
+     "type": "image",
+     "src": "assets/photos/crepe-chocolat.jpg",
+     "widthPct": 58,
+     "mt": 30
+    },
+    {
+     "id": "g211",
+     "type": "divider",
+     "mt": 40
+    },
+    {
+     "id": "g212",
+     "type": "pagebreak"
+    },
+    {
+     "id": "g213",
+     "type": "image",
+     "src": "assets/logo-noir.png",
+     "widthPct": 24,
+     "mb": 6
+    },
+    {
+     "id": "g214",
+     "type": "section",
+     "fr": "FROMAGE"
+    },
+    {
+     "id": "g215",
+     "type": "item",
+     "fr": "ASSIETTE DE FROMAGES",
+     "desc": "REBLOCHON, COMTÉ, CHÈVRE",
+     "en": "PLATE OF CHEESES (REBLOCHON, COMTÉ, GOAT'S CHEESE)",
+     "price": "12.80€"
+    },
+    {
+     "id": "g216",
+     "type": "section",
+     "fr": "LES DESSERTS",
+     "mt": 6
+    },
+    {
+     "id": "g217",
+     "type": "item",
+     "fr": "FONDUE AU CHOCOLAT",
+     "desc": "MINIMUM 2 PERSONNES — PRIX PAR PERSONNE",
+     "price": "14.50€"
+    },
+    {
+     "id": "g218",
+     "type": "item",
+     "fr": "FROMAGE BLANC, CRÈME FRAICHE, CONFITURE DE MYRTILLES",
+     "desc": "COTTAGE CHEESE AND BLUEBERRY JAM",
+     "price": "10.00€",
+     "tags": [
+      "gf"
+     ]
+    },
+    {
+     "id": "g219",
+     "type": "item",
+     "fr": "MOELLEUX AU CHOCOLAT ET GLACE VANILLE",
+     "desc": "CHOCOLATE FONDANT AND VANILLA ICE CREAM",
+     "price": "11.50€"
+    },
+    {
+     "id": "g220",
+     "type": "item",
+     "fr": "CRÈME BRÛLÉE MAISON",
+     "desc": "HOMEMADE CRÈME BRÛLÉE",
+     "price": "11.50€",
+     "tags": [
+      "gf"
+     ]
+    },
+    {
+     "id": "g221",
+     "type": "item",
+     "fr": "PANNA COTTA MAISON AUX FRUITS ROUGES",
+     "desc": "HOMEMADE PANNA COTTA WITH RED FRUITS",
+     "price": "11.00€",
+     "tags": [
+      "gf"
+     ]
+    },
+    {
+     "id": "g222",
+     "type": "item",
+     "fr": "CAFÉ GOURMAND",
+     "desc": "COFFEE WITH A SELECTION OF CAKES",
+     "price": "12.50€"
+    },
+    {
+     "id": "g223",
+     "type": "section",
+     "fr": "LES GLACES",
+     "mt": 6
+    },
+    {
+     "id": "g224",
+     "type": "item",
+     "fr": "2 BOULES DE GLACE",
+     "desc": "2 SCOOPS",
+     "sub": "VANILLE, CHOCOLAT, CAFÉ, CARAMEL BEURRE SALÉ, RHUM RAISINS, MENTHE CHOCOLAT, NOIX DE COCO, FRAMBOISE, MYRTILLE, CITRON, GÉNÉPI, MOJITO",
+     "en": "VANILLA, CHOCO, COFFEE, CARAMEL, RUM RAISIN, CHOCOLATE MINT, COCONUT, RASPBERRY, BLUEBERRY, LEMON, GÉNÉPI, MOJITO",
+     "price": "8.00€"
+    },
+    {
+     "id": "g225",
+     "type": "item",
+     "fr": "3 BOULES DE GLACE",
+     "desc": "3 SCOOPS",
+     "price": "9.50€"
+    },
+    {
+     "id": "g226",
+     "type": "item",
+     "fr": "FRAMBOISE MELBA",
+     "desc": "GLACE VANILLE & FRAMBOISE, COULIS DE FRAMBOISE, FRAMBOISE, CHANTILLY",
+     "en": "VANILLA & RASPBERRY ICE-CREAM, RASPBERRIES, RASPBERRY COULIS, CHANTILLY",
+     "price": "13.00€"
+    },
+    {
+     "id": "g227",
+     "type": "item",
+     "fr": "POIRE BELLE HÉLÈNE",
+     "desc": "GLACE VANILLE, POIRES, CHOCOLAT CHAUD, CHANTILLY",
+     "en": "VANILLA ICE-CREAM, PEAR, HOT CHOCOLATE, CHANTILLY",
+     "price": "13.00€"
+    },
+    {
+     "id": "g228",
+     "type": "item",
+     "fr": "CHOCOLAT LIÉGEOIS",
+     "desc": "GLACE CHOCOLAT & VANILLE, CHOCOLAT CHAUD, CHANTILLY",
+     "en": "VANILLA & CHOCOLATE ICE-CREAM, HOT CHOCOLATE, CHANTILLY",
+     "price": "13.00€"
+    },
+    {
+     "id": "g229",
+     "type": "item",
+     "fr": "CAFÉ LIÉGEOIS",
+     "desc": "GLACE CAFÉ, CAFÉ, CHANTILLY / COFFEE ICE-CREAM, COFFEE, CHANTILLY",
+     "price": "13.00€"
+    },
+    {
+     "id": "g230",
+     "type": "item",
+     "fr": "CARAMEL LIÉGEOIS",
+     "desc": "GLACE CARAMEL & VANILLE, SAUCE CARAMEL, CHANTILLY",
+     "en": "VANILLA & CARAMEL ICE-CREAM, CARAMEL SAUCE, CHANTILLY",
+     "price": "13.00€"
+    },
+    {
+     "id": "g231",
+     "type": "item",
+     "fr": "DAME BLANCHE",
+     "desc": "GLACE VANILLE, CHOCOLAT CHAUD, CHANTILLY",
+     "en": "VANILLA ICE-CREAM, HOT CHOCOLATE, CHANTILLY",
+     "price": "13.00€"
+    },
+    {
+     "id": "g232",
+     "type": "item",
+     "fr": "BANANA SPLIT",
+     "desc": "GLACE CHOCOLAT, GLACE VANILLE, BANANE, CHOCOLAT CHAUD, CHANTILLY",
+     "en": "VANILLA AND CHOCOLATE ICE-CREAM, BANANA, HOT CHOCOLATE, CHANTILLY",
+     "price": "13.00€"
+    },
+    {
+     "id": "g233",
+     "type": "item",
+     "fr": "COUPE GÉNÉPI",
+     "desc": "SORBET GÉNÉPI, GÉNÉPI / GÉNÉPI ICE-CREAM, GÉNÉPI",
+     "price": "13.00€"
+    },
+    {
+     "id": "g234",
+     "type": "item",
+     "fr": "COUPE COLONEL",
+     "desc": "SORBET CITRON, VODKA / LEMON ICE-CREAM, VODKA",
+     "price": "13.00€"
+    },
+    {
+     "id": "g235",
+     "type": "item",
+     "fr": "COUPE AFTER EIGHT",
+     "desc": "BOULE MENTHE CHOCOLAT, PEPPERMINT / MINT & CHOCOLATE ICE-CREAM, PEPPERMINT",
+     "price": "13.00€"
+    },
+    {
+     "id": "g236",
+     "type": "item",
+     "fr": "SUPPLÉMENT CHANTILLY",
+     "desc": "EXTRA CHANTILLY",
+     "price": "1.00€"
+    },
+    {
+     "id": "g237",
+     "type": "item",
+     "fr": "DEMANDEZ LA GROLLE",
+     "price": "13.00€",
+     "mt": 4
+    },
+    {
+     "id": "g238",
+     "type": "divider",
+     "mt": 8
+    },
+    {
+     "id": "g239",
+     "type": "pagebreak"
+    },
+    {
+     "id": "g240",
+     "type": "image",
+     "src": "assets/logo-noir.png",
+     "widthPct": 24,
+     "mb": 6
+    },
+    {
+     "id": "g241",
+     "type": "section",
+     "fr": "LES VINS"
+    },
+    {
+     "id": "g242",
+     "type": "image",
+     "src": "assets/photos/vins.jpg",
+     "widthPct": 100,
+     "heightPx": 78,
+     "mb": 2
+    },
+    {
+     "id": "g243",
+     "type": "winehead",
+     "text": "NOS BULLES (VOIR DERNIÈRE PAGE)",
+     "c1": "37,5cl",
+     "c2": "50cl",
+     "c3": "75cl",
+     "c4": "150cl"
+    },
+    {
+     "id": "g244",
+     "type": "formule",
+     "text": "VINS BLANCS DE SAVOIE AOP",
+     "heading": true,
+     "color": "#5e8b3a"
+    },
+    {
+     "id": "g245",
+     "type": "wine",
+     "fr": "CHIGNIN BERGERON",
+     "desc": "LES INTEMPORELLES « SÉLECTION GASTRONOMIE »",
+     "p1": "",
+     "p2": "",
+     "p3": "39.50€",
+     "p4": ""
+    },
+    {
+     "id": "g246",
+     "type": "wine",
+     "fr": "APREMONT",
+     "desc": "LES INTEMPORELLES « SÉLECTION GASTRONOMIE »",
+     "p1": "17.50€",
+     "p2": "",
+     "p3": "32.50€",
+     "p4": ""
+    },
+    {
+     "id": "g247",
+     "type": "wine",
+     "fr": "CHARDONNAY",
+     "desc": "LES INTEMPORELLES « SÉLECTION GASTRONOMIE »",
+     "p1": "",
+     "p2": "",
+     "p3": "33.50€",
+     "p4": ""
+    },
+    {
+     "id": "g248",
+     "type": "wine",
+     "fr": "CRÉMANT DE SAVOIE",
+     "p1": "",
+     "p2": "",
+     "p3": "33.50€",
+     "p4": ""
+    },
+    {
+     "id": "g249",
+     "type": "formule",
+     "text": "VIN BLANC - VIN DE FRANCE",
+     "heading": true,
+     "color": "#5e8b3a"
+    },
+    {
+     "id": "g250",
+     "type": "wine",
+     "fr": "SAUVIGNON",
+     "p1": "",
+     "p2": "",
+     "p3": "24.80€",
+     "p4": ""
+    },
+    {
+     "id": "g251",
+     "type": "formule",
+     "text": "VIN ROSÉ DE PROVENCE AOC BIO",
+     "heading": true,
+     "color": "#5e8b3a"
+    },
+    {
+     "id": "g252",
+     "type": "wine",
+     "fr": "CÔTEAUX D'AIX-EN-PROVENCE",
+     "desc": "AOC DOMAINE ST JULIEN LES VIGNES",
+     "p1": "",
+     "p2": "23.00€",
+     "p3": "32.50€",
+     "p4": ""
+    },
+    {
+     "id": "g253",
+     "type": "formule",
+     "text": "VINS ROUGES DE SAVOIE AOP",
+     "heading": true,
+     "color": "#d0141c"
+    },
+    {
+     "id": "g254",
+     "type": "wine",
+     "fr": "MONDEUSE",
+     "desc": "LES INTEMPORELLES « SÉLECTION GASTRONOMIE »",
+     "p1": "20.50€",
+     "p2": "",
+     "p3": "35.50€",
+     "p4": ""
+    },
+    {
+     "id": "g255",
+     "type": "wine",
+     "fr": "PINOT NOIR",
+     "desc": "LES INTEMPORELLES « SÉLECTION GASTRONOMIE »",
+     "p1": "",
+     "p2": "",
+     "p3": "32.50€",
+     "p4": ""
+    },
+    {
+     "id": "g256",
+     "type": "formule",
+     "text": "VALLÉE DU RHÔNE AOC",
+     "heading": true,
+     "color": "#c8102e"
+    },
+    {
+     "id": "g257",
+     "type": "wine",
+     "fr": "CÔTES DU RHÔNE",
+     "desc": "« RÉSERVE DU CHAPITRE »",
+     "p1": "19.50€",
+     "p2": "",
+     "p3": "33.50€",
+     "p4": ""
+    },
+    {
+     "id": "g258",
+     "type": "wine",
+     "fr": "SAINT-JOSEPH LES VINS DE VIENNE",
+     "desc": "CUILLERON, VILLARD, GAILLARD",
+     "p1": "",
+     "p2": "35.00€",
+     "p3": "50.50€",
+     "p4": "99.50€"
+    },
+    {
+     "id": "g259",
+     "type": "wine",
+     "fr": "CHÂTEAUNEUF-DU-PAPE",
+     "desc": "« DOMAINE FONTAVIN »",
+     "p1": "",
+     "p2": "",
+     "p3": "66.50€",
+     "p4": ""
+    },
+    {
+     "id": "g260",
+     "type": "wine",
+     "fr": "CÔTE RÔTIE",
+     "desc": "OGIER 2023",
+     "p1": "",
+     "p2": "",
+     "p3": "96.50€",
+     "p4": ""
+    },
+    {
+     "id": "g261",
+     "type": "formule",
+     "text": "BEAUJOLAIS - LANGUEDOC AOC",
+     "heading": true,
+     "color": "#c2185b"
+    },
+    {
+     "id": "g262",
+     "type": "wine",
+     "fr": "BROUILLY",
+     "desc": "« CHÂTEAU DES TOURS »",
+     "p1": "",
+     "p2": "",
+     "p3": "41.50€",
+     "p4": ""
+    },
+    {
+     "id": "g263",
+     "type": "wine",
+     "fr": "LANGUEDOC",
+     "desc": "« LES DARONS » JEFF CARREL",
+     "p1": "",
+     "p2": "",
+     "p3": "35.50€",
+     "p4": "",
+     "tags": [
+      "new"
+     ]
+    },
+    {
+     "id": "g264",
+     "type": "formule",
+     "text": "VIN ROUGE - VIN DE FRANCE",
+     "heading": true,
+     "color": "#d0141c"
+    },
+    {
+     "id": "g265",
+     "type": "wine",
+     "fr": "MERLOT",
+     "p1": "",
+     "p2": "",
+     "p3": "24.80€",
+     "p4": ""
+    },
+    {
+     "id": "g266",
+     "type": "formule",
+     "text": "BORDEAUX AOC",
+     "heading": true,
+     "color": "#d0141c"
+    },
+    {
+     "id": "g267",
+     "type": "wine",
+     "fr": "LUSSAC-SAINT-ÉMILION",
+     "desc": "GRAND RICOMBRE",
+     "p1": "",
+     "p2": "",
+     "p3": "35.50€",
+     "p4": "",
+     "tags": [
+      "coeur"
+     ]
+    },
+    {
+     "id": "g268",
+     "type": "wine",
+     "fr": "HAUT-MÉDOC CRU BOURGEOIS",
+     "desc": "« CHÂTEAU VICTORIA » 2020",
+     "p1": "",
+     "p2": "",
+     "p3": "55.50€",
+     "p4": "114.50€"
+    },
+    {
+     "id": "g269",
+     "type": "wine",
+     "fr": "POMEROL",
+     "desc": "« FUGUE DE NÉNIN » 2ND VIN DU CHÂTEAU NÉNIN 2019",
+     "p1": "",
+     "p2": "",
+     "p3": "84.50€",
+     "p4": ""
+    },
+    {
+     "id": "g270",
+     "type": "divider",
+     "mt": 8
+    }
+   ]
+  },
+  {
+   "key": "pizzas",
+   "label": "Pizzas",
+   "style": {
+    "titleFont": "Arimo",
+    "bodyFont": "Arimo",
+    "titleColor": "#6b4c2a",
+    "accent": "#be4344",
+    "pageBg": "#ffffff",
+    "leaders": true,
+    "format": "a4",
+    "theme": "pizza",
+    "marginMm": {
+     "t": 4,
+     "r": 15,
+     "b": 10,
+     "l": 15
+    },
+    "mirror": false,
+    "sectionUnderline": true,
+    "itemSpacing": 3
+   },
+   "blocks": [
+    {
+     "id": "g271",
+     "type": "cols",
+     "ratio": "22/56/22",
+     "gap": 0
+    },
+    {
+     "id": "g272",
+     "type": "colbreak"
+    },
+    {
+     "id": "g273",
+     "type": "image",
+     "src": "assets/logo-noir.png",
+     "widthPct": 50,
+     "mt": 14
+    },
+    {
+     "id": "g274",
+     "type": "colbreak"
+    },
+    {
+     "id": "g275",
+     "type": "image",
+     "src": "assets/flag-fr.svg",
+     "widthPct": 30,
+     "align": "right",
+     "mt": 46
+    },
+    {
+     "id": "g276",
+     "type": "colsend"
+    },
+    {
+     "id": "g277",
+     "type": "line",
+     "text": "SERVICE EN SALLE DE 12H À 18H",
+     "variant": "title",
+     "mt": 10,
+     "mb": 4
+    },
+    {
+     "id": "g278",
+     "type": "section",
+     "fr": "NOS PIZZAS",
+     "mt": 8
+    },
+    {
+     "id": "g279",
+     "type": "item",
+     "fr": "MARGARITA",
+     "desc": "Tomates, mozza, olives, origan",
+     "price": "13,50€"
+    },
+    {
+     "id": "g280",
+     "type": "item",
+     "fr": "PAMPLUNE",
+     "desc": "Tomates, mozza, jambon, oeuf, origan",
+     "price": "15,50€"
+    },
+    {
+     "id": "g281",
+     "type": "item",
+     "fr": "REINE",
+     "desc": "Tomates, mozza, jambon, champignons",
+     "price": "15,50€"
+    },
+    {
+     "id": "g282",
+     "type": "item",
+     "fr": "NAPOLITAINE",
+     "desc": "Tomates, mozza, anchois, câpres, olives, origan",
+     "price": "15,50€"
+    },
+    {
+     "id": "g283",
+     "type": "item",
+     "fr": "3 VALLÉES",
+     "desc": "Tomates, mozza, poivrons, champignons, olives, origan, roquette",
+     "price": "15,50€"
+    },
+    {
+     "id": "g284",
+     "type": "item",
+     "fr": "TOSCANE",
+     "desc": "Tomates, mozza, jambon, ananas, olives",
+     "price": "16,00€"
+    },
+    {
+     "id": "g285",
+     "type": "item",
+     "fr": "4 SAISONS",
+     "desc": "Tomates, mozza, artichaut, champignons, poivrons, olives, origan, roquette",
+     "price": "17,50€"
+    },
+    {
+     "id": "g286",
+     "type": "item",
+     "fr": "TARENTAISE",
+     "desc": "Tomates, mozza, jambon fumé speck, oeuf, roquette",
+     "price": "17,50€"
+    },
+    {
+     "id": "g287",
+     "type": "item",
+     "fr": "CALZONE",
+     "desc": "Tomates, mozza, jambon, champignons, oeuf, crème",
+     "price": "17,50€"
+    },
+    {
+     "id": "g288",
+     "type": "item",
+     "fr": "CHÈVRE",
+     "desc": "Crème, mozza, chèvre, miel, noix, roquette",
+     "price": "17,50€"
+    },
+    {
+     "id": "g289",
+     "type": "item",
+     "fr": "MEXICAINE",
+     "desc": "Tomates, mozza, chorizo, merguez, poivrons",
+     "price": "18,00€"
+    },
+    {
+     "id": "g290",
+     "type": "item",
+     "fr": "ORIENTALE",
+     "desc": "Crème, mozza, viande kebab, oignons, salade, sauce burger",
+     "price": "18,00€"
+    },
+    {
+     "id": "g291",
+     "type": "item",
+     "fr": "MERIBELOISE",
+     "desc": "Crème, mozza, lardons, pomme de terre, oignons, Reblochon",
+     "price": "18,00€"
+    },
+    {
+     "id": "g292",
+     "type": "item",
+     "fr": "4 FROMAGES",
+     "desc": "Tomates, mozza, chèvre, Roquefort, Reblochon",
+     "price": "18,00€"
+    },
+    {
+     "id": "g293",
+     "type": "item",
+     "fr": "SAUMON",
+     "desc": "Crème, ciboulette, mozza, saumon, citron",
+     "price": "20,00€"
+    },
+    {
+     "id": "g294",
+     "type": "item",
+     "fr": "LASAGNE MAISON - SALADE",
+     "price": "17,50€"
+    },
+    {
+     "id": "g295",
+     "type": "image",
+     "src": "assets/photos/pizza.jpg",
+     "widthPct": 74,
+     "mt": 26
+    }
+   ]
+  },
+  {
+   "key": "pizzas-en",
+   "label": "Pizzas (EN)",
+   "style": {
+    "titleFont": "Arimo",
+    "bodyFont": "Arimo",
+    "titleColor": "#6b4c2a",
+    "accent": "#be4344",
+    "pageBg": "#ffffff",
+    "leaders": true,
+    "format": "a4",
+    "theme": "pizza",
+    "marginMm": {
+     "t": 4,
+     "r": 15,
+     "b": 10,
+     "l": 15
+    },
+    "mirror": false,
+    "sectionUnderline": true,
+    "itemSpacing": 3
+   },
+   "blocks": [
+    {
+     "id": "g296",
+     "type": "cols",
+     "ratio": "22/56/22",
+     "gap": 0
+    },
+    {
+     "id": "g297",
+     "type": "colbreak"
+    },
+    {
+     "id": "g298",
+     "type": "image",
+     "src": "assets/logo-noir.png",
+     "widthPct": 50,
+     "mt": 14
+    },
+    {
+     "id": "g299",
+     "type": "colbreak"
+    },
+    {
+     "id": "g300",
+     "type": "image",
+     "src": "assets/flag-gb.svg",
+     "widthPct": 30,
+     "align": "right",
+     "mt": 46
+    },
+    {
+     "id": "g301",
+     "type": "colsend"
+    },
+    {
+     "id": "g302",
+     "type": "line",
+     "text": "AT THE RESTAURANT FROM NOON TO 6 PM",
+     "variant": "title",
+     "mt": 10,
+     "mb": 4
+    },
+    {
+     "id": "g303",
+     "type": "section",
+     "fr": "OUR PIZZAS",
+     "mt": 8
+    },
+    {
+     "id": "g304",
+     "type": "item",
+     "fr": "MARGARITA",
+     "desc": "Tomatoes, mozzarella, olives, oregano",
+     "price": "13,50€"
+    },
+    {
+     "id": "g305",
+     "type": "item",
+     "fr": "PAMPLUNE",
+     "desc": "Tomatoes, mozzarella, ham, egg, oregano",
+     "price": "15,50€"
+    },
+    {
+     "id": "g306",
+     "type": "item",
+     "fr": "REINE",
+     "desc": "Tomatoes, mozzarella, ham, mushrooms",
+     "price": "15,50€"
+    },
+    {
+     "id": "g307",
+     "type": "item",
+     "fr": "NAPOLITAINE",
+     "desc": "Tomatoes, mozzarella, anchovies, capers, olives, oregano",
+     "price": "15,50€"
+    },
+    {
+     "id": "g308",
+     "type": "item",
+     "fr": "3 VALLÉES",
+     "desc": "Tomatoes, mozzarella, green pepper, mushrooms, olives, oregano, rocket salad",
+     "price": "15,50€"
+    },
+    {
+     "id": "g309",
+     "type": "item",
+     "fr": "TOSCANE",
+     "desc": "Tomatoes, mozzarella, ham, pineapple, olives",
+     "price": "16,00€"
+    },
+    {
+     "id": "g310",
+     "type": "item",
+     "fr": "4 SAISONS",
+     "desc": "Tomatoes, mozzarella, artichoke, mushrooms, green pepper, olives, oregano, rocket salad",
+     "price": "17,50€"
+    },
+    {
+     "id": "g311",
+     "type": "item",
+     "fr": "TARENTAISE",
+     "desc": "Tomatoes, mozzarella, smoked ham speck, egg, rocket salad",
+     "price": "17,50€"
+    },
+    {
+     "id": "g312",
+     "type": "item",
+     "fr": "CALZONE",
+     "desc": "Tomatoes, mozzarella, ham, mushrooms, egg, cream",
+     "price": "17,50€"
+    },
+    {
+     "id": "g313",
+     "type": "item",
+     "fr": "CHÈVRE",
+     "desc": "Cream, mozzarella, goat cheese, honey, nuts, rocket salad",
+     "price": "17,50€"
+    },
+    {
+     "id": "g314",
+     "type": "item",
+     "fr": "MEXICAINE",
+     "desc": "Tomatoes, mozzarella, chorizo, merguez, green pepper",
+     "price": "18,00€"
+    },
+    {
+     "id": "g315",
+     "type": "item",
+     "fr": "ORIENTALE",
+     "desc": "Cream, mozza, meat kebab, onions, salad, burger sauce",
+     "price": "18,00€"
+    },
+    {
+     "id": "g316",
+     "type": "item",
+     "fr": "MERIBELOISE",
+     "desc": "Cream, mozzarella, bacon, potatoes, onions, Reblochon",
+     "price": "18,00€"
+    },
+    {
+     "id": "g317",
+     "type": "item",
+     "fr": "4 FROMAGES",
+     "desc": "Tomatoes, mozzarella, goat cheese, Roquefort, Reblochon",
+     "price": "18,00€"
+    },
+    {
+     "id": "g318",
+     "type": "item",
+     "fr": "SAUMON",
+     "desc": "Cream, chives, mozzarella, salmon, lemon",
+     "price": "20,00€"
+    },
+    {
+     "id": "g319",
+     "type": "item",
+     "fr": "HOME-MADE LASAGNA - SALAD",
+     "price": "17,50€"
+    },
+    {
+     "id": "g320",
+     "type": "image",
+     "src": "assets/photos/pizza.jpg",
+     "widthPct": 74,
+     "mt": 26
+    }
+   ]
+  },
+  {
+   "key": "emporter",
+   "label": "Vente à emporter",
+   "style": {
+    "titleFont": "Montserrat",
+    "bodyFont": "Montserrat",
+    "titleColor": "#ffffff",
+    "accent": "#a97f12",
+    "pageBg": "#000000",
+    "leaders": true,
+    "format": "affiche",
+    "theme": "emporter",
+    "itemSpacing": 2,
+    "marginMm": {
+     "t": 10,
+     "r": 10,
+     "b": 8,
+     "l": 10
+    },
+    "mirror": false,
+    "sectionUnderline": false
+   },
+   "blocks": [
+    {
+     "id": "g321",
+     "type": "emp-header",
+     "logoImg": "assets/logo-blanc.png",
+     "title": "VENTE<br>À EMPORTER",
+     "box1": "✩ NON STOP ✩",
+     "box2": "+33 (0) 479 08 53 90"
+    },
+    {
+     "id": "g322",
+     "type": "banner",
+     "text": "RESTAURANT SAVOYARD - PIZZÉRIA - CRÊPERIE",
+     "mt": 0,
+     "mb": 8
+    },
+    {
+     "id": "g323",
+     "type": "cols",
+     "ratio": "50/50",
+     "gap": 40
+    },
+    {
+     "id": "g324",
+     "type": "section",
+     "fr": "- LES ENTRÉES ET PLATS -"
+    },
+    {
+     "id": "g325",
+     "type": "item",
+     "fr": "SALADE MIXTE",
+     "sub": "Salade verte, œuf, maïs, jambon, Comté",
+     "en": "Green salad, egg, corn, ham, Comté",
+     "price": "12,70 €"
+    },
+    {
+     "id": "g326",
+     "type": "item",
+     "fr": "SALADE CAMPAGNARDE",
+     "sub": "Salade verte, croûtons, fromage, lardons, tomates",
+     "en": "Green salad, bacon, cheese, croûtons, tomatoes",
+     "price": "13,70 €"
+    },
+    {
+     "id": "g327",
+     "type": "item",
+     "fr": "SALADE SAVOYARDE",
+     "sub": "Salade verte, fromage à Raclette sur toast, tomates, œuf",
+     "en": "Green salad, cheese Raclette toast, tomatoes, egg",
+     "price": "14,70 €"
+    },
+    {
+     "id": "g328",
+     "type": "item",
+     "fr": "SALADE DE CHÈVRE CHAUD AU MIEL",
+     "sub": "Tomates confites et Noix",
+     "en": "Goat's cheese and green salad with honey, nuts and tomatoes",
+     "price": "13,70 €"
+    },
+    {
+     "id": "g329",
+     "type": "item",
+     "fr": "TARTIFLETTE",
+     "sub": "Pommes de terre, oignons, Reblochon, lardons, crème fraîche",
+     "en": "Potatoes, onions, Reblochon, bacon, fresh cream",
+     "price": "14,50 €"
+    },
+    {
+     "id": "g330",
+     "type": "item",
+     "fr": "LASAGNES MAISON",
+     "price": "13,70 €"
+    },
+    {
+     "id": "g331",
+     "type": "item",
+     "fr": "PORTION DE FRITES",
+     "price": "3,50 €"
+    },
+    {
+     "id": "g332",
+     "type": "item",
+     "fr": "SANDWICHS",
+     "price": "6,00 €"
+    },
+    {
+     "id": "g333",
+     "type": "image",
+     "src": "assets/photos/galette-emporter.jpg",
+     "widthPct": 92,
+     "heightPx": 92,
+     "mt": 6,
+     "mb": 0
+    },
+    {
+     "id": "g334",
+     "type": "section",
+     "fr": "- NOS CRÊPES ET GALETTES -"
+    },
+    {
+     "id": "g335",
+     "type": "item",
+     "fr": "CRÊPE SUCRE",
+     "desc": "Sugar",
+     "price": "3.50 €"
+    },
+    {
+     "id": "g336",
+     "type": "item",
+     "fr": "CRÊPE NUTELLA",
+     "price": "5.00 €"
+    },
+    {
+     "id": "g337",
+     "type": "item",
+     "fr": "CRÊPE CHOCOLAT MAISON",
+     "desc": "Homemade chocolate",
+     "price": "5.00 €"
+    },
+    {
+     "id": "g338",
+     "type": "item",
+     "fr": "CRÊPE CARAMEL AU BEURRE SALÉ",
+     "desc": "Caramel",
+     "price": "5.00 €"
+    },
+    {
+     "id": "g339",
+     "type": "item",
+     "fr": "CRÊPE CONFITURE AU CHOIX",
+     "desc": "Jam of your choice",
+     "price": "5.00 €"
+    },
+    {
+     "id": "g340",
+     "type": "item",
+     "fr": "GALETTE COMPLÈTE",
+     "desc": "Oeuf, Jambon, Fromage",
+     "en": "Egg, Ham, Cheese",
+     "price": "11.00 €"
+    },
+    {
+     "id": "g341",
+     "type": "item",
+     "fr": "GALETTE CAUCHOISE",
+     "sub": "Pommes Fruits, Grison et 3 Fromages",
+     "en": "Apples, Dry Beef, 3 Cheeses",
+     "price": "12.00 €"
+    },
+    {
+     "id": "g342",
+     "type": "item",
+     "fr": "GALETTE DES ALPES",
+     "sub": "Raclette, Pomme de Terre, Jambon Speck",
+     "en": "Cheese Raclette, Potatoes, Smoked Ham Speck",
+     "price": "13.00 €"
+    },
+    {
+     "id": "g343",
+     "type": "item",
+     "fr": "GALETTE BERRICHONNE",
+     "sub": "Chèvre, Tomates Confites, Miel, Noix, Roquette",
+     "en": "Goat Cheese, Dry Tomatoes, Honey, Nuts, Rocket Salad",
+     "price": "13.00 €"
+    },
+    {
+     "id": "g344",
+     "type": "item",
+     "fr": "GALETTE SAUMON FUMÉ",
+     "sub": "Crème Ciboulette, Saumon Fumé, Citron, Roquette",
+     "en": "Chive Cream, Smoked Salmon, Lemon, Rocket",
+     "price": "13.00 €"
+    },
+    {
+     "id": "g345",
+     "type": "colbreak"
+    },
+    {
+     "id": "g346",
+     "type": "section",
+     "fr": "- NOS PIZZAS -"
+    },
+    {
+     "id": "g347",
+     "type": "item",
+     "fr": "MARGARITA",
+     "desc": "Tomates, Mozza, Olives, Origan",
+     "en": "Tomatoes, Mozzarella, Olives, Oregano",
+     "price": "11.00 €"
+    },
+    {
+     "id": "g348",
+     "type": "item",
+     "fr": "PAMPLUNE",
+     "desc": "Tomates, Mozza, Jambon, Œuf, Origan",
+     "en": "Tomatoes, Mozzarella, Ham, Egg, Oregano",
+     "price": "12.00 €"
+    },
+    {
+     "id": "g349",
+     "type": "item",
+     "fr": "REINE",
+     "desc": "Tomates, Mozza, Jambon, Champignons",
+     "en": "Tomatoes, Mozzarella, Ham, Mushrooms",
+     "price": "13.00 €"
+    },
+    {
+     "id": "g350",
+     "type": "item",
+     "fr": "NAPOLITAINE",
+     "desc": "Tomates, Mozza, Anchois, Câpres, Olives, Origan",
+     "en": "Tomatoes, Mozzarella, Anchovies, Capers, Olives, Oregano",
+     "price": "13.50 €"
+    },
+    {
+     "id": "g351",
+     "type": "item",
+     "fr": "3 VALLÉES",
+     "sub": "Tomates, Mozza, Poivrons, Champignons, Olives, Origan, Roquette",
+     "en": "Tomatoes, Mozzarella, Peppers, Mushrooms, Olives, Oregano, Rocket Salad",
+     "price": "13.50 €"
+    },
+    {
+     "id": "g352",
+     "type": "item",
+     "fr": "TOSCANE",
+     "desc": "Tomates, Mozza, Jambon, Ananas, Olives",
+     "en": "Tomatoes, Mozzarella, Ham, Pineapple, Olives",
+     "price": "14.00 €"
+    },
+    {
+     "id": "g353",
+     "type": "item",
+     "fr": "4 SAISONS",
+     "sub": "Tomates, Mozza, Artichaut, Champignons, Poivrons, Origan, Roquette",
+     "en": "Tomatoes, Mozzarella, Artichoke, Mushrooms, Peppers, Olives, Oregano, Rocket Salad",
+     "price": "15.50 €"
+    },
+    {
+     "id": "g354",
+     "type": "item",
+     "fr": "TARENTAISE",
+     "desc": "Tomates, Mozza, Jambon Fumé Speck, Œuf, Crème",
+     "en": "Tomatoes, Mozzarella, Smoked Ham Speck, Egg, Cream",
+     "price": "15.50 €"
+    },
+    {
+     "id": "g355",
+     "type": "item",
+     "fr": "CALZONE",
+     "desc": "Tomates, Mozza, Jambon, Champignons, Œuf, Crème",
+     "en": "Tomatoes, Mozzarella, Ham, Mushrooms, Egg, Cream",
+     "price": "15.50 €"
+    },
+    {
+     "id": "g356",
+     "type": "item",
+     "fr": "CHÈVRE",
+     "desc": "Crème, Mozza, Chèvre, Miel, Noix, Roquette",
+     "en": "Cream, Mozzarella, Goat Cheese, Honey, Nuts, Rocket Salad",
+     "price": "15.50 €"
+    },
+    {
+     "id": "g357",
+     "type": "item",
+     "fr": "MEXICAINE",
+     "desc": "Tomates, Mozza, Chorizo, Merguez, Poivrons",
+     "en": "Tomatoes, Mozzarella, Chorizo, Merguez, Peppers",
+     "price": "15.50 €"
+    },
+    {
+     "id": "g358",
+     "type": "item",
+     "fr": "ORIENTALE",
+     "sub": "Crème, Mozza, Viande Kebab, Oignons, Salade, Sauce Burger",
+     "en": "Cream, Mozza, Meat Kebab, Onions, Salad, Burger Sauce",
+     "price": "15.50 €"
+    },
+    {
+     "id": "g359",
+     "type": "item",
+     "fr": "MÉRIBELOISE",
+     "sub": "Crème, Mozza, Lardons, Pommes de Terre, Oignons, Reblochon",
+     "en": "Cream, Mozzarella, Bacon, Potatoes, Onions, Reblochon",
+     "price": "15.50 €"
+    },
+    {
+     "id": "g360",
+     "type": "item",
+     "fr": "4 FROMAGES",
+     "desc": "Tomates, Mozza, Chèvre, Roquefort, Reblochon",
+     "en": "Tomatoes, Mozzarella, Goat Cheese, Roquefort, Reblochon",
+     "price": "15.50 €"
+    },
+    {
+     "id": "g361",
+     "type": "item",
+     "fr": "SAUMON",
+     "desc": "Crème, Ciboulette, Mozza, Saumon, Citron",
+     "en": "Cream, Chives, Mozzarella, Salmon, Lemon",
+     "price": "16.50 €"
+    },
+    {
+     "id": "g362",
+     "type": "image",
+     "src": "assets/photos/pizza-emporter.jpg",
+     "widthPct": 62,
+     "heightPx": 128,
+     "mt": 10
+    },
+    {
+     "id": "g363",
+     "type": "colsend"
+    },
+    {
+     "id": "g364",
+     "type": "cols",
+     "ratio": "20/60/20",
+     "gap": 24,
+     "valign": "center",
+     "mt": 8
+    },
+    {
+     "id": "g365",
+     "type": "image",
+     "src": "assets/qr-emporter.png",
+     "widthPct": 44
+    },
+    {
+     "id": "g366",
+     "type": "colbreak"
+    },
+    {
+     "id": "g367",
+     "type": "banner",
+     "text": "BOISSONS ET VINS À EMPORTER",
+     "ink": "dark"
+    },
+    {
+     "id": "g368",
+     "type": "colbreak"
+    },
+    {
+     "id": "g369",
+     "type": "image",
+     "src": "assets/qr-emporter.png",
+     "widthPct": 44
+    },
+    {
+     "id": "g370",
+     "type": "colsend"
+    },
+    {
+     "id": "g371",
+     "type": "note",
+     "text": "PRIX NETS EN EUROS",
+     "bold": true,
+     "mt": 4
+    }
+   ]
+  }
+ ]
+}

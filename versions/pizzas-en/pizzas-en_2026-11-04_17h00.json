@@ -1,0 +1,188 @@
+{
+ "style": {
+  "titleFont": "Arimo",
+  "bodyFont": "Arimo",
+  "titleColor": "#6b4c2a",
+  "accent": "#be4344",
+  "pageBg": "#ffffff",
+  "leaders": true,
+  "format": "a4",
+  "theme": "pizza",
+  "marginMm": {
+   "t": 4,
+   "r": 15,
+   "b": 10,
+   "l": 15
+  },
+  "mirror": false,
+  "sectionUnderline": true,
+  "itemSpacing": 3
+ },
+ "blocks": [
+  {
+   "id": "g296",
+   "type": "cols",
+   "ratio": "22/56/22",
+   "gap": 0
+  },
+  {
+   "id": "g297",
+   "type": "colbreak"
+  },
+  {
+   "id": "g298",
+   "type": "image",
+   "src": "assets/logo-noir.png",
+   "widthPct": 50,
+   "mt": 14
+  },
+  {
+   "id": "g299",
+   "type": "colbreak"
+  },
+  {
+   "id": "g300",
+   "type": "image",
+   "src": "assets/flag-gb.svg",
+   "widthPct": 30,
+   "align": "right",
+   "mt": 46
+  },
+  {
+   "id": "g301",
+   "type": "colsend"
+  },
+  {
+   "id": "g302",
+   "type": "line",
+   "text": "AT THE RESTAURANT FROM NOON TO 6 PM",
+   "variant": "title",
+   "mt": 10,
+   "mb": 4
+  },
+  {
+   "id": "g303",
+   "type": "section",
+   "fr": "OUR PIZZAS",
+   "mt": 8
+  },
+  {
+   "id": "g304",
+   "type": "item",
+   "fr": "MARGARITA",
+   "desc": "Tomatoes, mozzarella, olives, oregano",
+   "price": "13,50€"
+  },
+  {
+   "id": "g305",
+   "type": "item",
+   "fr": "PAMPLUNE",
+   "desc": "Tomatoes, mozzarella, ham, egg, oregano",
+   "price": "15,50€"
+  },
+  {
+   "id": "g306",
+   "type": "item",
+   "fr": "REINE",
+   "desc": "Tomatoes, mozzarella, ham, mushrooms",
+   "price": "15,50€"
+  },
+  {
+   "id": "g307",
+   "type": "item",
+   "fr": "NAPOLITAINE",
+   "desc": "Tomatoes, mozzarella, anchovies, capers, olives, oregano",
+   "price": "15,50€"
+  },
+  {
+   "id": "g308",
+   "type": "item",
+   "fr": "3 VALLÉES",
+   "desc": "Tomatoes, mozzarella, green pepper, mushrooms, olives, oregano, rocket salad",
+   "price": "15,50€"
+  },
+  {
+   "id": "g309",
+   "type": "item",
+   "fr": "TOSCANE",
+   "desc": "Tomatoes, mozzarella, ham, pineapple, olives",
+   "price": "16,00€"
+  },
+  {
+   "id": "g310",
+   "type": "item",
+   "fr": "4 SAISONS",
+   "desc": "Tomatoes, mozzarella, artichoke, mushrooms, green pepper, olives, oregano, rocket salad",
+   "price": "17,50€"
+  },
+  {
+   "id": "g311",
+   "type": "item",
+   "fr": "TARENTAISE",
+   "desc": "Tomatoes, mozzarella, smoked ham speck, egg, rocket salad",
+   "price": "17,50€"
+  },
+  {
+   "id": "g312",
+   "type": "item",
+   "fr": "CALZONE",
+   "desc": "Tomatoes, mozzarella, ham, mushrooms, egg, cream",
+   "price": "17,50€"
+  },
+  {
+   "id": "g313",
+   "type": "item",
+   "fr": "CHÈVRE",
+   "desc": "Cream, mozzarella, goat cheese, honey, nuts, rocket salad",
+   "price": "17,50€"
+  },
+  {
+   "id": "g314",
+   "type": "item",
+   "fr": "MEXICAINE",
+   "desc": "Tomatoes, mozzarella, chorizo, merguez, green pepper",
+   "price": "18,00€"
+  },
+  {
+   "id": "g315",
+   "type": "item",
+   "fr": "ORIENTALE",
+   "desc": "Cream, mozza, meat kebab, onions, salad, burger sauce",
+   "price": "18,00€"
+  },
+  {
+   "id": "g316",
+   "type": "item",
+   "fr": "MERIBELOISE",
+   "desc": "Cream, mozzarella, bacon, potatoes, onions, Reblochon",
+   "price": "18,00€"
+  },
+  {
+   "id": "g317",
+   "type": "item",
+   "fr": "4 FROMAGES",
+   "desc": "Tomatoes, mozzarella, goat cheese, Roquefort, Reblochon",
+   "price": "18,00€"
+  },
+  {
+   "id": "g318",
+   "type": "item",
+   "fr": "SAUMON",
+   "desc": "Cream, chives, mozzarella, salmon, lemon",
+   "price": "20,00€"
+  },
+  {
+   "id": "g319",
+   "type": "item",
+   "fr": "HOME-MADE LASAGNA - SALAD",
+   "price": "17,50€"
+  },
+  {
+   "id": "g320",
+   "type": "image",
+   "src": "assets/photos/pizza.jpg",
+   "widthPct": 74,
+   "mt": 26
+  }
+ ]
+}
