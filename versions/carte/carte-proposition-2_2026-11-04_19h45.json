@@ -2327,7 +2327,8 @@
    "src": "assets/photos/galette.jpg",
    "widthPct": 100,
    "heightPx": 128,
-   "mt": 10
+   "mt": 10,
+   "focus": "50% 22%"
   },
   {
    "id": "m482",

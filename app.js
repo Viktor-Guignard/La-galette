@@ -448,7 +448,7 @@ function renderBlockInner(blk){
       return ed(blk.id,'text',esc(blk.text),'', 'div');
     case 'image':
       return `<div class="img-slot img-block-slot" data-id="${blk.id}" data-field="src" title="Cliquer pour remplacer l'image">
-        <img src="${blk.src || 'assets/logo-noir.png'}" style="width:${blk.widthPct || 45}%${blk.heightPx ? ';height:' + blk.heightPx + 'px;object-fit:cover' : ''}" alt="">
+        <img src="${blk.src || 'assets/logo-noir.png'}" style="width:${blk.widthPct || 45}%${blk.heightPx ? ';height:' + blk.heightPx + 'px;object-fit:cover;object-position:' + (blk.focus || '50% 50%') : ''}" alt="">
       </div>`;
     case 'divider':
       return '';

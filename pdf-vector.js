@@ -219,10 +219,13 @@
       const k = Math.min(w0 / nw, h0 / nh);
       dw = nw * k; dh = nh * k;
     } else if (cs.objectFit === 'cover') {
-      /* « cover » : la photo remplit le cadre et déborde, recadrée au centre */
+      /* « cover » : la photo remplit le cadre et déborde ; le point de cadrage
+         (object-position, ex. « 50% 30% ») est respecté comme à l'écran */
       const k = Math.max(w0 / nw, h0 / nh);
       const sw = w0 / k, sh = h0 / k;
-      src = [(nw - sw) / 2, (nh - sh) / 2, sw, sh];
+      const pos = (cs.objectPosition || '50% 50%').split(/\s+/).map(v => /%$/.test(v) ? parseFloat(v) / 100 : 0.5);
+      const fx = isNaN(pos[0]) ? 0.5 : pos[0], fy = isNaN(pos[1]) ? 0.5 : pos[1];
+      src = [(nw - sw) * fx, (nh - sh) * fy, sw, sh];
     }
 
     /* matrice CSS (rotation du médaillon, etc.) */
