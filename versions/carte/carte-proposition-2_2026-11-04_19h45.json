@@ -1719,7 +1719,7 @@
   {
    "id": "mgal_cols",
    "type": "cols",
-   "ratio": "68/32",
+   "ratio": "60/40",
    "gap": 22,
    "fullText": true
   },
@@ -2337,9 +2337,9 @@
    "type": "image",
    "src": "assets/photos/galette.jpg",
    "widthPct": 100,
-   "heightPx": 330,
-   "focus": "50% 45%",
-   "mt": 6
+   "mt": 6,
+   "heightPx": 152,
+   "focus": "50% 0%"
   },
   {
    "id": "mgal_end",
