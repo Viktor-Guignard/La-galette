@@ -1,0 +1,537 @@
+{
+ "style": {
+  "titleFont": "Fraunces",
+  "bodyFont": "Jost",
+  "titleColor": "#ffffff",
+  "accent": "#c39a45",
+  "pageBg": "#000000",
+  "leaders": true,
+  "format": "totem",
+  "theme": "exterieur",
+  "itemSpacing": 1,
+  "marginMm": {
+   "t": 14,
+   "r": 15,
+   "b": 24,
+   "l": 15
+  },
+  "mirror": false,
+  "sectionUnderline": false
+ },
+ "blocks": [
+  {
+   "id": "t1",
+   "type": "emp-header",
+   "logoImg": "assets/logo-blanc.png",
+   "title": "Notre<br>carte",
+   "box1": "Réservations",
+   "box2": "+33 (0)4 79 08 53 90"
+  },
+  {
+   "id": "t2",
+   "type": "banner",
+   "text": "Restaurant savoyard · Pizzéria · Crêperie",
+   "mt": 0,
+   "mb": 10
+  },
+  {
+   "id": "t3",
+   "type": "cols",
+   "ratio": "33/34/33",
+   "gap": 30
+  },
+  {
+   "id": "t4",
+   "type": "section",
+   "fr": "Les entrées",
+   "en": "Starters"
+  },
+  {
+   "id": "t5",
+   "type": "item",
+   "fr": "SOUPE DE LÉGUMES OU À L'OIGNON",
+   "price": "17,00 €",
+   "sub": "Maison",
+   "en": "Homemade vegetable or onion soup",
+   "tags": [
+    "veg"
+   ]
+  },
+  {
+   "id": "t6",
+   "type": "item",
+   "fr": "ESCARGOTS LES 6",
+   "price": "16,50 €",
+   "en": "Snails, half dozen"
+  },
+  {
+   "id": "t7",
+   "type": "item",
+   "fr": "ESCARGOTS LES 12",
+   "price": "23,50 €",
+   "en": "Snails, twelve"
+  },
+  {
+   "id": "t8",
+   "type": "item",
+   "fr": "ASSIETTE DE SAUMON FUMÉ",
+   "price": "21,50 €",
+   "en": "Smoked salmon plate"
+  },
+  {
+   "id": "t9",
+   "type": "item",
+   "fr": "ASSIETTE DE VIANDE DES GRISONS",
+   "price": "17,50 €",
+   "en": "Dry beef plate"
+  },
+  {
+   "id": "t10",
+   "type": "item",
+   "fr": "ASSIETTE DU BERGER",
+   "price": "21,70 €",
+   "sub": "Speck, saucisse sèche, Grisons, Beaufort, Reblochon",
+   "en": "Shepherd's plate: ham, sausage, dry beef, cheeses"
+  },
+  {
+   "id": "t11",
+   "type": "section",
+   "fr": "Les salades",
+   "en": "Salads"
+  },
+  {
+   "id": "t12",
+   "type": "item",
+   "fr": "SALADE CAMPAGNARDE",
+   "price": "20,70 €",
+   "sub": "Croûtons, fromage, lardons, tomates",
+   "en": "Croutons, cheese, bacon, tomatoes"
+  },
+  {
+   "id": "t13",
+   "type": "item",
+   "fr": "SALADE SAVOYARDE",
+   "price": "21,70 €",
+   "sub": "Raclette sur toast, tomates, œuf",
+   "en": "Raclette cheese on toast, tomatoes, egg",
+   "tags": [
+    "veg"
+   ]
+  },
+  {
+   "id": "t14",
+   "type": "item",
+   "fr": "SALADE DE CHÈVRE CHAUD",
+   "price": "21,70 €",
+   "sub": "Miel, tomates confites, noix",
+   "en": "Warm goat's cheese, honey, confit tomatoes, walnuts",
+   "tags": [
+    "veg"
+   ]
+  },
+  {
+   "id": "t15",
+   "type": "section",
+   "fr": "Omelettes & plats",
+   "en": "Omelets & mains"
+  },
+  {
+   "id": "t16",
+   "type": "item",
+   "fr": "OMELETTE NATURE",
+   "price": "13,50 €",
+   "sub": "Salade verte",
+   "en": "Plain omelet, green salad"
+  },
+  {
+   "id": "t17",
+   "type": "item",
+   "fr": "OMELETTE CAMPAGNARDE",
+   "price": "18,70 €",
+   "sub": "Pommes de terre, saucisse, champignons",
+   "en": "Potatoes, sausage, mushrooms"
+  },
+  {
+   "id": "t18",
+   "type": "item",
+   "fr": "OMELETTE AUX MORILLES",
+   "price": "20,00 €",
+   "en": "Morel mushroom omelet"
+  },
+  {
+   "id": "t19",
+   "type": "item",
+   "fr": "LASAGNES MAISON",
+   "price": "25,00 €",
+   "sub": "Salade verte",
+   "en": "Homemade lasagna, green salad"
+  },
+  {
+   "id": "t20",
+   "type": "item",
+   "fr": "ASSIETTE DE FRITES",
+   "price": "8,50 €",
+   "en": "French fries",
+   "tags": [
+    "veg"
+   ]
+  },
+  {
+   "id": "t22",
+   "type": "colbreak"
+  },
+  {
+   "id": "t23",
+   "type": "section",
+   "fr": "Les spécialités",
+   "en": "Specialities"
+  },
+  {
+   "id": "t24",
+   "type": "note",
+   "text": "Minimum 2 personnes, sauf tartiflette · prix par personne",
+   "mt": 0
+  },
+  {
+   "id": "t25",
+   "type": "item",
+   "fr": "PIERRE CHAUDE ROYALE",
+   "price": "34,50 €",
+   "sub": "Bœuf et dinde, frites, 2 sauces, salade",
+   "en": "Hot stone: beef & turkey, fries, 2 sauces, salad"
+  },
+  {
+   "id": "t26",
+   "type": "item",
+   "fr": "TARTIFLETTE",
+   "price": "25,00 €",
+   "sub": "Reblochon, lardons, crème, salade",
+   "en": "Reblochon, bacon, cream, green salad"
+  },
+  {
+   "id": "t27",
+   "type": "item",
+   "fr": "TARTIFLETTE AU SPECK",
+   "price": "27,00 €",
+   "sub": "Reblochon, lardons, speck, crème, salade",
+   "en": "With smoked ham speck"
+  },
+  {
+   "id": "t28",
+   "type": "item",
+   "fr": "FONDUE BOURGUIGNONNE",
+   "price": "34,50 €",
+   "sub": "230 g de bœuf, frites, 2 sauces, salade",
+   "en": "Beef fondue 230 g, fries, 2 sauces, salad"
+  },
+  {
+   "id": "t29",
+   "type": "section",
+   "fr": "Les raclettes",
+   "en": "Raclettes"
+  },
+  {
+   "id": "t30",
+   "type": "item",
+   "fr": "RACLETTE NATURE",
+   "price": "23,50 €",
+   "sub": "Pommes de terre, oignons, cornichons",
+   "en": "Cheese, potatoes, onions, gherkins",
+   "tags": [
+    "veg"
+   ]
+  },
+  {
+   "id": "t31",
+   "type": "item",
+   "fr": "RACLETTE JAMBON SPECK",
+   "price": "28,50 €",
+   "en": "With smoked ham speck"
+  },
+  {
+   "id": "t32",
+   "type": "item",
+   "fr": "RACLETTE VIANDE DES GRISONS",
+   "price": "30,50 €",
+   "en": "With dry beef"
+  },
+  {
+   "id": "t33",
+   "type": "item",
+   "fr": "RACLETTE ROYALE",
+   "price": "33,50 €",
+   "sub": "Assiette de charcuterie, salade",
+   "en": "Charcuterie plate, green salad"
+  },
+  {
+   "id": "t34",
+   "type": "item",
+   "fr": "RACLETTE VÉGÉTARIENNE",
+   "price": "29,50 €",
+   "sub": "Assiette de crudités",
+   "en": "With raw vegetables",
+   "tags": [
+    "veg"
+   ]
+  },
+  {
+   "id": "t35",
+   "type": "item",
+   "fr": "RACLETTE JAMBON À LA TRUFFE",
+   "price": "36,50 €",
+   "en": "With truffle ham"
+  },
+  {
+   "id": "t36",
+   "type": "section",
+   "fr": "Les fondues",
+   "en": "Cheese fondues"
+  },
+  {
+   "id": "t37",
+   "type": "note",
+   "text": "Comté, Emmental, Beaufort · servies avec salade",
+   "mt": 0
+  },
+  {
+   "id": "t38",
+   "type": "item",
+   "fr": "FONDUE SAVOYARDE",
+   "price": "26,50 €",
+   "en": "Three-cheese fondue, bread",
+   "tags": [
+    "veg"
+   ]
+  },
+  {
+   "id": "t39",
+   "type": "item",
+   "fr": "FONDUE SAVOYARDE ROYALE",
+   "price": "31,50 €",
+   "sub": "Assiette de charcuterie",
+   "en": "With charcuterie plate"
+  },
+  {
+   "id": "t40",
+   "type": "item",
+   "fr": "FONDUE AUX CÈPES",
+   "price": "32,50 €",
+   "en": "With ceps",
+   "tags": [
+    "veg"
+   ]
+  },
+  {
+   "id": "t41",
+   "type": "item",
+   "fr": "FONDUE AUX MORILLES",
+   "price": "34,50 €",
+   "en": "With morels",
+   "tags": [
+    "veg"
+   ]
+  },
+  {
+   "id": "t42",
+   "type": "item",
+   "fr": "FONDUE À LA TRUFFE FRAÎCHE",
+   "price": "53,00 €",
+   "en": "With fresh truffle",
+   "tags": [
+    "veg"
+   ]
+  },
+  {
+   "id": "t43",
+   "type": "colbreak"
+  },
+  {
+   "id": "t44",
+   "type": "section",
+   "fr": "Les galettes",
+   "en": "Buckwheat galettes"
+  },
+  {
+   "id": "t45",
+   "type": "item",
+   "fr": "GALETTE JAMBON, FROMAGE",
+   "price": "14,00 €",
+   "en": "Ham, cheese"
+  },
+  {
+   "id": "t46",
+   "type": "item",
+   "fr": "GALETTE CHAMPIGNONS, SAUCISSE",
+   "price": "15,00 €",
+   "sub": "Fromage",
+   "en": "Mushrooms, sausage, cheese"
+  },
+  {
+   "id": "t47",
+   "type": "item",
+   "fr": "GALETTE CAUCHOISE",
+   "price": "17,00 €",
+   "sub": "Pommes, Grisons, 3 fromages",
+   "en": "Apples, dry beef, 3 cheeses"
+  },
+  {
+   "id": "t48",
+   "type": "item",
+   "fr": "GALETTE PAYSANNE",
+   "price": "18,00 €",
+   "sub": "Œuf, lardons, fromage, champignons, crème",
+   "en": "Egg, bacon, cheese, mushrooms, cream"
+  },
+  {
+   "id": "t49",
+   "type": "item",
+   "fr": "GALETTE DES ALPES",
+   "price": "18,00 €",
+   "sub": "Raclette, pomme de terre, speck",
+   "en": "Raclette cheese, potatoes, speck"
+  },
+  {
+   "id": "t50",
+   "type": "item",
+   "fr": "GALETTE BERRICHONNE",
+   "price": "18,00 €",
+   "sub": "Chèvre, tomates confites, miel, noix",
+   "en": "Goat's cheese, confit tomatoes, honey, walnuts",
+   "tags": [
+    "veg"
+   ]
+  },
+  {
+   "id": "t51",
+   "type": "item",
+   "fr": "GALETTE SAUMON FUMÉ",
+   "price": "19,00 €",
+   "sub": "Crème ciboulette, citron, roquette",
+   "en": "Chive cream, smoked salmon, lemon, rocket"
+  },
+  {
+   "id": "t52",
+   "type": "item",
+   "fr": "GALETTE KEBAB",
+   "price": "18,00 €",
+   "sub": "Oignons, tomates confites, œuf, salade",
+   "en": "Kebab meat, onions, egg, salad"
+  },
+  {
+   "id": "t53",
+   "type": "section",
+   "fr": "Nos crêpes",
+   "en": "Sweet crêpes"
+  },
+  {
+   "id": "t54",
+   "type": "item",
+   "fr": "CRÊPE BEURRE SUCRE",
+   "price": "6,70 €",
+   "en": "Butter and sugar"
+  },
+  {
+   "id": "t55",
+   "type": "item",
+   "fr": "CRÊPE CARAMEL BEURRE SALÉ",
+   "price": "9,00 €",
+   "en": "Salted butter caramel"
+  },
+  {
+   "id": "t56",
+   "type": "item",
+   "fr": "CRÊPE CHOCOLAT OU NUTELLA",
+   "price": "9,00 €",
+   "en": "Homemade chocolate or Nutella"
+  },
+  {
+   "id": "t57",
+   "type": "item",
+   "fr": "CRÊPE SUZETTE",
+   "price": "12,00 €",
+   "sub": "Orange, beurre, sucre, Grand-Marnier",
+   "en": "Orange zest, butter, sugar, Grand-Marnier"
+  },
+  {
+   "id": "t58",
+   "type": "item",
+   "fr": "CRÊPE NORMANDE",
+   "price": "12,50 €",
+   "sub": "Pommes, crème, Calvados",
+   "en": "Apples, cream, Calvados"
+  },
+  {
+   "id": "t59",
+   "type": "item",
+   "fr": "CRÊPE BELLE HÉLÈNE",
+   "price": "12,50 €",
+   "sub": "Poire, chocolat, glace vanille, chantilly",
+   "en": "Pear, chocolate, vanilla ice cream"
+  },
+  {
+   "id": "t60",
+   "type": "item",
+   "fr": "CRÊPE GLACÉE BOUNTY",
+   "price": "12,50 €",
+   "sub": "Glace coco, chocolat chaud, chantilly",
+   "en": "Coconut ice cream, hot chocolate"
+  },
+  {
+   "id": "t90",
+   "type": "image",
+   "src": "assets/photos/crepes.jpg",
+   "widthPct": 100,
+   "heightPx": 74,
+   "mt": 8
+  },
+  {
+   "id": "t62",
+   "type": "colsend"
+  },
+  {
+   "id": "t63",
+   "type": "cols",
+   "ratio": "20/60/20",
+   "gap": 24,
+   "valign": "center",
+   "mt": 10
+  },
+  {
+   "id": "t64",
+   "type": "image",
+   "src": "assets/qr-carte.png",
+   "widthPct": 44
+  },
+  {
+   "id": "t65",
+   "type": "colbreak"
+  },
+  {
+   "id": "t66",
+   "type": "banner",
+   "text": "Pizzas, vins et desserts : toute la carte à l'intérieur",
+   "ink": "dark"
+  },
+  {
+   "id": "t67",
+   "type": "colbreak"
+  },
+  {
+   "id": "t68",
+   "type": "image",
+   "src": "assets/qr-carte.png",
+   "widthPct": 44
+  },
+  {
+   "id": "t69",
+   "type": "colsend"
+  },
+  {
+   "id": "t70",
+   "type": "note",
+   "text": "Prix nets en euros",
+   "bold": true,
+   "mt": 4
+  }
+ ]
+}

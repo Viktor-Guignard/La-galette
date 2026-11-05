@@ -74,6 +74,7 @@ const PAGE_FORMATS = {
   /* Grand format : la page est dessinée à échelle réduite à l'écran
      (870 px de large) ; le PDF sort, lui, aux dimensions réelles. */
   affiche: { label:'Affiche porte-menu (46 × 66 cm)', w:870, h:1248, mm:[460,660] },
+  totem:   { label:'Porte-menu totem (48 × 68 cm)',   w:908, h:1286, mm:[480,680] },
 };
 /* px d'écran par mm de papier pour un format donné */
 function pxPerMm(fmt){ return fmt.w / fmt.mm[0]; }
@@ -90,6 +91,7 @@ function normMargins(st){
 }
 const PAGE_THEMES = {
   alpage:    { label:'La Galette — proposition « alpage »' },
+  exterieur: { label:'La Galette — supports extérieurs noir & or' },
   nuit:      { label:'La Galette — affiche « alpage » noir & or' },
   moderne:   { label:'La Galette — proposition moderne' },
   galette:   { label:'La Galette — carte (filets bruns)' },
@@ -138,12 +140,15 @@ function applyStyle(){
   const me = st.mirror ? {t:m.t, r:m.l, b:m.b, l:m.r} : m;
   root.style.setProperty('--page-pad-even', `${px(me.t)} ${px(me.r)} ${px(me.b)} ${px(me.l)}`);
   document.body.classList.toggle('leaders-off', !st.leaders);
+  document.body.dataset.format = st.format || 'a4';   // réglages propres à un format (totem…)
   document.body.classList.toggle('desc-inline', !!st.descInline);   // description sur la ligne du nom
   Object.keys(PAGE_THEMES).concat(['vigne']).forEach(t => document.body.classList.toggle('theme-' + t, st.theme === t));
   /* « alpage » prolonge la proposition moderne (mêmes niveaux de texte) */
   if(st.theme === 'alpage') document.body.classList.add('theme-moderne');
   /* « nuit » : l'affiche noir & or, retravaillée dans l'esprit alpage */
   if(st.theme === 'nuit') document.body.classList.add('theme-emporter');
+  /* « extérieur » : la même affiche, poussée pour une lecture à distance (adhésif, totem) */
+  if(st.theme === 'exterieur') document.body.classList.add('theme-emporter', 'theme-nuit');
   document.body.classList.toggle('no-section-underline', st.sectionUnderline === false);
   root.style.setProperty('--item-pad-v', (st.itemSpacing != null ? st.itemSpacing : 2) + 'px');
   loadFonts(st);

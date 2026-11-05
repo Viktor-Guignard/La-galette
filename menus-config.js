@@ -3,7 +3,8 @@
 window.CARTE_MENUS = [
   { key: 'carte',     label: 'La carte',          hint: 'Salle · 9 pages',  slug: 'carte' },
   { key: 'pizzas',    label: 'Pizzas',            hint: '4 langues',         slug: 'pizzas-fr' },
-  { key: 'emporter',  label: 'Vente à emporter',  hint: 'Affiche 46×66',    slug: 'vente-a-emporter' },
+  { key: 'emporter',  label: 'Vente à emporter',  hint: 'Adhésif 46×66',    slug: 'vente-a-emporter' },
+  { key: 'totem',     label: 'Totem',             hint: 'Porte-menu 48×68', slug: 'porte-menu-totem' },
 ];
 window.CARTE_PUBLIC_URL = 'https://viktor-guignard.github.io/la-coursive-site/carte-galette/carte.html';
 
@@ -32,5 +33,6 @@ window.MENU_BLOCK_PRESETS = {
   pizzas:      ['item-simple', 'legend', 'section', 'line', 'note', 'image', 'divider', 'pagebreak'],
   'pizzas-en': ['item-simple', 'legend', 'section', 'line', 'note', 'image', 'divider', 'pagebreak'],
   // Affiche noir & or : 2 colonnes, bandeaux or
+  totem:       ['item', 'item-simple', 'section', 'banner', 'line', 'image', 'note', 'cols', 'colbreak', 'colsend', 'pagebreak'],
   emporter:    ['item', 'item-simple', 'section', 'banner', 'image', 'note', 'cols', 'colbreak', 'colsend', 'pagebreak'],
 };

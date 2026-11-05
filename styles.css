@@ -1160,3 +1160,39 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
    d'origine ; la carte respire et laisse la place aux photos. */
 .desc-inline.theme-moderne .blk-item .fr .desc{display:inline; margin:0 0 0 7px; vertical-align:baseline;}
 .desc-inline.theme-moderne .blk-item .sub{display:inline;}
+
+/* =====================================================
+   Thème « extérieur » — adhésif et totem (3e proposition)
+   Prolonge « nuit » pour une lecture à 1–2 m : cadre or et
+   crêtes en pied de page, titres plus grands, prix plus lisibles.
+   ===================================================== */
+.theme-exterieur .pdf-page{position:relative;}
+.theme-exterieur .pdf-page::before{
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background:url('assets/deco/exterieur-cadre.svg') 0 0/100% 100% no-repeat;
+}
+.theme-exterieur .pdf-page > .block, .theme-exterieur .pdf-page > .page-cols{position:relative; z-index:1;}
+.theme-exterieur .blk-emp-header .emp-title{font-size:66px; line-height:.98;}
+.theme-exterieur .blk-emp-header .emp-box{border-radius:6px;}
+.theme-exterieur .blk-banner{font-size:17px; letter-spacing:.4em; padding:10px 12px; margin-left:0; margin-right:0; border-radius:3px;}
+.theme-exterieur .blk-section h2{font-size:34px; margin:4px 0 8px;}
+.theme-exterieur .blk-section h2 .en{font-size:10px; letter-spacing:.36em; margin-top:4px;}
+.theme-exterieur .blk-item .fr{font-size:13.2px; letter-spacing:.06em;}
+.theme-exterieur .blk-item .fr .desc, .theme-exterieur .blk-item .sub{font-size:9.6px;}
+.theme-exterieur .blk-item .en{font-size:10px;}
+.theme-exterieur .blk-item .price{font-size:16px; min-width:58px;}
+.theme-exterieur .blk-item .txt, .theme-exterieur .page-col .blk-item .txt{max-width:calc(100% - 66px);}
+.theme-exterieur .blk-note{font-size:9.5px; letter-spacing:.24em; text-transform:uppercase;}
+.theme-exterieur .blk-line{color:var(--cream); text-align:center;}
+.theme-exterieur .blk-image img{border-radius:6px;}
+/* totem 48×68 : trois colonnes, textes un cran plus serrés que l'adhésif */
+[data-format="totem"].theme-exterieur .blk-emp-header .emp-title{font-size:54px;}
+[data-format="totem"].theme-exterieur .blk-emp-header .emp-logo{flex-basis:34%;}
+[data-format="totem"].theme-exterieur .blk-section h2{font-size:28px; margin:2px 0 5px;}
+[data-format="totem"].theme-exterieur .blk-item .fr{font-size:11.6px; letter-spacing:.04em;}
+[data-format="totem"].theme-exterieur .blk-item .price{font-size:14px; min-width:52px;}
+[data-format="totem"].theme-exterieur .blk-item .fr .desc, [data-format="totem"].theme-exterieur .blk-item .sub, [data-format="totem"].theme-exterieur .blk-item .en{font-size:8.8px;}
+[data-format="totem"].theme-exterieur .blk-item .txt, [data-format="totem"].theme-exterieur .page-col .blk-item .txt{max-width:calc(100% - 58px);}
+[data-format="affiche"].theme-exterieur .blk-emp-header .emp-title{font-size:60px;}
+[data-format="affiche"].theme-exterieur .blk-item .fr{font-size:12.8px;}
+[data-format="affiche"].theme-exterieur .blk-section h2{font-size:31px;}

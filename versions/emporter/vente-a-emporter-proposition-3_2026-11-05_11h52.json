@@ -1,0 +1,1515 @@
+{
+ "style": {
+  "titleFont": "Fraunces",
+  "bodyFont": "Jost",
+  "titleColor": "#ffffff",
+  "accent": "#c39a45",
+  "pageBg": "#000000",
+  "leaders": true,
+  "format": "affiche",
+  "theme": "exterieur",
+  "itemSpacing": 1,
+  "marginMm": {
+   "t": 13,
+   "r": 15,
+   "b": 22,
+   "l": 15
+  },
+  "mirror": false,
+  "sectionUnderline": false
+ },
+ "blocks": [
+  {
+   "id": "m725",
+   "type": "emp-header",
+   "logoImg": "assets/logo-blanc.png",
+   "title": "Vente<br>à emporter",
+   "box1": "Non-stop",
+   "box2": "+33 (0)4 79 08 53 90",
+   "tr": {
+    "en": {
+     "title": "Take<br>away",
+     "box1": "Non-stop"
+    },
+    "src": {
+     "en": {
+      "title": "Vente<br>à emporter",
+      "box1": "Non-stop"
+     },
+     "it": {
+      "title": "Vente<br>à emporter",
+      "box1": "Non-stop"
+     },
+     "de": {
+      "title": "Vente<br>à emporter",
+      "box1": "Non-stop"
+     }
+    },
+    "it": {
+     "title": "Vendita<br>da asporto",
+     "box1": "Orario continuato"
+    },
+    "de": {
+     "title": "Zum<br>Mitnehmen",
+     "box1": "Durchgehend geöffnet"
+    }
+   }
+  },
+  {
+   "id": "m726",
+   "type": "banner",
+   "text": "Restaurant savoyard · Pizzéria · Crêperie",
+   "mt": 0,
+   "mb": 8,
+   "tr": {
+    "en": {
+     "text": "Savoyard restaurant · Pizzeria · Crêperie"
+    },
+    "src": {
+     "en": {
+      "text": "Restaurant savoyard · Pizzéria · Crêperie"
+     },
+     "it": {
+      "text": "Restaurant savoyard · Pizzéria · Crêperie"
+     },
+     "de": {
+      "text": "Restaurant savoyard · Pizzéria · Crêperie"
+     }
+    },
+    "it": {
+     "text": "Ristorante savoiardo · Pizzeria · Crêperie"
+    },
+    "de": {
+     "text": "Savoyardisches Restaurant · Pizzeria · Crêperie"
+    }
+   }
+  },
+  {
+   "id": "m727",
+   "type": "cols",
+   "ratio": "50/50",
+   "gap": 40
+  },
+  {
+   "id": "m728",
+   "type": "section",
+   "fr": "Entrées & plats",
+   "tr": {
+    "en": {
+     "fr": "Starters & mains"
+    },
+    "src": {
+     "en": {
+      "fr": "Entrées & plats"
+     },
+     "it": {
+      "fr": "Entrées & plats"
+     },
+     "de": {
+      "fr": "Entrées & plats"
+     }
+    },
+    "it": {
+     "fr": "Antipasti e piatti"
+    },
+    "de": {
+     "fr": "Vorspeisen & Hauptgerichte"
+    }
+   },
+   "en": "Starters & mains"
+  },
+  {
+   "id": "m729",
+   "type": "item",
+   "fr": "SALADE MIXTE",
+   "sub": "Salade verte, œuf, maïs, jambon, Comté",
+   "en": "Green salad, egg, corn, ham, Comté",
+   "price": "12,70 €",
+   "tr": {
+    "en": {
+     "fr": "MIXED SALAD",
+     "sub": "Green salad, egg, sweetcorn, ham, Comté",
+     "en": "Green salad, egg, sweetcorn, ham, Comté"
+    },
+    "src": {
+     "en": {
+      "fr": "SALADE MIXTE",
+      "sub": "Salade verte, œuf, maïs, jambon, Comté",
+      "en": "Green salad, egg, corn, ham, Comté"
+     },
+     "it": {
+      "fr": "SALADE MIXTE",
+      "sub": "Salade verte, œuf, maïs, jambon, Comté",
+      "en": "Green salad, egg, corn, ham, Comté"
+     },
+     "de": {
+      "fr": "SALADE MIXTE",
+      "sub": "Salade verte, œuf, maïs, jambon, Comté",
+      "en": "Green salad, egg, corn, ham, Comté"
+     }
+    },
+    "it": {
+     "fr": "INSALATA MISTA",
+     "sub": "Insalata verde, uovo, mais, prosciutto, Comté",
+     "en": "Insalata verde, uovo, mais, prosciutto, Comté"
+    },
+    "de": {
+     "fr": "GEMISCHTER SALAT",
+     "sub": "Grüner Salat, Ei, Mais, Schinken, Comté",
+     "en": "Grüner Salat, Ei, Mais, Schinken, Comté"
+    }
+   }
+  },
+  {
+   "id": "m730",
+   "type": "item",
+   "fr": "SALADE CAMPAGNARDE",
+   "sub": "Salade verte, croûtons, fromage, lardons, tomates",
+   "en": "Green salad, bacon, cheese, croûtons, tomatoes",
+   "price": "13,70 €",
+   "tr": {
+    "en": {
+     "fr": "COUNTRY SALAD",
+     "sub": "Green salad, croutons, cheese, lardons, tomatoes",
+     "en": "Green salad, lardons, cheese, croutons, tomatoes"
+    },
+    "src": {
+     "en": {
+      "fr": "SALADE CAMPAGNARDE",
+      "sub": "Salade verte, croûtons, fromage, lardons, tomates",
+      "en": "Green salad, bacon, cheese, croûtons, tomatoes"
+     },
+     "it": {
+      "fr": "SALADE CAMPAGNARDE",
+      "sub": "Salade verte, croûtons, fromage, lardons, tomates",
+      "en": "Green salad, bacon, cheese, croûtons, tomatoes"
+     },
+     "de": {
+      "fr": "SALADE CAMPAGNARDE",
+      "sub": "Salade verte, croûtons, fromage, lardons, tomates",
+      "en": "Green salad, bacon, cheese, croûtons, tomatoes"
+     }
+    },
+    "it": {
+     "fr": "INSALATA CAMPAGNOLA",
+     "sub": "Insalata verde, crostini, formaggio, pancetta, pomodori",
+     "en": "Insalata verde, pancetta, formaggio, crostini, pomodori"
+    },
+    "de": {
+     "fr": "BAUERNSALAT",
+     "sub": "Grüner Salat, Croûtons, Käse, Speckwürfel, Tomaten",
+     "en": "Grüner Salat, Speckwürfel, Käse, Croûtons, Tomaten"
+    }
+   }
+  },
+  {
+   "id": "m731",
+   "type": "item",
+   "fr": "SALADE SAVOYARDE",
+   "sub": "Salade verte, fromage à Raclette sur toast, tomates, œuf",
+   "en": "Green salad, cheese Raclette toast, tomatoes, egg",
+   "price": "14,70 €",
+   "tr": {
+    "en": {
+     "fr": "SAVOYARD SALAD",
+     "sub": "Green salad, Raclette cheese on toast, tomatoes, egg",
+     "en": "Green salad, Raclette cheese on toast, tomatoes, egg"
+    },
+    "src": {
+     "en": {
+      "fr": "SALADE SAVOYARDE",
+      "sub": "Salade verte, fromage à Raclette sur toast, tomates, œuf",
+      "en": "Green salad, cheese Raclette toast, tomatoes, egg"
+     },
+     "it": {
+      "fr": "SALADE SAVOYARDE",
+      "sub": "Salade verte, fromage à Raclette sur toast, tomates, œuf",
+      "en": "Green salad, cheese Raclette toast, tomatoes, egg"
+     },
+     "de": {
+      "fr": "SALADE SAVOYARDE",
+      "sub": "Salade verte, fromage à Raclette sur toast, tomates, œuf",
+      "en": "Green salad, cheese Raclette toast, tomatoes, egg"
+     }
+    },
+    "it": {
+     "fr": "INSALATA SAVOIARDA",
+     "sub": "Insalata verde, formaggio da Raclette su pane tostato, pomodori, uovo",
+     "en": "Insalata verde, formaggio da Raclette su pane tostato, pomodori, uovo"
+    },
+    "de": {
+     "fr": "SAVOYARDISCHER SALAT",
+     "sub": "Grüner Salat, Raclette-Käse auf Toast, Tomaten, Ei",
+     "en": "Grüner Salat, Raclette-Käse auf Toast, Tomaten, Ei"
+    }
+   }
+  },
+  {
+   "id": "m732",
+   "type": "item",
+   "fr": "SALADE DE CHÈVRE CHAUD AU MIEL",
+   "sub": "Tomates confites et Noix",
+   "en": "Goat's cheese and green salad with honey, nuts and tomatoes",
+   "price": "13,70 €",
+   "tr": {
+    "en": {
+     "fr": "WARM GOAT'S CHEESE SALAD WITH HONEY",
+     "sub": "Confit tomatoes and walnuts",
+     "en": "Warm goat's cheese salad with honey, confit tomatoes and walnuts"
+    },
+    "src": {
+     "en": {
+      "fr": "SALADE DE CHÈVRE CHAUD AU MIEL",
+      "sub": "Tomates confites et Noix",
+      "en": "Goat's cheese and green salad with honey, nuts and tomatoes"
+     },
+     "it": {
+      "fr": "SALADE DE CHÈVRE CHAUD AU MIEL",
+      "sub": "Tomates confites et Noix",
+      "en": "Goat's cheese and green salad with honey, nuts and tomatoes"
+     },
+     "de": {
+      "fr": "SALADE DE CHÈVRE CHAUD AU MIEL",
+      "sub": "Tomates confites et Noix",
+      "en": "Goat's cheese and green salad with honey, nuts and tomatoes"
+     }
+    },
+    "it": {
+     "fr": "INSALATA DI CAPRINO CALDO AL MIELE",
+     "sub": "Pomodori confit e noci",
+     "en": "Insalata verde con formaggio di capra caldo, miele, noci e pomodori confit"
+    },
+    "de": {
+     "fr": "WARMER ZIEGENKÄSESALAT MIT HONIG",
+     "sub": "Getrocknete Tomaten und Walnüsse",
+     "en": "Warmer Ziegenkäse und grüner Salat mit Honig, Walnüssen und getrockneten Tomaten"
+    }
+   }
+  },
+  {
+   "id": "m733",
+   "type": "item",
+   "fr": "TARTIFLETTE",
+   "sub": "Pommes de terre, oignons, Reblochon, lardons, crème fraîche",
+   "en": "Potatoes, onions, Reblochon, bacon, fresh cream",
+   "price": "14,50 €",
+   "tr": {
+    "en": {
+     "fr": "TARTIFLETTE",
+     "sub": "Potatoes, onions, Reblochon, lardons, crème fraîche",
+     "en": "Potatoes, onions, Reblochon, lardons, crème fraîche"
+    },
+    "src": {
+     "en": {
+      "fr": "TARTIFLETTE",
+      "sub": "Pommes de terre, oignons, Reblochon, lardons, crème fraîche",
+      "en": "Potatoes, onions, Reblochon, bacon, fresh cream"
+     },
+     "it": {
+      "fr": "TARTIFLETTE",
+      "sub": "Pommes de terre, oignons, Reblochon, lardons, crème fraîche",
+      "en": "Potatoes, onions, Reblochon, bacon, fresh cream"
+     },
+     "de": {
+      "fr": "TARTIFLETTE",
+      "sub": "Pommes de terre, oignons, Reblochon, lardons, crème fraîche",
+      "en": "Potatoes, onions, Reblochon, bacon, fresh cream"
+     }
+    },
+    "it": {
+     "fr": "TARTIFLETTE",
+     "sub": "Patate, cipolle, Reblochon, pancetta, panna fresca",
+     "en": "Patate, cipolle, Reblochon, pancetta, panna fresca"
+    },
+    "de": {
+     "fr": "TARTIFLETTE",
+     "sub": "Kartoffeln, Zwiebeln, Reblochon, Speckwürfel, Crème fraîche",
+     "en": "Kartoffeln, Zwiebeln, Reblochon, Speckwürfel, Crème fraîche"
+    }
+   }
+  },
+  {
+   "id": "m734",
+   "type": "item",
+   "fr": "LASAGNES MAISON",
+   "price": "13,70 €",
+   "tr": {
+    "en": {
+     "fr": "HOMEMADE LASAGNE"
+    },
+    "src": {
+     "en": {
+      "fr": "LASAGNES MAISON"
+     },
+     "it": {
+      "fr": "LASAGNES MAISON"
+     },
+     "de": {
+      "fr": "LASAGNES MAISON"
+     }
+    },
+    "it": {
+     "fr": "LASAGNE FATTE IN CASA"
+    },
+    "de": {
+     "fr": "HAUSGEMACHTE LASAGNE"
+    }
+   }
+  },
+  {
+   "id": "m735",
+   "type": "item",
+   "fr": "PORTION DE FRITES",
+   "price": "5,00 €",
+   "tr": {
+    "en": {
+     "fr": "PORTION OF CHIPS"
+    },
+    "src": {
+     "en": {
+      "fr": "PORTION DE FRITES"
+     },
+     "it": {
+      "fr": "PORTION DE FRITES"
+     },
+     "de": {
+      "fr": "PORTION DE FRITES"
+     }
+    },
+    "it": {
+     "fr": "PORZIONE DI PATATINE FRITTE"
+    },
+    "de": {
+     "fr": "PORTION POMMES FRITES"
+    }
+   }
+  },
+  {
+   "id": "m736",
+   "type": "item",
+   "fr": "SANDWICHS",
+   "price": "6,00 €",
+   "tr": {
+    "en": {
+     "fr": "SANDWICHES"
+    },
+    "src": {
+     "en": {
+      "fr": "SANDWICHS"
+     },
+     "it": {
+      "fr": "SANDWICHS"
+     },
+     "de": {
+      "fr": "SANDWICHS"
+     }
+    },
+    "it": {
+     "fr": "PANINI"
+    },
+    "de": {
+     "fr": "SANDWICHES"
+    }
+   }
+  },
+  {
+   "id": "m738",
+   "type": "section",
+   "fr": "Crêpes & galettes",
+   "tr": {
+    "en": {
+     "fr": "Crêpes & galettes"
+    },
+    "src": {
+     "en": {
+      "fr": "Crêpes & galettes"
+     },
+     "it": {
+      "fr": "Crêpes & galettes"
+     },
+     "de": {
+      "fr": "Crêpes & galettes"
+     }
+    },
+    "it": {
+     "fr": "Crêpes e galettes"
+    },
+    "de": {
+     "fr": "Crêpes & Galettes"
+    }
+   },
+   "en": "Crêpes & galettes"
+  },
+  {
+   "id": "m739",
+   "type": "item",
+   "fr": "CRÊPE SUCRE",
+   "desc": "Sugar",
+   "price": "3,50 €",
+   "tr": {
+    "en": {
+     "fr": "SUGAR CRÊPE",
+     "desc": "Sugar"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE SUCRE",
+      "desc": "Sugar"
+     },
+     "it": {
+      "fr": "CRÊPE SUCRE",
+      "desc": "Sugar"
+     },
+     "de": {
+      "fr": "CRÊPE SUCRE",
+      "desc": "Sugar"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE ALLO ZUCCHERO",
+     "desc": "Zucchero"
+    },
+    "de": {
+     "fr": "CRÊPE MIT ZUCKER",
+     "desc": "Zucker"
+    }
+   }
+  },
+  {
+   "id": "m740",
+   "type": "item",
+   "fr": "CRÊPE NUTELLA",
+   "price": "5,00 €",
+   "tr": {
+    "en": {
+     "fr": "NUTELLA CRÊPE"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE NUTELLA"
+     },
+     "it": {
+      "fr": "CRÊPE NUTELLA"
+     },
+     "de": {
+      "fr": "CRÊPE NUTELLA"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE ALLA NUTELLA"
+    },
+    "de": {
+     "fr": "CRÊPE MIT NUTELLA"
+    }
+   }
+  },
+  {
+   "id": "m741",
+   "type": "item",
+   "fr": "CRÊPE CHOCOLAT MAISON",
+   "desc": "Homemade chocolate",
+   "price": "5,00 €",
+   "tr": {
+    "en": {
+     "fr": "HOMEMADE CHOCOLATE CRÊPE",
+     "desc": "Homemade chocolate"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE CHOCOLAT MAISON",
+      "desc": "Homemade chocolate"
+     },
+     "it": {
+      "fr": "CRÊPE CHOCOLAT MAISON",
+      "desc": "Homemade chocolate"
+     },
+     "de": {
+      "fr": "CRÊPE CHOCOLAT MAISON",
+      "desc": "Homemade chocolate"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE AL CIOCCOLATO FATTO IN CASA",
+     "desc": "Cioccolato fatto in casa"
+    },
+    "de": {
+     "fr": "CRÊPE MIT HAUSGEMACHTER SCHOKOLADE",
+     "desc": "Hausgemachte Schokolade"
+    }
+   }
+  },
+  {
+   "id": "m742",
+   "type": "item",
+   "fr": "CRÊPE CARAMEL AU BEURRE SALÉ",
+   "desc": "Caramel",
+   "price": "5,00 €",
+   "tr": {
+    "en": {
+     "fr": "SALTED BUTTER CARAMEL CRÊPE",
+     "desc": "Caramel"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE CARAMEL AU BEURRE SALÉ",
+      "desc": "Caramel"
+     },
+     "it": {
+      "fr": "CRÊPE CARAMEL AU BEURRE SALÉ",
+      "desc": "Caramel"
+     },
+     "de": {
+      "fr": "CRÊPE CARAMEL AU BEURRE SALÉ",
+      "desc": "Caramel"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE AL CARAMELLO AL BURRO SALATO",
+     "desc": "Caramello"
+    },
+    "de": {
+     "fr": "CRÊPE MIT SALZBUTTERKARAMELL",
+     "desc": "Karamell"
+    }
+   }
+  },
+  {
+   "id": "m743",
+   "type": "item",
+   "fr": "CRÊPE CONFITURE AU CHOIX",
+   "desc": "Jam of your choice",
+   "price": "5,00 €",
+   "tr": {
+    "en": {
+     "fr": "CRÊPE WITH JAM OF YOUR CHOICE",
+     "desc": "Jam of your choice"
+    },
+    "src": {
+     "en": {
+      "fr": "CRÊPE CONFITURE AU CHOIX",
+      "desc": "Jam of your choice"
+     },
+     "it": {
+      "fr": "CRÊPE CONFITURE AU CHOIX",
+      "desc": "Jam of your choice"
+     },
+     "de": {
+      "fr": "CRÊPE CONFITURE AU CHOIX",
+      "desc": "Jam of your choice"
+     }
+    },
+    "it": {
+     "fr": "CRÊPE ALLA CONFETTURA A SCELTA",
+     "desc": "Confettura a scelta"
+    },
+    "de": {
+     "fr": "CRÊPE MIT KONFITÜRE NACH WAHL",
+     "desc": "Konfitüre nach Wahl"
+    }
+   }
+  },
+  {
+   "id": "m744",
+   "type": "item",
+   "fr": "GALETTE COMPLÈTE",
+   "desc": "Oeuf, Jambon, Fromage",
+   "en": "Egg, Ham, Cheese",
+   "price": "11,00 €",
+   "tr": {
+    "en": {
+     "fr": "GALETTE COMPLÈTE",
+     "desc": "Egg, ham, cheese",
+     "en": "Egg, ham, cheese"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE COMPLÈTE",
+      "desc": "Oeuf, Jambon, Fromage",
+      "en": "Egg, Ham, Cheese"
+     },
+     "it": {
+      "fr": "GALETTE COMPLÈTE",
+      "desc": "Oeuf, Jambon, Fromage",
+      "en": "Egg, Ham, Cheese"
+     },
+     "de": {
+      "fr": "GALETTE COMPLÈTE",
+      "desc": "Oeuf, Jambon, Fromage",
+      "en": "Egg, Ham, Cheese"
+     }
+    },
+    "it": {
+     "fr": "GALETTE COMPLÈTE",
+     "desc": "Uovo, prosciutto, formaggio",
+     "en": "Uovo, prosciutto, formaggio"
+    },
+    "de": {
+     "fr": "GALETTE COMPLÈTE",
+     "desc": "Ei, Schinken, Käse",
+     "en": "Ei, Schinken, Käse"
+    }
+   }
+  },
+  {
+   "id": "m745",
+   "type": "item",
+   "fr": "GALETTE CAUCHOISE",
+   "sub": "Pommes Fruits, Grison et 3 Fromages",
+   "en": "Apples, Dry Beef, 3 Cheeses",
+   "price": "12,00 €",
+   "tr": {
+    "en": {
+     "fr": "GALETTE CAUCHOISE",
+     "sub": "Apples, Grisons air-dried beef and 3 cheeses",
+     "en": "Apples, Grisons air-dried beef, 3 cheeses"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE CAUCHOISE",
+      "sub": "Pommes Fruits, Grison et 3 Fromages",
+      "en": "Apples, Dry Beef, 3 Cheeses"
+     },
+     "it": {
+      "fr": "GALETTE CAUCHOISE",
+      "sub": "Pommes Fruits, Grison et 3 Fromages",
+      "en": "Apples, Dry Beef, 3 Cheeses"
+     },
+     "de": {
+      "fr": "GALETTE CAUCHOISE",
+      "sub": "Pommes Fruits, Grison et 3 Fromages",
+      "en": "Apples, Dry Beef, 3 Cheeses"
+     }
+    },
+    "it": {
+     "fr": "GALETTE CAUCHOISE",
+     "sub": "Mele, carne secca dei Grigioni e 3 formaggi",
+     "en": "Mele, carne secca dei Grigioni, 3 formaggi"
+    },
+    "de": {
+     "fr": "GALETTE CAUCHOISE",
+     "sub": "Äpfel, Bündnerfleisch und 3 Käsesorten",
+     "en": "Äpfel, Bündnerfleisch, 3 Käsesorten"
+    }
+   }
+  },
+  {
+   "id": "m746",
+   "type": "item",
+   "fr": "GALETTE DES ALPES",
+   "sub": "Raclette, Pomme de Terre, Jambon Speck",
+   "en": "Cheese Raclette, Potatoes, Smoked Ham Speck",
+   "price": "13,00 €",
+   "tr": {
+    "en": {
+     "fr": "GALETTE DES ALPES",
+     "sub": "Raclette, potatoes, Speck ham",
+     "en": "Raclette cheese, potatoes, Speck ham"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE DES ALPES",
+      "sub": "Raclette, Pomme de Terre, Jambon Speck",
+      "en": "Cheese Raclette, Potatoes, Smoked Ham Speck"
+     },
+     "it": {
+      "fr": "GALETTE DES ALPES",
+      "sub": "Raclette, Pomme de Terre, Jambon Speck",
+      "en": "Cheese Raclette, Potatoes, Smoked Ham Speck"
+     },
+     "de": {
+      "fr": "GALETTE DES ALPES",
+      "sub": "Raclette, Pomme de Terre, Jambon Speck",
+      "en": "Cheese Raclette, Potatoes, Smoked Ham Speck"
+     }
+    },
+    "it": {
+     "fr": "GALETTE DES ALPES",
+     "sub": "Raclette, patate, prosciutto Speck",
+     "en": "Formaggio da Raclette, patate, prosciutto affumicato Speck"
+    },
+    "de": {
+     "fr": "GALETTE DES ALPES",
+     "sub": "Raclette, Kartoffeln, Speck-Schinken",
+     "en": "Raclette-Käse, Kartoffeln, geräucherter Speck-Schinken"
+    }
+   }
+  },
+  {
+   "id": "m747",
+   "type": "item",
+   "fr": "GALETTE BERRICHONNE",
+   "sub": "Chèvre, Tomates Confites, Miel, Noix, Roquette",
+   "en": "Goat Cheese, Dry Tomatoes, Honey, Nuts, Rocket Salad",
+   "price": "13,00 €",
+   "tr": {
+    "en": {
+     "fr": "GALETTE BERRICHONNE",
+     "sub": "Goat's cheese, confit tomatoes, honey, walnuts, rocket",
+     "en": "Goat's cheese, confit tomatoes, honey, walnuts, rocket"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE BERRICHONNE",
+      "sub": "Chèvre, Tomates Confites, Miel, Noix, Roquette",
+      "en": "Goat Cheese, Dry Tomatoes, Honey, Nuts, Rocket Salad"
+     },
+     "it": {
+      "fr": "GALETTE BERRICHONNE",
+      "sub": "Chèvre, Tomates Confites, Miel, Noix, Roquette",
+      "en": "Goat Cheese, Dry Tomatoes, Honey, Nuts, Rocket Salad"
+     },
+     "de": {
+      "fr": "GALETTE BERRICHONNE",
+      "sub": "Chèvre, Tomates Confites, Miel, Noix, Roquette",
+      "en": "Goat Cheese, Dry Tomatoes, Honey, Nuts, Rocket Salad"
+     }
+    },
+    "it": {
+     "fr": "GALETTE BERRICHONNE",
+     "sub": "Formaggio di capra, pomodori confit, miele, noci, rucola",
+     "en": "Formaggio di capra, pomodori confit, miele, noci, rucola"
+    },
+    "de": {
+     "fr": "GALETTE BERRICHONNE",
+     "sub": "Ziegenkäse, getrocknete Tomaten, Honig, Walnüsse, Rucola",
+     "en": "Ziegenkäse, getrocknete Tomaten, Honig, Walnüsse, Rucola"
+    }
+   }
+  },
+  {
+   "id": "m748",
+   "type": "item",
+   "fr": "GALETTE SAUMON FUMÉ",
+   "sub": "Crème Ciboulette, Saumon Fumé, Citron, Roquette",
+   "en": "Chive Cream, Smoked Salmon, Lemon, Rocket",
+   "price": "13,00 €",
+   "tr": {
+    "en": {
+     "fr": "SMOKED SALMON GALETTE",
+     "sub": "Chive cream, smoked salmon, lemon, rocket",
+     "en": "Chive cream, smoked salmon, lemon, rocket"
+    },
+    "src": {
+     "en": {
+      "fr": "GALETTE SAUMON FUMÉ",
+      "sub": "Crème Ciboulette, Saumon Fumé, Citron, Roquette",
+      "en": "Chive Cream, Smoked Salmon, Lemon, Rocket"
+     },
+     "it": {
+      "fr": "GALETTE SAUMON FUMÉ",
+      "sub": "Crème Ciboulette, Saumon Fumé, Citron, Roquette",
+      "en": "Chive Cream, Smoked Salmon, Lemon, Rocket"
+     },
+     "de": {
+      "fr": "GALETTE SAUMON FUMÉ",
+      "sub": "Crème Ciboulette, Saumon Fumé, Citron, Roquette",
+      "en": "Chive Cream, Smoked Salmon, Lemon, Rocket"
+     }
+    },
+    "it": {
+     "fr": "GALETTE AL SALMONE AFFUMICATO",
+     "sub": "Crema all'erba cipollina, salmone affumicato, limone, rucola",
+     "en": "Crema all'erba cipollina, salmone affumicato, limone, rucola"
+    },
+    "de": {
+     "fr": "GALETTE MIT RÄUCHERLACHS",
+     "sub": "Schnittlauchcreme, Räucherlachs, Zitrone, Rucola",
+     "en": "Schnittlauchcreme, Räucherlachs, Zitrone, Rucola"
+    }
+   }
+  },
+  {
+   "id": "m749",
+   "type": "colbreak"
+  },
+  {
+   "id": "m750",
+   "type": "section",
+   "fr": "Nos pizzas",
+   "tr": {
+    "en": {
+     "fr": "Our pizzas"
+    },
+    "src": {
+     "en": {
+      "fr": "Nos pizzas"
+     },
+     "it": {
+      "fr": "Nos pizzas"
+     },
+     "de": {
+      "fr": "Nos pizzas"
+     }
+    },
+    "it": {
+     "fr": "Le nostre pizze"
+    },
+    "de": {
+     "fr": "Unsere Pizzen"
+    }
+   },
+   "en": "Our pizzas"
+  },
+  {
+   "id": "m751",
+   "type": "item",
+   "fr": "MARGARITA",
+   "desc": "Tomates, Mozza, Olives, Origan",
+   "en": "Tomatoes, Mozzarella, Olives, Oregano",
+   "price": "11,00 €",
+   "tr": {
+    "en": {
+     "fr": "MARGHERITA",
+     "desc": "Tomatoes, mozzarella, olives, oregano",
+     "en": "Tomatoes, mozzarella, olives, oregano"
+    },
+    "src": {
+     "en": {
+      "fr": "MARGARITA",
+      "desc": "Tomates, Mozza, Olives, Origan",
+      "en": "Tomatoes, Mozzarella, Olives, Oregano"
+     },
+     "it": {
+      "fr": "MARGARITA",
+      "desc": "Tomates, Mozza, Olives, Origan",
+      "en": "Tomatoes, Mozzarella, Olives, Oregano"
+     },
+     "de": {
+      "fr": "MARGARITA",
+      "desc": "Tomates, Mozza, Olives, Origan",
+      "en": "Tomatoes, Mozzarella, Olives, Oregano"
+     }
+    },
+    "it": {
+     "fr": "MARGHERITA",
+     "desc": "Pomodoro, mozzarella, olive, origano",
+     "en": "Pomodoro, mozzarella, olive, origano"
+    },
+    "de": {
+     "fr": "MARGHERITA",
+     "desc": "Tomaten, Mozzarella, Oliven, Oregano",
+     "en": "Tomaten, Mozzarella, Oliven, Oregano"
+    }
+   }
+  },
+  {
+   "id": "m752",
+   "type": "item",
+   "fr": "PAMPLUNE",
+   "desc": "Tomates, Mozza, Jambon, Œuf, Origan",
+   "en": "Tomatoes, Mozzarella, Ham, Egg, Oregano",
+   "price": "12,00 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, ham, egg, oregano",
+     "en": "Tomatoes, mozzarella, ham, egg, oregano"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, Mozza, Jambon, Œuf, Origan",
+      "en": "Tomatoes, Mozzarella, Ham, Egg, Oregano"
+     },
+     "it": {
+      "desc": "Tomates, Mozza, Jambon, Œuf, Origan",
+      "en": "Tomatoes, Mozzarella, Ham, Egg, Oregano"
+     },
+     "de": {
+      "desc": "Tomates, Mozza, Jambon, Œuf, Origan",
+      "en": "Tomatoes, Mozzarella, Ham, Egg, Oregano"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, prosciutto, uovo, origano",
+     "en": "Pomodoro, mozzarella, prosciutto, uovo, origano"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Schinken, Ei, Oregano",
+     "en": "Tomaten, Mozzarella, Schinken, Ei, Oregano"
+    }
+   }
+  },
+  {
+   "id": "m753",
+   "type": "item",
+   "fr": "REINE",
+   "desc": "Tomates, Mozza, Jambon, Champignons",
+   "en": "Tomatoes, Mozzarella, Ham, Mushrooms",
+   "price": "13,00 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, ham, mushrooms",
+     "en": "Tomatoes, mozzarella, ham, mushrooms"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, Mozza, Jambon, Champignons",
+      "en": "Tomatoes, Mozzarella, Ham, Mushrooms"
+     },
+     "it": {
+      "desc": "Tomates, Mozza, Jambon, Champignons",
+      "en": "Tomatoes, Mozzarella, Ham, Mushrooms"
+     },
+     "de": {
+      "desc": "Tomates, Mozza, Jambon, Champignons",
+      "en": "Tomatoes, Mozzarella, Ham, Mushrooms"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, prosciutto, funghi",
+     "en": "Pomodoro, mozzarella, prosciutto, funghi"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Schinken, Champignons",
+     "en": "Tomaten, Mozzarella, Schinken, Champignons"
+    }
+   }
+  },
+  {
+   "id": "m754",
+   "type": "item",
+   "fr": "NAPOLITAINE",
+   "desc": "Tomates, Mozza, Anchois, Câpres, Olives, Origan",
+   "en": "Tomatoes, Mozzarella, Anchovies, Capers, Olives, Oregano",
+   "price": "13,50 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, anchovies, capers, olives, oregano",
+     "en": "Tomatoes, mozzarella, anchovies, capers, olives, oregano"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, Mozza, Anchois, Câpres, Olives, Origan",
+      "en": "Tomatoes, Mozzarella, Anchovies, Capers, Olives, Oregano"
+     },
+     "it": {
+      "desc": "Tomates, Mozza, Anchois, Câpres, Olives, Origan",
+      "en": "Tomatoes, Mozzarella, Anchovies, Capers, Olives, Oregano"
+     },
+     "de": {
+      "desc": "Tomates, Mozza, Anchois, Câpres, Olives, Origan",
+      "en": "Tomatoes, Mozzarella, Anchovies, Capers, Olives, Oregano"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, acciughe, capperi, olive, origano",
+     "en": "Pomodoro, mozzarella, acciughe, capperi, olive, origano"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Sardellen, Kapern, Oliven, Oregano",
+     "en": "Tomaten, Mozzarella, Sardellen, Kapern, Oliven, Oregano"
+    }
+   }
+  },
+  {
+   "id": "m755",
+   "type": "item",
+   "fr": "3 VALLÉES",
+   "sub": "Tomates, Mozza, Poivrons, Champignons, Olives, Origan, Roquette",
+   "en": "Tomatoes, Mozzarella, Peppers, Mushrooms, Olives, Oregano, Rocket Salad",
+   "price": "13,50 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "sub": "Tomatoes, mozzarella, peppers, mushrooms, olives, oregano, rocket",
+     "en": "Tomatoes, mozzarella, peppers, mushrooms, olives, oregano, rocket"
+    },
+    "src": {
+     "en": {
+      "sub": "Tomates, Mozza, Poivrons, Champignons, Olives, Origan, Roquette",
+      "en": "Tomatoes, Mozzarella, Peppers, Mushrooms, Olives, Oregano, Rocket Salad"
+     },
+     "it": {
+      "sub": "Tomates, Mozza, Poivrons, Champignons, Olives, Origan, Roquette",
+      "en": "Tomatoes, Mozzarella, Peppers, Mushrooms, Olives, Oregano, Rocket Salad"
+     },
+     "de": {
+      "sub": "Tomates, Mozza, Poivrons, Champignons, Olives, Origan, Roquette",
+      "en": "Tomatoes, Mozzarella, Peppers, Mushrooms, Olives, Oregano, Rocket Salad"
+     }
+    },
+    "it": {
+     "sub": "Pomodoro, mozzarella, peperoni, funghi, olive, origano, rucola",
+     "en": "Pomodoro, mozzarella, peperoni, funghi, olive, origano, rucola"
+    },
+    "de": {
+     "sub": "Tomaten, Mozzarella, Paprika, Champignons, Oliven, Oregano, Rucola",
+     "en": "Tomaten, Mozzarella, Paprika, Champignons, Oliven, Oregano, Rucola"
+    }
+   }
+  },
+  {
+   "id": "m756",
+   "type": "item",
+   "fr": "TOSCANE",
+   "desc": "Tomates, Mozza, Jambon, Ananas, Olives",
+   "en": "Tomatoes, Mozzarella, Ham, Pineapple, Olives",
+   "price": "14,00 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, ham, pineapple, olives",
+     "en": "Tomatoes, mozzarella, ham, pineapple, olives"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, Mozza, Jambon, Ananas, Olives",
+      "en": "Tomatoes, Mozzarella, Ham, Pineapple, Olives"
+     },
+     "it": {
+      "desc": "Tomates, Mozza, Jambon, Ananas, Olives",
+      "en": "Tomatoes, Mozzarella, Ham, Pineapple, Olives"
+     },
+     "de": {
+      "desc": "Tomates, Mozza, Jambon, Ananas, Olives",
+      "en": "Tomatoes, Mozzarella, Ham, Pineapple, Olives"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, prosciutto, ananas, olive",
+     "en": "Pomodoro, mozzarella, prosciutto, ananas, olive"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Schinken, Ananas, Oliven",
+     "en": "Tomaten, Mozzarella, Schinken, Ananas, Oliven"
+    }
+   }
+  },
+  {
+   "id": "m757",
+   "type": "item",
+   "fr": "4 SAISONS",
+   "sub": "Tomates, Mozza, Artichaut, Champignons, Poivrons, Origan, Roquette",
+   "en": "Tomatoes, Mozzarella, Artichoke, Mushrooms, Peppers, Olives, Oregano, Rocket Salad",
+   "price": "15,50 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "sub": "Tomatoes, mozzarella, artichoke, mushrooms, peppers, oregano, rocket",
+     "en": "Tomatoes, mozzarella, artichoke, mushrooms, peppers, olives, oregano, rocket"
+    },
+    "src": {
+     "en": {
+      "sub": "Tomates, Mozza, Artichaut, Champignons, Poivrons, Origan, Roquette",
+      "en": "Tomatoes, Mozzarella, Artichoke, Mushrooms, Peppers, Olives, Oregano, Rocket Salad"
+     },
+     "it": {
+      "sub": "Tomates, Mozza, Artichaut, Champignons, Poivrons, Origan, Roquette",
+      "en": "Tomatoes, Mozzarella, Artichoke, Mushrooms, Peppers, Olives, Oregano, Rocket Salad"
+     },
+     "de": {
+      "sub": "Tomates, Mozza, Artichaut, Champignons, Poivrons, Origan, Roquette",
+      "en": "Tomatoes, Mozzarella, Artichoke, Mushrooms, Peppers, Olives, Oregano, Rocket Salad"
+     }
+    },
+    "it": {
+     "sub": "Pomodoro, mozzarella, carciofi, funghi, peperoni, origano, rucola",
+     "en": "Pomodoro, mozzarella, carciofi, funghi, peperoni, olive, origano, rucola"
+    },
+    "de": {
+     "sub": "Tomaten, Mozzarella, Artischocke, Champignons, Paprika, Oregano, Rucola",
+     "en": "Tomaten, Mozzarella, Artischocke, Champignons, Paprika, Oliven, Oregano, Rucola"
+    }
+   }
+  },
+  {
+   "id": "m758",
+   "type": "item",
+   "fr": "TARENTAISE",
+   "desc": "Tomates, Mozza, Jambon Fumé Speck, Œuf, Crème",
+   "en": "Tomatoes, Mozzarella, Smoked Ham Speck, Egg, Cream",
+   "price": "15,50 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, smoked Speck ham, egg, cream",
+     "en": "Tomatoes, mozzarella, smoked Speck ham, egg, cream"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, Mozza, Jambon Fumé Speck, Œuf, Crème",
+      "en": "Tomatoes, Mozzarella, Smoked Ham Speck, Egg, Cream"
+     },
+     "it": {
+      "desc": "Tomates, Mozza, Jambon Fumé Speck, Œuf, Crème",
+      "en": "Tomatoes, Mozzarella, Smoked Ham Speck, Egg, Cream"
+     },
+     "de": {
+      "desc": "Tomates, Mozza, Jambon Fumé Speck, Œuf, Crème",
+      "en": "Tomatoes, Mozzarella, Smoked Ham Speck, Egg, Cream"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, prosciutto affumicato Speck, uovo, panna",
+     "en": "Pomodoro, mozzarella, prosciutto affumicato Speck, uovo, panna"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, geräucherter Speck-Schinken, Ei, Sahne",
+     "en": "Tomaten, Mozzarella, geräucherter Speck-Schinken, Ei, Sahne"
+    }
+   }
+  },
+  {
+   "id": "m759",
+   "type": "item",
+   "fr": "CALZONE",
+   "desc": "Tomates, Mozza, Jambon, Champignons, Œuf, Crème",
+   "en": "Tomatoes, Mozzarella, Ham, Mushrooms, Egg, Cream",
+   "price": "15,50 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, ham, mushrooms, egg, cream",
+     "en": "Tomatoes, mozzarella, ham, mushrooms, egg, cream"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, Mozza, Jambon, Champignons, Œuf, Crème",
+      "en": "Tomatoes, Mozzarella, Ham, Mushrooms, Egg, Cream"
+     },
+     "it": {
+      "desc": "Tomates, Mozza, Jambon, Champignons, Œuf, Crème",
+      "en": "Tomatoes, Mozzarella, Ham, Mushrooms, Egg, Cream"
+     },
+     "de": {
+      "desc": "Tomates, Mozza, Jambon, Champignons, Œuf, Crème",
+      "en": "Tomatoes, Mozzarella, Ham, Mushrooms, Egg, Cream"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, prosciutto, funghi, uovo, panna",
+     "en": "Pomodoro, mozzarella, prosciutto, funghi, uovo, panna"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Schinken, Champignons, Ei, Sahne",
+     "en": "Tomaten, Mozzarella, Schinken, Champignons, Ei, Sahne"
+    }
+   }
+  },
+  {
+   "id": "m760",
+   "type": "item",
+   "fr": "CHÈVRE",
+   "desc": "Crème, Mozza, Chèvre, Miel, Noix, Roquette",
+   "en": "Cream, Mozzarella, Goat Cheese, Honey, Nuts, Rocket Salad",
+   "price": "15,50 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Cream, mozzarella, goat's cheese, honey, walnuts, rocket",
+     "en": "Cream, mozzarella, goat's cheese, honey, walnuts, rocket"
+    },
+    "src": {
+     "en": {
+      "desc": "Crème, Mozza, Chèvre, Miel, Noix, Roquette",
+      "en": "Cream, Mozzarella, Goat Cheese, Honey, Nuts, Rocket Salad"
+     },
+     "it": {
+      "desc": "Crème, Mozza, Chèvre, Miel, Noix, Roquette",
+      "en": "Cream, Mozzarella, Goat Cheese, Honey, Nuts, Rocket Salad"
+     },
+     "de": {
+      "desc": "Crème, Mozza, Chèvre, Miel, Noix, Roquette",
+      "en": "Cream, Mozzarella, Goat Cheese, Honey, Nuts, Rocket Salad"
+     }
+    },
+    "it": {
+     "desc": "Panna, mozzarella, formaggio di capra, miele, noci, rucola",
+     "en": "Panna, mozzarella, formaggio di capra, miele, noci, rucola"
+    },
+    "de": {
+     "desc": "Sahne, Mozzarella, Ziegenkäse, Honig, Walnüsse, Rucola",
+     "en": "Sahne, Mozzarella, Ziegenkäse, Honig, Walnüsse, Rucola"
+    }
+   }
+  },
+  {
+   "id": "m761",
+   "type": "item",
+   "fr": "MEXICAINE",
+   "desc": "Tomates, Mozza, Chorizo, Merguez, Poivrons",
+   "en": "Tomatoes, Mozzarella, Chorizo, Merguez, Peppers",
+   "price": "15,50 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, chorizo, merguez, peppers",
+     "en": "Tomatoes, mozzarella, chorizo, merguez, peppers"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, Mozza, Chorizo, Merguez, Poivrons",
+      "en": "Tomatoes, Mozzarella, Chorizo, Merguez, Peppers"
+     },
+     "it": {
+      "desc": "Tomates, Mozza, Chorizo, Merguez, Poivrons",
+      "en": "Tomatoes, Mozzarella, Chorizo, Merguez, Peppers"
+     },
+     "de": {
+      "desc": "Tomates, Mozza, Chorizo, Merguez, Poivrons",
+      "en": "Tomatoes, Mozzarella, Chorizo, Merguez, Peppers"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, chorizo, merguez, peperoni",
+     "en": "Pomodoro, mozzarella, chorizo, merguez, peperoni"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Chorizo, Merguez, Paprika",
+     "en": "Tomaten, Mozzarella, Chorizo, Merguez, Paprika"
+    }
+   }
+  },
+  {
+   "id": "m762",
+   "type": "item",
+   "fr": "ORIENTALE",
+   "sub": "Crème, Mozza, Viande Kebab, Oignons, Salade, Sauce Burger",
+   "en": "Cream, Mozza, Meat Kebab, Onions, Salad, Burger Sauce",
+   "price": "15,50 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "sub": "Cream, mozzarella, kebab meat, onions, salad, burger sauce",
+     "en": "Cream, mozzarella, kebab meat, onions, salad, burger sauce"
+    },
+    "src": {
+     "en": {
+      "sub": "Crème, Mozza, Viande Kebab, Oignons, Salade, Sauce Burger",
+      "en": "Cream, Mozza, Meat Kebab, Onions, Salad, Burger Sauce"
+     },
+     "it": {
+      "sub": "Crème, Mozza, Viande Kebab, Oignons, Salade, Sauce Burger",
+      "en": "Cream, Mozza, Meat Kebab, Onions, Salad, Burger Sauce"
+     },
+     "de": {
+      "sub": "Crème, Mozza, Viande Kebab, Oignons, Salade, Sauce Burger",
+      "en": "Cream, Mozza, Meat Kebab, Onions, Salad, Burger Sauce"
+     }
+    },
+    "it": {
+     "sub": "Panna, mozzarella, carne kebab, cipolle, insalata, salsa burger",
+     "en": "Panna, mozzarella, carne kebab, cipolle, insalata, salsa burger"
+    },
+    "de": {
+     "sub": "Sahne, Mozzarella, Kebabfleisch, Zwiebeln, Salat, Burgersauce",
+     "en": "Sahne, Mozzarella, Kebabfleisch, Zwiebeln, Salat, Burgersauce"
+    }
+   }
+  },
+  {
+   "id": "m763",
+   "type": "item",
+   "fr": "MÉRIBELOISE",
+   "sub": "Crème, Mozza, Lardons, Pommes de Terre, Oignons, Reblochon",
+   "en": "Cream, Mozzarella, Bacon, Potatoes, Onions, Reblochon",
+   "price": "15,50 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "sub": "Cream, mozzarella, lardons, potatoes, onions, Reblochon",
+     "en": "Cream, mozzarella, lardons, potatoes, onions, Reblochon"
+    },
+    "src": {
+     "en": {
+      "sub": "Crème, Mozza, Lardons, Pommes de Terre, Oignons, Reblochon",
+      "en": "Cream, Mozzarella, Bacon, Potatoes, Onions, Reblochon"
+     },
+     "it": {
+      "sub": "Crème, Mozza, Lardons, Pommes de Terre, Oignons, Reblochon",
+      "en": "Cream, Mozzarella, Bacon, Potatoes, Onions, Reblochon"
+     },
+     "de": {
+      "sub": "Crème, Mozza, Lardons, Pommes de Terre, Oignons, Reblochon",
+      "en": "Cream, Mozzarella, Bacon, Potatoes, Onions, Reblochon"
+     }
+    },
+    "it": {
+     "sub": "Panna, mozzarella, pancetta, patate, cipolle, Reblochon",
+     "en": "Panna, mozzarella, pancetta, patate, cipolle, Reblochon"
+    },
+    "de": {
+     "sub": "Sahne, Mozzarella, Speckwürfel, Kartoffeln, Zwiebeln, Reblochon",
+     "en": "Sahne, Mozzarella, Speckwürfel, Kartoffeln, Zwiebeln, Reblochon"
+    }
+   }
+  },
+  {
+   "id": "m764",
+   "type": "item",
+   "fr": "4 FROMAGES",
+   "desc": "Tomates, Mozza, Chèvre, Roquefort, Reblochon",
+   "en": "Tomatoes, Mozzarella, Goat Cheese, Roquefort, Reblochon",
+   "price": "15,50 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Tomatoes, mozzarella, goat's cheese, Roquefort, Reblochon",
+     "en": "Tomatoes, mozzarella, goat's cheese, Roquefort, Reblochon"
+    },
+    "src": {
+     "en": {
+      "desc": "Tomates, Mozza, Chèvre, Roquefort, Reblochon",
+      "en": "Tomatoes, Mozzarella, Goat Cheese, Roquefort, Reblochon"
+     },
+     "it": {
+      "desc": "Tomates, Mozza, Chèvre, Roquefort, Reblochon",
+      "en": "Tomatoes, Mozzarella, Goat Cheese, Roquefort, Reblochon"
+     },
+     "de": {
+      "desc": "Tomates, Mozza, Chèvre, Roquefort, Reblochon",
+      "en": "Tomatoes, Mozzarella, Goat Cheese, Roquefort, Reblochon"
+     }
+    },
+    "it": {
+     "desc": "Pomodoro, mozzarella, formaggio di capra, Roquefort, Reblochon",
+     "en": "Pomodoro, mozzarella, formaggio di capra, Roquefort, Reblochon"
+    },
+    "de": {
+     "desc": "Tomaten, Mozzarella, Ziegenkäse, Roquefort, Reblochon",
+     "en": "Tomaten, Mozzarella, Ziegenkäse, Roquefort, Reblochon"
+    }
+   }
+  },
+  {
+   "id": "m765",
+   "type": "item",
+   "fr": "SAUMON",
+   "desc": "Crème, Ciboulette, Mozza, Saumon, Citron",
+   "en": "Cream, Chives, Mozzarella, Salmon, Lemon",
+   "price": "16,50 €",
+   "keepName": true,
+   "tr": {
+    "en": {
+     "desc": "Cream, chives, mozzarella, salmon, lemon",
+     "en": "Cream, chives, mozzarella, salmon, lemon"
+    },
+    "src": {
+     "en": {
+      "desc": "Crème, Ciboulette, Mozza, Saumon, Citron",
+      "en": "Cream, Chives, Mozzarella, Salmon, Lemon"
+     },
+     "it": {
+      "desc": "Crème, Ciboulette, Mozza, Saumon, Citron",
+      "en": "Cream, Chives, Mozzarella, Salmon, Lemon"
+     },
+     "de": {
+      "desc": "Crème, Ciboulette, Mozza, Saumon, Citron",
+      "en": "Cream, Chives, Mozzarella, Salmon, Lemon"
+     }
+    },
+    "it": {
+     "desc": "Panna, erba cipollina, mozzarella, salmone, limone",
+     "en": "Panna, erba cipollina, mozzarella, salmone, limone"
+    },
+    "de": {
+     "desc": "Sahne, Schnittlauch, Mozzarella, Lachs, Zitrone",
+     "en": "Sahne, Schnittlauch, Mozzarella, Lachs, Zitrone"
+    }
+   }
+  },
+  {
+   "id": "m766",
+   "type": "image",
+   "src": "assets/photos/pizza-emporter.jpg",
+   "widthPct": 62,
+   "heightPx": 128,
+   "mt": 10
+  },
+  {
+   "id": "m767",
+   "type": "colsend"
+  },
+  {
+   "id": "m768",
+   "type": "cols",
+   "ratio": "20/60/20",
+   "gap": 24,
+   "valign": "center",
+   "mt": 8
+  },
+  {
+   "id": "m769",
+   "type": "image",
+   "src": "assets/qr-emporter.png",
+   "widthPct": 44
+  },
+  {
+   "id": "m770",
+   "type": "colbreak"
+  },
+  {
+   "id": "m771",
+   "type": "banner",
+   "text": "Boissons et vins à emporter",
+   "ink": "dark",
+   "tr": {
+    "en": {
+     "text": "Takeaway drinks & wines"
+    },
+    "src": {
+     "en": {
+      "text": "Boissons et vins à emporter"
+     },
+     "it": {
+      "text": "Boissons et vins à emporter"
+     },
+     "de": {
+      "text": "Boissons et vins à emporter"
+     }
+    },
+    "it": {
+     "text": "Bevande e vini da asporto"
+    },
+    "de": {
+     "text": "Getränke & Weine zum Mitnehmen"
+    }
+   }
+  },
+  {
+   "id": "m772",
+   "type": "colbreak"
+  },
+  {
+   "id": "m773",
+   "type": "image",
+   "src": "assets/qr-emporter.png",
+   "widthPct": 44
+  },
+  {
+   "id": "m774",
+   "type": "colsend"
+  },
+  {
+   "id": "m775",
+   "type": "note",
+   "text": "Prix nets en euros",
+   "bold": true,
+   "mt": 4,
+   "tr": {
+    "en": {
+     "text": "Net prices in euros"
+    },
+    "src": {
+     "en": {
+      "text": "Prix nets en euros"
+     },
+     "it": {
+      "text": "Prix nets en euros"
+     },
+     "de": {
+      "text": "Prix nets en euros"
+     }
+    },
+    "it": {
+     "text": "Prezzi netti in euro"
+    },
+    "de": {
+     "text": "Nettopreise in Euro"
+    }
+   }
+  }
+ ]
+}
