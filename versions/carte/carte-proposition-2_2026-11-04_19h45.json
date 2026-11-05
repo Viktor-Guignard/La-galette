@@ -1719,9 +1719,8 @@
   {
    "id": "mgal_cols",
    "type": "cols",
-   "ratio": "60/40",
-   "gap": 22,
-   "fullText": true
+   "ratio": "50/50",
+   "gap": 28
   },
   {
    "id": "m466",
@@ -2074,6 +2073,10 @@
    }
   },
   {
+   "id": "mgal_br",
+   "type": "colbreak"
+  },
+  {
    "id": "m475",
    "type": "item",
    "fr": "GALETTE PAYSANNE",
@@ -2329,21 +2332,17 @@
    }
   },
   {
-   "id": "mgal_br",
-   "type": "colbreak"
+   "id": "mgal_end",
+   "type": "colsend"
   },
   {
    "id": "m481",
    "type": "image",
    "src": "assets/photos/galette.jpg",
    "widthPct": 100,
-   "mt": 6,
-   "heightPx": 152,
+   "heightPx": 395,
+   "mt": 30,
    "focus": "50% 0%"
-  },
-  {
-   "id": "mgal_end",
-   "type": "colsend"
   },
   {
    "id": "m482",
