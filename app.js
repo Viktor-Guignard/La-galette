@@ -517,7 +517,7 @@ function render(){
         pageEl.appendChild(buildInsertBar(i - 1));
         pageEl.appendChild(buildBlockEl(blk));
         row = document.createElement('div');
-        row.className = 'page-cols' + (blk.boxed ? ' boxed' : '');
+        row.className = 'page-cols' + (blk.boxed ? ' boxed' : '') + (blk.fullText ? ' full-text' : '');
         if(blk.gap != null) row.style.gap = blk.gap + 'px';
         if(blk.valign) row.style.alignItems = blk.valign;
         pageEl.appendChild(row);

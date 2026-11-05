@@ -1717,6 +1717,13 @@
    "en": "Buckwheat galettes"
   },
   {
+   "id": "mgal_cols",
+   "type": "cols",
+   "ratio": "68/32",
+   "gap": 22,
+   "fullText": true
+  },
+  {
    "id": "m466",
    "type": "item",
    "fr": "GALETTE, OEUF, JAMBON",
@@ -2322,13 +2329,21 @@
    }
   },
   {
+   "id": "mgal_br",
+   "type": "colbreak"
+  },
+  {
    "id": "m481",
    "type": "image",
    "src": "assets/photos/galette.jpg",
    "widthPct": 100,
-   "heightPx": 128,
-   "mt": 10,
-   "focus": "50% 22%"
+   "heightPx": 330,
+   "focus": "50% 45%",
+   "mt": 6
+  },
+  {
+   "id": "mgal_end",
+   "type": "colsend"
   },
   {
    "id": "m482",

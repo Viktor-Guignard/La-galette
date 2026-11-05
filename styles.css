@@ -1144,3 +1144,13 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
 .lang-foreign.theme-nuit .blk-item .fr{font-size:11.8px;}
 .lang-foreign.theme-nuit .blk-emp-header .emp-box1{font-size:15px; letter-spacing:.18em;}
 .theme-nuit .blk-emp-header .emp-logo{flex-basis:42%;}
+
+/* Colonnes « texte en taille normale » : une liste à côté d'une photo garde la
+   même taille de texte que le reste de la carte (option fullText du bloc). */
+.theme-moderne .page-cols.full-text .page-col .blk-item .fr{font-size:12.2px;}
+.theme-moderne .page-cols.full-text .page-col .blk-item .fr .desc, .theme-moderne .page-cols.full-text .page-col .blk-item .sub{font-size:11px;}
+.theme-moderne .page-cols.full-text .page-col .blk-item .en{font-size:10.6px;}
+.theme-moderne .page-cols.full-text .page-col .blk-item .price{font-size:12.2px; min-width:52px;}
+.theme-alpage .page-cols.full-text .page-col .blk-item .en{font-size:11px;}
+.theme-alpage .page-cols.full-text .page-col .blk-item .price{font-size:14px; min-width:48px;}
+.theme-alpage .page-cols.full-text .page-col .blk-item{padding-top:2px; padding-bottom:2px;}
