@@ -1201,3 +1201,19 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
 [data-format="totem"].theme-exterieur .pdf-page > .blk-image:first-child{text-align:center;}
 [data-format="totem"].theme-exterieur .pdf-page > .blk-line{font-family:var(--font-body); font-weight:600; font-size:15px; letter-spacing:.42em; text-transform:uppercase; color:var(--gold); padding:10px 0; border-top:1px solid rgba(195,154,69,.55); border-bottom:1px solid rgba(195,154,69,.55); margin:0 60px 14px;}
 [data-format="totem"].theme-exterieur .blk-note{font-size:11px; color:var(--cream);}
+/* totem complet (vins et menus compris) : un cran plus compact */
+[data-format="totem"].theme-exterieur .blk-section h2{font-size:24px; margin:2px 0 4px;}
+[data-format="totem"].theme-exterieur .blk-section h2 .en{font-size:8.5px; margin-top:2px;}
+[data-format="totem"].theme-exterieur .blk-section h2::after{height:8px; margin-top:3px;}
+[data-format="totem"].theme-exterieur .blk-item .fr{font-size:11px;}
+[data-format="totem"].theme-exterieur .blk-item .price{font-size:13.4px;}
+[data-format="totem"].theme-exterieur .blk-item .fr .desc, [data-format="totem"].theme-exterieur .blk-item .sub, [data-format="totem"].theme-exterieur .blk-item .en{font-size:8.4px;}
+[data-format="totem"].theme-exterieur .blk-wine .fr, [data-format="totem"].theme-exterieur .blk-winehead{font-size:10.4px; color:var(--cream);}
+[data-format="totem"].theme-exterieur .blk-wine .wp, [data-format="totem"].theme-exterieur .blk-winehead .wp{font-family:'Fraunces', Georgia, serif; font-size:12px; color:var(--gold);}
+[data-format="totem"].theme-exterieur .wprices .wp{width:36px; font-size:11px;}
+[data-format="totem"].theme-exterieur .blk-wine .leader{display:none;}
+[data-format="totem"].theme-exterieur .blk-wine .txt{max-width:none; flex:1; min-width:0;}
+[data-format="totem"].theme-exterieur .blk-wine .fr{font-size:9.8px; letter-spacing:.02em;}
+[data-format="totem"].theme-exterieur .blk-banner.ink-dark{font-size:12px; letter-spacing:.16em;}
+[data-format="affiche"].theme-exterieur .blk-emp-header .emp-title{font-size:54px;}
+[data-format="affiche"].theme-exterieur .blk-section h2{font-size:28px; margin:2px 0 6px;}

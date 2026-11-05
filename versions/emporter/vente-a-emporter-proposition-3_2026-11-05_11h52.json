@@ -8,7 +8,7 @@
   "leaders": true,
   "format": "affiche",
   "theme": "exterieur",
-  "itemSpacing": 1,
+  "itemSpacing": 0,
   "marginMm": {
    "t": 13,
    "r": 15,
@@ -411,6 +411,15 @@
      "fr": "SANDWICHES"
     }
    }
+  },
+  {
+   "id": "m990",
+   "type": "image",
+   "src": "assets/photos/galette-emporter.jpg",
+   "widthPct": 72,
+   "heightPx": 66,
+   "mt": 6,
+   "mb": 2
   },
   {
    "id": "m738",
@@ -1433,7 +1442,7 @@
   {
    "id": "m769",
    "type": "image",
-   "src": "assets/qr-emporter.png",
+   "src": "assets/qr-carte.png",
    "widthPct": 44
   },
   {

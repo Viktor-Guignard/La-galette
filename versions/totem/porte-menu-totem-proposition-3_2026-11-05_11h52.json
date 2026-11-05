@@ -20,24 +20,23 @@
  },
  "blocks": [
   {
-   "id": "h1",
+   "id": "t1",
    "type": "image",
    "src": "assets/logo-blanc.png",
-   "widthPct": 36,
-   "mb": 2
+   "widthPct": 18,
+   "mb": 0
   },
   {
-   "id": "h2",
+   "id": "t2",
    "type": "line",
    "text": "Restaurant savoyard · Pizzéria · Crêperie",
-   "v": "tagline",
-   "mb": 10
+   "mb": 8
   },
   {
    "id": "t3",
    "type": "cols",
    "ratio": "33/34/33",
-   "gap": 30
+   "gap": 28
   },
   {
    "id": "t4",
@@ -48,10 +47,9 @@
   {
    "id": "t5",
    "type": "item",
-   "fr": "SOUPE DE LÉGUMES OU À L'OIGNON",
+   "fr": "SOUPE DE LÉGUMES MAISON",
    "price": "17,00 €",
-   "sub": "Maison",
-   "en": "Homemade vegetable or onion soup",
+   "en": "Homemade vegetable soup",
    "tags": [
     "veg"
    ]
@@ -59,30 +57,30 @@
   {
    "id": "t6",
    "type": "item",
+   "fr": "SOUPE À L'OIGNON",
+   "price": "17,00 €",
+   "en": "Onion soup"
+  },
+  {
+   "id": "t7",
+   "type": "item",
    "fr": "ESCARGOTS LES 6",
    "price": "16,50 €",
    "en": "Snails, half dozen"
   },
   {
-   "id": "t7",
+   "id": "t8",
    "type": "item",
    "fr": "ESCARGOTS LES 12",
    "price": "23,50 €",
    "en": "Snails, twelve"
   },
   {
-   "id": "t8",
+   "id": "t9",
    "type": "item",
    "fr": "ASSIETTE DE SAUMON FUMÉ",
    "price": "21,50 €",
    "en": "Smoked salmon plate"
-  },
-  {
-   "id": "t9",
-   "type": "item",
-   "fr": "ASSIETTE DE VIANDE DES GRISONS",
-   "price": "17,50 €",
-   "en": "Dry beef plate"
   },
   {
    "id": "t10",
@@ -131,16 +129,15 @@
   {
    "id": "t15",
    "type": "section",
-   "fr": "Omelettes & plats",
-   "en": "Omelets & mains"
+   "fr": "Les omelettes",
+   "en": "Omelets · green salad"
   },
   {
    "id": "t16",
    "type": "item",
    "fr": "OMELETTE NATURE",
    "price": "13,50 €",
-   "sub": "Salade verte",
-   "en": "Plain omelet, green salad"
+   "en": "Plain omelet"
   },
   {
    "id": "t17",
@@ -160,20 +157,55 @@
   {
    "id": "t19",
    "type": "item",
-   "fr": "LASAGNES MAISON",
-   "price": "25,00 €",
-   "sub": "Salade verte",
-   "en": "Homemade lasagna, green salad"
-  },
-  {
-   "id": "t20",
-   "type": "item",
    "fr": "ASSIETTE DE FRITES",
    "price": "8,50 €",
    "en": "French fries",
    "tags": [
     "veg"
    ]
+  },
+  {
+   "id": "t20",
+   "type": "item",
+   "fr": "LASAGNES MAISON",
+   "price": "25,00 €",
+   "sub": "Salade verte",
+   "en": "Homemade lasagna, green salad"
+  },
+  {
+   "id": "t21",
+   "type": "banner",
+   "text": "Pizzas : la carte à l'intérieur",
+   "ink": "dark",
+   "mt": 8
+  },
+  {
+   "id": "t68",
+   "type": "section",
+   "fr": "Menus du midi",
+   "en": "Lunch menus"
+  },
+  {
+   "id": "t69",
+   "type": "note",
+   "text": "Servis uniquement le midi, jusqu'à 14 h 30",
+   "mt": 0
+  },
+  {
+   "id": "t70",
+   "type": "item",
+   "fr": "MENU CRÊPES",
+   "price": "25,90 €",
+   "sub": "1 galette au choix · 1 crêpe 1 ingrédient · 1 bolée de cidre",
+   "en": "1 galette, 1 crêpe with 1 topping, 1 bowl of cider"
+  },
+  {
+   "id": "t71",
+   "type": "item",
+   "fr": "MENU ENFANT",
+   "price": "18,90 €",
+   "sub": "Pizza bambino, galette jambon-fromage ou saucisse diot-frites · crêpe sucre ou Nutella, ou glace 2 boules · 1 boisson",
+   "en": "Pizza, galette or sausage & fries · crêpe or ice cream · 1 drink"
   },
   {
    "id": "t22",
@@ -250,20 +282,13 @@
   {
    "id": "t32",
    "type": "item",
-   "fr": "RACLETTE VIANDE DES GRISONS",
-   "price": "30,50 €",
-   "en": "With dry beef"
-  },
-  {
-   "id": "t33",
-   "type": "item",
    "fr": "RACLETTE ROYALE",
    "price": "33,50 €",
    "sub": "Assiette de charcuterie, salade",
    "en": "Charcuterie plate, green salad"
   },
   {
-   "id": "t34",
+   "id": "t33",
    "type": "item",
    "fr": "RACLETTE VÉGÉTARIENNE",
    "price": "29,50 €",
@@ -274,26 +299,26 @@
    ]
   },
   {
-   "id": "t35",
+   "id": "t34",
    "type": "item",
    "fr": "RACLETTE JAMBON À LA TRUFFE",
    "price": "36,50 €",
    "en": "With truffle ham"
   },
   {
-   "id": "t36",
+   "id": "t35",
    "type": "section",
    "fr": "Les fondues",
    "en": "Cheese fondues"
   },
   {
-   "id": "t37",
+   "id": "t36",
    "type": "note",
    "text": "Comté, Emmental, Beaufort · servies avec salade",
    "mt": 0
   },
   {
-   "id": "t38",
+   "id": "t37",
    "type": "item",
    "fr": "FONDUE SAVOYARDE",
    "price": "26,50 €",
@@ -303,12 +328,22 @@
    ]
   },
   {
-   "id": "t39",
+   "id": "t38",
    "type": "item",
    "fr": "FONDUE SAVOYARDE ROYALE",
    "price": "31,50 €",
    "sub": "Assiette de charcuterie",
    "en": "With charcuterie plate"
+  },
+  {
+   "id": "t39",
+   "type": "item",
+   "fr": "FONDUE AUX MORILLES",
+   "price": "34,50 €",
+   "en": "With morels",
+   "tags": [
+    "veg"
+   ]
   },
   {
    "id": "t40",
@@ -322,43 +357,89 @@
   },
   {
    "id": "t41",
-   "type": "item",
-   "fr": "FONDUE AUX MORILLES",
-   "price": "34,50 €",
-   "en": "With morels",
-   "tags": [
-    "veg"
-   ]
+   "type": "section",
+   "fr": "Nos vins",
+   "en": "Wines"
   },
   {
    "id": "t42",
-   "type": "item",
-   "fr": "FONDUE À LA TRUFFE FRAÎCHE",
-   "price": "53,00 €",
-   "en": "With fresh truffle",
-   "tags": [
-    "veg"
-   ]
+   "type": "winehead",
+   "text": "",
+   "c1": "37,5 cl",
+   "c2": "50 cl",
+   "c3": "75 cl",
+   "c4": "150 cl"
   },
   {
    "id": "t43",
-   "type": "colbreak"
+   "type": "wine",
+   "fr": "APREMONT",
+   "p1": "17,50",
+   "p2": "",
+   "p3": "32,50",
+   "p4": ""
   },
   {
    "id": "t44",
+   "type": "wine",
+   "fr": "CÔTEAUX D'AIX",
+   "p1": "",
+   "p2": "23,00",
+   "p3": "32,50",
+   "p4": ""
+  },
+  {
+   "id": "t45",
+   "type": "wine",
+   "fr": "SAINT-JOSEPH",
+   "p1": "",
+   "p2": "35,00",
+   "p3": "50,50",
+   "p4": "99,50"
+  },
+  {
+   "id": "t46",
+   "type": "wine",
+   "fr": "CÔTE RÔTIE",
+   "p1": "",
+   "p2": "",
+   "p3": "96,50",
+   "p4": ""
+  },
+  {
+   "id": "t47",
+   "type": "wine",
+   "fr": "LUSSAC-ST-ÉMILION",
+   "p1": "",
+   "p2": "",
+   "p3": "35,50",
+   "p4": ""
+  },
+  {
+   "id": "t48",
+   "type": "note",
+   "text": "Plus de vins à l'intérieur",
+   "mt": 4
+  },
+  {
+   "id": "t49",
+   "type": "colbreak"
+  },
+  {
+   "id": "t50",
    "type": "section",
    "fr": "Les galettes",
    "en": "Buckwheat galettes"
   },
   {
-   "id": "t45",
+   "id": "t51",
    "type": "item",
    "fr": "GALETTE JAMBON, FROMAGE",
    "price": "14,00 €",
    "en": "Ham, cheese"
   },
   {
-   "id": "t46",
+   "id": "t52",
    "type": "item",
    "fr": "GALETTE CHAMPIGNONS, SAUCISSE",
    "price": "15,00 €",
@@ -366,7 +447,7 @@
    "en": "Mushrooms, sausage, cheese"
   },
   {
-   "id": "t47",
+   "id": "t53",
    "type": "item",
    "fr": "GALETTE CAUCHOISE",
    "price": "17,00 €",
@@ -374,7 +455,7 @@
    "en": "Apples, dry beef, 3 cheeses"
   },
   {
-   "id": "t48",
+   "id": "t54",
    "type": "item",
    "fr": "GALETTE PAYSANNE",
    "price": "18,00 €",
@@ -382,7 +463,7 @@
    "en": "Egg, bacon, cheese, mushrooms, cream"
   },
   {
-   "id": "t49",
+   "id": "t55",
    "type": "item",
    "fr": "GALETTE DES ALPES",
    "price": "18,00 €",
@@ -390,7 +471,7 @@
    "en": "Raclette cheese, potatoes, speck"
   },
   {
-   "id": "t50",
+   "id": "t56",
    "type": "item",
    "fr": "GALETTE BERRICHONNE",
    "price": "18,00 €",
@@ -401,7 +482,7 @@
    ]
   },
   {
-   "id": "t51",
+   "id": "t57",
    "type": "item",
    "fr": "GALETTE SAUMON FUMÉ",
    "price": "19,00 €",
@@ -409,7 +490,7 @@
    "en": "Chive cream, smoked salmon, lemon, rocket"
   },
   {
-   "id": "t52",
+   "id": "t58",
    "type": "item",
    "fr": "GALETTE KEBAB",
    "price": "18,00 €",
@@ -417,34 +498,34 @@
    "en": "Kebab meat, onions, egg, salad"
   },
   {
-   "id": "t53",
+   "id": "t59",
    "type": "section",
    "fr": "Nos crêpes",
    "en": "Sweet crêpes"
   },
   {
-   "id": "t54",
+   "id": "t60",
    "type": "item",
    "fr": "CRÊPE BEURRE SUCRE",
    "price": "6,70 €",
    "en": "Butter and sugar"
   },
   {
-   "id": "t55",
+   "id": "t61",
    "type": "item",
    "fr": "CRÊPE CARAMEL BEURRE SALÉ",
    "price": "9,00 €",
    "en": "Salted butter caramel"
   },
   {
-   "id": "t56",
+   "id": "t62",
    "type": "item",
    "fr": "CRÊPE CHOCOLAT OU NUTELLA",
    "price": "9,00 €",
    "en": "Homemade chocolate or Nutella"
   },
   {
-   "id": "t57",
+   "id": "t63",
    "type": "item",
    "fr": "CRÊPE SUZETTE",
    "price": "12,00 €",
@@ -452,7 +533,7 @@
    "en": "Orange zest, butter, sugar, Grand-Marnier"
   },
   {
-   "id": "t58",
+   "id": "t64",
    "type": "item",
    "fr": "CRÊPE NORMANDE",
    "price": "12,50 €",
@@ -460,7 +541,7 @@
    "en": "Apples, cream, Calvados"
   },
   {
-   "id": "t59",
+   "id": "t65",
    "type": "item",
    "fr": "CRÊPE BELLE HÉLÈNE",
    "price": "12,50 €",
@@ -468,7 +549,7 @@
    "en": "Pear, chocolate, vanilla ice cream"
   },
   {
-   "id": "t60",
+   "id": "t66",
    "type": "item",
    "fr": "CRÊPE GLACÉE BOUNTY",
    "price": "12,50 €",
@@ -476,50 +557,55 @@
    "en": "Coconut ice cream, hot chocolate"
   },
   {
-   "id": "t90",
+   "id": "t67",
+   "type": "note",
+   "text": "Plus de crêpes à l'intérieur",
+   "mt": 4
+  },
+  {
+   "id": "t99",
    "type": "image",
    "src": "assets/photos/crepes.jpg",
    "widthPct": 100,
-   "heightPx": 74,
-   "mt": 8
+   "heightPx": 150,
+   "mt": 14
   },
   {
-   "id": "t62",
+   "id": "t72",
    "type": "colsend"
   },
   {
-   "id": "t63",
+   "id": "t73",
    "type": "cols",
    "ratio": "18/82",
    "gap": 24,
    "valign": "center",
-   "mt": 10
+   "mt": 8
   },
   {
-   "id": "t64",
+   "id": "t74",
    "type": "image",
    "src": "assets/qr-carte.png",
    "widthPct": 44
   },
   {
-   "id": "t65",
+   "id": "t75",
    "type": "colbreak"
   },
   {
-   "id": "t66",
+   "id": "t76",
    "type": "banner",
-   "text": "Pizzas, vins et desserts : toute la carte à l'intérieur",
+   "text": "Réservations +33 (0)4 79 08 53 90",
    "ink": "dark"
   },
   {
-   "id": "t69",
+   "id": "t77",
    "type": "colsend"
   },
   {
-   "id": "t70",
+   "id": "t78",
    "type": "note",
-   "text": "Réservations +33 (0)4 79 08 53 90 · Prix nets en euros",
-   "bold": true,
+   "text": "Prix nets en euros",
    "mt": 4
   }
  ]
