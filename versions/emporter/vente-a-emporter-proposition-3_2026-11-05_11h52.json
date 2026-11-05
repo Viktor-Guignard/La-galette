@@ -1425,7 +1425,7 @@
   {
    "id": "m768",
    "type": "cols",
-   "ratio": "20/60/20",
+   "ratio": "18/82",
    "gap": 24,
    "valign": "center",
    "mt": 8
@@ -1467,16 +1467,6 @@
      "text": "Getränke & Weine zum Mitnehmen"
     }
    }
-  },
-  {
-   "id": "m772",
-   "type": "colbreak"
-  },
-  {
-   "id": "m773",
-   "type": "image",
-   "src": "assets/qr-emporter.png",
-   "widthPct": 44
   },
   {
    "id": "m774",

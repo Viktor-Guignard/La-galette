@@ -490,7 +490,7 @@
   {
    "id": "t63",
    "type": "cols",
-   "ratio": "20/60/20",
+   "ratio": "18/82",
    "gap": 24,
    "valign": "center",
    "mt": 10
@@ -510,16 +510,6 @@
    "type": "banner",
    "text": "Pizzas, vins et desserts : toute la carte à l'intérieur",
    "ink": "dark"
-  },
-  {
-   "id": "t67",
-   "type": "colbreak"
-  },
-  {
-   "id": "t68",
-   "type": "image",
-   "src": "assets/qr-carte.png",
-   "widthPct": 44
   },
   {
    "id": "t69",
