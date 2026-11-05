@@ -1217,3 +1217,10 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
 [data-format="totem"].theme-exterieur .blk-banner.ink-dark{font-size:12px; letter-spacing:.16em;}
 [data-format="affiche"].theme-exterieur .blk-emp-header .emp-title{font-size:54px;}
 [data-format="affiche"].theme-exterieur .blk-section h2{font-size:28px; margin:2px 0 6px;}
+/* totem : l'espace libéré en pied de page sert à agrandir un peu le texte */
+[data-format="totem"].theme-exterieur .blk-section h2{font-size:26px;}
+[data-format="totem"].theme-exterieur .blk-item .fr{font-size:11.5px;}
+[data-format="totem"].theme-exterieur .blk-item .price{font-size:14px;}
+[data-format="totem"].theme-exterieur .blk-item .fr .desc, [data-format="totem"].theme-exterieur .blk-item .sub, [data-format="totem"].theme-exterieur .blk-item .en{font-size:8.8px;}
+/* vins du totem : le nom garde sa taille réduite (règle placée après l'agrandissement des plats) */
+[data-format="totem"].theme-exterieur .blk-wine .fr{font-size:9.8px;}

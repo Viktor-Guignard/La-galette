@@ -587,7 +587,17 @@ function checkOverflow(){
     // retirer d'abord la classe : le bandeau d'avertissement (30px sous la page)
     // gonflerait scrollHeight et rendrait l'état collant
     page.classList.remove('overflowing');
-    page.classList.toggle('overflowing', page.scrollHeight > pageH + 2);
+    /* supports extérieurs : le contenu ne doit pas entrer dans la marge basse,
+       où sont dessinées les crêtes (sinon un texte les chevauche) */
+    const strict = document.body.classList.contains('theme-exterieur');
+    const top = page.getBoundingClientRect().top;
+    const limit = top + pageH - (parseFloat(getComputedStyle(page).paddingBottom) || 0) + 2;
+    let bottom = 0;
+    if(strict) page.querySelectorAll('.block:not(.blk-marker):not(.blk-pagebreak), .page-cols').forEach(b => {
+      const r = b.getBoundingClientRect();
+      if(r.width && r.height && getComputedStyle(b).visibility !== 'hidden') bottom = Math.max(bottom, r.bottom);
+    });
+    page.classList.toggle('overflowing', page.scrollHeight > pageH + 2 || bottom > limit);
     /* porte-menu : un texte sous le cadre (hors zone visible) est signalé */
     const g = page.querySelector('.holder-guide');
     page.classList.remove('under-holder');

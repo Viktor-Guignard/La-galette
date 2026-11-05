@@ -12,7 +12,7 @@
   "marginMm": {
    "t": 13,
    "r": 15,
-   "b": 22,
+   "b": 20,
    "l": 15
   },
   "mirror": false,
@@ -1478,15 +1478,11 @@
    }
   },
   {
-   "id": "m774",
-   "type": "colsend"
-  },
-  {
    "id": "m775",
    "type": "note",
    "text": "Prix nets en euros",
    "bold": true,
-   "mt": 4,
+   "mt": 3,
    "tr": {
     "en": {
      "text": "Net prices in euros"
@@ -1509,6 +1505,10 @@
      "text": "Nettopreise in Euro"
     }
    }
+  },
+  {
+   "id": "m774",
+   "type": "colsend"
   }
  ]
 }

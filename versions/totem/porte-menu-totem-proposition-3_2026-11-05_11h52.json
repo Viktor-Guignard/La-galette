@@ -12,7 +12,7 @@
   "marginMm": {
    "t": 14,
    "r": 15,
-   "b": 24,
+   "b": 20,
    "l": 15
   },
   "mirror": false,
@@ -599,14 +599,14 @@
    "ink": "dark"
   },
   {
-   "id": "t77",
-   "type": "colsend"
-  },
-  {
    "id": "t78",
    "type": "note",
    "text": "Prix nets en euros",
-   "mt": 4
+   "mt": 3
+  },
+  {
+   "id": "t77",
+   "type": "colsend"
   }
  ]
 }
