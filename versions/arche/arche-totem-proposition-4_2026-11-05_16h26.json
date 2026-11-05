@@ -1,0 +1,82 @@
+{
+ "style": {
+  "titleFont": "Fraunces",
+  "bodyFont": "Jost",
+  "titleColor": "#ffffff",
+  "accent": "#c39a45",
+  "pageBg": "#2b2f33",
+  "leaders": true,
+  "format": "arche",
+  "theme": "exterieur",
+  "itemSpacing": 1,
+  "marginMm": {
+   "t": 12,
+   "r": 14,
+   "b": 13,
+   "l": 14
+  },
+  "mirror": false,
+  "sectionUnderline": false
+ },
+ "blocks": [
+  {
+   "id": "a4-1",
+   "type": "cols",
+   "ratio": "19.5/61/19.5",
+   "gap": 0,
+   "valign": "center"
+  },
+  {
+   "id": "a4-2",
+   "type": "image",
+   "src": "assets/deco/croix-savoie.svg",
+   "widthPct": 25,
+   "align": "right"
+  },
+  {
+   "id": "a4-3",
+   "type": "colbreak"
+  },
+  {
+   "id": "a4-4",
+   "type": "line",
+   "text": "À toutes heures",
+   "variant": "title"
+  },
+  {
+   "id": "a4-5",
+   "type": "colbreak"
+  },
+  {
+   "id": "a4-6",
+   "type": "image",
+   "src": "assets/deco/croix-savoie.svg",
+   "widthPct": 25,
+   "align": "left"
+  },
+  {
+   "id": "a4-7",
+   "type": "colsend"
+  },
+  {
+   "id": "a4-8",
+   "type": "image",
+   "src": "assets/deco/alpage-orn-or.svg",
+   "widthPct": 17,
+   "mt": 3,
+   "mb": 1
+  },
+  {
+   "id": "a4-9",
+   "type": "line",
+   "text": "Pierre chaude · Raclettes",
+   "variant": "main"
+  },
+  {
+   "id": "a4-10",
+   "type": "line",
+   "text": "Fondues savoyardes · Fondue bourguignonne",
+   "variant": "main"
+  }
+ ]
+}

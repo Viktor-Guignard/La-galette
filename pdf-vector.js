@@ -122,6 +122,7 @@
     el.classList.contains('page-label') ||
     el.classList.contains('page-overflow-warning') ||
     el.classList.contains('holder-guide') ||
+    el.classList.contains('arche-guide') ||
     el.classList.contains('hidden-badge') ||
     el.classList.contains('blk-pagebreak') ||
     el.classList.contains('blk-marker') ||
@@ -386,11 +387,14 @@
     const X = px => (px - base.left) * PX2MM;
     const Y = px => (px - base.top) * PX2MM;
 
-    /* 1. Fond de page */
+    /* 1. Fond de page : toute la feuille, au millimètre près. (La page
+       d'écran est arrondie au pixel : en grand format, sa hauteur
+       ramenée en mm peut manquer de 0,2 mm, et un filet blanc
+       apparaîtrait au bord d'une affiche à fond noir.) */
     const pageBg = rgb(getComputedStyle(pageEl).backgroundColor);
     if (pageBg.a > 0) {
       pdf.setFillColor(pageBg.r, pageBg.g, pageBg.b);
-      pdf.rect(0, 0, base.width * PX2MM, base.height * PX2MM, 'F');
+      pdf.rect(0, 0, Math.max(pageMm[0], base.width * PX2MM), Math.max(pageMm[1], base.height * PX2MM), 'F');
     }
 
     /* 2. Fonds, filets et images, dans l'ordre du document */

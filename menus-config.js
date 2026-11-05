@@ -3,8 +3,10 @@
 window.CARTE_MENUS = [
   { key: 'carte',     label: 'La carte',          hint: 'Salle · 9 pages',  slug: 'carte' },
   { key: 'pizzas',    label: 'Pizzas',            hint: '4 langues',         slug: 'pizzas-fr' },
-  { key: 'emporter',  label: 'Vente à emporter',  hint: 'Adhésif 46×66',    slug: 'vente-a-emporter' },
-  { key: 'totem',     label: 'Totem',             hint: 'Porte-menu 48×68', slug: 'porte-menu-totem' },
+  { key: 'emporter',  label: 'Vente à emporter',  hint: 'Adhésif vitre 48×68', slug: 'vente-a-emporter' },
+  { key: 'totem',     label: 'Totem',             hint: 'Porte-menu 47,8×68', slug: 'porte-menu-totem' },
+  { key: 'potence',   label: 'Panneau potence',   hint: 'Dibond recto verso 45×65', slug: 'panneau-potence' },
+  { key: 'arche',     label: 'Arche du totem',    hint: '49×13,9 — découpe faite par le resto', slug: 'arche-totem' },
 ];
 window.CARTE_PUBLIC_URL = 'https://viktor-guignard.github.io/la-coursive-site/carte-galette/carte.html';
 
@@ -33,6 +35,10 @@ window.MENU_BLOCK_PRESETS = {
   pizzas:      ['item-simple', 'legend', 'section', 'line', 'note', 'image', 'divider', 'pagebreak'],
   'pizzas-en': ['item-simple', 'legend', 'section', 'line', 'note', 'image', 'divider', 'pagebreak'],
   // Affiche noir & or : 2 colonnes, bandeaux or
-  totem:       ['item', 'item-simple', 'section', 'banner', 'line', 'image', 'note', 'cols', 'colbreak', 'colsend', 'pagebreak'],
+  totem:       ['item', 'item-simple', 'section', 'banner', 'line', 'wine', 'winehead', 'image', 'note', 'cols', 'colbreak', 'colsend', 'pagebreak'],
   emporter:    ['item', 'item-simple', 'section', 'banner', 'image', 'note', 'cols', 'colbreak', 'colsend', 'pagebreak'],
+  // Panneau de la potence (Dibond noir) : même carte complète que le totem
+  potence:     ['item', 'item-simple', 'section', 'banner', 'line', 'wine', 'winehead', 'image', 'note', 'cols', 'colbreak', 'colsend', 'pagebreak'],
+  // Arche du totem : quelques lignes centrées, croix de Savoie (images)
+  arche:       ['line', 'image', 'note', 'cols', 'colbreak', 'colsend'],
 };

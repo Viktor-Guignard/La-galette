@@ -1,0 +1,405 @@
+{
+ "style": {
+  "titleFont": "Fraunces",
+  "bodyFont": "Jost",
+  "titleColor": "#ffffff",
+  "accent": "#c39a45",
+  "pageBg": "#000000",
+  "leaders": true,
+  "format": "vitre",
+  "theme": "exterieur",
+  "itemSpacing": 1,
+  "marginMm": {
+   "t": 14,
+   "r": 15,
+   "b": 20,
+   "l": 15
+  },
+  "mirror": false,
+  "sectionUnderline": false
+ },
+ "blocks": [
+  {
+   "id": "v4-1",
+   "type": "emp-header",
+   "logoImg": "assets/logo-blanc.png",
+   "kicker": "Vente",
+   "title": "à emporter",
+   "box1": "Non stop",
+   "box2": "+33 (0)4 79 08 53 90"
+  },
+  {
+   "id": "v4-2",
+   "type": "banner",
+   "text": "Restaurant savoyard · Pizzéria · Crêperie",
+   "mt": 0,
+   "mb": 10
+  },
+  {
+   "id": "v4-3",
+   "type": "cols",
+   "ratio": "50/50",
+   "gap": 40
+  },
+  {
+   "id": "v4-4",
+   "type": "section",
+   "fr": "Les entrées et plats",
+   "en": "Starters & mains"
+  },
+  {
+   "id": "v4-5",
+   "type": "item",
+   "fr": "SALADE MIXTE",
+   "desc": "Salade verte, œuf, maïs, jambon, comté",
+   "en": "Green salad, egg, corn, ham, comté",
+   "price": "15,00 €"
+  },
+  {
+   "id": "v4-6",
+   "type": "item",
+   "fr": "SALADE CAMPAGNARDE",
+   "sub": "Salade verte, croûtons, fromage, lardons, tomates",
+   "en": "Green salad, bacon, cheese, croutons, tomatoes",
+   "price": "16,00 €"
+  },
+  {
+   "id": "v4-7",
+   "type": "item",
+   "fr": "SALADE SAVOYARDE",
+   "sub": "Salade verte, fromage à raclette sur toast, tomates, œuf",
+   "en": "Green salad, raclette cheese on toast, tomatoes, egg",
+   "price": "17,00 €"
+  },
+  {
+   "id": "v4-8",
+   "type": "item",
+   "fr": "SALADE DE CHÈVRE CHAUD AU MIEL",
+   "sub": "Tomates confites et noix",
+   "en": "Goat's cheese and green salad with honey, nuts and tomatoes",
+   "price": "16,00 €"
+  },
+  {
+   "id": "v4-9",
+   "type": "item",
+   "fr": "TARTIFLETTE",
+   "sub": "Pommes de terre, oignons, Reblochon, lardons, crème fraîche",
+   "en": "Potatoes, onions, Reblochon, bacon, fresh cream",
+   "price": "18,00 €"
+  },
+  {
+   "id": "v4-10",
+   "type": "item",
+   "fr": "LASAGNES MAISON",
+   "en": "Homemade lasagna",
+   "price": "18,00 €",
+   "enInline": true
+  },
+  {
+   "id": "v4-11",
+   "type": "item",
+   "fr": "PORTION DE FRITES",
+   "en": "French fries",
+   "price": "5,50 €",
+   "enInline": true
+  },
+  {
+   "id": "v4-12",
+   "type": "item",
+   "fr": "SANDWICHS",
+   "en": "Sandwiches",
+   "price": "8,50 €",
+   "enInline": true
+  },
+  {
+   "id": "v4-13",
+   "type": "section",
+   "fr": "Les crêpes et galettes",
+   "en": "Crêpes & galettes",
+   "mt": 6
+  },
+  {
+   "id": "v4-14",
+   "type": "item",
+   "fr": "CRÊPE SUCRE",
+   "en": "Sugar",
+   "price": "4,00 €",
+   "enInline": true
+  },
+  {
+   "id": "v4-15",
+   "type": "item",
+   "fr": "CRÊPE NUTELLA",
+   "en": "Nutella",
+   "price": "6,00 €",
+   "enInline": true
+  },
+  {
+   "id": "v4-16",
+   "type": "item",
+   "fr": "CRÊPE CHOCOLAT MAISON",
+   "en": "Homemade chocolate",
+   "price": "6,00 €",
+   "enInline": true
+  },
+  {
+   "id": "v4-17",
+   "type": "item",
+   "fr": "CRÊPE CARAMEL BEURRE SALÉ",
+   "en": "Caramel",
+   "price": "6,00 €",
+   "enInline": true
+  },
+  {
+   "id": "v4-18",
+   "type": "item",
+   "fr": "CRÊPE CONFITURE AU CHOIX",
+   "en": "Jam of your choice",
+   "price": "5,50 €",
+   "enInline": true
+  },
+  {
+   "id": "v4-19",
+   "type": "item",
+   "fr": "GALETTE COMPLÈTE",
+   "desc": "Œuf, jambon, fromage",
+   "en": "Egg, ham, cheese",
+   "price": "12,50 €"
+  },
+  {
+   "id": "v4-20",
+   "type": "item",
+   "fr": "GALETTE CAUCHOISE",
+   "desc": "Pommes, Grison, 3 fromages",
+   "en": "Apples, dry beef, 3 cheeses",
+   "price": "13,50 €"
+  },
+  {
+   "id": "v4-21",
+   "type": "item",
+   "fr": "GALETTE DES ALPES",
+   "sub": "Raclette, pomme de terre, jambon speck",
+   "en": "Raclette cheese, potatoes, smoked ham speck",
+   "price": "15,00 €"
+  },
+  {
+   "id": "v4-22",
+   "type": "item",
+   "fr": "GALETTE BERRICHONNE",
+   "sub": "Chèvre, tomates confites, miel, noix, roquette",
+   "en": "Goat's cheese, dried tomatoes, honey, nuts, rocket",
+   "price": "15,00 €"
+  },
+  {
+   "id": "v4-23",
+   "type": "item",
+   "fr": "GALETTE SAUMON FUMÉ",
+   "sub": "Crème ciboulette, saumon fumé, citron, roquette",
+   "en": "Chive cream, smoked salmon, lemon, rocket",
+   "price": "15,50 €"
+  },
+  {
+   "id": "v4-24",
+   "type": "image",
+   "src": "assets/photos/galette-emporter.jpg",
+   "widthPct": 100,
+   "heightPx": 66,
+   "focus": "60% 55%",
+   "mt": 8
+  },
+  {
+   "id": "v4-25",
+   "type": "colbreak"
+  },
+  {
+   "id": "v4-26",
+   "type": "section",
+   "fr": "Nos pizzas",
+   "en": "Our pizzas"
+  },
+  {
+   "id": "v4-27",
+   "type": "item",
+   "fr": "MARGARITA",
+   "desc": "Tomate, mozza, olives, origan",
+   "en": "Tomato, mozzarella, olives, oregano",
+   "price": "14,50 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-28",
+   "type": "item",
+   "fr": "PAMPLUNE",
+   "desc": "Tomate, mozza, jambon, œuf, origan",
+   "en": "Tomato, mozzarella, ham, egg, oregano",
+   "price": "15,50 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-29",
+   "type": "item",
+   "fr": "REINE",
+   "desc": "Tomate, mozza, jambon, champignons",
+   "en": "Tomato, mozzarella, ham, mushrooms",
+   "price": "15,50 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-30",
+   "type": "item",
+   "fr": "NAPOLITAINE",
+   "sub": "Tomate, mozza, anchois, câpres, olives, origan",
+   "en": "Tomato, mozzarella, anchovies, capers, olives, oregano",
+   "price": "15,50 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-31",
+   "type": "item",
+   "fr": "3 VALLÉES",
+   "sub": "Tomate, mozza, poivrons, champignons, olives, origan, roquette",
+   "en": "Tomato, mozzarella, peppers, mushrooms, olives, oregano, rocket",
+   "price": "15,50 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-32",
+   "type": "item",
+   "fr": "TOSCANE",
+   "desc": "Tomate, mozza, jambon, ananas, olives",
+   "en": "Tomato, mozzarella, ham, pineapple, olives",
+   "price": "16,50 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-33",
+   "type": "item",
+   "fr": "4 SAISONS",
+   "sub": "Tomate, mozza, artichaut, champignons, poivrons, olives, origan, roquette",
+   "en": "Tomato, mozzarella, artichoke, mushrooms, peppers, olives, oregano, rocket",
+   "price": "17,50 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-34",
+   "type": "item",
+   "fr": "TARENTAISE",
+   "sub": "Tomate, mozza, jambon fumé speck, œuf, roquette",
+   "en": "Tomato, mozzarella, smoked ham speck, egg, rocket",
+   "price": "17,50 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-35",
+   "type": "item",
+   "fr": "CALZONE",
+   "sub": "Tomate, mozza, jambon, champignons, œuf, crème",
+   "en": "Tomato, mozzarella, ham, mushrooms, egg, cream",
+   "price": "17,50 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-36",
+   "type": "item",
+   "fr": "CHÈVRE",
+   "desc": "Crème, mozza, chèvre, miel, noix, roquette",
+   "en": "Cream, mozzarella, goat's cheese, honey, walnuts, rocket",
+   "price": "17,50 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-37",
+   "type": "item",
+   "fr": "MEXICAINE",
+   "desc": "Tomate, mozza, chorizo, merguez, poivrons",
+   "en": "Tomato, mozzarella, chorizo, merguez, peppers",
+   "price": "18,00 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-38",
+   "type": "item",
+   "fr": "ORIENTALE",
+   "sub": "Crème, mozza, viande kebab, oignons, salade, sauce burger",
+   "en": "Cream, mozzarella, kebab meat, onions, salad, burger sauce",
+   "price": "18,00 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-39",
+   "type": "item",
+   "fr": "MÉRIBELOISE",
+   "sub": "Crème, mozza, lardons, pommes de terre, oignons, Reblochon",
+   "en": "Cream, mozzarella, bacon, potatoes, onions, Reblochon",
+   "price": "18,00 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-40",
+   "type": "item",
+   "fr": "4 FROMAGES",
+   "desc": "Tomate, mozza, chèvre, roquefort, Reblochon",
+   "en": "Tomato, mozzarella, goat's cheese, Roquefort, Reblochon",
+   "price": "18,00 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-41",
+   "type": "item",
+   "fr": "SAUMON",
+   "desc": "Crème, ciboulette, mozza, saumon, citron",
+   "en": "Cream, chives, mozzarella, salmon, lemon",
+   "price": "20,00 €",
+   "keepName": true
+  },
+  {
+   "id": "v4-42",
+   "type": "image",
+   "src": "assets/photos/pizza-emporter.jpg",
+   "widthPct": 100,
+   "heightPx": 185,
+   "focus": "50% 50%",
+   "mt": 8
+  },
+  {
+   "id": "v4-43",
+   "type": "colsend"
+  },
+  {
+   "id": "v4-44",
+   "type": "cols",
+   "ratio": "10/90",
+   "gap": 26,
+   "valign": "center"
+  },
+  {
+   "id": "v4-45",
+   "type": "image",
+   "src": "assets/qr-carte.png",
+   "widthPct": 100,
+   "align": "left",
+   "mt": 12
+  },
+  {
+   "id": "v4-46",
+   "type": "colbreak"
+  },
+  {
+   "id": "v4-47",
+   "type": "banner",
+   "text": "Et aussi boissons et vins à emporter",
+   "ink": "dark",
+   "mt": 12
+  },
+  {
+   "id": "v4-48",
+   "type": "note",
+   "text": "Prix nets en euros",
+   "mt": 4
+  },
+  {
+   "id": "v4-49",
+   "type": "colsend"
+  }
+ ]
+}

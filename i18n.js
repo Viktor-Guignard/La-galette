@@ -28,7 +28,7 @@
     wine: ['desc'],                    // le nom du vin ne se traduit pas
     section: ['fr'], line: ['text'], note: ['text'], formule: ['text'],
     banner: ['text'], winehead: ['text'], legend: ['text'],
-    'emp-header': ['title', 'box1'],
+    'emp-header': ['kicker', 'title', 'box1'],
   };
   /* noms qui ne se traduisent jamais (pizzas, vins…) : drapeau keepName sur le bloc */
   function fieldsOf(blk) {

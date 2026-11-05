@@ -118,7 +118,7 @@
       k: 'format taille page marge dimension a4 a5 mm centimetre impression porte-menu bord',
       a: `<p>Dans <b>🎨 Apparence</b> :</p>
         <ul>
-          <li><b>Format de page</b> : A4 (carte de salle, pizzas) ou affiche 46 × 66 cm (vente à emporter)</li>
+          <li><b>Format de page</b> : A4 (carte de salle, pizzas) ou le format exact de chaque support extérieur : adhésif vitre 48 × 68 cm, totem 47,8 × 68 cm, panneau potence 45 × 65 cm, arche 49 × 13,9 cm</li>
           <li><b>Porte-menu</b> : indiquez les millimètres cachés par le cadre — un pointillé rouge montre la zone visible, et ce qui passe dessous est signalé</li>
           <li><b>Marges (mm)</b> : haut / droite / bas / gauche, au dixième de millimètre</li>
           <li><b>Marges en miroir</b> : pour les documents reliés (pages paires inversées)</li>
@@ -200,7 +200,7 @@
       q: 'Comment obtenir le PDF pour l\'imprimeur ?',
       k: 'pdf imprimer imprimeur telecharger export fichier papier impression editer sortir',
       a: `<p>Cliquez sur <b>⬇️ PDF</b> en haut : le fichier se télécharge directement, nommé avec la date et l'heure. Rien à régler.</p>
-        <p>Le PDF sort <b>exactement au format choisi</b> dans 🎨 Apparence (A4, affiche 46 × 66 cm), sans fond perdu ni traits de coupe, et <b>identique à ce que vous voyez à l'écran</b>.</p>
+        <p>Le PDF sort <b>exactement au format choisi</b> dans 🎨 Apparence (A4, adhésif 48 × 68 cm, totem 47,8 × 68 cm…), sans fond perdu ni traits de coupe, et <b>identique à ce que vous voyez à l'écran</b>.</p>
         <p><b>Dans quelle langue ?</b> Celle affichée : le bouton indique « PDF FR », « PDF DE »… Choisissez la langue en haut (🇫🇷 🇬🇧 🇮🇹 🇩🇪) avant de cliquer.</p>
         <p>Le texte reste du <b>vrai texte</b> : net à n'importe quelle taille d'impression, et votre imprimeur peut le sélectionner pour vérifier les accents ou les prix.</p>
         <p class="tip">Le PDF ne concerne que la carte de l'onglet en cours — répétez l'opération pour chaque carte.</p>`
@@ -282,7 +282,7 @@
       cat: 'Général',
       q: 'À quoi servent les onglets en haut ?',
       k: 'onglet tab carte pizzas emporter affiche vins boissons naviguer changer passer',
-      a: `<p>Chaque onglet est une <b>carte indépendante</b> : La carte (9 pages, salle), Pizzas et Vente à emporter (affiche 46 × 66 cm).</p>
+      a: `<p>Chaque onglet est une <b>carte indépendante</b> : La carte (9 pages, salle), Pizzas, Vente à emporter (adhésif vitre 48 × 68 cm), Totem (47,8 × 68 cm), Panneau potence (45 × 65 cm, imprimé recto verso) et Arche du totem (49 × 13,9 cm : le restaurant découpe l'arrondi, un pointillé montre où garder les textes).</p>
         <p>Chacune existe dans les <b>4 langues</b> (sélecteur 🇫🇷 🇬🇧 🇮🇹 🇩🇪 en haut) : la carte anglaise des pizzas, par exemple, c'est l'onglet Pizzas en 🇬🇧.</p>
         <p>Chacune a son propre contenu, son format, ses couleurs, ses versions et son PDF.</p>
         <p class="tip">Le dernier onglet <b>📱 Publier / QR</b> n'est pas une carte : c'est là qu'on rend les modifications visibles aux clients.</p>`

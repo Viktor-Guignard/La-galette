@@ -104,7 +104,8 @@
           /* affiche à emporter : le téléphone, seul moyen de commander */
           const tel = (b.box2 || '').replace(/<[^>]+>/g, '');
           const el = document.createElement('div'); el.className = 'm-order';
-          el.innerHTML = `<div class="t">${esc((b.title || '').replace(/<br\s*\/?>/gi, ' '))}</div><div class="s">${esc(b.box1 || '')}</div>${tel ? `<a class="tel" href="tel:${tel.replace(/[^+\d]/g, '').replace(/^\+330/, '+33')}">📞 ${esc(tel)}</a>` : ''}`;
+          /* « Vente » (surtitre de l'adhésif) + « à emporter » : une seule ligne sur le web */
+          el.innerHTML = `<div class="t">${esc(((b.kicker ? b.kicker + ' ' : '') + (b.title || '')).replace(/<br\s*\/?>/gi, ' '))}</div><div class="s">${esc(b.box1 || '')}</div>${tel ? `<a class="tel" href="tel:${tel.replace(/[^+\d]/g, '').replace(/^\+330/, '+33')}">📞 ${esc(tel)}</a>` : ''}`;
           wrap.appendChild(el);
           break;
         }

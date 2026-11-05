@@ -72,10 +72,35 @@ const PAGE_FORMATS = {
   carte34: { label:'Carte haute (14 × 34 cm)',    w:529,  h:1285, mm:[140,340] },
   a5:      { label:'Demi-A4 / A5 (14,85 × 21 cm)', w:561,  h:794,  mm:[148.5,210] },
   /* Grand format : la page est dessinée à échelle réduite à l'écran
-     (870 px de large) ; le PDF sort, lui, aux dimensions réelles. */
+     (870 px de large) ; le PDF sort, lui, aux dimensions réelles.
+     Tous les supports extérieurs gardent la même échelle d'écran
+     (870 px pour 460 mm ≈ 1,891 px/mm) : une taille de texte réglée
+     sur l'un a la même taille imprimée sur les autres. */
   affiche: { label:'Affiche porte-menu (46 × 66 cm)', w:870, h:1248, mm:[460,660] },
-  totem:   { label:'Porte-menu totem (48 × 68 cm)',   w:908, h:1286, mm:[480,680] },
+  vitre:   { label:'Adhésif vitrine (48 × 68 cm)',    w:908, h:1286, mm:[480,680] },
+  potence: { label:'Panneau potence, Dibond (45 × 65 cm)', w:851, h:1229, mm:[450,650] },
+  totem:   { label:'Porte-menu totem (47,8 × 68 cm)', w:904, h:1286, mm:[478,680] },
+  arche:   { label:'Arche du totem (49 × 13,9 cm)',   w:927, h:263,  mm:[490,139] },
 };
+/* Arche du totem : le restaurant découpe lui-même l'arrondi dans le
+   rectangle imprimé. Hypothèse de découpe (à confirmer) : arc de cercle
+   qui part à 50 mm du bas sur les deux bords et monte à 139 mm au milieu.
+   Repère d'édition seulement (jamais imprimé) : ligne de coupe et
+   zone de sécurité de 1 cm. */
+const ARCHE_CUT = { sideMm:50, safeMm:10 };
+function archeGuideSvg(fmt){
+  const [W, H] = fmt.mm, a = W / 2, s = H - ARCHE_CUT.sideMm;
+  const R = (a*a + s*s) / (2*s), cy = R;               // centre sous le bas du panneau (y vers le bas)
+  const r2 = R - ARCHE_CUT.safeMm, m = ARCHE_CUT.safeMm;
+  const yAt = (r, dx) => cy - Math.sqrt(Math.max(0, r*r - dx*dx));
+  const f = v => v.toFixed(2);
+  const ys = yAt(r2, a - m);
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,0 H${W} V${f(H - ARCHE_CUT.sideMm)} A${f(R)},${f(R)} 0 0,0 0,${f(H - ARCHE_CUT.sideMm)} Z" class="ag-off"/>
+    <path d="M0,${f(H - ARCHE_CUT.sideMm)} A${f(R)},${f(R)} 0 0,1 ${W},${f(H - ARCHE_CUT.sideMm)}" class="ag-cut"/>
+    <path d="M${m},${H - m} V${f(ys)} A${f(r2)},${f(r2)} 0 0,1 ${W - m},${f(ys)} V${H - m} Z" class="ag-safe"/>
+  </svg>`;
+}
 /* px d'écran par mm de papier pour un format donné */
 function pxPerMm(fmt){ return fmt.w / fmt.mm[0]; }
 /* Anciens presets (rétro-compatibilité) -> valeurs en mm */
@@ -402,6 +427,7 @@ function renderBlockInner(blk){
           <img src="${blk.logoImg || 'assets/logo-blanc.png'}" alt="logo">
         </div>
         <div class="emp-side">
+          ${blk.kicker != null ? ed(blk.id,'kicker',esc(blk.kicker),'emp-kicker','div') : ''}
           ${ed(blk.id,'title',blk.title,'emp-title','div')}
           <div class="emp-box">
             ${ed(blk.id,'box1',esc(blk.box1),'emp-box1','div')}
@@ -470,6 +496,8 @@ function blockClass(blk){
   let c = map[blk.type] || '';
   if(blk.type==='line') c += ' v-' + (blk.variant || 'main');
   if(blk.type==='item' && !blk.en && !blk.sub) c += ' one-line';
+  /* plat court : la traduction suit le nom sur la même ligne (passe dessous, entière, si la place manque) */
+  if(blk.type==='item' && blk.enInline && blk.en) c += ' en-inline';
   if(blk.type==='section' && blk.sub) c += ' sub';
   if(blk.type==='banner' && blk.ink === 'dark') c += ' ink-dark';
   if(blk.type==='note' && blk.italic) c += ' italic';
@@ -555,6 +583,13 @@ function render(){
       g.className = 'holder-guide';
       g.style.inset = `${hd.t*k}px ${hd.r*k}px ${hd.b*k}px ${hd.l*k}px`;
       g.title = 'Zone visible dans le porte-menu';
+      pageEl.appendChild(g);
+    }
+    if(state.style.format === 'arche'){
+      const g = document.createElement('div');
+      g.className = 'arche-guide';
+      g.title = 'Arrondi découpé par le restaurant (hypothèse : 5 cm sur les bords, 13,9 cm au milieu) — gardez les textes dans le pointillé (1 cm de sécurité)';
+      g.innerHTML = archeGuideSvg(fmt);
       pageEl.appendChild(g);
     }
     const warn = document.createElement('div');

@@ -1224,3 +1224,104 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
 [data-format="totem"].theme-exterieur .blk-item .fr .desc, [data-format="totem"].theme-exterieur .blk-item .sub, [data-format="totem"].theme-exterieur .blk-item .en{font-size:8.8px;}
 /* vins du totem : le nom garde sa taille réduite (règle placée après l'agrandissement des plats) */
 [data-format="totem"].theme-exterieur .blk-wine .fr{font-size:9.8px;}
+
+/* =====================================================
+   Supports extérieurs — 4e proposition, aux formats exacts
+   (même échelle d'écran partout : ≈ 1,891 px par mm)
+   · vitre   : adhésif « Vente à emporter » 48 × 68, fond noir
+   · potence : Dibond recto verso 45 × 65, fond noir, carte complète
+   · totem   : porte-menu 47,8 × 68, fond ardoise, carte complète
+   · arche   : fronton du totem 49 × 13,9, fond ardoise
+   Les règles [data-format="affiche"] restent pour l'ancien adhésif 46 × 66.
+   ===================================================== */
+
+/* crêtes du pied de page, dessinées au millimètre pour chaque format */
+[data-format="vitre"].theme-exterieur .pdf-page::before{background-image:url('assets/deco/exterieur-vitre.svg');}
+[data-format="potence"].theme-exterieur .pdf-page::before{background-image:url('assets/deco/exterieur-potence.svg');}
+[data-format="arche"].theme-exterieur .pdf-page::before{display:none;}
+
+/* ---------- A · adhésif vitre : « À EMPORTER » domine l'en-tête ---------- */
+[data-format="vitre"].theme-exterieur .blk-emp-header{align-items:center; gap:28px; margin-bottom:12px; padding-right:0;}  /* bandeau or aligné à droite sur le bandeau du dessous */
+[data-format="vitre"].theme-exterieur .blk-emp-header .emp-logo{flex:0 0 28.5%;}
+[data-format="vitre"].theme-exterieur .blk-emp-header .emp-side{margin-right:0; padding-top:0; align-items:flex-start;}
+[data-format="vitre"].theme-exterieur .blk-emp-header .emp-kicker{font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; font-size:42px; line-height:1; color:var(--gold); margin:0 0 20px 3px; text-transform:none;}
+[data-format="vitre"].theme-exterieur .blk-emp-header .emp-title{font-family:var(--font-body); font-style:normal; font-weight:600; text-transform:uppercase; font-size:90px; line-height:.95; letter-spacing:0; color:#fff; text-align:left; padding-left:0; white-space:nowrap;}
+[data-format="vitre"].theme-exterieur .blk-emp-header .emp-box{align-self:stretch; display:flex; align-items:center; justify-content:space-between; gap:14px; margin-top:6px; padding:8px 18px 9px; border-radius:6px;}
+[data-format="vitre"].theme-exterieur .blk-emp-header .emp-box1{border:none; padding:0; font-size:20px; letter-spacing:.32em; line-height:1.1; white-space:nowrap;}
+[data-format="vitre"].theme-exterieur .blk-emp-header .emp-box2{padding:0; font-size:31px; line-height:1.1; white-space:nowrap;}
+.lang-foreign[data-format="vitre"].theme-exterieur .blk-emp-header .emp-title{font-size:60px; white-space:normal;}
+[data-format="vitre"].theme-exterieur .blk-banner{font-size:16px; letter-spacing:.42em; padding:9px 12px;}
+[data-format="vitre"].theme-exterieur .blk-banner.ink-dark{font-size:16px; letter-spacing:.26em; padding:10px 12px;}
+[data-format="vitre"].theme-exterieur .blk-section h2{font-size:31px; margin:2px 0 4px;}
+[data-format="vitre"].theme-exterieur .blk-section h2 .en{font-size:9.6px; margin-top:5px;}
+[data-format="vitre"].theme-exterieur .blk-section h2::after{height:9px; margin-top:3px;}
+[data-format="vitre"].theme-exterieur .blk-item .fr{font-size:13px; letter-spacing:.05em;}
+[data-format="vitre"].theme-exterieur .blk-item .price{font-size:16px; min-width:56px;}
+[data-format="vitre"].theme-exterieur .blk-item .fr .desc, [data-format="vitre"].theme-exterieur .blk-item .sub{font-size:9.8px;}
+[data-format="vitre"].theme-exterieur .blk-item .en{font-size:10.2px;}
+[data-format="vitre"].theme-exterieur .blk-note{font-size:10px;}
+
+/* coupures de ligne soignées (pas de mot seul en dernière ligne, noms équilibrés) ;
+   le PDF reprend les coupures de l'écran. Sans effet sur les navigateurs anciens. */
+.theme-exterieur .blk-item .sub, .theme-exterieur .blk-item .en, .theme-exterieur .blk-note{text-wrap:pretty;}
+.theme-exterieur .blk-item .fr, .theme-exterieur .blk-banner{text-wrap:balance;}
+
+/* plat court (option enInline) : « CRÊPE SUCRE  Sugar » sur une ligne */
+.blk-item.en-inline .txt > .fr{display:inline;}
+.blk-item.en-inline .txt > .en{display:inline-block; margin-left:.55em;}
+
+/* ---------- B et C · carte complète (potence noire, totem ardoise) ---------- */
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .pdf-page > .blk-line{font-family:var(--font-body); font-weight:600; font-size:15px; letter-spacing:.42em; text-transform:uppercase; color:var(--gold); padding:8px 0; border-top:1px solid rgba(195,154,69,.55); border-bottom:1px solid rgba(195,154,69,.55); margin:2px 60px 10px;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-section h2{font-size:24px; line-height:1.02; margin:1px 0 2px;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-section h2 .en{font-size:8.4px; margin-top:4px; letter-spacing:.32em;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-section h2::after{height:7px; margin-top:2px;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-item .fr{font-size:11.4px; letter-spacing:.03em; line-height:1.16;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-item .price{font-size:14px; min-width:50px;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-item .fr .desc, :is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-item .sub{font-size:8.9px; line-height:1.25;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-item .en{font-size:8.9px; line-height:1.25;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-item .txt, :is([data-format="totem"],[data-format="potence"]).theme-exterieur .page-col .blk-item .txt{max-width:calc(100% - 54px);}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-note{font-size:9.4px; font-weight:500; letter-spacing:.03em; text-transform:none; color:var(--cream); line-height:1.25;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-note.italic{font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; color:var(--gold); letter-spacing:0;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-banner.ink-dark{font-size:11.5px; letter-spacing:.14em; line-height:1.35; padding:8px 10px;}
+/* vins : nom puis domaine, prix alignés sous les contenances */
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-winehead{padding:0 4px; margin:1px 0 1px;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .wprices .wp{width:37px;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-winehead .wp{font-family:var(--font-body); font-style:normal; font-weight:500; font-size:8.6px; letter-spacing:.02em; color:var(--muted-n);}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-wine .wp{font-family:'Fraunces', Georgia, serif; font-weight:600; font-size:11.6px; color:var(--gold);}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-wine .fr{font-size:9.8px; letter-spacing:.02em; line-height:1.18; color:var(--cream);}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-wine .fr .desc{display:block; font-size:8.6px; letter-spacing:.01em; margin-top:1px;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-wine .leader{display:none;}
+:is([data-format="totem"],[data-format="potence"]).theme-exterieur .blk-wine .txt{max-width:none; flex:1; min-width:0;}
+/* potence 45 × 65 : la même carte sur 6 % de largeur en moins, un cran plus serrée */
+[data-format="potence"].theme-exterieur .blk-section h2{font-size:22.5px;}
+[data-format="potence"].theme-exterieur .blk-item .fr{font-size:10.8px; letter-spacing:.02em;}
+[data-format="potence"].theme-exterieur .blk-item .price{font-size:13.4px; min-width:48px;}
+[data-format="potence"].theme-exterieur .blk-item .fr .desc, [data-format="potence"].theme-exterieur .blk-item .sub, [data-format="potence"].theme-exterieur .blk-item .en{font-size:8.5px;}
+[data-format="potence"].theme-exterieur .blk-item .txt, [data-format="potence"].theme-exterieur .page-col .blk-item .txt{max-width:calc(100% - 50px);}
+[data-format="potence"].theme-exterieur .blk-note{font-size:9px;}
+[data-format="potence"].theme-exterieur .wprices .wp{width:35px;}
+[data-format="potence"].theme-exterieur .blk-wine .wp{font-size:11px;}
+[data-format="potence"].theme-exterieur .pdf-page > .blk-line{font-size:14px; padding:7px 0; margin-bottom:8px;}
+/* potence : 2 px de moins entre nom, pointillés et prix, pour que les noms longs passent
+   sur 2 lignes (« OMELETTE POMMES DE TERRE, / SAUCISSE, CHAMPIGNONS ») au lieu de 3 */
+[data-format="potence"].theme-exterieur .blk-item{gap:4px;}
+/* totem : noms des vins à la taille de la potence (5,7 mm imprimés) et lignes de vins
+   un peu plus aérées ; la 1re colonne tombe ainsi au niveau des deux autres */
+[data-format="totem"].theme-exterieur .blk-wine .fr{font-size:10.8px; letter-spacing:.02em;}
+[data-format="totem"].theme-exterieur .blk-wine{padding-top:2px; padding-bottom:2px;}
+
+/* ---------- Arche du totem ---------- */
+[data-format="arche"].theme-exterieur .pdf-page{display:flex; flex-direction:column; justify-content:flex-end;}
+[data-format="arche"].theme-exterieur .blk-line{font-family:var(--font-body); color:var(--cream); text-align:center; padding:0 4px; margin:0;}
+[data-format="arche"].theme-exterieur .blk-line.v-title{font-weight:600; font-size:54px; line-height:.95; letter-spacing:.04em; text-transform:uppercase; color:var(--cream); margin:0;}
+[data-format="arche"].theme-exterieur .blk-line.v-main{font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:500; font-size:30px; line-height:1.08; letter-spacing:0; text-transform:none; color:var(--gold); margin:0;}
+[data-format="arche"].theme-exterieur .blk-image img{border-radius:0;}
+/* repère de découpe de l'arche (éditeur seulement, jamais imprimé) */
+.arche-guide{position:absolute; inset:0; pointer-events:none; z-index:3;}
+.arche-guide svg{width:100%; height:100%; display:block;}
+.arche-guide path{vector-effect:non-scaling-stroke;}
+.arche-guide .ag-off{fill:rgba(201,75,75,.18); stroke:none;}
+.arche-guide .ag-cut{fill:none; stroke:#e06c6c; stroke-width:1.5; stroke-dasharray:7 4;}
+.arche-guide .ag-safe{fill:none; stroke:rgba(255,255,255,.6); stroke-width:1; stroke-dasharray:3 3;}
+body.exporting .arche-guide, body.print-mode .arche-guide{display:none !important;}
+@media print{ .arche-guide{display:none !important;} }

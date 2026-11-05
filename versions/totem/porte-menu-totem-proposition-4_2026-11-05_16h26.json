@@ -1,0 +1,620 @@
+{
+ "style": {
+  "titleFont": "Fraunces",
+  "bodyFont": "Jost",
+  "titleColor": "#ffffff",
+  "accent": "#c39a45",
+  "pageBg": "#2b2f33",
+  "leaders": true,
+  "format": "totem",
+  "theme": "exterieur",
+  "itemSpacing": 1,
+  "marginMm": {
+   "t": 14,
+   "r": 15,
+   "b": 20,
+   "l": 15
+  },
+  "mirror": false,
+  "sectionUnderline": false
+ },
+ "blocks": [
+  {
+   "id": "t4-1",
+   "type": "image",
+   "src": "assets/logo-blanc.png",
+   "widthPct": 16,
+   "mb": 0
+  },
+  {
+   "id": "t4-2",
+   "type": "line",
+   "text": "Restaurant savoyard · Pizzéria · Crêperie",
+   "variant": "main",
+   "mb": 8
+  },
+  {
+   "id": "t4-3",
+   "type": "cols",
+   "ratio": "33/34/33",
+   "gap": 26
+  },
+  {
+   "id": "t4-4",
+   "type": "section",
+   "fr": "Les entrées",
+   "en": "Starters"
+  },
+  {
+   "id": "t4-5",
+   "type": "item",
+   "fr": "SOUPE DE LÉGUMES MAISON",
+   "en": "Homemade vegetable soup",
+   "price": "17,00 €"
+  },
+  {
+   "id": "t4-6",
+   "type": "item",
+   "fr": "SOUPE À L'OIGNON",
+   "en": "Onion soup",
+   "price": "17,00 €"
+  },
+  {
+   "id": "t4-7",
+   "type": "item",
+   "fr": "ESCARGOTS LES 6",
+   "en": "Snails, half dozen",
+   "price": "16,50 €"
+  },
+  {
+   "id": "t4-8",
+   "type": "item",
+   "fr": "ESCARGOTS LES 12",
+   "en": "Snails, twelve",
+   "price": "23,50 €"
+  },
+  {
+   "id": "t4-9",
+   "type": "item",
+   "fr": "ASSIETTE DE SAUMON FUMÉ",
+   "en": "Smoked salmon plate",
+   "price": "21,50 €"
+  },
+  {
+   "id": "t4-10",
+   "type": "item",
+   "fr": "ASSIETTE DU BERGER",
+   "sub": "Jambon speck, saucisse sèche, viande des Grisons, Beaufort, Reblochon",
+   "en": "Shepherd's plate: ham, sausage, dry beef, Beaufort, Reblochon",
+   "price": "21,70 €"
+  },
+  {
+   "id": "t4-11",
+   "type": "section",
+   "fr": "Les salades",
+   "en": "Salads"
+  },
+  {
+   "id": "t4-12",
+   "type": "item",
+   "fr": "SALADE CAMPAGNARDE",
+   "sub": "Salade verte, croûtons, fromage, lardons, tomates",
+   "en": "Green salad, croutons, cheese, bacon, tomatoes",
+   "price": "20,70 €"
+  },
+  {
+   "id": "t4-13",
+   "type": "item",
+   "fr": "SALADE SAVOYARDE",
+   "sub": "Salade verte, fromage à raclette sur toast, tomates, œuf",
+   "en": "Green salad, raclette cheese on toast, tomatoes, egg",
+   "price": "21,70 €"
+  },
+  {
+   "id": "t4-14",
+   "type": "item",
+   "fr": "SALADE DE CHÈVRE CHAUD",
+   "sub": "Au miel, tomates confites et noix",
+   "en": "Warm goat's cheese with honey, confit tomatoes and walnuts",
+   "price": "21,70 €"
+  },
+  {
+   "id": "t4-15",
+   "type": "section",
+   "fr": "Les omelettes",
+   "en": "Omelets"
+  },
+  {
+   "id": "t4-16",
+   "type": "note",
+   "text": "Avec salade verte · with green salad",
+   "mt": 0
+  },
+  {
+   "id": "t4-17",
+   "type": "item",
+   "fr": "OMELETTE NATURE",
+   "en": "Plain omelet",
+   "price": "14,50 €"
+  },
+  {
+   "id": "t4-18",
+   "type": "item",
+   "fr": "OMELETTE POMMES DE TERRE, SAUCISSE, CHAMPIGNONS",
+   "en": "Potato, sausage and mushroom omelet",
+   "price": "19,70 €"
+  },
+  {
+   "id": "t4-19",
+   "type": "item",
+   "fr": "OMELETTE AUX MORILLES",
+   "en": "Morel mushroom omelet",
+   "price": "21,00 €"
+  },
+  {
+   "id": "t4-20",
+   "type": "item",
+   "fr": "ASSIETTE DE FRITES",
+   "en": "French fries",
+   "price": "8,50 €"
+  },
+  {
+   "id": "t4-21",
+   "type": "section",
+   "fr": "Nos vins",
+   "en": "Wines",
+   "mt": 8
+  },
+  {
+   "id": "t4-22",
+   "type": "winehead",
+   "text": "",
+   "c1": "37,5 cl",
+   "c2": "50 cl",
+   "c3": "75 cl",
+   "c4": "150 cl"
+  },
+  {
+   "id": "t4-23",
+   "type": "wine",
+   "fr": "APREMONT",
+   "p1": "17,50",
+   "p2": "",
+   "p3": "32,50",
+   "p4": ""
+  },
+  {
+   "id": "t4-24",
+   "type": "wine",
+   "fr": "CÔTEAUX D'AIX-EN-PROVENCE",
+   "p1": "",
+   "p2": "23,00",
+   "p3": "32,50",
+   "p4": ""
+  },
+  {
+   "id": "t4-25",
+   "type": "wine",
+   "fr": "SAINT-JOSEPH",
+   "desc": "Vins de Vienne",
+   "p1": "",
+   "p2": "35,00",
+   "p3": "50,50",
+   "p4": "99,50"
+  },
+  {
+   "id": "t4-26",
+   "type": "wine",
+   "fr": "CÔTE RÔTIE",
+   "desc": "Ogier",
+   "p1": "",
+   "p2": "",
+   "p3": "96,50",
+   "p4": ""
+  },
+  {
+   "id": "t4-27",
+   "type": "wine",
+   "fr": "MONDEUSE VIEILLES VIGNES",
+   "desc": "Domaine Jean Perrier",
+   "p1": "20,50",
+   "p2": "",
+   "p3": "35,50",
+   "p4": ""
+  },
+  {
+   "id": "t4-28",
+   "type": "wine",
+   "fr": "LUSSAC-SAINT-ÉMILION",
+   "desc": "Grand Ricombre",
+   "p1": "",
+   "p2": "",
+   "p3": "35,50",
+   "p4": "66,00"
+  },
+  {
+   "id": "t4-29",
+   "type": "note",
+   "text": "Plus de vins à l'intérieur · more wines inside",
+   "mt": 3
+  },
+  {
+   "id": "t4-30",
+   "type": "colbreak"
+  },
+  {
+   "id": "t4-31",
+   "type": "section",
+   "fr": "Les spécialités",
+   "en": "Specialities"
+  },
+  {
+   "id": "t4-32",
+   "type": "note",
+   "text": "Minimum 2 personnes sauf tartiflette · prix par personne",
+   "mt": 0
+  },
+  {
+   "id": "t4-33",
+   "type": "note",
+   "text": "Minimum 2 people except tartiflette · price per person",
+   "italic": true,
+   "mt": 0
+  },
+  {
+   "id": "t4-34",
+   "type": "item",
+   "fr": "PIERRE CHAUDE ROYALE",
+   "sub": "Bœuf 125 g, dinde 125 g, frites, 3 sauces, oignons, salade verte",
+   "en": "Hot stone: beef 125 g, turkey 125 g, fries, 3 sauces, onions, green salad",
+   "price": "35,50 €"
+  },
+  {
+   "id": "t4-35",
+   "type": "item",
+   "fr": "TARTIFLETTE, SALADE VERTE",
+   "en": "Tartiflette, green salad",
+   "price": "25,50 €"
+  },
+  {
+   "id": "t4-36",
+   "type": "item",
+   "fr": "TARTIFLETTE SPECK, SALADE VERTE",
+   "en": "Tartiflette with speck ham, green salad",
+   "price": "27,50 €"
+  },
+  {
+   "id": "t4-37",
+   "type": "item",
+   "fr": "FONDUE BOURGUIGNONNE",
+   "sub": "230 g de bœuf, frites, salade verte, 3 sauces",
+   "en": "Beef fondue: 230 g of beef, fries, green salad, 3 sauces",
+   "price": "36,50 €"
+  },
+  {
+   "id": "t4-38",
+   "type": "section",
+   "fr": "Les raclettes",
+   "en": "Raclettes"
+  },
+  {
+   "id": "t4-39",
+   "type": "item",
+   "fr": "RACLETTE NATURE",
+   "en": "Plain raclette",
+   "price": "23,50 €"
+  },
+  {
+   "id": "t4-40",
+   "type": "item",
+   "fr": "RACLETTE JAMBON SPECK",
+   "en": "With smoked ham speck",
+   "price": "28,50 €"
+  },
+  {
+   "id": "t4-41",
+   "type": "item",
+   "fr": "RACLETTE ROYALE",
+   "sub": "Assiette de charcuterie, salade verte",
+   "en": "Charcuterie plate, green salad",
+   "price": "33,50 €"
+  },
+  {
+   "id": "t4-42",
+   "type": "item",
+   "fr": "RACLETTE VÉGÉTARIENNE",
+   "sub": "Assiette de crudités",
+   "en": "Raw vegetable plate",
+   "price": "29,50 €"
+  },
+  {
+   "id": "t4-43",
+   "type": "item",
+   "fr": "RACLETTE JAMBON BLANC À LA TRUFFE",
+   "en": "With truffle ham",
+   "price": "36,50 €"
+  },
+  {
+   "id": "t4-44",
+   "type": "section",
+   "fr": "Les fondues",
+   "en": "Cheese fondues"
+  },
+  {
+   "id": "t4-45",
+   "type": "item",
+   "fr": "FONDUE SAVOYARDE, SALADE VERTE",
+   "sub": "Comté, Emmental, Beaufort",
+   "en": "Comté, Emmental, Beaufort, green salad",
+   "price": "26,50 €"
+  },
+  {
+   "id": "t4-46",
+   "type": "item",
+   "fr": "FONDUE SAVOYARDE ROYALE",
+   "sub": "Assiette de charcuterie, salade verte",
+   "en": "Charcuterie plate, green salad",
+   "price": "31,50 €"
+  },
+  {
+   "id": "t4-47",
+   "type": "item",
+   "fr": "FONDUE SAVOYARDE AUX MORILLES",
+   "en": "With morel mushrooms",
+   "price": "34,50 €"
+  },
+  {
+   "id": "t4-48",
+   "type": "item",
+   "fr": "FONDUE SAVOYARDE À LA TRUFFE",
+   "en": "With truffle",
+   "price": "53,00 €"
+  },
+  {
+   "id": "t4-49",
+   "type": "section",
+   "fr": "Menus du midi",
+   "en": "Lunch menus",
+   "mt": 6
+  },
+  {
+   "id": "t4-50",
+   "type": "note",
+   "text": "Servis uniquement le midi, jusqu'à 14 h 30",
+   "mt": 0
+  },
+  {
+   "id": "t4-51",
+   "type": "note",
+   "text": "Lunchtime only, until 2.30 pm",
+   "italic": true,
+   "mt": 0
+  },
+  {
+   "id": "t4-52",
+   "type": "item",
+   "fr": "MENU CRÊPES",
+   "sub": "1 galette au choix · 1 crêpe sucre, confiture ou chocolat · 1 bolée de cidre",
+   "en": "1 galette of your choice · 1 crêpe (sugar, jam or chocolate) · 1 bowl of cider",
+   "price": "25,90 €"
+  },
+  {
+   "id": "t4-53",
+   "type": "item",
+   "fr": "MENU ENFANTS",
+   "sub": "Au choix : pizza bambino jambon-fromage ou saucisse diot-frites · 1 crêpe sucre ou Nutella, ou glace 2 boules · 1 boisson au choix",
+   "en": "Kids' ham & cheese pizza or diot sausage & fries · 1 sugar or Nutella crêpe, or 2 scoops of ice cream · 1 drink",
+   "price": "18,90 €"
+  },
+  {
+   "id": "t4-54",
+   "type": "colbreak"
+  },
+  {
+   "id": "t4-55",
+   "type": "banner",
+   "text": "Consultez la carte des pizzas à l'intérieur !",
+   "ink": "dark",
+   "mt": 2
+  },
+  {
+   "id": "t4-56",
+   "type": "note",
+   "text": "See our pizza menu inside!",
+   "italic": true,
+   "mt": 2
+  },
+  {
+   "id": "t4-57",
+   "type": "item",
+   "fr": "LASAGNES MAISON",
+   "en": "Homemade lasagna",
+   "price": "25,00 €",
+   "mt": 4
+  },
+  {
+   "id": "t4-58",
+   "type": "section",
+   "fr": "Les galettes",
+   "en": "Savoury pancakes",
+   "mt": 8
+  },
+  {
+   "id": "t4-59",
+   "type": "item",
+   "fr": "GALETTE JAMBON, FROMAGE",
+   "en": "Ham, cheese",
+   "price": "14,50 €"
+  },
+  {
+   "id": "t4-60",
+   "type": "item",
+   "fr": "GALETTE CHAMPIGNONS, SAUCISSES, FROMAGE",
+   "en": "Mushrooms, sausages, cheese",
+   "price": "16,00 €"
+  },
+  {
+   "id": "t4-61",
+   "type": "item",
+   "fr": "GALETTE CAUCHOISE",
+   "sub": "Pommes, Grisons, 3 fromages",
+   "en": "Apples, dry beef, 3 cheeses",
+   "price": "17,50 €"
+  },
+  {
+   "id": "t4-62",
+   "type": "item",
+   "fr": "GALETTE PAYSANNE",
+   "sub": "Œuf, lardons, fromage, champignons, crème",
+   "en": "Egg, bacon, cheese, mushrooms, cream",
+   "price": "18,50 €"
+  },
+  {
+   "id": "t4-63",
+   "type": "item",
+   "fr": "GALETTE DES ALPES",
+   "sub": "Raclette, pomme de terre, jambon speck",
+   "en": "Raclette cheese, potato, smoked ham speck",
+   "price": "18,50 €"
+  },
+  {
+   "id": "t4-64",
+   "type": "item",
+   "fr": "GALETTE BERRICHONNE",
+   "sub": "Chèvre, tomates confites, miel, noix, roquette",
+   "en": "Goat's cheese, confit tomatoes, honey, walnuts, rocket",
+   "price": "18,50 €"
+  },
+  {
+   "id": "t4-65",
+   "type": "item",
+   "fr": "GALETTE SAUMON FUMÉ",
+   "sub": "Crème ciboulette, saumon fumé, citron, roquette",
+   "en": "Chive cream, smoked salmon, lemon, rocket",
+   "price": "19,00 €"
+  },
+  {
+   "id": "t4-66",
+   "type": "item",
+   "fr": "GALETTE KEBAB",
+   "sub": "Viande kebab, oignon, tomates confites, œuf, salade",
+   "en": "Kebab meat, onion, confit tomatoes, egg, salad",
+   "price": "18,50 €"
+  },
+  {
+   "id": "t4-67",
+   "type": "section",
+   "fr": "Nos crêpes",
+   "en": "Sweet crêpes",
+   "mt": 6
+  },
+  {
+   "id": "t4-68",
+   "type": "item",
+   "fr": "CRÊPE BEURRE SUCRE",
+   "en": "Butter and sugar",
+   "price": "6,70 €"
+  },
+  {
+   "id": "t4-69",
+   "type": "item",
+   "fr": "CRÊPE CARAMEL AU BEURRE SALÉ",
+   "en": "Salted butter caramel",
+   "price": "9,00 €"
+  },
+  {
+   "id": "t4-70",
+   "type": "item",
+   "fr": "CRÊPE CHOCOLAT MAISON OU NUTELLA",
+   "en": "Homemade chocolate or Nutella",
+   "price": "9,00 €"
+  },
+  {
+   "id": "t4-71",
+   "type": "item",
+   "fr": "SUZETTE",
+   "sub": "Zestes d'orange, beurre, sucre, Grand-Marnier",
+   "en": "Orange zest, butter, sugar, Grand-Marnier",
+   "price": "12,00 €"
+  },
+  {
+   "id": "t4-72",
+   "type": "item",
+   "fr": "CRÊPE NORMANDE",
+   "sub": "Pommes, crème, Calvados",
+   "en": "Apples, cream, Calvados",
+   "price": "12,50 €"
+  },
+  {
+   "id": "t4-73",
+   "type": "item",
+   "fr": "CRÊPE BELLE HÉLÈNE",
+   "sub": "Poire, chocolat, glace vanille, chantilly",
+   "en": "Pear, chocolate, vanilla ice cream, whipped cream",
+   "price": "12,50 €"
+  },
+  {
+   "id": "t4-74",
+   "type": "item",
+   "fr": "CRÊPE GLACÉE BOUNTY",
+   "sub": "Glace noix de coco, chocolat chaud, chantilly",
+   "en": "Coconut ice cream, hot chocolate, whipped cream",
+   "price": "12,50 €"
+  },
+  {
+   "id": "t4-75",
+   "type": "note",
+   "text": "Plus de crêpes à l'intérieur · more crêpes inside",
+   "mt": 3
+  },
+  {
+   "id": "t4-76",
+   "type": "image",
+   "src": "assets/photos/crepes.jpg",
+   "widthPct": 100,
+   "heightPx": 81,
+   "focus": "50% 60%",
+   "mt": 10
+  },
+  {
+   "id": "t4-77",
+   "type": "colsend"
+  },
+  {
+   "id": "t4-78",
+   "type": "cols",
+   "ratio": "10/90",
+   "gap": 24,
+   "valign": "center"
+  },
+  {
+   "id": "t4-79",
+   "type": "image",
+   "src": "assets/qr-carte.png",
+   "widthPct": 100,
+   "align": "left",
+   "mt": 10
+  },
+  {
+   "id": "t4-80",
+   "type": "colbreak"
+  },
+  {
+   "id": "t4-81",
+   "type": "banner",
+   "text": "Réservations +33 (0)4 79 08 53 90",
+   "ink": "dark",
+   "mt": 10
+  },
+  {
+   "id": "t4-82",
+   "type": "note",
+   "text": "Prix nets en euros",
+   "mt": 3
+  },
+  {
+   "id": "t4-83",
+   "type": "colsend"
+  }
+ ]
+}
