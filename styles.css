@@ -1154,3 +1154,9 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
 .theme-alpage .page-cols.full-text .page-col .blk-item .en{font-size:11px;}
 .theme-alpage .page-cols.full-text .page-col .blk-item .price{font-size:14px; min-width:48px;}
 .theme-alpage .page-cols.full-text .page-col .blk-item{padding-top:2px; padding-bottom:2px;}
+
+/* Option « description sur la ligne du nom » (style.descInline) : chaque plat
+   tient en deux lignes (nom + description, puis l'anglais), comme les cartes
+   d'origine ; la carte respire et laisse la place aux photos. */
+.desc-inline.theme-moderne .blk-item .fr .desc{display:inline; margin:0 0 0 7px; vertical-align:baseline;}
+.desc-inline.theme-moderne .blk-item .sub{display:inline;}

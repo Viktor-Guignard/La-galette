@@ -138,6 +138,7 @@ function applyStyle(){
   const me = st.mirror ? {t:m.t, r:m.l, b:m.b, l:m.r} : m;
   root.style.setProperty('--page-pad-even', `${px(me.t)} ${px(me.r)} ${px(me.b)} ${px(me.l)}`);
   document.body.classList.toggle('leaders-off', !st.leaders);
+  document.body.classList.toggle('desc-inline', !!st.descInline);   // description sur la ligne du nom
   Object.keys(PAGE_THEMES).concat(['vigne']).forEach(t => document.body.classList.toggle('theme-' + t, st.theme === t));
   /* « alpage » prolonge la proposition moderne (mêmes niveaux de texte) */
   if(st.theme === 'alpage') document.body.classList.add('theme-moderne');
