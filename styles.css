@@ -1196,3 +1196,8 @@ body.exporting .tr-auto, body.print-mode .tr-auto{text-decoration:none !importan
 [data-format="affiche"].theme-exterieur .blk-emp-header .emp-title{font-size:60px;}
 [data-format="affiche"].theme-exterieur .blk-item .fr{font-size:12.8px;}
 [data-format="affiche"].theme-exterieur .blk-section h2{font-size:31px;}
+/* totem : fond ardoise, en-tête centré (logo seul + accroche), pour se distinguer de l'adhésif noir */
+[data-format="totem"].theme-exterieur .pdf-page::before{background-image:url('assets/deco/totem-ardoise.svg');}
+[data-format="totem"].theme-exterieur .pdf-page > .blk-image:first-child{text-align:center;}
+[data-format="totem"].theme-exterieur .pdf-page > .blk-line{font-family:var(--font-body); font-weight:600; font-size:15px; letter-spacing:.42em; text-transform:uppercase; color:var(--gold); padding:10px 0; border-top:1px solid rgba(195,154,69,.55); border-bottom:1px solid rgba(195,154,69,.55); margin:0 60px 14px;}
+[data-format="totem"].theme-exterieur .blk-note{font-size:11px; color:var(--cream);}

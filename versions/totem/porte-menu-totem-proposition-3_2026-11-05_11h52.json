@@ -4,7 +4,7 @@
   "bodyFont": "Jost",
   "titleColor": "#ffffff",
   "accent": "#c39a45",
-  "pageBg": "#000000",
+  "pageBg": "#2b2f33",
   "leaders": true,
   "format": "totem",
   "theme": "exterieur",
@@ -20,18 +20,17 @@
  },
  "blocks": [
   {
-   "id": "t1",
-   "type": "emp-header",
-   "logoImg": "assets/logo-blanc.png",
-   "title": "Notre<br>carte",
-   "box1": "Réservations",
-   "box2": "+33 (0)4 79 08 53 90"
+   "id": "h1",
+   "type": "image",
+   "src": "assets/logo-blanc.png",
+   "widthPct": 36,
+   "mb": 2
   },
   {
-   "id": "t2",
-   "type": "banner",
+   "id": "h2",
+   "type": "line",
    "text": "Restaurant savoyard · Pizzéria · Crêperie",
-   "mt": 0,
+   "v": "tagline",
    "mb": 10
   },
   {
@@ -529,7 +528,7 @@
   {
    "id": "t70",
    "type": "note",
-   "text": "Prix nets en euros",
+   "text": "Réservations +33 (0)4 79 08 53 90 · Prix nets en euros",
    "bold": true,
    "mt": 4
   }
